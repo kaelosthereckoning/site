@@ -34,7 +34,7 @@
 				document.getElementById('dashboard_div'));
 
 			// Create a range slider, passing some options
-			var donutRangeSlider = new google.visualization.ControlWrapper({
+			var AverageRangeSlider = new google.visualization.ControlWrapper({
 				'controlType': 'NumberRangeFilter',
 				'containerId': 'filter_div',
 				'options': {
@@ -42,8 +42,8 @@
 				}
 			});
 
-			// Create a pie chart, passing some options
-			var pieChart = new google.visualization.ChartWrapper({
+			// Create a line chart, passing some options
+			var lineChart = new google.visualization.ChartWrapper({
 				'chartType': 'LineChart',
 				'containerId': 'chart_div',
 				'options': {
@@ -56,7 +56,7 @@
 			// Establish dependencies, declaring that 'filter' drives 'pieChart',
 			// so that the pie chart will only display entries that are let through
 			// given the chosen slider range.
-			dashboard.bind(donutRangeSlider, pieChart);
+			dashboard.bind(AverageRangeSlider, lineChart);
 
 			// Draw the dashboard.
 			dashboard.draw(data);
