@@ -12,6 +12,56 @@
 <!--import scripts-->
 	<script src="assets/jquery-3.2.1.min.js"></script>
   	<script src="assets/bootstrap-3.3.7.min.js"></script>
+	
+<!--Load the AJAX API-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+
+		// Load the Visualization API and the controls package.
+		// Packages for all the other charts you need will be loaded
+		// automatically by the system.
+		google.charts.load('current', {'packages':['corechart', 'controls']});
+
+		// Set a callback to run when the Google Visualization API is loaded.
+		google.charts.setOnLoadCallback(drawDashboard);
+
+		function drawDashboard() {
+			// Create our data table.
+			var data = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:N13');
+
+			// Create a dashboard.
+			var dashboard = new google.visualization.Dashboard(
+				document.getElementById('dashboard_div'));
+
+			// Create a range slider, passing some options
+			var donutRangeSlider = new google.visualization.ControlWrapper({
+				'controlType': 'NumberRangeFilter',
+				'containerId': 'filter_div',
+				'options': {
+					'filterColumnLabel': 'Power Cost'
+				}
+			});
+
+			// Create a pie chart, passing some options
+			var pieChart = new google.visualization.ChartWrapper({
+				'chartType': 'LineChart',
+				'containerId': 'chart_div',
+				'options': {
+					'width': 300,
+					'height': 300,
+					'legend': 'right'
+				}
+			});
+
+			// Establish dependencies, declaring that 'filter' drives 'pieChart',
+			// so that the pie chart will only display entries that are let through
+			// given the chosen slider range.
+			dashboard.bind(donutRangeSlider, pieChart);
+
+			// Draw the dashboard.
+			dashboard.draw(data);
+		}
+	</script>
 </head>
 <body>
 
@@ -37,6 +87,13 @@
     <li><a href="donate.html">Donate</a></li>
   </ul>
 </div>
+	
+<!--Div that will hold the dashboard-->
+    <div id="dashboard_div">
+	    <!--Divs that will hold each control and chart-->
+	    <div id="filter_div"></div>
+	    <div id="chart_div"></div>
+    </div>
 
 </body>
   
