@@ -27,8 +27,8 @@
 
 		function drawDashboard() {
 			// Create our data table.
-			var data = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:N13');
-
+			var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:N13');
+			
 			// Create a dashboard.
 			var dashboard = new google.visualization.Dashboard(
 				document.getElementById('dashboard_div'));
@@ -47,7 +47,7 @@
 					'width': 300,
 					'height': 300,
 					'legend': 'right',
-					'filterColumnIndex': 1,
+					'filterColumnIndex': 0,
 				}
 			});
 
@@ -57,7 +57,7 @@
 			dashboard.bind(AverageRangeSlider, lineChart);
 
 			// Draw the dashboard.
-			dashboard.draw(data);
+			dashboard.draw(query);
 		}
 	</script>
 </head>
