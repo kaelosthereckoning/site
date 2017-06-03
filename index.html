@@ -7,71 +7,70 @@
 	<meta charset="utf-8">
 	
 <!--import CSS stylesheets-->
-	<link href="index.css" rel="stylesheet" type="text/css">
-	<link href="nav.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="index.css" type="text/css">
 	<!--bootstrap-->
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="assets/bootstrap-3.3.7.min.css" type="text/css">
 	<!--jquery-->
-	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
 	
 <!--import scripts-->
-	<script src="index.js"></script>
-	<script src="nav.js"></script>
+
+	<!--bootstrap-->
+	<script src="assets/bootstrap-3.3.7.min.js"></script>
 	<!--jquery-->
-	<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
-	<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+	<script src="assets/jquery.min.js"></script>
+	<script src="assets/jquery-1.11.1.min.js"></script>
+	<script src="assets/jquery.ui-1.10.4.tabs.min.js"></script>
 	
 <!--tab title-->
 	<title>Kaelos: The Reckoning - Data Analysis</title>
 	
 <!--banner-->
-	<div id="banner">
+
+<div id="banner">
 	<h1>Kaelos: The Reckoning - Eternal CCG Data Analysis</h1>
 	</div>
 	
-	</head>
-	
-	<body>
+</head>
+
+<!--body-->
+<body>
 <!--static navbar-->
-     	<div id="login" class="container-fluid">
-	     				<ul>
-							<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      						<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-						</ul>
-		</div>
+<nav id="Tabs1">
+  <ul class="nav nav-tabs">
+    <li class="active"><a href="#tabs-1">Home</a></li>
+    <li class="dropdown">
+    	<a class="dropdown-toggle" data-toggle="dropdown" href="#tabs-2">Topics<span class="caret"></span></a>
+    		<ul class="dropdown-menu">
+        		<li><a href="#">Submenu 1-1</a></li>
+        		<li><a href="#">Submenu 1-2</a></li>
+        		<li><a href="#">Submenu 1-3</a></li>                        
+      		</ul>
+    </li>
+    <li><a href="#tabs-3">Tab 3</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Content 1</p>
+  </div>
+  <div id="tabs-2">
+    <p>Content 2</p>
+  </div>
+  <div id="tabs-3">
+    <p>Content 3</p>
+  </div>
+</nav>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+    </script>
+</body>
 	
-		<div id="static-navbar" class="main-navigation">
-			<nav id="site-navbar" class="navbar navbar-inverse">
-				<div class="container-fluid">
-    				<div class="navbar-header">
-      					<a class="navbar-brand" href="#">Kaelos: The Reckoning</a>
-    				</div>
-    				<ul class="nav navbar-nav" id="actual-navbar">
-      					<li class="active"><a href="#">Home</a></li>
-      					<li class="dropdown">
-        					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics
-        					<span class="caret"></span></a>
-        					<ul class="dropdown-menu" id="topics-dropdown">
-          						<li><a href="#">Page 1-1</a></li>
-          						<li><a href="#">Page 1-2</a></li>
-          						<li><a href="#">Page 1-3</a></li>
-        					</ul>
-      					</li>
-      					<li><a href="#">Charts</a></li>
-     					<li><a href="#">Analyses</a></li>
-     					<li><a href="#">Reference</a></li>
-     					<li><a href="#">Programs</a></li>
-     					<li><a href="#">Donate</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<div id="main">
-	</div>
-	</body>
-	<footer class="footer">
+	
+<!--static footer-->	
+<footer class="footer">
 		<div id="twitchfooter"> twitch.tv/kaelosthereckoning </div>
 		<hr>
 		<div id="sitelicense">
