@@ -37,6 +37,9 @@
 			var AverageRangeSlider = new google.visualization.ControlWrapper({
 				'controlType': 'NumberRangeFilter',
 				'containerId': 'filter_div'
+				'options': {
+				'filterColumnIndex': 0
+			}
 			});
 
 			// Create a line chart, passing some options
@@ -47,10 +50,9 @@
 					'width': 300,
 					'height': 300,
 					'legend': 'right',
-					'filterColumnIndex': 0,
 				}
 			});
-
+			
 			// Establish dependencies, declaring that 'filter' drives 'pieChart',
 			// so that the pie chart will only display entries that are let through
 			// given the chosen slider range.
