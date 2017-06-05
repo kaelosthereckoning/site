@@ -17,6 +17,6 @@ function handleQueryResponse(response) {
           vAxis: {title: 'Average Influence Cost'}
         };
 
-        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
         chart.draw(data, options);
