@@ -31,8 +31,25 @@
           		title: 'Influence',
           		curveType: 'function',
           		legend: { position: 'bottom' }
+			series: {
+            			0: { color: '#e2431e' },
+            			1: { color: '#e7711b' },
+            			2: { color: '#f1ca3a' },
+            			3: { color: '#6f9654' },
+            			4: { color: '#1c91c0' },
+            			5: { color: '#43459d' },
+          		}
+			//hAxis: { 
+			//	maxValue: 7, 
+			//	format: 'MMM',
+        		//	slantedText: false,
+        		//	maxAlternation: 1
+			//	},
+          		//vAxis: { maxValue: 13 },
+			//'width': 300,
+			//'height': 300,
         	};
-
+		
         	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
         	chart.draw(data, options);
@@ -66,7 +83,9 @@
 </div>
 
 <!--table of charts-->	
-	<div id="chart_001"></div>
+
+  <div id="chart_001"></div>
+
 
 </body>
   
