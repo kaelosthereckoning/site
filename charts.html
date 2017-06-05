@@ -20,35 +20,25 @@
       		google.charts.setOnLoadCallback(drawChart);
 
       		function drawChart() {
-        	var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:O13');
+        		var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:N13');
 			query.send(handleQueryResponse);
       		}
 
 		function handleQueryResponse(response) {
-  				var data = response.getDataTable();
-
+  			var data = response.getDataTable();
         		var options = {
-          			title: 'Mean Influence Cost per Power Cost, by Faction',
+          			title: 'Average Influence Cost per Power Cost, by Faction',
           			curveType: 'function',
-          			legend: { position: 'bottom' },
+          			legend: { position: 'bottom' }
 				hAxis: { 
 					format: 'none',
-					title: 'Power Cost',
-			//	maxValue: 7, 
-			//	format: 'MMM',
-        		//	slantedText: false,
-        		//	maxAlternation: 1
-					},
-          			vAxis: { 
+					title: 'Power Cost'}
+				vAxis: {
 					format: 'none',
-					title: 'Average Influence Cost';
-			//maxValue: 13 },
-			//'width': 300,
-			//'height': 300,
-					}
-			};
-		
-        	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
+					title: 'Average Influence Cost'}
+        		};
+
+        	var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
         	chart.draw(data, options);
       		}
