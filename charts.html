@@ -25,36 +25,28 @@
       		}
 
 		function handleQueryResponse(response) {
-  		var data = response.getDataTable();
+  				var data = response.getDataTable();
 
-        	var options = {
-          		title: 'Mean Influence Cost per Power Cost, by Faction',
-          		curveType: 'function',
-          		legend: { position: 'bottom' }
-			//series: {
-            		//	0: { color: '#e2431e' },
-            		//	1: { color: '#e7711b' },
-            		//	2: { color: '#f1ca3a' },
-            		//	3: { color: '#6f9654' },
-            		//	4: { color: '#1c91c0' },
-            		//	5: { color: '#43459d' },
-          		}
-			hAxis: { 
-				format: 'none',
-				title: 'Power Cost',
+        		var options = {
+          			title: 'Mean Influence Cost per Power Cost, by Faction',
+          			curveType: 'function',
+          			legend: { position: 'bottom' },
+				hAxis: { 
+					format: 'none',
+					title: 'Power Cost',
 			//	maxValue: 7, 
 			//	format: 'MMM',
         		//	slantedText: false,
         		//	maxAlternation: 1
-				},
-          		vAxis: { 
-				format: 'none',
-				title: 'Average Influence Cost';
+					},
+          			vAxis: { 
+					format: 'none',
+					title: 'Average Influence Cost';
 			//maxValue: 13 },
 			//'width': 300,
 			//'height': 300,
-				}
-        	};
+					}
+			};
 		
         	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
