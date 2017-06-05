@@ -16,44 +16,22 @@
 <!--Load the AJAX API-->
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript">
-		google.charts.load('current', {'packages':['corechart']});
-      		google.charts.setOnLoadCallback(drawChart);
-
-      		function drawChart() {
-        	var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:N13');
-			query.send(handleQueryResponse);
-      		}
-
-		function handleQueryResponse(response) {
-  		var data = response.getDataTable();
-
-        	var options = {
-          		title: 'Influence',
-          		curveType: 'function',
-          		legend: { position: 'bottom' }
-			series: {
-            			0: { color: '#e2431e' },
-            			1: { color: '#e7711b' },
-            			2: { color: '#f1ca3a' },
-            			3: { color: '#6f9654' },
-            			4: { color: '#1c91c0' },
-            			5: { color: '#43459d' },
-          		}
-			//hAxis: { 
-			//	maxValue: 7, 
-			//	format: 'MMM',
-        		//	slantedText: false,
-        		//	maxAlternation: 1
-			//	},
-          		//vAxis: { maxValue: 13 },
-			//'width': 300,
-			//'height': 300,
-        	};
-		
-        	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
-
-        	chart.draw(data, options);
-      		}
+		function doGet() {
+   		// Get sample data from a spreadsheet.
+   		var dataSourceUrl = 'https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=2&range=I2:O13';
+   
+   		var chartBuilder = Charts.newLineChart()
+       		.setTitle('Average Influence Cost per Power Cost, by Faction')
+       		.setXAxisTitle('Power Cost')
+       		.setYAxisTitle('Average Influence Cost')
+       		.setDimensions(600, 500)
+       		.setCurveStyle(Charts.CurveStyle.SMOOTH)
+       		.setPointStyle(Charts.PointStyle.MEDIUM)
+       		.setDataSourceUrl(dataSourceUrl);
+   
+   		var chart = chartBuilder.build();
+   		return UiApp.createApplication().add(chart);
+ 		}
 	</script>
 </head>
 <body>
@@ -84,7 +62,7 @@
 
 <!--table of charts-->	
 
-  <div id="chart_001"></div>
+  <div id="chart"></div>
 
 
 </body>
