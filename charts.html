@@ -29,13 +29,9 @@
         		var options = {
           			title: 'Average Influence Cost per Power Cost, by Faction',
           			curveType: 'function',
-          			legend: { position: 'bottom' }
-				hAxis: { 
-					format: 'none',
-					title: 'Power Cost'}
-				vAxis: {
-					format: 'none',
-					title: 'Average Influence Cost'}
+          			legend: { position: 'bottom' },
+				hAxis: { title: 'Power Cost' },
+				vAxis: { title: 'Average Influence Cost' }
         		};
 
         	var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
