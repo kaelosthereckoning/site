@@ -42,7 +42,8 @@ body {
 }
 
 .nav-tabs > li > a{
-  border: medium none;
+	border: medium none;
+	padding: 10px 3px;
 }
 
 .nav-tabs > li > a{
