@@ -39,18 +39,17 @@ body {
 }
 
 
-/* CONTENT */
+
 #main {
   padding-top: 20px;
 }
-/* FOOTER */
-#footer {
+
+footer {
   /* BASE CODE */
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0; left: 0;
   height: 150px;
-  /* STYLING */
   background: #590202;
   display: table;
 }
