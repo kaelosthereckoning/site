@@ -3,13 +3,19 @@
 
 html{
 	background-color: #131313;
+	height: 100%;
 }
+
+{
+    margin: 0;
+}
+
 body {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
   	padding: 0;
   	margin: auto;
 	width:100%;
-  	height: 1400px;
+  	height: 100%;
 }
 
 #homepage {
@@ -50,6 +56,16 @@ hr{
 	color: gray;
 }
 
+.footer-wrapper {
+    min-height: 100%;
+    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+    height: 100%;
+    margin: 0 auto -155px; /* The bottom margin is the negative value of the footer's height. */
+}
+.footer, .push {
+    height: 155px; /* .push must be the same height as .footer */
+}
+
 #twitchfooter {
 	text-align: center;
 	font-size: 175%;
@@ -59,3 +75,4 @@ hr{
 	font-size: 80%;
 	text-align: center;
 }
+
