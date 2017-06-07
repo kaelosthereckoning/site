@@ -2,8 +2,6 @@
 /* CSS Document */
 
 html{
-	background-color: #262626;
-	color: #ffffff;
 	height: 100%;
 }
 
@@ -24,6 +22,8 @@ html{
 }
 
 body {
+	background-color: #262626;
+	color: #ffffff;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
   	padding: 0;
   	margin: auto;
