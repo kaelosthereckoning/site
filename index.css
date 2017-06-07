@@ -56,16 +56,6 @@ hr{
 	color: gray;
 }
 
-.footer-wrapper {
-    min-height: 100%;
-    height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-    height: 100%;
-    margin: 0 auto -155px; /* The bottom margin is the negative value of the footer's height. */
-}
-.footer, .push {
-    height: 155px; /* .push must be the same height as .footer */
-}
-
 #twitchfooter {
 	text-align: center;
 	font-size: 175%;
