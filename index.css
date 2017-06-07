@@ -43,13 +43,9 @@ body {
 }
 
 footer {
-	position: absolute;
 	width: 100%;
-	bottom: 0; left: 0;
 	height: 150px;
 	background: #131313;
-	display: flex;
-	display: -webkit-flex;
 }
 
 hr{
