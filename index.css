@@ -48,11 +48,26 @@ footer {
 	background-color: #131313;
 }
 
-hr.heart {
-	border-top: 4px single #E5E5E5;
-	text-align: center;
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
 }
-hr.heart:after {
+
+f1.heart {
+	width: 70%;
+  	margin: .7em auto;
+  	overflow: hidden;
+  	text-align: center;
+  	font-weight:300;
+  	color: #E5E5E5;
+}
+
+f1.heart:before,f1.heart:after {
 	content: '\002665';
 	display: inline-block;
 	position: relative;
@@ -60,6 +75,12 @@ hr.heart:after {
 	padding: 0 10px;
 	color: #E5E5E5;
 	font-size: 18px;
+	width: 50%;
+  	margin: 0 .5em 0 -55%;
+}
+
+f1.heart:after {
+	margin: 0 -55% 0 .5em;
 }
 
 #twitchfooter {
