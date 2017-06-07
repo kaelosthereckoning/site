@@ -13,23 +13,34 @@
 <!--import scripts-->
 	<script src="assets/jquery-3.2.1.min.js"></script>
   	<script src="assets/bootstrap-3.3.7.min.js"></script>
+	<script>
+		function mainNav() {
+    			var x = document.getElementById("main-nav");
+    			if (x.className === "main-nav") {
+        			x.className += " responsive";
+    				} 
+			else {
+        				x.className = "main-nav";
+    				}
+			}
+	</script>
 </head>
 <body>
 <!--main navigation-->
-	<div class="container" id="main-nav">
+	<div class="main-nav" id="main-nav">
   		<h3>Kaelos: The Reckoning - Eternal Data Analyses</h3>
   		<ul class="nav nav-tabs">
     			<li class="active"><a href="index.html">Home</a></li>
     			<li class="dropdown">
       				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics <span class="caret"></span></a>
       				<ul class="dropdown-menu">
-					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
         				<li><a href="topics/tournaments.html">Tournaments</a></li>
         				<li><a href="topics/ranked.html">Ranked</a></li>
         				<li><a href="topics/draft.html">Draft</a></li>
         				<li><a href="topics/deck-building.html">Deck Building</a></li> 
         				<li><a href="topics/reactive-play.html">Reactive Play</a></li>
-					<li><a href="topics/primitive-ai.html">Primitive AI</a></li>     
+					<li><a href="topics/primitive-ai.html">Primitive AI</a></li>  
+					<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       				</ul>
     			</li>
     			<li><a href="charts.html">Charts</a></li>
