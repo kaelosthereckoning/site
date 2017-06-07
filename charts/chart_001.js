@@ -12,13 +12,7 @@ function handleQueryResponse(response) {
         var options = {
 		title: 'Influence',
 		curveType: 'function',
-		legend: { position: 'bottom' },
-		hAxis: {
-			title: 'Power Cost'
-		},
-		vAxis: {
-			title: 'Average Influence Cost'
-		}
+		legend: { position: 'bottom' }
         };
 
         var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
