@@ -7,23 +7,38 @@ google.charts.load('current', {'packages':['corechart']});
 			query.send(handleQueryResponse);
       }
 
-function handleQueryResponse(response) {
-  var data = response.getDataTable();
+	function handleQueryResponse(response) {
+  		var data = response.getDataTable();
 
-        var options = {
-		title: 'Average Influence Cost of Power Cost, by Faction',
-		curveType: 'function',
-		legend: { position: 'bottom' },
-		hAxis: {
-			title: 'Power Cost'
-		},
-		vAxis: {
-			title: 'Average Influence Cost'
-		}
-        };
+        	var options = {
+			title: 'Average Influence Cost of Power Cost, by Faction',
+			curveType: 'function',
+			legend: { position: 'bottom' },
+			hAxis: {
+				title: 'Power Cost'
+			},
+			vAxis: {
+				title: 'Average Influence Cost'
+			}
+        	};
 
-        var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
+        	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
-        chart.draw(data, options);
-}
+        	chart.draw(data, options);
+	}
+	
+	function resizeChart () {
+    		chart.draw(data, options);
+	}
+	
+	if (document.addEventListener) {
+    		window.addEventListener('resize', resizeChart);
+	}
+	else if (document.attachEvent) {
+    		window.attachEvent('onresize', resizeChart);
+	}
+	else {
+    		window.resize = resizeChart;
+	}
+	
 }, false);
