@@ -1,23 +1,23 @@
-$color1: #FFFFFF;
+/*color1: #FFFFFF;
 $color2: #E5E5E5;
 $color3: #BFBFBF;
 $color4: #7F7F7F;
 $color5: #262626;
 $color6: #131313;
 $breakpoint: 800px;
-$nav-height: 70px;
+$nav-height: 70px;*/
 
 
 .main-nav {
 	width: 100%;
-  background-color: $color4 !important;
-	color: $color1;
+  background-color: #7F7F7F !important;
+	color: #FFFFFF;
   overflow: hidden;
 }
 
 .main-nav a{
-	background-color: $color4 !important;
-	color: $color1;
+	background-color: #7F7F7F !important;
+	color: #FFFFFF;
   float: left;
   display: block;
   text-align: center;
@@ -27,13 +27,13 @@ $nav-height: 70px;
 }
 
 .main-nav:hover{
-	background-color: $color3 !important;
-	color: $color5;
+	background-color: #BFBFBF !important;
+	color: #262626;
 }
 
 .main-nav:active{
-	background-color: $color5 !important;
-	color: $color3;
+	background-color: #262626 !important;
+	color: #BFBFBF;
 }
 
 .main-nav .icon {
@@ -48,7 +48,7 @@ $nav-height: 70px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .main-nav.responsive {position: relative;}
   .main-nav.responsive .icon {
     position: absolute;
