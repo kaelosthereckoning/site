@@ -2,7 +2,8 @@
 /* CSS Document */
 
 html{
-	background-color: #131313;
+	background-color: #262626;
+	color: #ffffff;
 	height: 100%;
 }
 
@@ -17,11 +18,8 @@ html{
 }
 
 #banner {
-  /* BASE CODE */
   height: 5%;
   width: 100%;
-  /* STYLING */
-  background-color: #ffffff;
   display: table;
 }
 
@@ -49,15 +47,15 @@ footer {
 	width: 100%;
 	bottom: 0; left: 0;
 	height: 150px;
-	background: #590202;
+	background: #131313;
 	display: flex;
 	display: -webkit-flex;
 }
 
 hr{
 	border: none;
-	height: 1px;
-	color: gray;
+	height: 3px;
+	color: E5E5E5;
 }
 
 #twitchfooter {
