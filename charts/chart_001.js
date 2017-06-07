@@ -18,3 +18,4 @@ function handleQueryResponse(response) {
         var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
         chart.draw(data, options);
+}
