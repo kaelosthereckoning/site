@@ -68,15 +68,12 @@ f1.heart {
 }
 
 f1.heart:before,f1.heart:after {
-	content: '\002665';
+	content: "";
 	display: inline-block;
-	position: relative;
-	top: -15px;
-	padding: 0 10px;
-	color: #E5E5E5;
-	font-size: 18px;
 	width: 50%;
-  	margin: 0 .5em 0 -55%;
+	margin: 0 .5em 0 -55%;
+	vertical-align: middle;
+	border-bottom: 1px solid;
 }
 
 f1.heart:after {
