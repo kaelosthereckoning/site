@@ -48,17 +48,6 @@ footer {
 	background-color: #131313;
 }
 
-hr {
-	display: block;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: auto;
-	margin-right: auto;
-	border-style: inset;
-	border-width: 1px;
-	border-color: #E5E5E5;
-}
-
 hr.heart {
 	border-top: 4px single #E5E5E5;
 	text-align: center;
