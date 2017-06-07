@@ -49,7 +49,7 @@ footer {
 }
 
 hr {
-	border: none;
+	border: 1px;
 	height: 3px;
 	color: #E5E5E5;
 }
