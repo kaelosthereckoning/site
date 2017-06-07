@@ -11,7 +11,7 @@ function handleQueryResponse(response) {
   var data = response.getDataTable();
 
         var options = {
-		title: 'Influence',
+		title: 'Average Influence Cost of Power Cost, by Faction',
 		curveType: 'function',
 		legend: { position: 'bottom' },
 		hAxis: {
