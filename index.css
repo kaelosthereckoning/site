@@ -27,46 +27,6 @@ body {
   	flex-direction: column;
 }
 
-#main-nav {
-	width: 100%;
-}
-
-.nav-tabs{
-	background-color:#7F7F7F;
-	color: #ffffff;
-}
-
-.nav-tabs:active {
-	background-color: #262626;
-	color: #bfbfbf;
-}
-
-.nav-tabs > li > a{
-	border: medium none;
-	padding: 10px 3px;
-}
-
-.nav-tabs > li > a{
-	background-color: #7F7F7F !important;
-	color: #ffffff;
-	border: medium none;
-	border-radius: 0;
-}
-
-.nav-tabs > li > a:hover{
-	background-color: #bfbfbf !important;
-	color: #262626;
-	border: medium none;
-	border-radius: 0;
-}
-
-.nav-tabs > li > a:active{
-	background-color: #262626 !important;
-	color: #bfbfbf;
-	border: medium none;
-	border-radius: 0;
-}
-
 .content {
   flex: 1 0 auto;
 }
