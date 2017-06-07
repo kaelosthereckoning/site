@@ -1,275 +1,46 @@
-/**
- * Sets a translucent background color to all elements it affects. Helpful while setting up, or debugging, the structure of your site to make sure all items are cleared correctly.
- *
- * @param {color} [$bg=blue] - A color to be lightened, so make sure you pick a darkish color.
- *
- * @example
- *   section
- *     edit(red)
- */
-/**
- * Clearfix used to clear floated children elements. http://nicolasgallagher.com/micro-clearfix-hack
- *
- * @example
- *   .parent
- *     clearfix()
- *     .child
- *       column('1/2')
- */
-/**
- * Creates a Flexbox container.
- *
- * @param {string} [$direction=row] - The flex-direction the container should create. This is typically opposite to the element you're creating so a row() would need flex-container(column).
- *
- * @example
- *   $flexbox = true
- *
- *   section
- *     flex-container()
- *     figure
- *       column('1/2')
- */
-/**
- * Horizontally center a container element and apply padding to it.
- *
- * @param {unit} [$max-size=1140px] - A max-width to assign. Can be any unit.
- * @param {unit} [$pad=0] - Padding on the left and right of the element. Can be any unit.
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   section
- *     center(900px)
- */
-/**
- * Align nested elements.
- *
- * @param {string} [$location=middle-center] - The position the nested element takes relative to the containing element.
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * - reset
- * - top-left
- * - top-center or top
- * - top-right
- * - middle-left or left
- * - middle-right or right
- * - bottom-left
- * - bottom-center or bottom
- * - bottom-right
- *
- * @example
- *   .parent
- *     align(right)
- *     width: 600px
- *     height: 400px
- *     .child
- *       width: 300px
- *       height: 150px
- */
-/**
- * Creates a column that is a fraction of the size of it's containing element with a gutter. You don't need to pass any additional ratios (fractions) as the grid system will make use of calc(). Note that fractions must always be wrapped in quotes.
- *
- * @param {string} [$fraction='1/1'] - This is a simple fraction of the containing element's width. This must be a string written as a fraction.
- * @param {number} [$cycle=convert(unquote(split('/', $fraction)[1]))] - Lost works by assigning a margin-right to all elements except the last in the row. It does this by default by using the denominator of the fraction you pick. To override this default use this param. e.g. column('2/4', $cycle: 2)
- * @param {number} [$gut=$gutter] - The margin on the right side of the element used to create a gutter. Typically this is left alone and the global $gutter will be used, but you can override it here if you want certain elements to have a particularly large or small gutter (pass 0 for no gutter at all).
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   figure
- *     column('1/3')
- */
-/**
- * Creates a row that is a fraction of the size of it's containing element with a gutter. You don't need to pass any additional ratios (fractions) as the grid system will make use of calc(). Note that fractions must always be wrapped in quotes.
- *
- * @param {string} [$fraction='1/1'] - This is a simple fraction of the containing element's height. This must be a string written as a fraction.
- * @param {number} [$gut=$gutter] - The margin on the bottom of the element used to create a gutter. Typically this is left alone and the global $gutter will be used, but you can override it here if you want certain elements to have a particularly large or small gutter (pass 0 for no gutter at all).
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   figure
- *     row('1/3')
- */
-/**
- * Creates a block that is a fraction of the size of it's containing element with a gutter on the right and bottom. You don't need to pass any additional ratios (fractions) as the grid system will make use of calc(). Note that fractions must always be wrapped in quotes.
- *
- * @param {string} [$fraction='1/1'] - This is a simple fraction of the containing element's width/height. This must be a string written as a fraction.
- * @param {number} [$cycle=convert(unquote(split('/', $fraction)[1]))] - Lost works by assigning a margin-right/bottom to all elements except the last row (no margin-bottom) and the last column (no margin-right). It does this by default by using the denominator of the fraction you pick. To override this default use this param. e.g. waffle('2/4', $cycle: 2)
- * @param {number} [$gut=$gutter] - The margin on the right and bottom side of the element used to create a gutter. Typically this is left alone and the global $gutter will be used, but you can override it here if you want certain elements to have a particularly large or small gutter (pass 0 for no gutter at all).
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   figure
- *     waffle('1/3')
- */
-/**
- * Margin to the left, right, bottom, or top, of an element depending on if the fraction passed is positive or negative. It works for both horizontal and vertical grids but not both.
- *
- * @param {string} [$fraction='1/1'] - Fraction of the container to be offset. Must be a string.
- * @param {string} [$dir=row] - Direction the grid is going. Should be the opposite of the column() or row() it's being used on.
- * @param {number} [$gut=$gutter] - How large the gutter involved is, typically this won't be adjusted, but if you have set the elements for that container to have different gutters than default, you will need to match that gutter here as well.
- *
- * @example
- *   .two-elements
- *     column('1/3')
- *     &:first-child
- *       offset('1/3')
- */
-/**
- * Source ordering. Shift elements left, right, up, or down, by their left or top position by passing a positive or negative fraction.
- *
- * @param {string} [$fraction='1/1'] - Fraction of the container to be shifted. Must be a string.
- * @param {string} [$dir=row] - Direction the grid is going. Should be the opposite of the column() or row() it's being used on.
- * @param {number} [$gut=$gutter] - Adjust the size of the gutter for this movement. Should match the element's $gut.
- *
- * @example
- *   figure
- *     column('1/2')
- *     &:first-child
- *       move('1/2')
- */
-/**
- * Creates a wrapping element for working with JS masonry libraries like Isotope. Assigns a negative margin on each side of this wrapping element.
- *
- * @param {number} [$gut=$gutter] - How large the gutter involved is, typically this won't be adjusted and will inherit the global $gutter setting, but it's made available if you want your masonry grid to have a special $gut, it should match your masonry-column's $gut.
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   section
- *     masonry-wrap()
- *   figure
- *     masonry-column('1/3')
- */
-/**
- * Creates a column for working with JS masonry libraries like Isotope. Assigns a margin to each side of the element.
- *
- * @param {number} [$gut=$gutter] - How large the gutter involved is, typically this won't be adjusted and will inherit the global $gutter setting, but it's made available if you want your masonry grid to have a special $gut, it should match your masonry-row's $gut.
- * @param {boolean} [$flex=$flexbox] - Determines whether this element should use Flexbox or not.
- *
- * @example
- *   section
- *     masonry-wrap()
- *   figure
- *     masonry-column('1/3')
- */
-/**
- * A function to return the size of a column minus it's gutter if a gutter is assigned. Handy for generating CSS classes.
- *
- * @param {string} [$fraction='1/1'] - This is a simple fraction of the containing element's width. This must be a string written as a fraction.
- * @param {number} [$gut=$gutter] - The gutter assigned to this size.
- *
- * @example
- *   [class*="col-"]
- *     float: left
- *     margin-right: $gutter
- *     &:last-child
- *       margin-right: 0
- *
- *   for $i in 1..12
- *     .col-{$i}
- *       width: get-size(s('%s/12', $i))
- */
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100");
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-html,
-body {
-  width: 100%;
-  font-family: 'Roboto Slab', serif;
-  line-height: 1.8em;
-  letter-spacing: 0.1em;
-  color: #fff;
-  background: #00ced1;
-}
-@media screen and (min-width: 600px) {
-  html,
-  body {
-    padding: 0 10px;
-    background: #6495ed;
-  }
-}
-h1 {
-  font-size: 2em;
-  line-height: 1.4em;
-  text-align: center;
-  padding: 0.5em;
-}
-section {
-  zoom: 1;
-  position: relative;
-  height: auto;
-}
-section:after,
-section:before {
-  content: "";
-  display: table;
-}
-section:after {
-  clear: both;
-}
-section h4 {
-  background: rgba(0,0,0,0.1);
-  cursor: pointer;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-top: none;
-  padding: 15px 20px;
-}
-section h4:first-child {
-  border-top: 1px solid rgba(0,0,0,0.2);
-}
-@media screen and (min-width: 600px) {
-  section h4 {
-    position: relative;
-    width: 33.333333333333336%;
-    height: 20%;
-    display: block;
-  }
-}
-section ul {
-  zoom: 1;
-  position: relative;
-  height: auto;
-  min-height: 100%;
-  border: 1px solid rgba(0,0,0,0.2);
-  border-left: none;
-  display: none;
-}
-section ul:after,
-section ul:before {
-  content: "";
-  display: table;
-}
-section ul:after {
-  clear: both;
-}
-section ul li {
-  list-style: circle;
-}
-@media screen and (min-width: 600px) {
-  section ul {
-    position: absolute;
-    width: 66.66666666666667%;
-    right: 0;
-    top: 0;
-    padding: 15px 30px;
-  }
-}
-section .active {
-  cursor: default;
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  border-right: none;
-}
-@media screen and (min-width: 600px) {
-  section .active {
-    background: rgba(0,0,0,0);
-    border-right: 1px solid rgba(0,0,0,0);
-  }
-}
-section .active + ul {
-  display: block;
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+div.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
 }
 
+/* Style the buttons inside the tab */
+div.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 300px;
+}
