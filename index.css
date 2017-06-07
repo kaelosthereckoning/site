@@ -56,28 +56,7 @@ hr {
 	margin-right: auto;
 	border-style: inset;
 	border-width: 1px;
-}
-
-f1.heart {
-	width: 70%;
-  	margin: .7em auto;
-  	overflow: hidden;
-  	text-align: center;
-  	font-weight:300;
-  	color: #E5E5E5;
-}
-
-f1.heart:before,f1.heart:after {
-	content: "";
-	display: inline-block;
-	width: 50%;
-	margin: 0 .5em 0 -55%;
-	vertical-align: middle;
-	border-bottom: 1px solid;
-}
-
-f1.heart:after {
-	margin: 0 -55% 0 .5em;
+	color: #E5E5E5;
 }
 
 #twitchfooter {
