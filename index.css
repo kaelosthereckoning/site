@@ -10,14 +10,6 @@ html{
     margin: 0;
 }
 
-body {
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-  	padding: 0;
-  	margin: auto;
-	width:100%;
-  	height: 100%;
-}
-
 #homepage {
   min-height: 100%;
   height: 100%;
@@ -31,6 +23,19 @@ body {
   /* STYLING */
   background-color: #ffffff;
   display: table;
+}
+
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+  	padding: 0;
+  	margin: auto;
+	width:100vh;
+	display: flex;
+  	flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 
