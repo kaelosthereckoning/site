@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
@@ -19,3 +20,4 @@ function handleQueryResponse(response) {
 
         chart.draw(data, options);
 }
+}, false);
