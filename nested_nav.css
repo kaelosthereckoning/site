@@ -27,6 +27,8 @@ div.nested_tab button {
 /* Change background color of buttons on hover */
 div.nested_tab button:hover {
     background-color: #ddd;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
 }
 
 /* Create an active/current "tab button" class */
@@ -39,7 +41,7 @@ div.nested_tab button.active {
     float: left;
     padding: 0px 12px;
     border: 1px solid #ccc;
-    width: 70vh;
+    width: 100%;
     border-left: none;
-    height: 300px;
+    height: 100%;
 }
