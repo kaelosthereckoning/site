@@ -45,9 +45,23 @@ body {
   border: medium none;
 }
 
+.nav-tabs > li > a{
+	background-color: #7F7F7F !important;
+	color: #ffffff;
+	border: medium none;
+	border-radius: 0;
+}
+
 .nav-tabs > li > a:hover{
 	background-color: #bfbfbf !important;
 	color: #262626;
+	border: medium none;
+	border-radius: 0;
+}
+
+.nav-tabs > li > a:active{
+	background-color: #262626 !important;
+	color: #bfbfbf;
 	border: medium none;
 	border-radius: 0;
 }
