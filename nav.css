@@ -18,9 +18,14 @@ $nav-height: 70px;*/
 	list-style: none;
 }
 
-.nav-tabs > li {
+.nav-tabs > li.tier1 {
     float:none;
     display:inline-block;
+}
+
+.nav-tabs > li.tier2 {
+    float:none;
+    display:block;
 }
 
 a:hover,a:focus{
