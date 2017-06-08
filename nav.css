@@ -41,22 +41,22 @@ a:hover,a:focus{
 	margin-bottom: 0;
 	margin-right: 3px;
 	margin-left: 3px;
-}
-.tab .nav-tabs li a{
-    display: inline-block;
-    font-size: 14px;
-    color: #fff;
-    padding: 15px 25px;
-    background: #4b4673;
+	font-size: 14px;
+	color: #fff;
+	background: #4b4673;
     border-radius: 0;
     position: relative;
     border: none;
     transition: all 0.5s ease 0s;
 }
-.tab .nav-tabs li a:hover{
+.tab .nav-tabs li a{
+    display: inline-block;
+    padding: 15px 25px;
+}
+.tab .nav-tabs li:hover{
     background: #7c70d9;
 }
-.tab .nav-tabs li a:before{
+.tab .nav-tabs li:before{
     content: "";
     width: 100%;
     border: 3px solid #4b4673;
@@ -66,13 +66,13 @@ a:hover,a:focus{
     transform: rotateY(-90deg);
     transition: all 0.5s ease 0s;
 }
-.tab .nav-tabs li a:hover:before,
-.tab .nav-tabs li.active a:before{
+.tab .nav-tabs li:hover:before,
+.tab .nav-tabs li.active:before{
     transform: rotateY(0deg);
 }
-.tab .nav-tabs li.active a,
-.tab .nav-tabs li.active a:focus,
-.tab .nav-tabs li.active a:hover{
+.tab .nav-tabs li.active,
+.tab .nav-tabs li.active:focus,
+.tab .nav-tabs li.active:hover{
     background: #fff;
     color: #333;
     border: none;
