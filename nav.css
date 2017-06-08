@@ -14,18 +14,18 @@ background-color: #262626;
 $breakpoint: 800px;
 $nav-height: 70px;*/
 
-.nav-tabs {
+.nav-pills {
 	list-style: none;
 	width: 100%;
 }
 
-.nav-tabs > li.tier1 {
+.nav-pills > li.tier1 {
 	float:none;
 	display:inline-block;
 	width: 12%;
 }
 
-.nav-tabs > li.tier2 {
+.nav-pills > li.tier2 {
     float:none;
     display:block;
 }
@@ -34,10 +34,10 @@ a:hover,a:focus{
     text-decoration: none;
     outline: none;
 }
-.tab .nav-tabs{
+.nav-pills{
     border-bottom: 7px solid #4b4673;
 }
-.tab .nav-tabs li{
+.nav-pills li{
 	margin-bottom: 0;
 	margin-right: 3px;
 	margin-left: 3px;
@@ -49,14 +49,14 @@ a:hover,a:focus{
     border: none;
     transition: all 0.5s ease 0s;
 }
-.tab .nav-tabs li a{
+.nav-pills li a{
     display: inline-block;
     padding: 15px 25px;
 }
-.tab .nav-tabs li:hover{
+.nav-pills li:hover{
     background: #7c70d9;
 }
-.tab .nav-tabs li:before{
+.nav-pills li:before{
     content: "";
     width: 100%;
     border: 3px solid #4b4673;
@@ -66,38 +66,28 @@ a:hover,a:focus{
     transform: rotateY(-90deg);
     transition: all 0.5s ease 0s;
 }
-.tab .nav-tabs li:hover:before,
-.tab .nav-tabs li.active:before{
+.nav-pills li:hover:before,
+.nav-pills li.active:before{
     transform: rotateY(0deg);
 }
-.tab .nav-tabs li.active,
-.tab .nav-tabs li.active:focus,
-.tab .nav-tabs li.active:hover{
+.nav-pills li.active,
+.nav-pills li.active:focus,
+.nav-pills li.active:hover{
     background: #fff;
     color: #333;
     border: none;
     border-radius: 0;
 }
-.tab .tab-content{
-    padding: 12px;
-    font-size: 14px;
-    color: #484848;
-    line-height: 25px;
-}
-.tab .tab-content h3{
-    font-size: 24px;
-    color: #606060;
-    margin-top: 10px;
-}
+
 @media only screen and (max-width: 480px){
-    .tab .nav-tabs li{
+    .nav-pills li{
         width: 100%;
         margin-bottom: 10px;
     }
-    .tab .nav-tabs li:last-child{
+    .nav-pills li:last-child{
         margin-bottom: 0;
     }
-    .tab .nav-tabs li a{
+    .nav-pills li a{
         display: block;
         margin-right: 0;
     }
