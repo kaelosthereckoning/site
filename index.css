@@ -1,11 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 
-html{
+html {
+	font-size: 1em;
+}
+
+@media screen and (min-width: 1400px) {
+  html { font-size: 1.25em; }
 }
 
 * {
-    margin: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 #page {
@@ -13,13 +19,27 @@ html{
 	min-width: 100vw;
 }
 
+header {
+	background-color: #fff;
+	margin: 0 auto 2rem;
+	padding: 1rem 2rem 2rem;
+	width: 100%;
+}
+
 #banner {
+
+}
+
+section {
+	
 }
 
 body {
 	background-color: #262626;
 	color: #ffffff;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", "Helvetica", "Arial", "sans-serif";
+	font-size: 1rem;
+	line-height: 1.5em;
   	padding: 0;
   	margin: auto;
 	width: 100%;
@@ -27,8 +47,13 @@ body {
   	flex-direction: column;
 }
 
+.main-nav {
+	order: 1;
+}
+
 .content {
 	flex: 1 0 auto;
+	order: 2;
 }
 
 
@@ -41,6 +66,7 @@ footer {
 	width: 100%;
 	height: 150px;
 	background-color: #131313;
+	order: 10;
 }
 
 hr {
