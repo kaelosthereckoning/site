@@ -82,11 +82,13 @@ hr {
 }
 
 #twitchfooter {
+	padding: 5px;
 	text-align: center;
 	font-size: 1.75rem;
 }
 
 #sitelicense{
+	padding: 5px;
 	font-size: 0.8 rem;
 	text-align: center;
 }
