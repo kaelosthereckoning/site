@@ -16,10 +16,13 @@ $nav-height: 70px;*/
 	color: #FFFFFF;
 	border-top: solid 3px #fff;
 	border-bottom: solid 3px #fff;
+	display: flex;
+	width: 100%;
 }
 
 .main-nav li {
 	float: left;
+	flex: 1 1 100%;
 }
 
 .main-nav li:hover{
@@ -48,7 +51,6 @@ $nav-height: 70px;*/
 }
 
 .main-nav ul {
-	display: none;
 	list-style:none;
 	position: absolute;
 	padding: 12px 16px;
