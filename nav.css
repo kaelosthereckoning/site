@@ -16,6 +16,7 @@ $nav-height: 70px;*/
 
 .nav-tabs {
 	list-style: none;
+	width: 100%;
 }
 
 .nav-tabs > li.tier1 {
@@ -36,8 +37,9 @@ a:hover,a:focus{
     border-bottom: 7px solid #4b4673;
 }
 .tab .nav-tabs li{
-    margin-bottom: 0;
-    margin-right: 5px;
+	margin-bottom: 0;
+	margin-right: 3px;
+	margin-left: 3px;
 }
 .tab .nav-tabs li a{
     display: inline-block;
