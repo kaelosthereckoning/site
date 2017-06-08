@@ -36,13 +36,14 @@ ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .menu li {
-  display: block;
-  list-style-type: none;
-  text-transform: uppercase;
+	display: block;
+	list-style-type: none;
+	text-transform: uppercase;
+	flex: auto;
 }
 
 .selected {
@@ -64,8 +65,9 @@ ul {
     	-webkit-transition: all .2s ease-in;
     	transition: all .2s ease-in;
 }
+
 .menu li a:hover {
-  background: #BFBFBF;
+  background-color: #BFBFBF;
   color: #262626;
 }
 
@@ -78,11 +80,11 @@ ul {
   .menu {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -105,7 +107,7 @@ nav ul li:hover > ul {
 @media (min-width: 800px) {
   nav ul li:hover > ul {
     padding-left: 0;
-    background: #BFBFBF;
+    background-color: #BFBFBF;
   }
 
   nav ul li:hover > ul a {
@@ -113,13 +115,14 @@ nav ul li:hover > ul {
   }
 
   .sub-menu li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-right: 2em;
+	flex: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding-right: 2em;
   }
   .sub-menu li:hover, .sub-menu li a:hover {
-    background: #BFBFBF;
+    background-color: #BFBFBF;
     color: #262626;
   }
 
