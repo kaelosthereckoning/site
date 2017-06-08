@@ -36,11 +36,6 @@ ul.main-nav > li > a{
 	transition: .3s background-color;
 }
 
-ul.dropdown {
-	position: absolute;
-	display: inline-block;
-}
-
 ul.main-nav > li > a:hover{
 	background-color: #BFBFBF !important;
 	color: #262626;
