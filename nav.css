@@ -51,14 +51,18 @@ ul {
 }
 
 .menu li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  text-decoration: none;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	text-align: center;
+  	text-decoration: none;
 	background-color: #7F7F7F;
 	color: #FFFFFF;
-  padding: 1rem;
+  	padding: 1rem;
+	-moz-transition: all .2s ease-in;
+    	-o-transition: all .2s ease-in;
+    	-webkit-transition: all .2s ease-in;
+    	transition: all .2s ease-in;
 }
 .menu li a:hover {
   background: #BFBFBF;
