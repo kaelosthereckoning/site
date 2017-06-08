@@ -14,32 +14,32 @@ a.selected {
 
 ul.main-nav {
 	display: inline-block;
-	float: left;
 	list-style:none;
-	width: 100%;
+	width: 150px;
+	height: 30px;
+	padding:0;
+	margin:0;
 	background-color: #7F7F7F;
 	color: #FFFFFF;
 	overflow: auto;
 }
 
 ul.main-nav > li {
-	display:inline-block;
-	background-color: #7F7F7F;
-	list-style:none;
 	float: left;
 }
 
-ul.main-nav > li > a{
+ul.main-nav > li > a {
 	background-color: #7F7F7F;
 	color: #FFFFFF;
 	text-align: center;
 	padding: 14px 16px;
+	display: block;
 	text-decoration: none;
 	font-size: 17px;
-	transition: .3s;
+	transition: .3s background-color;
 }
 
-ul.main-nav > li > a:hover{
+ul.main-nav > li:hover{
 	background-color: #BFBFBF;
 	color: #262626;
 }
