@@ -121,6 +121,7 @@ nav ul li:hover > ul {
 	display: -ms-flexbox;
 	display: flex;
 	padding-right: 2em;
+	  background-color: #BFBFBF;
   }
   .sub-menu li:hover, .sub-menu li a:hover {
     background-color: #BFBFBF;
