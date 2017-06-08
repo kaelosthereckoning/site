@@ -7,6 +7,10 @@ $color6: #131313;
 $breakpoint: 800px;
 $nav-height: 70px;*/
 
+a.selected {
+	background-color: #262626;
+	color: #BFBFBF;
+}
 
 ul.main-nav {
 	display: inline-block;
@@ -41,11 +45,6 @@ ul.main-nav > li > a:hover{
 }
 
 ul.main-nav > li > a:active {
-	background-color: #262626;
-	color: #BFBFBF;
-}
-
-li > a.selected:link, a.selected:visited {
 	background-color: #262626;
 	color: #BFBFBF;
 }
