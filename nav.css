@@ -23,6 +23,8 @@ ul.main-nav {
 	height: 20px;
 	background-color: #7F7F7F;
 	color: #FFFFFF;
+	overflow: auto; 
+	overflow-y: hidden;
 }
 
 ul.main-nav > li {
