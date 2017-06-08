@@ -33,6 +33,7 @@ ul.main-nav a{
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+	transition: .3s background-color;
 }
 
 ul.dropdown {
@@ -40,12 +41,12 @@ ul.dropdown {
 	display: inline-block;
 }
 
-ul.main-nav:hover{
+ul.main-nav a:hover{
 	background-color: #BFBFBF !important;
 	color: #262626;
 }
 
-ul.main-nav:active{
+ul.main-nav a:active{
 	background-color: #262626 !important;
 	color: #BFBFBF;
 }
@@ -86,7 +87,7 @@ ul.dropdown-menu {
 	z-index: 1;
 }
 
-ul.dropdown:hover .dropdown-menu {
+ul.dropdown :hover .dropdown-menu {
 	display: block;
 	list-style: none;
 }
