@@ -9,13 +9,14 @@ $nav-height: 70px;*/
 
 
 .main-nav {
+	position: fixed;
+	display: inline-block;
+	float: left;
+	list-style:none;
 	width: 100%;
 	background-color: #7F7F7F !important;
 	color: #FFFFFF;
-	overflow: hidden;
-	list-style:none;
-	display: inline-block;
-	float: left;
+	overflow: auto;
 }
 
 .main-nav li {
@@ -87,10 +88,7 @@ $nav-height: 70px;*/
 	z-index: 1;
 }
 
-.dropdown-menu li{
-	list-style:none;
-}
-
 .dropdown:hover .dropdown-menu {
-    display: block;
+	display: block;
+	list-style: none;
 }
