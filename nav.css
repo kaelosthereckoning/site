@@ -27,22 +27,22 @@ ul.main-nav > li {
 
 
 ul.main-nav > li > a{
-	background-color: #7F7F7F !important;
+	background-color: #7F7F7F;
 	color: #FFFFFF;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
-	transition: .3s background-color;
+	transition: .3s;
 }
 
 ul.main-nav > li > a:hover{
-	background-color: #BFBFBF !important;
+	background-color: #BFBFBF;
 	color: #262626;
 }
 
 ul.main-nav > li > a:active{
-	background-color: #262626 !important;
+	background-color: #262626;
 	color: #BFBFBF;
 }
 
