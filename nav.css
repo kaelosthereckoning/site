@@ -45,7 +45,7 @@ ul.main-nav > li > a:active {
 	color: #BFBFBF;
 }
 
-a.selected:link {
+li > a.selected:link, a.selected:visited {
 	background-color: #262626;
 	color: #BFBFBF;
 }
