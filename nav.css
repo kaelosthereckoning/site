@@ -7,15 +7,21 @@ $color6: #131313;
 $breakpoint: 800px;
 $nav-height: 70px;*/
 
+* {
+    box-sizing: border-box;
+}
+
 a.selected {
 	background-color: #262626 !important;
 	color: #BFBFBF !important;
 }
 
 ul.main-nav {
+	position: fixed;
+	top: 0;
 	display: inline-block;
 	list-style:none;
-	height: 30px;
+	width: 100%;
 	padding:0;
 	margin:0;
 	background-color: #7F7F7F;
@@ -84,6 +90,10 @@ ul.dropdown-menu {
 	padding: 12px 16px;
 	z-index: 999;
 }
+
+ul.dropdown-menu li {
+ position: relative;
+ }
 
 ul.dropdown :hover .dropdown-menu {
 	display: block;
