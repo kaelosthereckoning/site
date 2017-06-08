@@ -24,8 +24,6 @@ ul.main-nav {
 	background-color: #7F7F7F;
 	color: #FFFFFF;
 	overflow: auto;
-	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 ul.main-nav > li {
