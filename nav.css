@@ -35,7 +35,7 @@ $nav-height: 70px;*/
 	background-color: #7F7F7F;
 	color: #FFFFFF;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 10px 10px;
 	display: block;
 	text-decoration: none;
 	font-size: 17px;
@@ -53,7 +53,7 @@ $nav-height: 70px;*/
 .main-nav ul {
 	list-style:none;
 	position: absolute;
-	padding: 12px 16px;
+	padding: 10px 10px;
 	overflow: hidden;
 }
 
