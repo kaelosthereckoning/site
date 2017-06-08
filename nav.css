@@ -40,7 +40,12 @@ ul.main-nav > li > a:hover{
 	color: #262626;
 }
 
-ul.main-nav > li > a:active, a:selected{
+ul.main-nav > li > a:active {
+	background-color: #262626;
+	color: #BFBFBF;
+}
+
+li.selected a {
 	background-color: #262626;
 	color: #BFBFBF;
 }
