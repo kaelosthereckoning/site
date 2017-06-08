@@ -17,9 +17,7 @@ a.selected {
 }
 
 ul.main-nav {
-	position: fixed;
-	top: 0;
-	display: inline-block;
+	display: block;
 	list-style:none;
 	width: 100%;
 	padding:0;
