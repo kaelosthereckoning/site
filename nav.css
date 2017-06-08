@@ -29,8 +29,9 @@ $nav-height: 70px;*/
 }
 
 
-.main-nav > dropdown-menu a{
+.dropdown-menu {
 	display: block;
+	list-style:none;
 }
 
 .main-nav:hover{
