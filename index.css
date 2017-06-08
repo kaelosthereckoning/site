@@ -47,7 +47,7 @@ body {
   	flex-direction: column;
 }
 
-.main-nav {
+.nav {
 	margin: 30px;
 	order: 1;
 }
