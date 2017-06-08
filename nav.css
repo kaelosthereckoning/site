@@ -8,8 +8,8 @@ $breakpoint: 800px;
 $nav-height: 70px;*/
 
 a.selected {
-	background-color: #262626;
-	color: #BFBFBF;
+	background-color: #262626 !important;
+	color: #BFBFBF !important;
 }
 
 ul.main-nav {
