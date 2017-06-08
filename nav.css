@@ -8,18 +8,17 @@ $breakpoint: 800px;
 $nav-height: 70px;*/
 
 
-.main-nav {
-	position: fixed;
+ul.main-nav {
 	display: inline-block;
 	float: left;
 	list-style:none;
 	width: 100%;
-	background-color: #7F7F7F !important;
+	background-color: #7F7F7F;
 	color: #FFFFFF;
 	overflow: auto;
 }
 
-.main-nav li {
+ul.main-nav li {
 	display:inline-block;
 	background-color: #7F7F7F;
 	list-style:none;
@@ -27,7 +26,7 @@ $nav-height: 70px;*/
 }
 
 
-.main-nav a{
+ul.main-nav a{
 	background-color: #7F7F7F !important;
 	color: #FFFFFF;
 	text-align: center;
@@ -36,49 +35,48 @@ $nav-height: 70px;*/
 	font-size: 17px;
 }
 
-.dropdown {
+ul.dropdown {
 	position: relative;
 	display: inline-block;
 }
 
-.main-nav:hover{
+ul.main-nav:hover{
 	background-color: #BFBFBF !important;
 	color: #262626;
 }
 
-.main-nav:active{
+ul.main-nav:active{
 	background-color: #262626 !important;
 	color: #BFBFBF;
 }
 
-.main-nav .icon {
+ul.main-nav .icon {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
-  .main-nav a:not(:first-child) {display: none;}
-  .main-nav a.icon {
-    float: right;
-    display: block;
+	ul.main-nav a:not(:first-child) {display: none;}
+	ul.main-nav a.icon {
+	float: right;
+	display: block;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .main-nav.responsive {position: relative;}
-  .main-nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .main-nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-
+	ul.main-nav.responsive {position: relative;}
+	ul.main-nav.responsive .icon {
+	position: absolute;
+	right: 0;
+	top: 0;
+	}
+	ul.main-nav.responsive a {
+	float: none;
+	display: block;
+	text-align: left;
+	}
 }
 
-.dropdown-menu {
+ul.dropdown-menu {
 	display: none;
 	list-style:none;
 	position: relative;
@@ -88,7 +86,7 @@ $nav-height: 70px;*/
 	z-index: 1;
 }
 
-.dropdown:hover .dropdown-menu {
+ul.dropdown:hover .dropdown-menu {
 	display: block;
 	list-style: none;
 }
