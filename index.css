@@ -47,10 +47,6 @@ body {
   	flex-direction: column;
 }
 
-.container {
-	width: 100%;
-}
-
 .nav {
 	margin: 30px;
 	order: 1;
