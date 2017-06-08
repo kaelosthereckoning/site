@@ -42,7 +42,7 @@ $nav-height: 70px;*/
     z-index: 1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
