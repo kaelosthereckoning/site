@@ -20,9 +20,9 @@ $nav-height: 70px;*/
 }
 
 .main-navigation {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin: 2em;
+	border-radius: 5px;
+	border: 2px solid color: #E5E5E5;
+	margin: 2em;
 }
 
 ul {
