@@ -20,8 +20,9 @@ $nav-height: 70px;*/
 }
 
 .nav-tabs > li.tier1 {
-    float:none;
-    display:inline-block;
+	float:none;
+	display:inline-block;
+	width: 12%;
 }
 
 .nav-tabs > li.tier2 {
