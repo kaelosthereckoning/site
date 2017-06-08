@@ -14,6 +14,10 @@ background-color: #262626;
 $breakpoint: 800px;
 $nav-height: 70px;*/
 
+.nav-tabs {
+	list-style: none;
+}
+
 .nav-tabs > li {
     float:none;
     display:inline-block;
