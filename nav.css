@@ -7,10 +7,6 @@ $color6: #131313;
 $breakpoint: 800px;
 $nav-height: 70px;*/
 
-* {
-    box-sizing: border-box;
-}
-
 a.selected {
 	background-color: #262626 !important;
 	color: #BFBFBF !important;
