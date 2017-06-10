@@ -3,7 +3,7 @@ google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=1&range=I2:O13');
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=1&range=I1:J8');
 			query.send(handleQueryResponse);
       }
 
@@ -11,18 +11,12 @@ google.charts.load('current', {'packages':['corechart']});
   		var data = response.getDataTable();
 
         	var options = {
-			title: 'Average Influence Cost of Power Cost, by Faction',
-			curveType: 'function',
+			title: 'Total Card Availability, by Faction',
 			legend: { position: 'bottom' },
-			hAxis: {
-				title: 'Power Cost'
-			},
-			vAxis: {
-				title: 'Average Influence Cost'
-			}
+			pieSliceText: 'label',
         	};
 
-        	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
+        	var chart = new google.visualization.PieChart(document.getElementById('chart_faction_002'));
 
         	chart.draw(data, options);
 	}
