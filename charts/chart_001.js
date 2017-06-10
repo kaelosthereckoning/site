@@ -1,3 +1,20 @@
+// Fire: #ff0000 / red
+// Justice: #008000 / green
+// Time: #ffd700 / gold
+// Primal: #0000ff / blue
+// Shadow: #4b0082 / indigo
+// None: #708090 / slategray
+// Argenport: #556B2F / darkolivegreen
+// Combrei: #BEFF00 / greenyellow
+// Elysian: #4385FF / cornflowerblue
+// Feln: #8A2BE2 / blueviolet
+// Hooru: #008080 / teal
+// Praxis: #FA8072 / salmon
+// Rakano: #FF4500 / orangered
+// Skycrag: #00FFFF / cyan
+// Stonescar: #800000 / maroon
+// Xenan: #483D8B / darkslateblue
+
 document.addEventListener('DOMContentLoaded', function() {
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -20,6 +37,14 @@ google.charts.load('current', {'packages':['corechart']});
 			vAxis: {
 				title: 'Average Influence Cost'
 			}
+			series: {
+            			0: { color: '#ff0000' },
+            			1: { color: '#ffd700' },
+            			2: { color: '#008000' },
+            			3: { color: '#0000ff' },
+            			4: { color: '#4b0082' },
+            			5: { color: '#708090' },
+          		}
         	};
 
         	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
