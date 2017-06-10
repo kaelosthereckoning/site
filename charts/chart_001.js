@@ -15,6 +15,16 @@
 // Stonescar: #800000 / maroon
 // Xenan: #483D8B / darkslateblue
 
+// Faction Color Block
+// series: {
+//            			0: { color: '#ff0000' },
+//            			1: { color: '#ffd700' },
+//           			2: { color: '#008000' },
+//            			3: { color: '#0000ff' },
+//            			4: { color: '#4b0082' },
+//           			5: { color: '#708090' },
+//         		}
+
 document.addEventListener('DOMContentLoaded', function() {
 google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
