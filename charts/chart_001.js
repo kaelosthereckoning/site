@@ -47,7 +47,7 @@ google.charts.load('current', {'packages':['corechart']});
 			vAxis: {
 				title: 'Average Influence Cost'
 			}
-			colors: ['#ff0000', '#ffd700', '#008000', '#0000ff', '#4b0082']
+			colors: ['#ff0000', '#ffd700', '#008000', '#0000ff', '#4b0082','#708090']
 		};
 
         	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
