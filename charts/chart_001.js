@@ -24,10 +24,11 @@
 //            			4: { color: '#4b0082' },
 //           			5: { color: '#708090' },
 //         		}
+// colors: ['#ff0000', '#ffd700', '#008000', '#0000ff', '#4b0082','#708090']
 
 document.addEventListener('DOMContentLoaded', function() {
-google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
+// google.charts.load('current', {'packages':['corechart', 'table']});
+//      google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=1&range=I2:O13');
@@ -54,6 +55,13 @@ google.charts.load('current', {'packages':['corechart']});
 
         	chart.draw(data, options);
 	}
+	
+
+google.load('visualization', '1', {
+    packages: ['corechart'],
+    callback: drawChart
+});
+	
 	
 	function resizeChart () {
     		chart.draw(data, options);
