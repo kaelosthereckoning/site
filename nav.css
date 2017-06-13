@@ -29,8 +29,11 @@ $nav-height: 70px;*/
 
 .nav-pills > li.tier2 {
 	float:none;
-	position: absolute;
 	display: block;
+	position: absolute;
+	width: 10vw;
+	align: left;
+	
 }
 
 .nav-pills:hover {
