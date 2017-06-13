@@ -1,14 +1,14 @@
 .container{
   flex-wrap: wrap;
-  float: left;
+  justify-content: flex-start;
 }
 
 .line_graph{
     height: 50%;
-    width: 50%;
+    width: 100%;
 }
 
 .pie_chart{
-  height: 75%;
+  height: 50%;
   width: 50%;
 }
