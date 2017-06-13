@@ -20,7 +20,7 @@ google.charts.load('current', {'packages':['table']});
 
         	var table = new google.visualization.Table(document.getElementById('table_001'));
 
-        	table.draw(data, options;
+        	table.draw(data, options);
 	}
 	
 	function resizeChart () {
