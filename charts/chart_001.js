@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
     		window.resize = resizeChart;
 	}
 	
-}, false)
+}, false);
 
 google.load('visualization', '1', {
     packages: ['corechart'],
