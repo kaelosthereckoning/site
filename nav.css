@@ -33,8 +33,9 @@ $nav-height: 70px;*/
 }
 
 a:hover,a:focus{
-    text-decoration: none;
-    outline: none;
+	text-decoration: none;
+	outline: none;
+	background: #7c70d9;
 }
 
 .nav-pills li{
@@ -56,6 +57,8 @@ a:hover,a:focus{
 .nav-pills li:hover{
     background: #7c70d9;
 }
+
+
 .nav-pills li:before{
     content: "";
     width: 100%;
