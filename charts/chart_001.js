@@ -55,12 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         	chart.draw(data, options);
 	}
-	
 
-google.load('visualization', '1', {
-    packages: ['corechart'],
-    callback: drawChart
-});
 	
 	
 	function resizeChart () {
@@ -78,3 +73,8 @@ google.load('visualization', '1', {
 	}
 	
 }, false);
+
+google.load('visualization', '1', {
+    packages: ['corechart'],
+    callback: drawChart
+});
