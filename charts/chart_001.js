@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 //      google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
+	 
         var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1614771438&headers=1&range=I2:O13');
 			query.send(handleQueryResponse);
       }
