@@ -17,6 +17,7 @@ $nav-height: 70px;*/
 .nav-pills {
 	list-style: none;
 	width: 100%;
+	display: inline-block;
 }
 
 .nav-pills > li.tier1 {
@@ -73,7 +74,7 @@ a:hover,a:focus{
 .nav-pills li.active,
 .nav-pills li.active:focus,
 .nav-pills li.active:hover{
-    background: #fff;
+    background: transparent;
     color: #333;
     border: none;
     border-radius: 0;
