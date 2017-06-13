@@ -24,15 +24,20 @@ $nav-height: 70px;*/
 .nav-pills > li.tier1 {
 	float:none;
 	display:inline-block;
-	width: 12%;
+	width: 12vw;
 }
 
 .nav-pills > li.tier2 {
 	float:none;
 	position: absolute;
+	display: block;
 }
 
-a:hover,a:focus{
+.nav-pills:hover {
+	background: #7c70d9;
+}
+
+a:hover,a:focus,a:active{
 	text-decoration: none;
 	outline: none;
 	background: #7c70d9;
@@ -73,6 +78,7 @@ a:hover,a:focus{
 .nav-pills li.active:before{
     transform: rotateY(0deg);
 }
+
 .nav-pills li.active,
 .nav-pills li.active:focus,
 .nav-pills li.active:hover{
@@ -81,6 +87,7 @@ a:hover,a:focus{
     border: none;
     border-radius: 0;
 }
+
 
 @media only screen and (max-width: 480px){
     .nav-pills li{
