@@ -1,5 +1,6 @@
 .container{
   flex-wrap: wrap;
+  float: left;
 }
 
 .line_graph{
@@ -8,6 +9,6 @@
 }
 
 .pie_chart{
-  height: 50%;
-  width: 75%;
+  height: 75%;
+  width: 50%;
 }
