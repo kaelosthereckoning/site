@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-google.charts.load('current', {'packages':['corechart']});
+google.charts.load('current', {'packages':['table']});
       google.charts.setOnLoadCallback(drawTable);
 
       function drawTable() {
