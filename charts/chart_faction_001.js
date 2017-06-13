@@ -11,7 +11,7 @@ google.charts.load('current', {'packages':['corechart']});
   		var data = response.getDataTable();
 
         	var options = {
-			title: 'Total Card Availability, by Faction',
+			title: 'Card Availability, by Faction',
 			legend: { position: 'bottom' },
 			pieSliceText: 'label',
         	};
