@@ -50,7 +50,7 @@ google.charts.load('current', {'packages':['corechart']});
 			}
         	};
 
-        	var chart = new google.visualization.LineChart(document.getElementById('chart_faction_003'));
+        	var chart = new google.visualization.LineChart(document.getElementById('chart_faction_002'));
 
         	chart.draw(data, options);
 	}
