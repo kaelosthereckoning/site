@@ -16,7 +16,7 @@ google.charts.load('current', {'packages':['corechart']});
 			pieSliceText: 'label',
         	};
 
-        	var chart = new google.visualization.PieChart(document.getElementById('chart_faction_002'));
+        	var chart = new google.visualization.PieChart(document.getElementById('chart_faction_001'));
 
         	chart.draw(data, options);
 	}
