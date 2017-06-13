@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         	chart.draw(data, options);
 	}
-
-	
 	
 	function resizeChart () {
     		chart.draw(data, options);
@@ -73,9 +71,11 @@ document.addEventListener('DOMContentLoaded', function() {
     		window.resize = resizeChart;
 	}
 	
-}, false);
+}, false)
 
 google.load('visualization', '1', {
     packages: ['corechart'],
     callback: drawChart
 });
+
+
