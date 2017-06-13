@@ -1,5 +1,5 @@
 .container{
-  flex-wrap: nowrap | wrap | wrap-reverse;
+  flex-wrap: wrap;
 }
 
 .line_graph{
