@@ -12,7 +12,7 @@ google.charts.load('current', {'packages':['corechart']});
 
         	var options = {
 			title: 'Total Card Availability, by Faction',
-			legend: { position: 'right' },
+			legend: { position: 'bottom' },
 			pieSliceText: 'label',
         	};
 
