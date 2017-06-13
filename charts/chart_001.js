@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
         	var chart = new google.visualization.LineChart(document.getElementById('chart_001'));
 
         	chart.draw(data, options);
-	}
+	}, false);
 	
 	function resizeChart () {
     		chart.draw(data, options);
@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 	else {
     		window.resize = resizeChart;
-	}
+	};
 	
-}, false);
+
 
 
