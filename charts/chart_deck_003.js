@@ -39,14 +39,14 @@ google.charts.load('current', {'packages':['corechart']});
   		var data = response.getDataTable();
 
         	var options = {
-			title: 'Card Availability per Power Cost, by Faction',
+			title: 'Average Influence Cost of Power Cost, by Deck Type',
 			curveType: 'function',
 			legend: { position: 'bottom' },
 			hAxis: {
 				title: 'Power Cost'
 			},
 			vAxis: {
-				title: 'Card Availability (# cards)'
+				title: 'Average Influence Cost'
 			}
         	};
 
