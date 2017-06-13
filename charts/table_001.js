@@ -10,13 +10,13 @@ google.charts.load('current', {'packages':['table']});
 	function handleQueryResponse(response) {
   		var data = response.getDataTable();
 
-        	//var options = {
+        	var options = {
 			//title: 'Influence Required for 90% Odds of Playing Card on Curve'
 			//showRowNumber: true, 
       			//sort: enable,
       			//sortAscending: false,
       			//sortColumn: 3,
-        	//};
+        	};
 
         	var table = new google.visualization.Table(document.getElementById('table_001'));
 
