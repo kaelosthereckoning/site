@@ -18,6 +18,7 @@ $nav-height: 70px;*/
 	list-style: none;
 	width: 100%;
 	display: inline-block;
+	border-bottom: 7px solid #4b4673;
 }
 
 .nav-pills > li.tier1 {
@@ -35,9 +36,7 @@ a:hover,a:focus{
     text-decoration: none;
     outline: none;
 }
-.nav-pills{
-    border-bottom: 7px solid #4b4673;
-}
+
 .nav-pills li{
 	margin-bottom: 0;
 	margin-right: 3px;
@@ -74,7 +73,7 @@ a:hover,a:focus{
 .nav-pills li.active,
 .nav-pills li.active:focus,
 .nav-pills li.active:hover{
-    background: transparent;
+    background: #fff;
     color: #333;
     border: none;
     border-radius: 0;
