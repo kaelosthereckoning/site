@@ -1,6 +1,7 @@
 .nav-pills {
 	top-margin: 30px;
-  border-bottom: 7px solid #4b4673;
+  	width=100%;
+	border-bottom: 7px solid #4b4673;
 }
 
 .nav-pills li{
