@@ -1,0 +1,51 @@
+.nav-pills {
+  border-bottom: 7px solid #4b4673;
+}
+
+.nav-pills li{
+	margin-bottom: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 14px;
+	color: #fff;
+  background: #4b4673;
+  border-radius: 0;
+  position: relative;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-pills li{
+	margin-bottom: 0;
+	margin-right: 3px;
+	margin-left: 3px;
+	font-size: 14px;
+	color: #fff;
+  background: #4b4673;
+  border-radius: 0;
+  position: relative;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.nav-pills > li > a:hover,a:focus,a:active{
+	text-decoration: none;
+	outline: none;
+	background: #7c70d9;
+}
+
+.nav-pills li:before{
+    content: "";
+    width: 100%;
+    border: 3px solid #4b4673;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transform: rotateY(-90deg);
+    transition: all 0.5s ease 0s;
+}
+
+.nav-pills li:hover:before,
+.nav-pills li.active:before{
+    transform: rotateY(0deg);
+}
