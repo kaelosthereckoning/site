@@ -35,19 +35,6 @@
   transition: all 0.5s ease 0s;
 }
 
-.nav-pills li{
-	margin-bottom: 0;
-	margin-right: 3px;
-	margin-left: 3px;
-	font-size: 14px;
-	color: #fff;
-  background: #4b4673;
-  border-radius: 0;
-  position: relative;
-  border: none;
-  transition: all 0.5s ease 0s;
-}
-
 .current {
     background: #7c70d9;
 }
