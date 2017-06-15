@@ -30,6 +30,10 @@
   transition: all 0.5s ease 0s;
 }
 
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    background: #7c70d9;
+}
+
 .nav-pills > li > a:hover,a:focus,a:active{
 	text-decoration: none;
 	outline: none;
