@@ -24,10 +24,9 @@
 
 .nav-pills li{
 	margin-bottom: 0;
-	margin-right: 3px;
-	margin-left: 3px;
 	font-size: 14px;
 	color: #fff;
+	width: 12%;
   background: #4b4673;
   border-radius: 0;
   position: relative;
@@ -45,6 +44,7 @@
 	background: #7c70d9;
 }
 
+@media (min-width: 576px){
 .nav-pills li:before{
     content: "";
     width: 100%;
@@ -60,9 +60,15 @@
 .nav-pills li.active:before{
     transform: rotateY(0deg);
 }
+}
 
 @media (max-width: 575px) {
 	.nav-pills li:before{
+		content: "";
+    width: 100%;
+    border: 3px solid #4b4673;
+    position: absolute;
+    top: 0;
 		left: -5px;
     		transform: rotateX(-90deg);
     		transition: all 0.5s ease 0s;
