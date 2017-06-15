@@ -1,3 +1,20 @@
+/*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+ */
+
 .nav-pills {
 	margin-top: 30px;
 	margin-left: 5px;
@@ -55,6 +72,18 @@
 .nav-pills li:hover:before,
 .nav-pills li.active:before{
     transform: rotateY(0deg);
+}
+
+@media (max-width: 575px) {
+	.nav-pills li:before{
+		left: -5px;
+    		transform: rotateX(-90deg);
+    		transition: all 0.5s ease 0s;
+	}
+	.nav-pills li:hover:before,
+	.nav-pills li.active:before{
+    	transform: rotateX(0deg);
+	}
 }
 
 .inline-dropdown {
