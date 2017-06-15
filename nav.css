@@ -91,6 +91,13 @@ a:hover,a:focus,a:active{
     border-radius: 0;
 }
 
+.nav-pills li.active a, 
+.nav-pills li.active a:focus, 
+.nav-pills>li.active a:hover {
+    color: #fff;
+    background-color: #7c70d9;
+}
+
 
 @media only screen and (max-width: 480px){
     .nav-pills li{
