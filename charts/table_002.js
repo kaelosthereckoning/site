@@ -11,7 +11,7 @@ google.charts.load('current', {'packages':['table']});
   		var data = response.getDataTable();
 
         	var options = {
-			//title: 'Odds of Generating Any Card of Given Power + Rarity from Unstable Form'
+			//title: 'Unstable Form - Odds of Generating Any Card of Given Power + Rarity'
 			//showRowNumber: true, 
       			//sort: enable,
       			//sortAscending: false,
