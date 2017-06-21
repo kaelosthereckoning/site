@@ -1,0 +1,90 @@
+<html>
+<head>
+  
+
+<!--CSS style sheets-->
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="test2.css">
+
+<!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  
+<!--Tab accordion scripts-->
+  <script type="text/javascript" src="test2.js"></script>
+  
+<!--Custom scripts-->
+  <script type="text/javascript" src="chart_total_001.js"></script>
+  <script type="text/javascript" src="chart_total_002.js"></script>
+  <script type="text/javascript" src="chart_total_003.js"></script>
+  
+  <script type="text/javascript" src="chart_faction_001.js"></script>
+  <script type="text/javascript" src="chart_faction_002.js"></script>
+  <script type="text/javascript" src="chart_faction_003.js"></script>
+  
+  <script type="text/javascript" src="chart_deck_001.js"></script>
+  <script type="text/javascript" src="chart_deck_002.js"></script>
+  <!--<script type="text/javascript" src="chart_deck_003.js"></script>-->
+  
+  <script type="text/javascript" src="table_001.js"></script>
+    <script type="text/javascript" src="table_002.js"></script>
+
+</head>
+
+<body>
+<ul class="tabs">
+  <li class="active" rel="tab1">Tab 1</li>
+  <li rel="tab2">Tab 2</li>
+  <li rel="tab3">Tab 3</li>
+  <li rel="tab4">Tab 4</li>
+</ul>
+<div class="tab_container">
+  <h3 class="d_active tab_drawer_heading" rel="tab1">Faction (Total)</h3>
+  <div id="tab1" class="tab_content">
+  <h2>Tab 1 content</h2>
+      <div id="total_container" class="container">
+    <div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
+    <div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
+    <div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
+    <div id="" class="" alt=""></div>
+  </div>
+  </div>
+  <!-- #tab1 -->
+  <h3 class="tab_drawer_heading" rel="tab2">Faction (Strict)</h3>
+  <div id="tab2" class="tab_content">
+  <h2>Tab 2 content</h2>
+      <div id="faction_container" class="container">
+    <div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
+    <div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
+    <div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
+    <div id="" class="" alt=""></div>
+  </div>
+  </div>
+  <!-- #tab2 -->
+  <h3 class="tab_drawer_heading" rel="tab3">Deck Type</h3>
+  <div id="tab3" class="tab_content">
+  <h2>Tab 3 content</h2>
+      <div id="deck_container" class="container">
+    <div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
+    <div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
+    <!--<div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>-->
+    <div id="" class="" alt=""></div>
+  </div>
+  </div>
+  <!-- #tab3 -->
+  <h3 class="tab_drawer_heading" rel="tab4">Card Type</h3>
+  <div id="tab4" class="tab_content">
+  </div>
+  <!-- #tab4 --> 
+    <h3 class="tab_drawer_heading" rel="tab5">Reference Tables</h3>
+  <div id="tab5" class="tab_content">
+  <h2>Tab 4 content</h2>
+     <div id="card_container" class="container">
+    <div id="table_001" class="table" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
+    <div id="table_002" class="table" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
+  </div>
+  </div>
+</div>
+<!-- .tab_container -->
+</div>
+</body>
+</html>
