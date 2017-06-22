@@ -31,60 +31,36 @@
 </head>
 
 <body>
-<ul class="tabs">
-  <li class="active" rel="tab1">Tab 1</li>
-  <li rel="tab2">Tab 2</li>
-  <li rel="tab3">Tab 3</li>
-  <li rel="tab4">Tab 4</li>
-</ul>
-<div class="tab_container">
-  <h3 class="d_active tab_drawer_heading" rel="tab1">Faction (Total)</h3>
-  <div id="tab1" class="tab_content">
-  <h2>Tab 1 content</h2>
-      <div id="total_container" class="container">
-    <div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
-    <div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
-    <div id="" class="" alt=""></div>
+<div class="container">
+<div class="row">
+  <div class="col-sm-3">
+    <div class="sidebar-nav">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="visible-xs navbar-brand">Sidebar menu</span>
+        </div>
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Menu Item 1</a></li>
+            <li><a href="#">Menu Item 2</a></li>
+            <li><a href="#">Menu Item 3</a></li>
+            <li><a href="#">Menu Item 4</a></li>
+            <li><a href="#">Reviews <span class="badge">1,118</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
   </div>
-  </div>
-  <!-- #tab1 -->
-  <h3 class="tab_drawer_heading" rel="tab2">Faction (Strict)</h3>
-  <div id="tab2" class="tab_content">
-  <h2>Tab 2 content</h2>
-      <div id="faction_container" class="container">
-    <div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
-    <div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
-    <div id="" class="" alt=""></div>
-  </div>
-  </div>
-  <!-- #tab2 -->
-  <h3 class="tab_drawer_heading" rel="tab3">Deck Type</h3>
-  <div id="tab3" class="tab_content">
-  <h2>Tab 3 content</h2>
-      <div id="deck_container" class="container">
-    <div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
-    <div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
-    <!--<div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>-->
-    <div id="" class="" alt=""></div>
-  </div>
-  </div>
-  <!-- #tab3 -->
-  <h3 class="tab_drawer_heading" rel="tab4">Card Type</h3>
-  <div id="tab4" class="tab_content">
-  </div>
-  <!-- #tab4 --> 
-    <h3 class="tab_drawer_heading" rel="tab5">Reference Tables</h3>
-  <div id="tab5" class="tab_content">
-  <h2>Tab 4 content</h2>
-     <div id="card_container" class="container">
-    <div id="table_001" class="table" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
-    <div id="table_002" class="table" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
-  </div>
+  <div class="col-sm-9">
+    Main content goes here
   </div>
 </div>
-<!-- .tab_container -->
 </div>
 </body>
 </html>
