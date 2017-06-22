@@ -33,58 +33,48 @@
 </head>
 
 <body>
-<div class="row" style="min-height:300px;">
-    <div class="col-sm-6">
-        <h3>All the Charts</h3>
-        <hr/>
-        <div class="col-xs-3">
-            <!-- required for floating -->
-            <!-- Nav tabs -->
-            <ul class="nav nav-tabs tabs-left">
-                <li class="active"><a href="#total" data-toggle="tab">Total</a></li>
-                <li><a href="#faction" data-toggle="tab">Faction</a></li>
-                <li><a href="#deck_type" data-toggle="tab">Deck Type</a></li>
-                <li><a href="#reference" data-toggle="tab">Reference</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-9">
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active fade" id="total">
-		     <div id="total_container" class="container">
-    <div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
-    <div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
-    <div id="" class="" alt=""></div>
-  </div>
-		    </div>
-                <div class="tab-pane fade" id="faction">
-			  <div id="faction_container" class="container">
-    <div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
-    <div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
-    <div id="" class="" alt=""></div>
-  </div>
-		    </div>
-                <div class="tab-pane fade" id="deck_type">
-		      <div id="deck_container" class="container">
-    <div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
-    <div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
-    <!--<div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>-->
-    <div id="" class="" alt=""></div>
-  </div>
-		    </div>
-                <div class="tab-pane fade" id="reference">
-		      <div id="card_container" class="container">
-    <div id="table_001" class="table" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
-    <div id="table_002" class="table" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
-  </div>
-		    </div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-    <div  class="col-sm-6">
-  </div>
+<!--navigation-->
+<div class="navbar navbar-inverse navbar-fixed-left">
+  <a class="navbar-brand" href="#">LOGO</a>
+  <ul class="nav navbar-nav">
+    <li><a href="#total"><i class="fa fa-home"></i><span> Total </span></a></li>
+   <li><a href="#faction"><i class="fa fa-info-circle"></i><span> Faction </span></a></li>
+   <li><a href="#deck-type"><i class="fa fa-heart"></i><span> Deck Type </span></a></li>
+   <li><a href="#card-type"><i class="fa fa-briefcase"></i><span> Card Type </span></a></li>
+   <li><a href="#reference"><i class="fa fa-envelope"></i><span> Reference </span></a></li>
+  </ul>
+</div>
+<!--end navigation-->
+<!-- 1st section-->
+<div class="wrapper">
+<div class="container" id="total">
+ <div class="row">
+   <h2>Link 1</h2>
+ </div>
+</div>
+<!-- 2nd section-->
+  <div class="container" id="faction">
+ <div class="row">
+   <h2>Link 2</h2>
+ </div>
+</div>
+    <!--3rd section-->
+    <div class="container" id="deck-type">
+ <div class="row">
+   <h2>Link 3</h2>
+ </div>
+</div>
+    <!--4th section-->
+    <div class="container" id="card-type">
+ <div class="row">
+   <h2>Link 4</h2>
+	<!--5th section-->
+    <div class="container" id="reference">
+ <div class="row">
+   <h2>Link 5</h2>
+ </div>
+</div>
+</div>
+
 </body>
 </html>
