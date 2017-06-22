@@ -28,40 +28,32 @@
 </head>
 
 <body>
-<section>
-
-<input id="tab-one" type="radio" name="grp" checked="checked"/>
-<label for="tab-one">Tab One</label>
-<div>
-   <div id="total_container" class="container">
-    <div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
-    <div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
-    <div id="" class="" alt=""></div>
+<div class="row" style="min-height:300px;">
+    <div  class="col-sm-6">
+        <h3>Left Tabs</h3>
+        <hr/>
+        <div class="col-xs-3">
+            <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left">
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#profile" data-toggle="tab">Profile</a></li>
+                <li><a href="#messages" data-toggle="tab">Messages</a></li>
+                <li><a href="#settings" data-toggle="tab">Settings</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="home">Home Tab.</div>
+                <div class="tab-pane" id="profile">Profile Tab.</div>
+                <div class="tab-pane" id="messages">Messages Tab.</div>
+                <div class="tab-pane" id="settings">Settings Tab.</div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div  class="col-sm-6">
   </div>
- </div>
-
-<input id="tab-two" type="radio" name="grp" />
-<label for="tab-two">Tab Two</label>
-<div>
-  <div id="faction_container" class="container">
-    <div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
-    <div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
-    <div id="" class="" alt=""></div>
-  </div>
-</div>
-
-<input id="tab-three" type="radio" name="grp" />
-<label for="tab-three">Tab Three</label>
-<div>
-      <div id="deck_container" class="container">
-    <div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
-    <div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
-    <!--<div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>-->
-    <div id="" class="" alt=""></div>
-  </div>
-  </div>
-  </section>
 </body>
 </html>
