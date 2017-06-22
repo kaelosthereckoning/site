@@ -31,7 +31,7 @@ google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
-        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/16_ICRavvwQN_qJSHuj3CZMDsTFZAHPuD1Oy7mndEyKs/gviz/tq?gid=1943591120&headers=1&range=A117:AD127');
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1heFua3RYluzNAIl_Q_0BiOq_ri4Bs6azD3to672R-C8/gviz/tq?gid=1943591120&headers=1&range=A117:AD127');
 			query.send(handleQueryResponse);
       }
 
