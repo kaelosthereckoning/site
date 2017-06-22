@@ -11,7 +11,7 @@ google.charts.load('current', {'packages':['corechart']});
   		var data = response.getDataTable();
 
         	var options = {
-			title: 'Total Card Availability, by Deck Type',
+			title: 'Card Availability, by Deck Type',
 			legend: { position: 'bottom' },
 			pieSliceText: 'label',
         	};
