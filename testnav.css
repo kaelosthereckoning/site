@@ -94,3 +94,7 @@
 	}
 }
 
+.dropdown-menu {
+    float:left;
+    clear:left;
+}
