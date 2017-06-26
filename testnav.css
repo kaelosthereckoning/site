@@ -15,11 +15,14 @@
 // No media query since the extra-large breakpoint has no upper bound on its width
  */
 
+* {
+  border-radius: 0 !important;
+}
+
 .nav-pills {
 	margin-top: 30px;
 	margin-left: 5px;
 	margin-right: 5px;
-	border-bottom: 7px solid #4b4673;
 	width: 100%;
 }
 
@@ -32,7 +35,6 @@
 	border-left: 3px;
 	border-right: 3px;
 	border-color: #7c70d9;
-  border-radius: 0 !important;
   position: relative;
   transition: all 0.5s ease 0s;
 }
@@ -48,6 +50,11 @@
 }
 
 @media (min-device-width: 576px){
+
+	.nav-pills {
+		border-bottom: 7px solid #4b4673;
+	}
+
 .nav-pills li:before{
     content: "";
     width: 100%;
@@ -66,6 +73,11 @@
 }
 
 @media (max-device-width: 575px) {
+	
+	.nav-pills {
+		border-left: 7px solid #4b4673;
+	}
+	
 	.nav-pills li:before{
 		content: "";
     width: 100%;
@@ -82,6 +94,6 @@
 	}
 }
 
-.inline-dropdown {
-    display: block;
+.dropdown-menu {
+	display: block;
 }
