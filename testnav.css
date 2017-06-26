@@ -47,7 +47,7 @@
 	background: #7c70d9;
 }
 
-@media (min-width: 576px){
+@media (min-device-width: 576px){
 .nav-pills li:before{
     content: "";
     width: 100%;
@@ -65,7 +65,7 @@
 }
 }
 
-@media (max-width: 575px) {
+@media (max-device-width: 575px) {
 	.nav-pills li:before{
 		content: "";
     width: 100%;
