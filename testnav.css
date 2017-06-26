@@ -94,16 +94,3 @@
 	}
 }
 
-.dropdown-menu {
-	display: none;
-	position: absolute;
-}
-
-.dropdown:hover .dropdown-menu {
-	display: block;
-}
-
-.dropdown:hover .dropdown-toggle {
-    background-color: #7c70d9;
-}
-
