@@ -20,22 +20,33 @@
 <body>
 <!--main navigation-->
 <div class="container-fluid" "text-center">
-    <div class="row">
-                <!-- nav pills -->
-                <ul class="nav nav-pills nav-justified">
-                    <li role="presentation" class="active tier1"><a href="#Section1" aria-controls="home" role="pill" data-toggle="pill">Section 1</a></li>
-			<li role="presentation" class="tier1"><a href="#Section2" aria-controls="profile" role="pill" data-toggle="pill">Section 2</a></li>
-			<li role="presentation" class="dropdown tier1">
-          			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-					<ul class="dropdown-menu nav nav-pills">
-						<li class="tier2"><a href="#">Action</a></li>
-						<li class="tier2"><a href="#">Another action</a></li>
-						<li class="tier2"><a href="#">Something else here</a></li>
-          				</ul>
-			</li>
-                    <li role="presentation" class="tier1"><a href="#Section3" aria-controls="messages" role="pill" data-toggle="pill">Section 3</a></li>
-                </ul>
-            </div>
+        <!-- nav pills -->
+    <nav class="nav nav-pills nav-justified flex-column flex-sm-row navbar-fixed-top">
+  <li class="nav-item">
+    <a class="flex-sm-fill text-sm-center nav-link shore" href="#">Home</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
+    <ul class="dropdown-menu">
+      <a class="dropdown-item" href="#"></a>
+      <a class="dropdown-item" href="#">Another action</a>
+      <a class="dropdown-item" href="#">Something else here</a>
+      <a class="dropdown-item" href="#">Separated link</a>
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Analyses</a>
+  </li>
+  <li class="nav-item">
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Charts</a>
+  </li>
+	    <li class="nav-item">
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Programs</a>
+  </li>
+	    <li class="nav-item">
+    <a class="flex-sm-fill text-sm-center nav-link" href="#">Reference</a>
+	    </li>
+</nav>
 </div>
 
 <!--content-->
