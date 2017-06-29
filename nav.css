@@ -72,12 +72,12 @@ nav.nav-pills li a{
 	.nav-pills {
 		border-bottom: 7px solid #9EA7FF;
 		border-left: none;
-		width: 100vw;
+		width: 100%;
 		background: #7F7F7F;
 	}
 	
 	nav.nav-pills li{
-		width: 100vw;
+		width: 100%;
 	}
 	
 	.nav-pills li:before{
