@@ -20,15 +20,6 @@ html {
 	min-width: 100vw;
 }
 
-.wrapper-1 {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.header, .nav, .content, .footer {
-  flex: 1 100%;
-}
-
 .header {
 	margin: 0 auto 2rem;
 	padding: 1rem 2rem 2rem;
