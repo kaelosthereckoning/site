@@ -67,7 +67,7 @@ nav.nav-pills li a{
     transform: rotateX(0deg);
 }
 
-@media (min-width: 768px){
+@media (min-device-width: 768px){
 
 	.nav-pills {
 		border-bottom: 7px solid #9EA7FF;
