@@ -41,20 +41,16 @@ html {
 
 .container-1{
 	display: flex;
-	flex-wrap: nowrap;
 	flex-direction: column;
 }
 
 .container-2 {
 	display: flex;
-	flex-wrap: wrap;
 	flex-direction: row;
 }
 
 @media (min-device-width: 768px){
 	.container-2 {
-		display: flex;
-		flex-wrap: nowrap;
 		flex-direction: column;
 	}
 }
