@@ -77,7 +77,7 @@ nav.nav-pills li a{
 	}
 	
 	nav.nav-pills li{
-		width: 12%;
+		width: 100vw;
 	}
 	
 	.nav-pills li:before{
