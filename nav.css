@@ -68,8 +68,8 @@ nav.nav-pills li a{
 
 
 .dropdown-menu {
-	display: block !important;
-	position: absolute !important;
+	display: block;
+	position: static;
 }
 
 @media (min-device-width: 768px){
