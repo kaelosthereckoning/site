@@ -16,61 +16,74 @@ $nav-height: 70px;*/
 
 * {
   border-radius: 0 !important;
-}
-
-.nav li a, .nav li a:visited {
-    color: #ffffff !important;
-}
-
-.nav li a:hover, .nav li a:active {
-    color: #ffffff !important;
-}
-
-.nav li.active a {
-    color: #ffffff !important;
+  background: #131313;
 }
 
 .nav-pills {
 	margin-top: 30px;
-	width: 99%;
-	margin-left: 0.5%;
-	white-space:nowrap;
+	white-space: nowrap;
+	border-left: 7px solid #9EA7FF;
+	width: 33vw;
+	background: #262626;
 }
 
-.nav-pills li{
-	margin-bottom: 0;
-	font-size: 14px;
-	color: #ffffff;
-	width: 12%;
-  background: #4b4673;
-	border-left: 1%;
-	border-right: 1%;
-	border-color: #ffffff;
-  position: relative;
-  transition: all 0.5s ease 0s;
+nav.nav-pills li{
+  	background: #4F547F;
+	color: #FFFFFF;
+  	transition: all 0.5s ease 0s;
+	margin: 0;
+	position: relative;
+	padding: 0;
 }
 
-.shore {
-    background: #7c70d9;
-}
+nav.nav-pills li a{
+	color: #FFFFFF;
+	}
 
 .nav-pills > li > a:hover,a:focus,a:active{
 	text-decoration: none;
 	outline: none;
-	background: #7c70d9;
+	color: #FFFFFF;
+	background: #29317F;
 }
 
-@media (min-device-width: 576px){
-
-	.nav-pills {
-		border-bottom: 7px solid #4b4673;
-		border-left: none;
+#landing {
+	background-color: #29317F;
+	color: #FFFFFF;
 	}
 
-.nav-pills li:before{
+	.nav-pills li:before{
     content: "";
     width: 100%;
-    border: 3px solid #4b4673;
+    border: 20px solid #9EA7FF;
+    position: absolute;
+    right: -5px;
+    transform: rotateX(-90deg);
+    transition: all 0.5s ease 0s;
+}
+
+.nav-pills li:hover:before,
+.nav-pills li.active:before{
+    transform: rotateX(0deg);
+}
+
+@media (min-width: 768px){
+
+	.nav-pills {
+		border-bottom: 7px solid #9EA7FF;
+		border-left: none;
+		width: 100vw;
+		background: #7F7F7F;
+	}
+	
+	nav.nav-pills li{
+		width: 12%;
+	}
+	
+	.nav-pills li:before{
+    content: "";
+    width: 100%;
+    border: 3px solid #9EA7FF;
     position: absolute;
     top: -5px;
     left: 0;
@@ -82,28 +95,4 @@ $nav-height: 70px;*/
 .nav-pills li.active:before{
     transform: rotateY(0deg);
 }
-}
-
-@media (max-device-width: 575px) {
-	
-	.nav-pills {
-		border-bottom: none;
-		border-left: 7px solid #4b4673;
 	}
-	
-	.nav-pills li:before{
-		content: "";
-    width: 100%;
-    border: 3px solid #4b4673;
-    position: absolute;
-    top: 0;
-		left: -5px;
-    		transform: rotateX(-90deg);
-    		transition: all 0.5s ease 0s;
-	}
-	.nav-pills li:hover:before,
-	.nav-pills li.active:before{
-    	transform: rotateX(0deg);
-	}
-}
-
