@@ -3,6 +3,7 @@
 
 html {
 	font-size: 1em;
+	background: #131313;
 }
 
 @media screen and (min-width: 1400px) {
@@ -19,8 +20,16 @@ html {
 	min-width: 100vw;
 }
 
-header {
-	background-color: #fff;
+.wrapper-1 {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header, .nav, .content, .footer {
+  flex: 1 100%;
+}
+
+.header {
 	margin: 0 auto 2rem;
 	padding: 1rem 2rem 2rem;
 	width: 100%;
@@ -30,9 +39,26 @@ header {
 
 }
 
-section {
-	
+.container-1{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: column;
 }
+
+.container-2 {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+@media (min-device-width: 768px){
+	.container-2 {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+	}
+}
+
 
 body {
 	background-color: #262626;
@@ -47,27 +73,22 @@ body {
   	flex-direction: column;
 }
 
-#main_nav {
+.nav {
 	order: 1;
 	width: 100%;
 }
 
 .content {
-	flex: 1 0 auto;
 	order: 2;
-}
-
-
-
-#main {
-  padding-top: 20px;
+	flex: 1 0 auto;
+	padding-top: 20px;
 }
 
 footer {
+	order: 10;
 	width: 100%;
 	background-color: #131313;
 	flex: 1 1 auto;
-	order: 10;
 }
 
 hr {
@@ -92,4 +113,3 @@ hr {
 	font-size: 0.8rem;
 	text-align: center;
 }
-
