@@ -21,10 +21,9 @@ $nav-height: 70px;*/
 
 .nav-pills {
 	margin-top: 30px;
+	margin-right: 30px;
 	white-space: nowrap;
 	border-left: 7px solid #9EA7FF;
-	width: 100%;
-	height: 20px;
 	background: #262626;
 }
 
@@ -38,38 +37,40 @@ nav.nav-pills li{
 
 nav.nav-pills li a{
 	color: #FFFFFF;
+	height: 40px;
 	}
+	
+.nav-pills > li:hover,li:focus,li:active{
+	background: #29317F;
+}
 
 .nav-pills > li > a:hover,a:focus,a:active{
 	text-decoration: none;
 	outline: none;
 	color: #FFFFFF;
-	background: #29317F;
+	background: transparent;
 }
 
-#landing {
+.landing{
 	background-color: #29317F;
-	color: #FFFFFF;
 	}
+
+
 
 	.nav-pills li:before{
     content: "";
-    border: 20px solid #9EA7FF;
-    position: absolute;
-    right: -5px;
-    transform: rotateX(-90deg);
+	border-width: 40px 7px 0 0;
+    border-style: solid;
+	border-color: #9EA7FF;
+	right: 0;
+    position: absolute;    
+	transform: rotateX(-90deg);
     transition: all 0.5s ease 0s;
 }
 
 .nav-pills li:hover:before,
 .nav-pills li.active:before{
     transform: rotateX(0deg);
-}
-
-
-.dropdown-menu {
-	display: block;
-	position: static;
 }
 
 @media (min-device-width: 768px){
@@ -85,20 +86,18 @@ nav.nav-pills li a{
 	}
 	
 	.nav-pills li:before{
-    		content: "";
-    		width: 100%;
-    		border: 3px solid #9EA7FF;
-    		position: absolute;
-    		top: -5px;
-    		left: 0;
-    		transform: rotateY(-90deg);
-    		transition: all 0.5s ease 0s;
-	}
-
-	.nav-pills li:hover:before,
-	.nav-pills li.active:before{
-		transform: rotateY(0deg);
-	}
-	
+    content: "";
+    width: 100%;
+    border: 3px solid #9EA7FF;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    transform: rotateY(-90deg);
+    transition: all 0.5s ease 0s;
 }
 
+.nav-pills li:hover:before,
+.nav-pills li.active:before{
+    transform: rotateY(0deg);
+}
+	}
