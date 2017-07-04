@@ -108,6 +108,10 @@ nav.nav-pills li a{
 		margin: 0;
 		border: 2px solid #ffffff;
 		}
+
+.dropdown:visited {
+	background: #9EA7FF !important;
+}
 		
 
 	.dropdown.open .dropdown-toggle  {
