@@ -1,93 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+<div id="page">
 <head>
   <title>Kaelos: The Reckoning</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
 <!--import CSS stylesheets-->
-	<link rel="stylesheet" href="assets/bootstrap-3.3.7.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="index.css">
-	<link rel="stylesheet" href="nested_nav.css">
+	<link rel="stylesheet" href="nav.css">
 	
 <!--import scripts-->
-	<script src="assets/jquery-3.2.1.min.js"></script>
-  	<script src="assets/bootstrap-3.3.7.min.js"></script>
-	<script type="text/javascript" src="charts/chart_001.js"></script>
-	<script>
-		function openCity(evt, cityName) {
-    		var i, tabcontent, tablinks;
-    		tabcontent = document.getElementsByClassName("tabcontent");
-    		for (i = 0; i < tabcontent.length; i++) {
-        		tabcontent[i].style.display = "none";
-    		}
-    		tablinks = document.getElementsByClassName("tablinks");
-    		for (i = 0; i < tablinks.length; i++) {
-        		tablinks[i].className = tablinks[i].className.replace(" active", "");
-    		}
-    		document.getElementById(cityName).style.display = "block";
-    		evt.currentTarget.className += " active";
-		}
-
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-	</script>
-	
-<!--Load the AJAX API-->
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
 </head>
-	
-<body>	
-<!--static navigation bar-->
-	<div class="container" id="main_nav">
-  		<h3>Kaelos: The Reckoning - Eternal Data Analyses</h3>
-  			<ul class="nav nav-tabs">
-    				<li><a href="index.html">Home</a></li>
-    				<li class="dropdown">
-      					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Topics <span class="caret"></span></a>
-      						<ul class="dropdown-menu">
-        						<li><a href="topics/tournaments.html">Tournaments</a></li>
-        						<li><a href="topics/ranked.html">Ranked</a></li>
-        						<li><a href="topics/draft.html">Draft</a></li>
-        						<li><a href="topics/deck-building.html">Deck Building</a></li> 
-        						<li><a href="topics/reactive-play.html">Reactive Play</a></li>
-	      						<li><a href="topics/primitive-ai.html">Primitive AI</a></li>     
-      						</ul>
-    				</li>
-    				<li class="active"><a href="charts.html">Charts</a></li>
-    				<li><a href="analyses.html">Analyses</a></li>
-    				<li><a href="references.html">References</a></li>
-    			<li><a href="programs.html">Programs</a></li>
-    			<li><a href="donate.html">Donate</a></li>
-  		</ul>
+<body>
+	<div class="container-1">
+		<div class="container-2">
+	<!-- main navigation-->
+	<div id="main_nav" align="middle">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row">
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link landing" href="#">Home</a></li>
+			<li class="nav-item dropdown">
+				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="topics/ranked.html">Deck Construction</a>
+						<a class="dropdown-item" href="topics/draft.html">Draft</a>
+						<a class="dropdown-item" href="topics/">Tournament</a>
+						<a class="dropdown-item" href="#">Eternal AI</a>
+					</ul>
+			</li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="analyses.html">Analyses</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="charts.html">Charts</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+		</nav>
 	</div>
-	
-<!--content-->
+	<!--content-->
 	<div class="content">
-<!--nested navigation bar-->
-		<div id="nested_nav">
-			<div class="nested_tab">
- 				<button class="tablinks" onclick="openCity(event, 'Faction')" id="defaultOpen">Faction Comparisons</button>
-  				<button class="tablinks" onclick="openCity(event, 'Deck')">Deck Type Comparisons</button>
-  				<button class="tablinks" onclick="openCity(event, 'Card')">Card Comparisons</button>
-			</div>
-
-			<div id="Faction" class="tabcontent">
-				<p><div id="chart_001" class="chartdiv"></div>
-			</div>
-
-			<div id="Deck" class="tabcontent">
-			</div>
-
-			<div id="Card" class="tabcontent">
-			</div>
-		</div>
+		content
 	</div>
-
-<!--static footer-->	
+		</div>
+	<!--static footer-->	
 	<footer class="footer">
-		<div id="twitchfooter"> twitch.tv/kaelosthereckoning </div>
+		<div id="twitchfooter" align="middle"> 
+			twitch.tv/kaelosthereckoning 
+		</div>
 		<hr>
 		<div id="sitelicense">
 			<div id="CCimage" align="middle">
@@ -99,6 +60,8 @@
 		</div>	
 
 	</footer>
+	</div>
 </body>
+</div>
 </html>
 
