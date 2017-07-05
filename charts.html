@@ -11,9 +11,6 @@
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="nav.css">
 	
-<!--load ajax api-->
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	
 <!--import scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,9 +20,14 @@
 	<div class="container-1">
 		<div class="container-2">
 	<!-- main navigation-->
-	<div id="main_nav" align="middle">
-		<nav class="nav nav-pills nav-justified flex-column flex-sm-row">
-			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link landing" href="#">Home</a></li>
+	<div id="main_nav">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container">
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
+		<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
+
+		</div>
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
+			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
 			<li class="nav-item dropdown">
 				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
 					<ul class="dropdown-menu">
@@ -39,94 +41,15 @@
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="charts.html">Charts</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
-			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			</div>
 		</nav>
+	</div>
+
 	</div>
 	<!--content-->
 	<div class="content">
-<!-- nested navigation-->
-<div class="navbar navbar-inverse navbar-fixed-left">
-	  <a class="navbar-brand" href="#">CHARTS</a>
-  <ul class="nav navbar-nav">
-    <li><a href="#total"><i class="fa fa-home"></i><span> Total </span></a></li>
-   <li><a href="#faction"><i class="fa fa-info-circle"></i><span> Faction </span></a></li>
-   <li><a href="#deck-type"><i class="fa fa-heart"></i><span> Deck Type </span></a></li>
-   <li><a href="#card-type"><i class="fa fa-briefcase"></i><span> Card Type </span></a></li>
-   <li><a href="#reference"><i class="fa fa-envelope"></i><span> Reference </span></a></li>
-	  <li><a href="#power"><i class="fa fa-envelope"></i><span> Power </span></a></li>
-  </ul>
-</div>
-<!--end navigation-->
-<!-- 1st section-->
-<div class="wrapper">
-<div class="container" id="total">
- <div class="row">
-     <div id="total_container" class="container">
-	     <h4><strong>Total</strong> - All statistics in this category include all cards to which some attribute is applicable.  E.g. Fire includes all cards with any Fire influence requirement present.</h4>
-    <div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
-    <div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
-    <div id="" class="" alt=""></div>
-  </div>
- </div>
-</div>
-<!-- 2nd section-->
-  <div class="container" id="faction">
- <div class="row">
-  <div id="faction_container" class="container">
-	  <h4><strong>Deck Type</strong> - All statistics in this category are for the most stringent criteria.  E.g. Fire contains only mono fire cards while Rakano includes only dual-color Rakano cards.</h4>
-    <div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
-    <div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
-    <div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
-    <div id="" class="" alt=""></div>
-  </div>
- </div>
-</div>
-    <!--3rd section-->
-    <div class="container" id="deck-type">
- <div class="row">
-  <div id="deck_container" class="container">
-	  <h4><strong>Deck Type</strong> - All statistics in this category include the card pool available to that deck type.  E.g. Fire contains only mono fire cards while Rakano includes Fire, Justice, and dual-color Rakano cards.</h4>
-    <div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
-    <div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
-    <div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
-    <div id="" class="" alt=""></div>
-  </div>
- </div>
-</div>
-    <!--4th section-->
-    <div class="container" id="card-type">
- <div class="row">
-   <h2>Link 4</h2>
- </div>
-</div>
-	<!--5th section-->
-    <div class="container" id="reference">
- <div class="row">
-  <div id="card_container" class="container">
-	  <!--<li><a href="influence_reference.html"> Influence Reference</a></li>-->
-	  <div id="power_reference" class="table" alt="Power Reference Chart"></div>
-	  <div id="influence_reference" class="table" alt="Influence Reference Chart"></div>
-	  <h4>Unstable Form - Odds of Generating Any Card of Given Power + Rarity</h4>
-    <div id="table_002" class="table" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
-  </div>
- </div>
-	</div>
-	<!--6th section-->
-    <div class="container" id="power">
- <div class="row">
-	<div id="card_container" class="container">
-	 <h4> # Power Cards Required for 60-90% Odds of Playing Card On Curve </h4>
-	  <div id="table_power_002" class="table" style="padding: 1em;" alt="# Power Cards Required for 60-90% Odds of Playing Card On Curve"></div>
-	 <h4> # Influence Cards Required for 60-90% Odds of Playing Card On Curve </h4>
-	  <div id="table_power_003" class="table" style="padding: 1em;" alt="# Influence Cards Required for 60-90% Odds of Playing Card On Curve"></div>
-	 
-    <h4>Influence Required for 90% Odds of Playing Card on Curve</h4>
-    <div id="table_power_001" class="table" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
- </div>
-</div>
-</div>
-</div>
+		content
 	</div>
 		</div>
 	<!--static footer-->	
@@ -148,5 +71,14 @@
 	</div>
 </body>
 </div>
-</html>
 
+	
+<script>
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+});
+</script>
+
+</html>
