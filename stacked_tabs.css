@@ -1,0 +1,49 @@
+.wrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.tab-menu {
+	order: 1;
+	width: 25%;
+	background: #262626;
+}
+
+.tab-content {
+	order: 2;
+	width: 75%;
+}
+
+.btn-group-vertical > a {
+	background: #262626;
+}
+
+.btn-block {
+	width: 100%;
+}
+
+.btn-mine {
+	width=100% !important;
+	height= 3em;
+	padding: 1em;
+    line-height: normal;
+	border-radius: 0;
+	margin: 0;
+}
+
+.btn-mine > a {
+	text-decoration: none !important;
+}
+
+.btn-mine > a:focus, a:active, a:hover {
+	background: #BFBFBF !important;
+	text-decoration: none !important;
+}
+
+.btn-mine > a:visited {
+	background: #262626 !important;
+}
+
+.tab-content {
+	padding: 1em;
+}
