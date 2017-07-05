@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="index.css">
 	<link rel="stylesheet" href="nav.css">
-	<link rel="stylesheet" href"nested_nav.css">
+	<link rel="stylesheet" href"stacked_tabs.css">
 	
 <!--import scripts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -49,53 +49,30 @@
 
 	</div>
 	<!--content-->
-		<!--tab content-->
-<div class="tab-content">
-<div class="tabordion">
-	  <section id="section0">
-	  <label for="section0">CHARTS</label>
-	  </section>
-  <section id="section1">
-    <input type="radio" name="sections" id="option1" checked>
-    <label for="option1">Total</label>
-    <charts></charts>
-      
-  </section>
-  <section id="section2">
-    <input type="radio" name="sections" id="option2">
-    <label for="option2">Faction</label>
-  		<charts></charts>
-  </section>
-  <section id="section3">
-    <input type="radio" name="sections" id="option3">
-    <label for="option3">Deck Type</label>
-  		<charts></charts>
-  </section>
-  <section id="section7">
-    <input type="radio" name="sections" id="option7">
-    <label for="option7">Card Type</label>
-  		<charts></charts>
-  </section>
-  <section id="section4">
-    <input type="radio" name="sections" id="option4">
-    <label for="option4">Individual Card</label>
-  		<charts></charts>
-  </section>
-  <section id="section5">
-    <input type="radio" name="sections" id="option5">
-    <label for="option5">Power</label>
-  		<charts></charts>
-  </section>
-  <section id="section5">
-    <input type="radio" name="sections" id="option5">
-    <label for="option5">Reference</label>
-  		<charts></charts>
-  </section>
- <section id="section6">
-    <input type="radio" name="sections" id="option6">
-    <label for="option6">Tournament</label>
-  		<charts></charts>
-  </section>
+		
+		<!--tab menu-->
+	<div class="wrapper">
+	<div class="tab-menu">
+            <div id="tabs" class="btn-group-vertical btn-block" data-toggle="buttons-radio">
+              <a href="#prices2" class="btn btn-mine btn-info btn-block btn-link active" data-toggle="tab" role="tab">Prices</a>
+              <a href="#features2" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Features</a>
+              <a href="#requests2" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Requests</a>
+              <a href="#contact2" class="btn btn-mine btn-info btn-block btn-link"  data-toggle="tab" role="tab">Contact</a>
+            </div>
+			</div>
+		
+             <!--tab content-->
+            <div class="tab-content">
+              <div class="tab-pane active" id="prices2">
+			  test content
+			  </div>
+              <div class="tab-pane" id="features2">
+			  </div>
+              <div class="tab-pane" id="requests2">
+			  </div>
+              <div class="tab-pane" id="contact2">
+                        </div>
+
 </div>
 </div>
 		</div>
