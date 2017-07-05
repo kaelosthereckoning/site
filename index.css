@@ -6,15 +6,6 @@ html {
 	background: #131313;
 }
 
-@media screen and (min-width: 1400px) {
-  html { font-size: 1.25em; }
-}
-
-* {
-	margin: auto;
-	box-sizing: border-box;
-}
-
 #page {
 	min-height: 100vh;
 	min-width: 100vw;
