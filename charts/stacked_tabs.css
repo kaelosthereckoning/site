@@ -38,10 +38,13 @@
 .btn-mine > a:focus, a:active, a:hover {
 	background: #BFBFBF !important;
 	text-decoration: none !important;
+	color: #ffffff !important;
 }
 
 .btn-mine > a:visited {
 	background: #262626 !important;
+	text-decoration: none !important;
+	color: #ffffff !important;
 }
 
 .tab-content {
