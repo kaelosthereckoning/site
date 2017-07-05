@@ -19,7 +19,11 @@ $nav-height: 70px;*/
   background: #131313;
 }
 
-.nav-pills {
+.glyphicon {
+	background: transparent;
+}
+
+.nav-container {
 	margin-top: 30px;
 	margin-right: 30px;
 	white-space: nowrap;
@@ -31,15 +35,45 @@ nav.nav-pills li{
   	background: #4F547F;
 	color: #FFFFFF;
   	transition: all 0.5s ease 0s;
-	margin: 0;
+	margin-top: 6px;
+	margin-left: 0px;
 	padding: 0;
+	height: 3em;
+}
+
+#top {
+	margin-top: 0px;
+	border-bottom: 2px solid #9EA7FF;
+}
+
+#menu{
+	text-align: left;
+}
+
+.glyphicon-plus, .glyphicon-minus{
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+#bottom {
+	margin-bottom: 0px;
+}
+
+#menu-collapse > hr {
+	border-top: 5px single #ffffff;
+	margin: 0px;
+	padding: 0px;
 }
 
 nav.nav-pills li a{
 	color: #FFFFFF;
 	height: 40px;
 	}
-	
+
+.nav-pills > li > a:visited {
+	background: #4F547F;
+}
+
 .nav-pills > li:hover,li:focus,li:active{
 	background: #29317F;
 }
@@ -52,14 +86,12 @@ nav.nav-pills li a{
 }
 
 .landing{
-	background-color: #29317F;
+	background-color: #29317F !important;
 	}
 
-
-
-	.nav-pills li:before{
+.nav-pills li:before{
     content: "";
-	border-width: 40px 7px 0 0;
+	border-width: 3em 7px 0 0;
     border-style: solid;
 	border-color: #9EA7FF;
 	right: 0;
@@ -75,14 +107,19 @@ nav.nav-pills li a{
 
 @media (min-device-width: 768px){
 
-	.nav-pills {
+	.nav-container {
 		border-bottom: 7px solid #9EA7FF;
 		border-left: none;
 		width: 100vw;
 		background: #7F7F7F;
 	}
 	
-	nav.nav-pills li{
+	#menu-collapse-btn {
+		display: none;
+	}
+	
+	#collapsible-menu {
+		display: inherit;
 	}
 	
 	.nav-pills li:before{
@@ -99,8 +136,8 @@ nav.nav-pills li a{
 .nav-pills li:hover:before,
 .nav-pills li.active:before{
     transform: rotateY(0deg);
-}
 	}
+}
 
 	.dropdown-menu{
 		position: absolute;
@@ -109,7 +146,7 @@ nav.nav-pills li a{
 		border: 2px solid #ffffff;
 		}
 
-.dropdown:visited {
+.dropdown:visited{
 	background: #9EA7FF !important;
 }
 		
