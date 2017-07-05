@@ -20,11 +20,16 @@
 	<div class="container-1">
 		<div class="container-2">
 	<!-- main navigation-->
-	<div id="main_nav" align="middle">
-		<nav class="nav nav-pills nav-justified flex-column flex-sm-row" role="navigation">
-			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link landing" href="#">Home</a></li>
+	<div id="main_nav">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container">
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
+		<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
+
+		</div>
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
+			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
 			<li class="nav-item dropdown">
-				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="menu" href="#">Topics</a>
+				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
 					<ul class="dropdown-menu">
 						<a class="dropdown-item" href="topics/ranked.html">Deck Construction</a>
 						<a class="dropdown-item" href="topics/draft.html">Draft</a>
@@ -36,8 +41,11 @@
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="charts.html">Charts</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
-			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			</div>
 		</nav>
+	</div>
+
 	</div>
 	<!--content-->
 	<div class="content">
@@ -63,4 +71,14 @@
 	</div>
 </body>
 </div>
+
+	
+<script>
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+});
+</script>
+
 </html>
