@@ -26,9 +26,9 @@
 	width=100% !important;
 	height= 3em;
 	padding: 1em;
-    line-height: normal;
 	border-radius: 0;
 	margin: 0;
+	float: left;
 }
 
 .btn-mine > a {
