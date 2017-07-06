@@ -74,23 +74,49 @@
 		</nav>
 	</div><!--end main_nav-->
 	
-	<div class="wrapper">
+	<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<div class="wrapper">
 		
 		<!-- Charts - Tabs-->
-	<div class="tab-menu">
-            <div id="tabs" class="btn-group-vertical btn-block btn-mine" data-toggle="buttons" type="radio">
-		<p class="charts-header">CHARTS</p>
-		<a href="#total" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Total</a>
-		<a href="#faction" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Faction</a>
-		<a href="#deck-type" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Deck Type</a>
-		<a href="#card-type" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Card Type</a>
-		<a href="#individual" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Individual Cards</a>
-		<a href="#power" class="btn btn-mine btn-info btn-block btn-link"  data-toggle="tab" role="tab">Power</a>
-		<a href="#influence" class="btn btn-mine btn-info btn-block btn-link"  data-toggle="tab" role="tab">Influence</a>
-		<a href="#gameplay" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Gameplay</a>
-		<a href="#reference" class="btn btn-mine btn-info btn-block btn-link" data-toggle="tab" role="tab">Reference</a>
+	<div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left">
+
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+		<a href="#total" class="list-group-item" data-toggle="tab" role="tab">Total</a>
+		<a href="#faction" class="list-group-item" data-toggle="tab" role="tab">Faction</a>
+		<a href="#deck-type" class="list-group-item" data-toggle="tab" role="tab">Deck Type</a>
+		<a href="#card-type" class="list-group-item" data-toggle="tab" role="tab">Card Type</a>
+		<a href="#individual" class="list-group-item" data-toggle="tab" role="tab">Individual Cards</a>
+		<a href="#power" class="list-group-item"  data-toggle="tab" role="tab">Power</a>
+		<a href="#influence" class="list-group-item"  data-toggle="tab" role="tab">Influence</a>
+		<a href="#gameplay" class="list-group-item" data-toggle="tab" role="tab">Gameplay</a>
+		<a href="#reference" class="list-group-item" data-toggle="tab" role="tab">Reference</a>
             </div>
-	</div>
+        </div><!--/span-->
+        <div class="col-xs-12 col-sm-9 content">
+          <p class="pull-left">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
              
 	<div class="tab-content">
 		    <!-- Charts - Total-->
