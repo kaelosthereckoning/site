@@ -24,6 +24,7 @@ $nav-height: 3em*/
 
 .glyphicon {
 	background: transparent;
+	float: right;
 }
 
 .nav-container {
@@ -54,7 +55,6 @@ nav.nav-pills li{
 }
 
 .glyphicon-plus, .glyphicon-minus{
-	padding-left: 1em;
 	padding-right: 1em;
 }
 
