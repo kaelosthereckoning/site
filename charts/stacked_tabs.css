@@ -5,7 +5,7 @@
 .wrapper {
 	display: flex;
 	flex-direction: row;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid #BFBFBF;
 }
 
 .tab-menu {
@@ -21,10 +21,6 @@
 
 .btn-group-vertical > a {
 	background: #262626;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
 }
 
 .btn-block {
