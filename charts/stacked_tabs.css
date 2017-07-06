@@ -11,6 +11,8 @@
 .tab-menu {
 	order: 1;
 	background: #262626;
+	font-size: 1em;
+	width: 10em;
 }
 
 .tab-content {
@@ -38,6 +40,8 @@
 	text-align: left;
 	padding-left: 3em ! important;
 	padding-right: 3em ! important;
+	font-size: 1em;
+	width: 10em;
 }
 
 .btn-mine > a:links,a:visited {
