@@ -1,3 +1,7 @@
+
+@charset "utf-8";
+/* CSS Document */
+
 .wrapper {
 	display: flex;
 	flex-direction: row;
@@ -9,44 +13,50 @@
 	background: #262626;
 }
 
-.tab-content {
-	order: 2;
-	width: 75%;
-}
-
 .btn-group-vertical > a {
 	background: #262626;
 }
 
 .btn-block {
 	width: 100%;
-}
-
-.btn-mine {
-	width=100% !important;
-	height= 3em;
-	padding: 1em;
-	border-radius: 0;
-	margin: 0;
-	float: left;
+	color: #ffffff;
+	margin: 0 ! important;
 }
 
 .btn-mine > a {
 	text-decoration: none !important;
 }
 
-.btn-mine > a:focus, a:active, a:hover {
-	background: #BFBFBF !important;
-	text-decoration: none !important;
-	color: #ffffff !important;
-}
-
-.btn-mine > a:visited {
+.btn-mine > a:links,a:visited {
 	background: #262626 !important;
 	text-decoration: none !important;
 	color: #ffffff !important;
 }
 
+.btn-mine > a:focus, a:active {
+	background: #131313 !important;
+	text-decoration: none !important;
+	color: #ffffff !important;
+}
+
+.btn-mine > a:hover {
+	background: #BFBFBF !important;
+	text-decoration: none !important;
+	color: #131313 !important;
+}
+
+.tab-menu > .btn-group-vertical > .btn {
+	padding: 1em;
+	height= 3em;
+	border-radius: 0;
+	margin; 0 ! important;
+	border: 0 ! important;
+	float: left;
+	}
+}
+
 .tab-content {
+	order: 2;
+	width: 75%;
 	padding: 1em;
 }
