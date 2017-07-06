@@ -11,10 +11,11 @@
 .tab-menu {
 	order: 1;
 	background: #262626;
+	width: 25%;
 
 .tab-content {
 	order: 2;
-	width: 100%;
+	width: 75%;
 	text-align: left;
 }
 
