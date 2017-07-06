@@ -27,7 +27,8 @@ $nav-height: 3em*/
 }
 
 .nav-container {
-	margin: 2em;
+	margin-top: 2em;
+	margin-right: 2em;
 	white-space: nowrap;
 	border-left: 7px solid #9EA7FF;
 	background: #262626;
