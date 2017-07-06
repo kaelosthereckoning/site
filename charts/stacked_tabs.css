@@ -39,13 +39,13 @@
 .btn-mine > a:links,a:visited {
 	background: #262626 !important;
 	text-decoration: none !important;
-	color: #ffffff !important;
+	color: #BFBFBF !important;
 }
 
 .btn-mine > a:focus, a:active {
 	background: #131313 !important;
 	text-decoration: none !important;
-	color: #ffffff !important;
+	color: #BFBFBF !important;
 }
 
 .btn-mine > a:hover {
@@ -65,7 +65,7 @@
 
 .charts-header {
 	background: #262626;
-	color: #ffffff;
+	color: #BFBFBF;
 	text-align: center;
 	margin: 0;
 	border: 0;
