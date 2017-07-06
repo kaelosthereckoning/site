@@ -13,6 +13,12 @@
 	background: #262626;
 }
 
+.tab-content {
+	order: 2;
+	width: 75%;
+	padding: 1em;
+}
+
 .btn-group-vertical > a {
 	background: #262626;
 }
@@ -55,8 +61,4 @@
 	}
 }
 
-.tab-content {
-	order: 2;
-	width: 75%;
-	padding: 1em;
-}
+
