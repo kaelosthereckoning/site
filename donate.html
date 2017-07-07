@@ -27,7 +27,7 @@
 
 		</div>
 		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
-			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
 			<li class="nav-item dropdown">
 				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
 					<ul class="dropdown-menu">
@@ -38,10 +38,10 @@
 					</ul>
 			</li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="analyses.html">Analyses</a></li>
-			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="charts.html">Charts</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="/charts/charts.html#total">Charts</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
 			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
-			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			<li class="nav-item landing" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
 			</div>
 		</nav>
 	</div>
@@ -49,7 +49,19 @@
 	</div>
 	<!--content-->
 	<div class="content">
-		content
+		<div id="stripe-widget">
+			<form action="/your-server-side-code" method="POST">
+				<script
+				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+				data-key="pk_test_94GeNUOG7iqCJe19cvLNWloj"
+				data-amount="999"
+				data-name="kaelosthereckoning.github.io"
+				data-description="Widget"
+				data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+				data-locale="auto">
+				</script>
+			</form>
+		</div>
 	</div>
 		</div>
 	<!--static footer-->	
