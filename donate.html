@@ -48,20 +48,38 @@
 
 	</div>
 	<!--content-->
+				
 	<div class="content">
+		<p>This site, my stats analyses, and the programs I write are all shared freely with everyone in the community.  Most of you have contributed generously of your brains, time, and company to help me with this ongoing project.</p>
+		<p> As many of you know, the work here and twitch streaming are my only occupation until I become well enough to return to my career.</p>
+		<p> Therefore, please do not feel obligated to donate, but do know that I tremendously appreciate all of the support I receive from the Eternal community.  Being stuck in a bed ain't so bad when I have such good company on twitch, people making sure I can take care of my dogs and enabling my LaCroix habit, and a host of interesting problems to solve courtesty of Direwolf Digital and infinitely curious friends.</p>
+		<hr>
+		<p>I could write a script to automate putting donor names on a list, or slap you up on a slide during my twitch breaks, but I'm guessing that's not why you're offering support.  Please know instead that I will be quietly and truely grateful.</p>
+		
+		<div class="payments">
+		<p>Donate by Gmail:
+			<br>
+			<a href="https://mail.google.com/mail/?compose=1&view=cm&fs=1&to=kaelosthereckoning@gmail.com&su=Google Wallet Donation&body=The%20dollar%20sign%20button%20to%20the%20right of%20Send%20will%20let%20you%20donate%20securely%20by%20email.%20Thank you,%20sincerely,%20for%20your%20support." target="_top"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Google_Wallet_logo.svg/2000px-Google_Wallet_logo.svg.png" alt="Email Widget for Google Wallet" style="height: 5em; width: 5em;"></a></p>
+
+			<p> Donate by Stripe, a secure card-handling API:
+				<br>
 		<div id="stripe-widget">
 			<form action="/your-server-side-code" method="POST">
-				<script
-				src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-				data-key="pk_test_94GeNUOG7iqCJe19cvLNWloj"
-				data-amount="999"
-				data-name="kaelosthereckoning.github.io"
-				data-description="Widget"
-				data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-				data-locale="auto">
+				<script src="https://checkout.stripe.com/checkout.js" 
+					class="stripe-button" 
+					data-key="pk_test_94GeNUOG7iqCJe19cvLNWloj" 
+					data-amount="999"
+					data-name="kaelosthereckoning.github.io"
+					data-description="Widget"
+					data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+					data-locale="auto"
+					data-zip-code="true">
 				</script>
 			</form>
 		</div>
+			<p>
+			
+			
 	</div>
 		</div>
 	<!--static footer-->	
@@ -83,14 +101,27 @@
 	</div>
 </body>
 </div>
-
 	
 <script>
+$(document).ready(function () {	
 $('.collapse').on('shown.bs.collapse', function(){
 $(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
 }).on('hidden.bs.collapse', function(){
 $(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
 });
+	}
+</script>
+
+<script
+src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+data-key="pk_test_94GeNUOG7iqCJe19cvLNWloj"
+data-amount="999"
+data-name="kaelosthereckoning.github.io"
+data-description="Widget"
+data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+data-locale="auto"
+data-zip-code="true">
 </script>
 
 </html>
+
