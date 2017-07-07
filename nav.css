@@ -17,11 +17,6 @@ background-color: #262626;
 $breakpoint: 786px;
 $nav-height: 3em*/
 
-* {
-  border-radius: 0 !important;
-  background: #131313;
-}
-
 .glyphicon {
 	background: transparent;
 	float: right;
