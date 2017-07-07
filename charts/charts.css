@@ -1,24 +1,5 @@
-*{
-	border-radius: 0 !important;
-}
-
-body {
-  padding-top: 50px;
-}
-/*
- * Style tweaks
- * --------------------------------------------------
- */
-html,
-body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
-  height: 100%;
-}
-body {
-}
-footer {
-  padding: 30px 0;
-}
+@charset "utf-8";
+/* CSS Document */
 
 .sidebar-nav {
 	height: 4em;
@@ -42,6 +23,7 @@ footer {
 }
 
 .sidebar-toggle {
+	background: transparent;
 	height: 3em;
 	width: 3em;
 	margin-top: 0.5em;
