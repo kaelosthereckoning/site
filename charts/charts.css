@@ -50,6 +50,7 @@ footer {
 }
 
 .glyphicon-menu-hamburger {
+	background: transparent;
 	color: #131313;
 }
 
