@@ -17,7 +17,7 @@ background-color: #262626;
 $breakpoint: 786px;
 $nav-height: 3em*/
 
-.nav-container-container {
+#main_nav{
 	background: $131313;
 }
 
