@@ -74,7 +74,7 @@ body {
 
 footer {
 	order: 10;
-	width: 100%;
+	width: 100vw;
 	background-color: #131313;
 	flex: 1 1 auto;
 }
