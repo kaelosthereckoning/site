@@ -70,6 +70,10 @@ body {
 	padding-top: 20px;
 }
 
+.section-1 {
+	margin: 10px;
+}
+
 footer {
 	order: 10;
 	width: 100vw;
