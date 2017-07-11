@@ -87,33 +87,33 @@
 		
 		<!-- Charts - Tabs-->
 	<div class="container-fluid">
-      <div class="row row-offcanvas row-offcanvas-left disappearing-bar">
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas tab-menu">
-          <div class="btn-block btn-mine btn-group-vertical sidebar btn-mine" data-toggle="buttons" type="radio" id="sidebar">
-		<a href="#total" class="list-group-item btn-mine" data-toggle="tab" role="tab" id="top">Total</a>
-		<a href="#faction" class="list-group-item btn-mine" data-toggle="tab" role="tab">Faction</a>
-		<a href="#deck-type" class="list-group-item btn-mine" data-toggle="tab" role="tab">Deck Type</a>
-		<a href="#card-type" class="list-group-item btn-mine" data-toggle="tab" role="tab">Card Type</a>
-		<a href="#individual" class="list-group-item btn-mine" data-toggle="tab" role="tab">Individual Cards</a>
-		<a href="#power" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Power</a>
-		<a href="#influence" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Influence</a>
-		<a href="#gameplay" class="list-group-item btn-mine" data-toggle="tab" role="tab">Gameplay</a>
-		<a href="#reference" class="list-group-item btn-mine" data-toggle="tab" role="tab">Reference</a>
-            </div>
-        </div><!--/span-->
-	<div class="tab-content">
+		<div class="row row-offcanvas row-offcanvas-left disappearing-bar">
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas tab-menu">
+				<div class="btn-block btn-mine btn-group-vertical sidebar btn-mine" data-toggle="buttons" type="radio" id="sidebar">
+					<a href="#total_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab" id="top">Total</a>
+					<a href="#faction_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Faction</a>
+					<a href="#deck-type_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Deck Type</a>
+					<a href="#card-type_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Card Type</a>
+					<a href="#individual_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Individual Cards</a>
+					<a href="#power_pane" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Power</a>
+					<a href="#influence_pane" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Influence</a>
+					<a href="#gameplay_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Gameplay</a>
+					<a href="#reference_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Reference</a>
+				</div>
+			</div><!--end tab menu-->
+<div class="tab-content">
 		    <!-- Charts - Total-->
-	<div class="tab-pane active" id="total">
+	<div class="tab-pane active" id="total_pane">
 		<div class="container" id="total">
 			<div class="row">
 				<div id="total_container" class="container">
 					<h4><strong>Total</strong> - All statistics in this category include all cards to which some attribute is applicable.  E.g. Fire includes all cards with any Fire influence requirement present.</h4>
 					<hr>
-					<div id="chart_total_001" class="pie_chart" alt="Total Card Availability, by Faction"></div>
+					<div id="chart_total_001" class="pie_chart chart" alt="Total Card Availability, by Faction"></div>
 					<hr>
-					<div id="chart_total_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
+					<div id="chart_total_002" class="line_graph chart" alt="Card Availability per Power Cost, by Faction"></div>
 					<hr>
-					<div id="chart_total_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
+					<div id="chart_total_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
 					<hr>
 					<div id="" class="" alt=""></div>
 				</div>
@@ -121,17 +121,17 @@
 		</div>
 	</div>
             
-	<div class="tab-pane active" id="faction">
+	<div class="tab-pane active" id="faction_pane">
 		<div class="container" id="faction">
 			<div class="row">
 				<div id="faction_container" class="container">
 					<h4><strong>Faction</strong> - All statistics in this category are for the most stringent criteria.  E.g. Fire contains only mono fire cards while Rakano includes only dual-color Rakano cards.</h4>
 					<hr>
-					<div id="chart_faction_001" class="pie_chart" alt="Card Availability, by Faction"></div>
+					<div id="chart_faction_001" class="pie_chart chart" alt="Card Availability, by Faction"></div>
 					<hr>
-					<div id="chart_faction_002" class="line_graph" alt="Card Availability per Power Cost, by Faction"></div>
+					<div id="chart_faction_002" class="line_graph chart" alt="Card Availability per Power Cost, by Faction"></div>
 					<hr>
-   					<div id="chart_faction_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Faction"></div>
+   					<div id="chart_faction_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Faction"></div>
 					<hr>
 					<div id="" class="" alt=""></div>
 				</div>
@@ -139,31 +139,17 @@
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="deck-type">
+	<div class="tab-pane active" id="deck-type_pane">
 		<div class="container" id="deck-type">
 			<div class="row">
 				<div id="deck-type_container" class="container">
 					<h4><strong>Deck Type</strong> - All statistics in this category include the card pool available to that deck type.  E.g. Fire contains only mono fire cards while Rakano includes Fire, Justice, and dual-color Rakano cards.</h4>
 					<hr>
-					<div id="chart_deck_001" class="pie_chart" alt="Total Card Availability, by Deck Type"></div>
+					<div id="chart_deck_001" class="pie_chart chart" alt="Total Card Availability, by Deck Type"></div>
 					<hr>
-					<div id="chart_deck_002" class="line_graph" alt="Card Availability per Power Cost, by Deck Type"></div>
+					<div id="chart_deck_002" class="line_graph chart" alt="Card Availability per Power Cost, by Deck Type"></div>
 					<hr>
-					<div id="chart_deck_003" class="line_graph" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
-					<hr>
-					<div id="" class="" alt=""></div>
-				</div>
-			</div>
-		</div>
-	</div>
-		
-	<div class="tab-pane active" id="Total">
-		<div class="container" id="total">
-			<div class="row">
-				<div id="total_container" class="container">
-					<h4><strong> </strong> - </h4>
-					<hr>
-					
+					<div id="chart_deck_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
 					<hr>
 					<div id="" class="" alt=""></div>
 				</div>
@@ -171,7 +157,7 @@
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="card-type">
+	<div class="tab-pane active" id="card-type_pane">
 		<div class="container" id="card-type">
 			<div class="row">
 				<div id="card-type_container" class="container">
@@ -185,45 +171,45 @@
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="individual">
+	<div class="tab-pane active" id="individual_pane">
 		<div class="container" id="individual">
 			<div class="row">
 				<div id="individual_container" class="container">
 					<p>Unstable Form - Odds of Generating Any Card of Given Power + Rarity</p>	
-					<div id="table_002" class="table" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
+					<div id="table_002" class="table chart" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
 					<div id="" class="" alt=""></div>
 				</div>
 			</div>
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="power">
+	<div class="tab-pane active" id="power_pane">
 		<div class="container" id="power">
 			<div class="row">
 				<div id="power_container" class="container">
 					<p> # Power Cards Required for 60-90% Odds of Playing Card On Curve </p>
-					<div id="table_power_002" class="table" style="padding: 1em;" alt="# Power Cards Required for 60-90% Odds of Playing Card On Curve"></div>
+					<div id="table_power_002" class="table chart" style="padding: 1em;" alt="# Power Cards Required for 60-90% Odds of Playing Card On Curve"></div>
 					<div id="" class="" alt=""></div>
 				</div>
 			</div>
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="influence">
+	<div class="tab-pane active" id="influence_pane">
 		<div class="container" id="influence">
 			<div class="row">
 				<div id="influence_container" class="container">
 					<p> # Influence Cards Required for 60-90% Odds of Playing Card On Curve </p>
-					<div id="table_power_003" class="table" style="padding: 1em;" alt="# Influence Cards Required for 60-90% Odds of Playing Card On Curve"></div>
+					<div id="table_power_003" class="table chart" style="padding: 1em;" alt="# Influence Cards Required for 60-90% Odds of Playing Card On Curve"></div>
 					<p>Influence Required for 90% Odds of Playing Card on Curve</p>
-					<div id="table_power_001" class="table" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
+					<div id="table_power_001" class="table chart" style="padding: 1em;" alt="Influence Required for 90% Odds of Playing Card on Curve"></div>
 					<div id="" class="" alt=""></div>
 				</div>
 			</div>
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="gameplay">
+	<div class="tab-pane active" id="gameplay_pane">
 		<div class="container" id="gameplay">
 			<div class="row">
 				<div id="gameplay_container" class="container">
@@ -237,7 +223,7 @@
 		</div>
 	</div>
 		
-	<div class="tab-pane active" id="reference">
+	<div class="tab-pane active" id="reference_pane">
 		<div class="container" id="reference">
 			<div class="row">
 				<div id="reference_container" class="container">
