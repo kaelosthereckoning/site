@@ -99,6 +99,10 @@
 	border: 0 ! important;
 	float: left;
 	}
+
+.chart {
+	color: black !important;
+}
 	
 #top {
 		border-top: 2px solid #131313 !important;
