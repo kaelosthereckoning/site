@@ -103,6 +103,12 @@
 .chart, .table, .data {
 	color: black !important;
 }
+
+.data-description {
+	font-size: 0.5em;
+	background: transparent !important;
+	color: #ffffff !important;
+}
 	
 #top {
 		border-top: 2px solid #131313 !important;
