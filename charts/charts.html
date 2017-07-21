@@ -35,9 +35,12 @@
 	<script type="text/javascript" src="chart_faction_003.js"></script>
 	<script type="text/javascript" src="data_faction_003.js"></script>
   
-	<script type="text/javascript" src="chart_deck_001.js"></script>
-	<script type="text/javascript" src="chart_deck_002.js"></script>
-	<script type="text/javascript" src="chart_deck_003.js"></script>
+	<script type="text/javascript" src="chart_deck-type_001.js"></script>
+	<script type="text/javascript" src="data_deck-type_001.js"></script>
+	<script type="text/javascript" src="chart_deck-type_002.js"></script>
+	<script type="text/javascript" src="data_deck-type_002.js"></script>
+	<script type="text/javascript" src="chart_deck-type_003.js"></script>
+	<script type="text/javascript" src="data_deck-type_003.js"></script>
   
 	<script type="text/javascript" src="table_001.js"></script>
 	<script type="text/javascript" src="table_002.js"></script>
@@ -281,11 +284,43 @@
 				<div id="deck-type_container" class="container">
 					<h4><strong>Deck Type</strong> - All statistics in this category include the card pool available to that deck type.  E.g. Fire contains only mono fire cards while Rakano includes Fire, Justice, and dual-color Rakano cards.</h4>
 					<hr>
-					<div id="chart_deck_001" class="pie_chart chart" alt="Total Card Availability, by Deck Type"></div>
+					<div id="chart_deck-type_001" class="pie_chart chart" alt="Total Card Availability, by Deck Type"></div>
+					 <div id="accordion_deck-type_001" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_deck-type_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_001" href="#description_deck-type_001" aria-expanded="true" aria-controls="description_deck-type_001">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_deck-type_001" class="collapse" role="tabpanel" aria-labelledby="description_header_deck-type_001">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_deck-type_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_001" href="#data_deck-type_001" aria-expanded="true" aria-controls="data_deck-type_001">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_deck-type_001" class="collapse" role="tabpanel" aria-labelledby="data_header_deck-type_001">
+      								<div class="data" id="data_deck-type_001></div>
+    							</div>
+  						</div>
+					</div>
 					<hr>
-					<div id="chart_deck_002" class="line_graph chart" alt="Card Availability per Power Cost, by Deck Type"></div>
+					<div id="chart_deck-type_002" class="line_graph chart" alt="Card Availability per Power Cost, by Deck Type"></div>
 					<hr>
-					<div id="chart_deck_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
+					<div id="chart_deck-type_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
 					<hr>
 					<div id="" class="" alt=""></div>
 				</div>
