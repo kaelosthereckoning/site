@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="page">
+<head>
+  <title>Kaelos: The Reckoning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!--import CSS stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="../nav.css">
+	
+<!--import scripts-->
+	<!--jquery api-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--bootstrap api-->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--charts api-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	
+	<!--custom scripts-->
+	<script type="text/javascript" src="deck_req_80.js"></script>
+
+</head>
+<body>
+	<div class="container-1">
+		<div class="container-2">
+	<!-- main navigation-->
+	<div id="main_nav" role="navigation">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container">
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
+		<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
+
+		</div>
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
+			<li class="nav-item dropdown">
+				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="topics/ranked.html">Deck Construction</a>
+						<a class="dropdown-item" href="topics/draft.html">Draft</a>
+						<a class="dropdown-item" href="topics/">Tournament</a>
+						<a class="dropdown-item" href="#">Eternal AI</a>
+					</ul>
+			</li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="analyses.html">Analyses</a></li>
+			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" href="/charts/charts.html#total">Charts</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
+			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			</div>
+		</nav>
+	</div><!--end main_nav-->
+	
+			<div class="content">
+          <p> Deck Requirements for 80% Probability of Playing Card on Curve (# Power and Influence cards) </p>
+					
+					<div id="accordion_deck-req_001" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_deck-req_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-req_001" href="#description_deck-req_001" aria-expanded="true" aria-controls="description_total_001">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+ 							<div id="description_deck-req_001" class="collapse" role="tabpanel" aria-labelledby="description_header_deck-req_001">
+      								<div class="description">
+        					<BLOCKQUOTE>
+										<br> Data may be sorted by column ascending / descending.
+										<br> Probabilities generated using: 1-hypgeom.dist(S-1, T+7 , A, 75)  where S = minimum influence / power needed, T = turn number, A = # of potential successes in deck.
+										<br> Card # selected using smallest whole number which generated a probability of over 80%.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+					</div>
+          <div id="deck_req_80" class="table chart" alt="Deck Requirements for 80% Probability of Playing Card on Curve (# Power and Influence cards)"></div>
+			</div>
+		</div>
+	</div>
+
+</div><!--end tab-content-->
+</div><!--end wrapper-->
+</div><!--end content-->
+</div><!--end container-2-->
+		
+	<!--static footer-->	
+	<footer class="footer">
+		<div id="twitchfooter" align="middle"> 
+			twitch.tv/kaelosthereckoning 
+		</div>
+		<hr>
+		<div id="sitelicense">
+			<div id="CCimage" align="middle">
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a>
+			</div>
+			<br />
+			<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Kaelos: The Reckoning - Eternal CCG Data Analysis"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="kaelosthereckoning.com" property="cc:attributionName" rel="cc:attributionURL">Kaelos: The Reckoning</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />
+			<br />For permissions beyond the scope of this license contact <a xmlns:cc="http://creativecommons.org/ns#" href="kaelosthereckoning@gmail.com" rel="cc:morePermissions">kaelosthereckoning@gmail.com</a>.
+		</div>	
+
+	</footer>
+	</div><!--end container-1-->
+</body>
+</div> 
+
+	
+<script>
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+});
+</script>
+	
+<script>
+$(document).ready(function () {
+  $('[data-toggle=offcanvas]').click(function () {
+    if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+	    $('.list-group-item').attr('tabindex', '-1');
+    } else {
+	    $('.list-group-item').attr('tabindex', '');
+    }
+    $('.row-offcanvas').toggleClass('active');
+    
+  });
+});
+</script>
+</html>
