@@ -99,16 +99,6 @@
 	border: 0 ! important;
 	float: left;
 	}
-
-.chart, .table, .data {
-	color: black !important;
-}
-
-blockquote {
-	font-size: 1em;
-	background: transparent !important;
-	color: #9EA7FF !important;
-}
 	
 #top {
 		border-top: 2px solid #131313 !important;
