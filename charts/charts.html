@@ -48,6 +48,7 @@
 	<script type="text/javascript" src="table_power_001.js"></script>
 	<script type="text/javascript" src="table_power_002.js"></script>
 	<script type="text/javascript" src="table_power_003.js"></script>
+	<script type="text/javascript" src="../reference/first_playable_full.js"></script>
 	<script type="text/javascript" src="table_power_004.js"></script>
 	
 	<script type="text/javascript" src="table_influence_004.js"></script>
@@ -475,6 +476,42 @@
 					<hr>
 					<p> First Playable Turn w/ 25 Power Deck, 60/70/80/90% Odds </p>
 					<div id="table_power_003" class="table chart" style="padding: 1em;" alt="First Playable Turn w/ 25 Power Deck, 60/70/80/90% Odds"></div>
+					<div id="accordion_power_003" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_power_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_power_003" href="#description_power_003" aria-expanded="true" aria-controls="description_power_003">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+ 							<div id="description_power_003" class="collapse" role="tabpanel" aria-labelledby="description_header_power_003">
+      								<div class="description">
+        					<BLOCKQUOTE>
+										<br> Probabilities generated using: 1-hypgeom.dist(S-1, T+7 , A, 75, true)  where S = minimum influence / power needed, T = turn number, A = # of potential successes in deck.  This formula gives the sum of all probabilities representing the target number or greater successes.
+										<br> Basic assumption is 25 power cards in 75 card deck; no Warp cards or other cost- / turn-altering effects.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_power_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_power_003" href="#data_power_003" aria-expanded="true" aria-controls="data_power_003">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_power_003" class="collapse" role="tabpanel" aria-labelledby="data_header_power_003">
+      								<div class="data" id="first_playable_full"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
 					<hr>
 					<div id="" class="" alt=""></div>
 				</div>
