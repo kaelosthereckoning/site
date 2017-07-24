@@ -3,7 +3,7 @@ google.charts.load('current', {'packages':['table']});
       google.charts.setOnLoadCallback(drawTable);
 
       function drawTable() {
-        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1M7sbpFIlvchRQ4CYE-S5EifDXltz5sBFO2vPNqjce9Q/gviz/tq?gid=1854222079&headers=1&range=A1:G');
+        var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1M7sbpFIlvchRQ4CYE-S5EifDXltz5sBFO2vPNqjce9Q/gviz/tq?gid=1652213040&headers=1&range=A1:G');
 			query.send(handleQueryResponse);
       }
 
@@ -18,7 +18,7 @@ google.charts.load('current', {'packages':['table']});
       			//sortColumn: 3,
         	};
 
-        	var table = new google.visualization.Table(document.getElementById('deck_req_60'));
+        	var table = new google.visualization.Table(document.getElementById('deck_req_80'));
 
         	table.draw(data, options);
 	}
