@@ -18,7 +18,7 @@ google.charts.load('current', {'packages':['table']});
       			//sortColumn: 3,
         	};
 
-        	var table = new google.visualization.Table(document.getElementById('deck_req_90'));
+        	var table = new google.visualization.Table(document.getElementById('power_odds'));
 
         	table.draw(data, options);
 	}
