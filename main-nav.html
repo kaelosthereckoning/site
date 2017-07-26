@@ -1,0 +1,51 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!--import CSS stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="../nav.css">
+	
+<!--import scripts-->
+	<!--jquery api-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--bootstrap api-->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- main navigation-->
+	<div id="main_nav" role="navigation">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container">
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
+		<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
+
+		</div>
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="#">Home</a></li>
+			<li class="nav-item dropdown">
+				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="topics/ranked.html">Deck Construction</a>
+						<a class="dropdown-item" href="topics/draft.html">Draft</a>
+						<a class="dropdown-item" href="topics/">Tournament</a>
+						<a class="dropdown-item" href="#">Eternal AI</a>
+					</ul>
+			</li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="analyses.html">Analyses</a></li>
+			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" href="/charts/charts.html#total">Charts</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="programs.html">Programs</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="reference.html">Reference</a>
+			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="donate.html">Donate</a></li>
+			</div>
+		</nav>
+	</div><!--end main_nav-->
+  
+  </body>
+  
+  </html>
