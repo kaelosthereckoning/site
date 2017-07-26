@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="page">
+<head>
+  <title>Kaelos: The Reckoning</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+<!--import CSS stylesheets-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../index.css">
+	<link rel="stylesheet" href="../nav.css">
+	<link rel="stylesheet" href="charts.css">
+	
+<!--import scripts-->
+	<!--jquery api-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--bootstrap api-->
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--charts api-->
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+ 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.min.js"></script>
+	
+	<!--custom scripts-->
+	<script type="text/javascript" src="chart_total_001.js"></script>
+	<script type="text/javascript" src="data_total_001.js"></script>
+	<script type="text/javascript" src="chart_total_002.js"></script>
+	<script type="text/javascript" src="data_total_002.js"></script>
+	<script type="text/javascript" src="chart_total_003.js"></script>
+	<script type="text/javascript" src="data_total_003.js"></script>
+	
+  	<script type="text/javascript" src="chart_faction_001.js"></script>
+	<script type="text/javascript" src="data_faction_001.js"></script>
+	<script type="text/javascript" src="chart_faction_002.js"></script>
+	<script type="text/javascript" src="data_faction_002.js"></script>
+	<script type="text/javascript" src="chart_faction_003.js"></script>
+	<script type="text/javascript" src="data_faction_003.js"></script>
+  
+	<script type="text/javascript" src="chart_deck-type_001.js"></script>
+	<script type="text/javascript" src="data_deck-type_001.js"></script>
+	<script type="text/javascript" src="chart_deck-type_002.js"></script>
+	<script type="text/javascript" src="data_deck-type_002.js"></script>
+	<script type="text/javascript" src="chart_deck-type_003.js"></script>
+	<script type="text/javascript" src="data_deck-type_003.js"></script>
+  
+	<script type="text/javascript" src="table_001.js"></script>
+	<script type="text/javascript" src="table_002.js"></script>
+	
+	<script type="text/javascript" src="table_power_001.js"></script>
+	<script type="text/javascript" src="table_power_002.js"></script>
+	<script type="text/javascript" src="table_power_003.js"></script>
+	<script type="text/javascript" src="../reference/first_playable_full.js"></script>
+	<script type="text/javascript" src="table_power_004.js"></script>
+	
+	<script type="text/javascript" src="table_influence_004.js"></script>
+	
+	<script type="text/javascript" src="power_reference.js"></script>
+	<script type="text/javascript" src="influence_reference.js"></script>
+</head>
+<body>
+	<div class="container-1">
+		<div class="container-2">
+	<!-- main navigation-->
+	<div id="main_nav" role="navigation">
+		<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container">
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
+		<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
+
+		</div>
+		<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="https://kaelosthereckoning.github.io/site/index.html">Home</a></li>
+			<li class="nav-item dropdown">
+				<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
+					<ul class="dropdown-menu">
+						<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/ranked.html">Deck Construction</a>
+						<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/draft.html">Draft</a>
+						<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/tournament.html">Tournament</a>
+						<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/Eternal_AI.html">Eternal AI</a>
+					</ul>
+			</li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.github.io/site/analyses/analyses.html">Analyses</a></li>
+			<li class="nav-item landing"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.github.io/site/charts/charts.html">Charts</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.github.io/site/programs/programs.html">Programs</a></li>
+			<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.github.io/site/reference/reference.html">Reference</a>
+			<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.github.io/site/donate.html">Donate</a></li>
+			</div>
+		</nav>
+	</div><!--end main_nav-->
+	
+			<div class="content">
+   <!--Charts - Sidebar-->
+			<div class="container-fluid">
+	<div class="sidebar-nav">
+      <p id="charts">CHARTS</p>
+	  <button type="button" class="btn sidebar-toggle" data-toggle="offcanvas"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+	</div>
+			</div>
+
+<div class="wrapper">
+		
+		<!-- Charts - Tabs-->
+	<div class="container-fluid">
+		<div class="row row-offcanvas row-offcanvas-left disappearing-bar">
+			<div class="col-xs-6 col-sm-3 sidebar-offcanvas tab-menu">
+				<div class="btn-block btn-mine btn-group-vertical sidebar btn-mine" data-toggle="buttons" type="radio" id="sidebar">
+					<a href="#total_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab" id="top">Total</a>
+					<a href="#faction_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Faction</a>
+					<a href="#deck-type_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Deck Type</a>
+					<a href="#card-type_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Card Type</a>
+					<a href="#individual_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Individual Cards</a>
+					<a href="#power_pane" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Power</a>
+					<a href="#influence_pane" class="list-group-item btn-mine"  data-toggle="tab" role="tab">Influence</a>
+					<a href="#gameplay_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Gameplay</a>
+					<a href="#reference_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Reference</a>
+				</div>
+			</div><!--end tab menu-->
+<div class="tab-content">
+		    <!-- Charts - Total-->
+	<div class="tab-pane active" id="total_pane">
+		<div class="container" id="total">
+			<div class="row">
+				<div id="total_container" class="container">
+					<h4><strong>Total</strong> - All statistics in this category include all cards to which some attribute is applicable.  
+						<br>E.g. Fire includes all cards with any Fire influence requirement present.</h4>
+					<hr>
+					<!-- Card Availability-->
+					<div id="chart_total_001" class="pie_chart chart" alt="Total Card Availability, by Faction"></div>
+					<div id="accordion_total_001" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_total_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_001" href="#description_total_001" aria-expanded="true" aria-controls="description_total_001">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_total_001" class="collapse" role="tabpanel" aria-labelledby="description_header_total_001">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" includes all tokens generated by other cards.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_total_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_001" href="#data_total_001" aria-expanded="true" aria-controls="data_total_001">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_total_001" class="collapse" role="tabpanel" aria-labelledby="data_header_total_001">
+      								<div class="data" id="data_total_001"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<div id="chart_total_002" class="line_graph chart" alt="Total Card Availability per Power Cost, by Faction"></div>												     			
+  					<div id="accordion_total_002" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_total_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_002" href="#description_total_002" aria-expanded="true" aria-controls="description_total_002">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_total_002" class="collapse" role="tabpanel" aria-labelledby="description_header_total_002">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> 24 power and variable (X, W) power costs excluded from chart.
+										<br>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" includes all tokens generated by other cards.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_total_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_002" href="#data_total_002" aria-expanded="true" aria-controls="data_total_002">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_total_002" class="collapse" role="tabpanel" aria-labelledby="data_header_total_001">
+      								<div class="data" id="data_total_002"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<div id="chart_total_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Faction (Total)"></div>
+					<div id="accordion_total_003" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_total_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_003" href="#description_total_003" aria-expanded="true" aria-controls="description_total_003">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_total_003" class="collapse" role="tabpanel" aria-labelledby="description_header_total_003">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br>Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_total_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_total_003" href="#data_total_003" aria-expanded="true" aria-controls="data_total_003">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_total_003" class="collapse" role="tabpanel" aria-labelledby="data_header_total_003">
+      								<div class="data" id="data_total_003"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Charts - Faction-->
+            
+	<div class="tab-pane active" id="faction_pane">
+		<div class="container" id="faction">
+			<div class="row">
+				<div id="faction_container" class="container">
+					<h4><strong>Faction</strong> - All statistics in this category are for the most stringent criteria.  
+						<br>E.g. Fire contains only mono fire cards while Rakano includes only dual-color Rakano cards.</h4>
+					<hr>
+						<!-- Card Availability-->
+						<div id="chart_faction_001" class="pie_chart chart" alt="Card Availability, by Faction"></div>
+							<!-- Data-->
+						<div id="accordion_faction_001" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_faction_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_001" href="#description_faction_001" aria-expanded="true" aria-controls="description_faction_001">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_faction_001" class="collapse" role="tabpanel" aria-labelledby="description_header_faction_001">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" includes all tokens generated by other cards.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_faction_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_001" href="#data_faction_001" aria-expanded="true" aria-controls="data_faction_001">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_faction_001" class="collapse" role="tabpanel" aria-labelledby="data_header_faction_001">
+      								<div class="data" id="data_faction_001"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<!-- Card Availability / Power Cost -->
+					<div id="chart_faction_002" class="line_graph chart" alt="Card Availability per Power Cost, by Faction"></div>
+							<!-- Data-->
+						<div id="accordion_faction_002" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_faction_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_002" href="#description_faction_002" aria-expanded="true" aria-controls="description_faction_002">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_faction_002" class="collapse" role="tabpanel" aria-labelledby="description_header_faction_002">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> 24 power and variable (X, W) power costs excluded from chart.
+										<br>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" includes all tokens generated by other cards.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_faction_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_002" href="#data_faction_002" aria-expanded="true" aria-controls="data_faction_002">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_faction_002" class="collapse" role="tabpanel" aria-labelledby="data_header_faction_002">
+      								<div class="data" id="data_faction_002"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<!-- Avg Influence Cost-->
+   					<div id="chart_faction_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Faction"></div>
+						<!-- Data -->
+					<div id="accordion_faction_003" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_faction_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_003" href="#description_faction_003" aria-expanded="true" aria-controls="description_faction_003">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_faction_003" class="collapse" role="tabpanel" aria-labelledby="description_header_faction_003">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br>Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_faction_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_faction_003" href="#data_faction_003" aria-expanded="true" aria-controls="data_faction_003">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_faction_003" class="collapse" role="tabpanel" aria-labelledby="data_header_faction_003">
+      								<div class="data" id="data_faction_003"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<!-- Card Availability-->
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Charts - Deck Type-->
+		
+	<div class="tab-pane active" id="deck-type_pane">
+		<div class="container" id="deck-type">
+			<div class="row">
+				<div id="deck-type_container" class="container">
+					<h4><strong>Deck Type</strong> - All statistics in this category include the card pool available to that deck type.  
+						<br>E.g. Fire contains only mono fire cards while Rakano includes Fire, Justice, and dual-color Rakano cards.</h4>
+					<hr>
+					<!-- Card Availability-->
+					<div id="chart_deck-type_001" class="pie_chart chart" alt="Total Card Availability, by Deck Type"></div>
+						<!-- Data-->
+					 <div id="accordion_deck-type_001" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_deck-type_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_001" href="#description_deck-type_001" aria-expanded="true" aria-controls="description_deck-type_001">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_deck-type_001" class="collapse" role="tabpanel" aria-labelledby="description_header_deck-type_001">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" cards excluded.  (Shared pool does not contribute.)
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_deck-type_001">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_001" href="#data_deck-type_001" aria-expanded="true" aria-controls="data_deck-type_001">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_deck-type_001" class="collapse" role="tabpanel" aria-labelledby="data_header_deck-type_001">
+      								<div class="data" id="data_deck-type_001"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<div id="chart_deck-type_002" class="line_graph chart" alt="Card Availability per Power Cost, by Deck Type"></div>
+					<!-- Data-->
+					 <div id="accordion_deck-type_002" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_deck-type_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_001" href="#description_deck-type_002" aria-expanded="true" aria-controls="description_deck-type_002">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="description_deck-type_002" class="collapse" role="tabpanel" aria-labelledby="description_header_deck-type_002">
+      								<div class="description">
+        								<BLOCKQUOTE>
+										<br> 24 power and variable (X, W) power costs excluded from chart.
+										<br>
+										<br> Power cards excluded from count.
+										<br> Transformed Monuments included in count.
+										<br> Faction "None" includes all tokens generated by other cards.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_deck-type_002">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_deck-type_002" href="#data_deck-type_002" aria-expanded="true" aria-controls="data_deck-type_002">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_deck-type_002" class="collapse" role="tabpanel" aria-labelledby="data_header_deck-type_002">
+      								<div class="data" id="data_deck-type_002"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<div id="chart_deck-type_003" class="line_graph chart" alt="Average Influence Cost of Power Cost, by Deck Type"></div>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="card-type_pane">
+		<div class="container" id="card-type">
+			<div class="row">
+				<div id="card-type_container" class="container">
+					<h4><strong> </strong> - </h4>
+					<hr>
+					
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="individual_pane">
+		<div class="container" id="individual">
+			<div class="row">
+				<div id="individual_container" class="container">
+					<p>Unstable Form - Odds of Generating Any Card of Given Power + Rarity</p>	
+					<div id="table_002" class="table chart" style="padding: 1em;" alt="Unstable Form - Odds of Generating Any Card of Given Power + Rarity"></div>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="power_pane">
+		<div class="container" id="power">
+			<div class="row">
+				<div id="power_container" class="container">
+					<p> # Power Cards Required for 60-90% Odds of Playing Card On Curve </p>
+					<div id="table_power_002" class="table chart" style="padding: 1em;" alt="# Power Cards Required for 60-90% Odds of Playing Card On Curve"></div>
+					<hr>
+					<p> First Playable Turn w/ 25 Power Deck, 60/70/80/90% Odds </p>
+					<div id="table_power_003" class="table chart" style="padding: 1em;" alt="First Playable Turn w/ 25 Power Deck, 60/70/80/90% Odds"></div>
+					<div id="accordion_power_003" role="tablist" aria-multiselectable="true">
+  						<div class="data">
+    							<div class="data-description" role="tab" id="description_header_power_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_power_003" href="#description_power_003" aria-expanded="true" aria-controls="description_power_003">
+          									Data description
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+ 							<div id="description_power_003" class="collapse" role="tabpanel" aria-labelledby="description_header_power_003">
+      								<div class="description">
+        					<BLOCKQUOTE>
+										<br> Probabilities generated using: 1-hypgeom.dist(S-1, T+7 , A, 75, true)  where S = minimum influence / power needed, T = turn number, A = # of potential successes in deck.  This formula gives the sum of all probabilities representing the target number or greater successes.
+										<br> Basic assumption is 25 power cards in 75 card deck; no Warp cards or other cost- / turn-altering effects.
+										<br>
+										<br> Last update: July 20, 2017
+									</BLOCKQUOTE>
+      								</div>
+    							</div>
+  						</div>
+						<div class="data">
+    							<div class="data-description" role="tab" id="data_header_power_003">
+      								<h5 class="mb-0">
+        								<a data-toggle="collapse" data-parent="#accordion_power_003" href="#data_power_003" aria-expanded="true" aria-controls="data_power_003">
+          									Raw data
+										<span class="glyphicon glyphicon-plus-sign"></span>
+        								</a>
+      								</h5>
+    							</div>
+							<div id="data_power_003" class="collapse" role="tabpanel" aria-labelledby="data_header_power_003">
+      								<div class="data" id="first_playable_full"></div>
+    							</div>
+  						</div>
+					</div>
+					<hr>
+					<li>
+							<a href="../reference/deck_req_60.html">Deck Requirements, per Card (60%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_70.html">Deck Requirements, per Card (70%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_80.html">Deck Requirements, per Card (80%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_90.html">Deck Requirements, per Card (90%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req.html">Deck Requirements, per Card (Comparative)</a>
+						</li>
+						<li>
+							<a href="../reference/first_playable_full.html">First Playable Turn @ 25 Power</a>
+						</li>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="influence_pane">
+		<div class="container" id="influence">
+			<div class="row">
+				<div id="influence_container" class="container">
+					<p> # Influence Cards Required for 60-90% Odds of Playing Card On Curve </p>
+					<div id="table_power_003" class="table chart" style="padding: 1em;" alt="# Influence Cards Required for 60-90% Odds of Playing Card On Curve"></div>
+					<hr>
+					<p> Cards With > Average Influence Requirement / Cards Conferring Mono Advantage</p>
+					<div id="table_influence_004" class="table chart" style="padding: 1em;" alt="Cards With > Average Influence (assessed per mono faction, at each power level"></div>
+					<p class="ss"> Cards needed an influence requirement that exceeded an average of other cards at the same power cost within a given faction. </p>
+					<hr>
+					<li>
+							<a href="../reference/deck_req_60.html">Deck Requirements, per Card (60%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_70.html">Deck Requirements, per Card (70%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_80.html">Deck Requirements, per Card (80%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_90.html">Deck Requirements, per Card (90%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req.html">Deck Requirements, per Card (Comparative)</a>
+						</li>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="gameplay_pane">
+		<div class="container" id="gameplay">
+			<div class="row">
+				<div id="gameplay_container" class="container">
+					<h4><strong> </strong> - </h4>
+					<hr>
+					
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+		
+	<div class="tab-pane active" id="reference_pane">
+		<div class="container" id="reference">
+			<div class="row">
+				<div id="reference_container" class="container">
+					<h4><strong> </strong> - </h4>
+					<hr>
+					<ol>
+						<li>
+							<a href="../reference/deck_req_60.html">Deck Requirements, per Card (60%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_70.html">Deck Requirements, per Card (70%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_80.html">Deck Requirements, per Card (80%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req_90.html">Deck Requirements, per Card (90%)</a>
+						</li>
+						<li>
+							<a href="../reference/deck_req.html">Deck Requirements, per Card (Comparative)</a>
+						</li>
+						<li>
+							<a href="../reference/first_playable_full.html">First Playable Turn @ 25 Power</a>
+						</li>
+						<li>
+							<a href="../reference/power_odds.html">Table - Power Odds</a>
+						</li>
+						<li>
+							<a href="../reference/influence_odds.html">Table - Influence Odds</a>
+						</li>
+						
+						
+						
+					</ol>
+					<hr>
+					<div id="" class="" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div><!--end tab-content-->
+</div><!--end wrapper-->
+</div><!--end content-->
+</div><!--end container-2-->
+		
+	<!--static footer-->	
+	<footer class="footer">
+		<div id="twitchfooter" align="middle"> 
+			twitch.tv/kaelosthereckoning 
+		</div>
+		<hr>
+		<div id="sitelicense">
+			<div id="CCimage" align="middle">
+				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a>
+			</div>
+			<br />
+			<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">"Kaelos: The Reckoning - Eternal CCG Data Analysis"</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="kaelosthereckoning.com" property="cc:attributionName" rel="cc:attributionURL">Kaelos: The Reckoning</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.<br />
+			<br />For permissions beyond the scope of this license contact <a xmlns:cc="http://creativecommons.org/ns#" href="kaelosthereckoning@gmail.com" rel="cc:morePermissions">kaelosthereckoning@gmail.com</a>.
+		</div>	
+
+	</footer>
+	</div><!--end container-1-->
+</body>
+</div> 
+
+	
+<script>
+$('.collapse').on('shown.bs.collapse', function(){
+$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+}).on('hidden.bs.collapse', function(){
+$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+});
+</script>
+	
+<script>
+$(document).ready(function () {
+  $('[data-toggle=offcanvas]').click(function () {
+    if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+	    $('.list-group-item').attr('tabindex', '-1');
+    } else {
+	    $('.list-group-item').attr('tabindex', '');
+    }
+    $('.row-offcanvas').toggleClass('active');
+    
+  });
+});
+</script>
+</html>
