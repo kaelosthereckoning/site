@@ -15,7 +15,7 @@ google.charts.load('current', {'packages':['corechart']});
 			curveType: 'function',
 			legend: { position: 'bottom' },
 			hAxis: {
-				title: '# Units'
+				title: '# Attachments'
 			},
 			vAxis: {
 				title: 'Power Cost'
