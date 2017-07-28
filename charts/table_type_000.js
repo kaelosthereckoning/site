@@ -18,7 +18,7 @@ google.charts.load('current', {'packages':['table']});
       			//sortColumn: 3,
         	};
 
-        	var table = new google.visualization.Table(document.getElementById('table_type_001'));
+        	var table = new google.visualization.Table(document.getElementById('table_type_000'));
 
         	table.draw(data, options);
 	}
