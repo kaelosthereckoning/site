@@ -102,12 +102,32 @@
 	<script type="text/javascript" src="table_removal_001.js"></script>
 	<script type="text/javascript" src="table_removal_002.js"></script>
 	<script type="text/javascript" src="table_removal_003.js"></script>
-</head>
+	
+	<script>
+		function handleLoad(e) {
+			console.log('Loaded import: ' + e.target.href);
+		}
+		function handleError(e) {
+			console.log('Error loading import: ' + e.target.href);
+		}
+	</script>
+	
+	<link rel="import" href="http://github.io/kaelosthereckoning/site/main-nav.html" id="mainNavTemplate" onload="handleLoad(event)" onerror="handleError(event)">
+
+	</head>
+	
 <body>
 	<div class="container-1">
 		<div class="container-2">
 	<!-- Main Navigation -->
-	<div id="main_nav" role="navigation"></div>
+	<div id="main_nav" role="navigation">
+			<script>
+				var link = document.querySelector('link[rel="import"]');
+    				var content = link.import;
+    				var el = content.querySelector('.main-nav');
+				document.body.appendChild(el.cloneNode(true));
+			</script>
+			</div>
 	
 			<div class="content">
    <!--Charts - Sidebar-->
