@@ -34,5 +34,17 @@
 					                <a href="#reference_pane" class="list-group-item btn-mine" data-toggle="tab" role="tab">Reference</a>
 				          </div>
       </body>
+		      <script>
+				$(document).ready(function () {
+  				$('[data-toggle=offcanvas]').click(function () {
+    				if ($('.sidebar-offcanvas').css('background-color') == 'rgb(255, 255, 255)') {
+	    				$('.list-group-item').attr('tabindex', '-1');
+    					} else {
+	    					$('.list-group-item').attr('tabindex', '');
+    					}
+    					$('.row-offcanvas').toggleClass('active');
+    					});
+				});
+			</script>
       
 </html>
