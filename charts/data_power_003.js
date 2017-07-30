@@ -18,7 +18,7 @@ google.charts.load('current', {'packages':['table']});
       			//sortColumn: 3,
         	};
 
-        	var table = new google.visualization.Table(document.getElementById('data_deck-type_002'));
+        	var table = new google.visualization.Table(document.getElementById('data_power_003'));
 
         	table.draw(data, options);
 	}
