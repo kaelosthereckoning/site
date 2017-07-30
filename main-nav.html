@@ -38,6 +38,14 @@
 					<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" id="nav-donate" href="https://kaelosthereckoning.github.io/site/donate.html">Donate</a></li>
 				</div>
 			</nav>
+			
 		</body>
 
+				<script>
+				$('.collapse').on('shown.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-plus").removeClass("glyphicon-plus").addClass("glyphicon-minus");
+					}).on('hidden.bs.collapse', function(){
+				$(this).parent().find(".glyphicon-minus").removeClass("glyphicon-minus").addClass("glyphicon-plus");
+				});
+				</script>
 </html>
