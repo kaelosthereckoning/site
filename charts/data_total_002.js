@@ -18,7 +18,7 @@ google.charts.load('current', {'packages':['table']});
       			//sortColumn: 3,
         	};
 
-        	var table = new google.visualization.Table(document.getElementById('data_faction_001'));
+        	var table = new google.visualization.Table(document.getElementById('data_total_002'));
 
         	table.draw(data, options);
 	}
