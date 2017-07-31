@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+#nav-charts {
+background-color: #29317F !important;
+}
+
+.chart {
+	height: 300px;
+	width:100%;
+}
+
+@media (min-device-width: 768px){
+
+.chart {
+	height: 500px;
+}
+
+}
