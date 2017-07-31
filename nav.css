@@ -93,8 +93,8 @@ nav.nav-pills li a{
 
 .nav-pills li:before{
     content: "";
-	border-width: 3em 7px 0 0;
-    border-style: solid;
+	border-width: 3em 7px 0 0 !important;
+    border-style: solid !important;
 	border-color: #9EA7FF;
 	right: 0;
     position: absolute;    
@@ -127,7 +127,7 @@ nav.nav-pills li a{
 .nav-pills li:before{
     content: "";
     width: 100%;
-    border: 3px solid #9EA7FF;
+    border: 3px solid #9EA7FF !important;
     position: absolute;
     top: -5px;
     left: 0;
