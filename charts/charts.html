@@ -99,36 +99,20 @@
 	<script type="text/javascript" src="table_skills_000.js"></script>
 	
 	<script type="text/javascript" src="table_triggers_000.js"></script>
+	
+	<script>
+        $(document).ready(function() {
+          $('#main-nav').load("https://kaelosthereckoning.github.io/site/main-nav.html");
+        });
+	</script>
+	
 	</head>
 	
 <body>
 	<div class="container-1">
 		<div class="container-2">
 	<!-- Main Navigation -->
-	<div id ="main-nav">
-			<nav class="nav nav-pills nav-justified flex-column flex-sm-row nav-container main-nav">
-				<div class="nav nav-pills nav-justified flex-column flex-sm-row menu-collapse-btn" id="menu-collapse-btn">
-					<li class="nav-item" id="top" data-toggle="collapse" data-target="#collapsible-menu"><a class="flex-sm-fill text-sm-center nav-link menu" id="menu" href="#"><span class="glyphicon glyphicon-plus"></span>Menu</a></li>
-				</div>
-				<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
-					<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-home" href="https://kaelosthereckoning.github.io/site/index.html">Home</a></li>
-					<li class="nav-item dropdown">
-						<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" id="nav-topics" data-toggle="dropdown" role="button" href="#">Topics</a>
-							<ul class="dropdown-menu">
-								<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/ranked.html">Deck Construction</a>
-								<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/draft.html">Draft</a>
-								<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/tournament.html">Tournament</a>
-								<a class="dropdown-item" href="https://kaelosthereckoning.github.io/site/topics/Eternal_AI.html">Eternal AI</a>
-							</ul>
-					</li>
-					<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-analyses" href="https://kaelosthereckoning.github.io/site/analyses/analyses.html">Analyses</a></li>
-					<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-charts" href="https://kaelosthereckoning.github.io/site/charts/charts.html">Charts</a></li>
-					<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-programs" href="https://kaelosthereckoning.github.io/site/programs/programs.html">Programs</a></li>
-					<li class="nav-item"><a class="flex-sm-fill text-sm-center nav-link" id="nav-reference" href="https://kaelosthereckoning.github.io/site/reference/reference.html">Reference</a>
-					<li class="nav-item" id="bottom"><a class="flex-sm-fill text-sm-center nav-link" id="nav-donate" href="https://kaelosthereckoning.github.io/site/donate.html">Donate</a></li>
-				</div>
-			</nav>
-			</div>
+	<div id ="main-nav"></div>
 	
 			<div class="content">
    <!--Charts - Sidebar-->
