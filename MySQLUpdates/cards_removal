@@ -1,0 +1,65 @@
+UPDATE `eternal_cards` SET `removal` = 1 WHERE (
+	`[Deadly]` = 1 OR
+	`[Deal]` = 1 OR
+	`[Discard]` = 1 OR
+	`[Exhaust]` = 1 OR
+	`[Kill]` = 1 OR
+	`[Killer]` = 1 OR
+	`[Negate]` = 1 OR
+	`[Sacrifice]` = 1 OR
+	`[Silence]` = 1 OR
+	`[Slow]` = 1 OR
+	`[Steal]` = 1 OR
+	`[Stun]` = 1 OR
+	`[Transform]` = 1 OR
+	`[Teleport]` = 1 OR
+	`debuff` = 1
+	);
+UPDATE `eternal_cards` SET `[Deadly]` = 1 WHERE MATCH `cardtext` AGAINST ('"deadly"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Deal]` = 1 WHERE MATCH `cardtext` AGAINST ('"deal"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Discard]` = 1 WHERE MATCH `cardtext` AGAINST ('"discard"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Exhaust]` = 1 WHERE MATCH `cardtext` AGAINST ('"exhaust"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Kill]` = 1 WHERE MATCH `cardtext` AGAINST ('"kill"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Killer]` = 1 WHERE MATCH `cardtext` AGAINST ('"killer"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Negate]` = 1 WHERE MATCH `cardtext` AGAINST ('"negate"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Sacrifice]` = 1 WHERE MATCH `cardtext` AGAINST ('"sacrifice"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Silence]` = 1 WHERE MATCH `cardtext` AGAINST ('"silence"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Slow]` = 1 WHERE MATCH `cardtext` AGAINST ('"double the cost of a card"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Steal]` = 1 WHERE( 
+		`cardtext` LIKE '% steal %' OR 
+		`cardtext` LIKE	'%draw%enemy deck%' OR 
+		`cardtext` LIKE '%draw%enemy hand%' OR 
+		`cardtext` LIKE '%draw%enemy player_s deck%' OR
+		`cardtext` LIKE '%draw%enemy player_s hand%' OR 
+		`cardtext` LIKE '%draw%each player_s deck%' OR 
+		`cardtext` LIKE '%when an enemy unit dies_ it goes into your void%');
+UPDATE `eternal_cards` SET `[Steal]` = 0 WHERE( 
+		`cardtext` NOT LIKE '% steal %' AND 
+		`cardtext` NOT LIKE	'%draw%enemy deck%' AND 
+		`cardtext` NOT LIKE '%draw%enemy hand%' AND 
+		`cardtext` NOT LIKE '%draw%enemy player_s deck%' AND
+		`cardtext` NOT LIKE '%draw%enemy player_s hand%' AND 
+		`cardtext` NOT LIKE '%draw%each player_s deck%' AND
+		`cardtext` NOT LIKE '%when an enemy unit dies_ it goes into your void%');
+UPDATE `eternal_cards` SET `[Stun]` = 1 WHERE MATCH `cardtext` AGAINST ('"stun"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Teleport]` = 1 WHERE`cardtext` LIKE '%put%unit%into%owner_s hand%';
+UPDATE `eternal_cards` SET `[Teleport]` = 0 WHERE`cardtext` NOT LIKE '%put%unit%into%owner_s hand%';
+UPDATE `eternal_cards` SET `[Transform]` = 1 WHERE MATCH `cardtext` AGAINST ('"transform"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `debuff` = 1 WHERE( 
+		`debuffarmor` = 1 OR 
+		`debuffstrength` = 1 OR 
+		`debuffhealth` = 1 OR 
+		`debuffunit` = 1);
+UPDATE `eternal_cards` SET `debuff` = 0 WHERE( 
+		`debuffarmor` = 0 AND  
+		`debuffstrength` = 0 AND  
+		`debuffhealth` = 0 AND  
+		`debuffunit` = 0);
+UPDATE `eternal_cards` SET `debuffarmor` = 0 WHERE `cardtext` NOT LIKE '%-_[Armor]%';
+UPDATE `eternal_cards` SET `debuffstrength` = 0 WHERE `cardtext` NOT LIKE '%-_[Strength]%';
+UPDATE `eternal_cards` SET `debuffhealth` = 0 WHERE `cardtext` NOT LIKE '%-_[Health]%';
+UPDATE `eternal_cards` SET `debuffunit` = 0 WHERE `cardtext` NOT LIKE '%-_/-%';
+UPDATE `eternal_cards` SET `debuffarmor` = 1 WHERE `cardtext` LIKE '%-_[Armor]%';
+UPDATE `eternal_cards` SET `debuffstrength` = 1 WHERE `cardtext` LIKE '%-_[Strength]%';
+UPDATE `eternal_cards` SET `debuffhealth` = 1 WHERE `cardtext` LIKE '%-_[Health]%';
+UPDATE `eternal_cards` SET `debuffunit` = 1 WHERE `cardtext` LIKE '%-_/-%';
