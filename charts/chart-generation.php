@@ -553,44 +553,44 @@
 	$stonescardeckCardCycling=array();
 	$xenandeckCardCycling=array();
 	
-// declare Deck Thinning arrays			
-	$fireThinning=array();
-	$timeThinning=array();
-	$justiceThinning=array();
-	$primalThinning=array();
-	$shadowThinning=array();
-	$allThinning=array();
-	$noneThinning=array();
-	$monofireThinning=array();
-	$monotimeThinning=array();
-	$monojusticeThinning=array();
-	$monoprimalThinning=array();
-	$monoshadowThinning=array();
-	$argenportThinning=array();
-	$combreiThinning=array();
-	$elysianThinning=array();
-	$felnThinning=array();
-	$hooruThinning=array();
-	$praxisThinning=array();
-	$rakanoThinning=array();
-	$skycragThinning=array();
-	$stonescarThinning=array();
-	$xenanThinning=array();
-	$monofiredeckThinning=array();
-	$monotimedeckThinning=array();
-	$monojusticedeckThinning=array();
-	$monoprimaldeckThinning=array();
-	$monoshadowdeckThinning=array();
-	$argenportdeckThinning=array();
-	$combreideckThinning=array();
-	$elysiandeckThinning=array();
-	$felndeckThinning=array();
-	$hoorudeckThinning=array();
-	$praxisdeckThinning=array();
-	$rakanodeckThinning=array();
-	$skycragdeckThinning=array();
-	$stonescardeckThinning=array();
-	$xenandeckThinning=array();
+// declare Deck Manipulation arrays			
+	$fireManipulation=array();
+	$timeManipulation=array();
+	$justiceManipulation=array();
+	$primalManipulation=array();
+	$shadowManipulation=array();
+	$allManipulation=array();
+	$noneManipulation=array();
+	$monofireManipulation=array();
+	$monotimeManipulation=array();
+	$monojusticeManipulation=array();
+	$monoprimalManipulation=array();
+	$monoshadowManipulation=array();
+	$argenportManipulation=array();
+	$combreiManipulation=array();
+	$elysianManipulation=array();
+	$felnManipulation=array();
+	$hooruManipulation=array();
+	$praxisManipulation=array();
+	$rakanoManipulation=array();
+	$skycragManipulation=array();
+	$stonescarManipulation=array();
+	$xenanManipulation=array();
+	$monofiredeckManipulation=array();
+	$monotimedeckManipulation=array();
+	$monojusticedeckManipulation=array();
+	$monoprimaldeckManipulation=array();
+	$monoshadowdeckManipulation=array();
+	$argenportdeckManipulation=array();
+	$combreideckManipulation=array();
+	$elysiandeckManipulation=array();
+	$felndeckManipulation=array();
+	$hoorudeckManipulation=array();
+	$praxisdeckManipulation=array();
+	$rakanodeckManipulation=array();
+	$skycragdeckManipulation=array();
+	$stonescardeckManipulation=array();
+	$xenandeckManipulation=array();
 	
 	while($fireRow = mysqli_fetch_array($fireResult)){
 			array_push($powerArray, array("label" => $fireRow["1"]));
@@ -606,7 +606,7 @@
 			array_push($fireRemoval, array("value" => $fireRow["12"]));
 			array_push($fireReactive, array("value" => $fireRow["13"]));
 			array_push($fireCardCycling, array("value" => $fireRow["14"]));
-			array_push($fireThinning, array("value" => $fireRow["15"]));
+			array_push($fireManipulation, array("value" => $fireRow["15"]));
 	}
 	
 	while($timeRow = mysqli_fetch_array($timeResult)){
@@ -622,7 +622,7 @@
 			array_push($timeRemoval, array("value" => $timeRow["12"]));
 			array_push($timeReactive, array("value" => $timeRow["13"]));
 			array_push($timeCardCycling, array("value" => $timeRow["14"]));
-			array_push($timeThinning, array("value" => $timeRow["15"]));
+			array_push($timeManipulation, array("value" => $timeRow["15"]));
 	}
 
 	while($justiceRow = mysqli_fetch_array($justiceResult)){
@@ -638,7 +638,7 @@
 			array_push($justiceRemoval, array("value" => $justiceRow["12"]));
 			array_push($justiceReactive, array("value" => $justiceRow["13"]));
 			array_push($justiceCardCycling, array("value" => $justiceRow["14"]));
-			array_push($justiceThinning, array("value" => $justiceRow["15"]));
+			array_push($justiceManipulation, array("value" => $justiceRow["15"]));
 	}
 	
 	while($primalRow = mysqli_fetch_array($primalResult)){
@@ -654,7 +654,7 @@
 			array_push($primalRemoval, array("value" => $primalRow["12"]));
 			array_push($primalReactive, array("value" => $primalRow["13"]));
 			array_push($primalCardCycling, array("value" => $primalRow["14"]));
-			array_push($primalThinning, array("value" => $primalRow["15"]));
+			array_push($primalManipulation, array("value" => $primalRow["15"]));
 	}
 	
 	while($shadowRow = mysqli_fetch_array($shadowResult)){
@@ -670,7 +670,7 @@
 			array_push($shadowRemoval, array("value" => $shadowRow["12"]));
 			array_push($shadowReactive, array("value" => $shadowRow["13"]));
 			array_push($shadowCardCycling, array("value" => $shadowRow["14"]));
-			array_push($shadowThinning, array("value" => $shadowRow["15"]));
+			array_push($shadowManipulation, array("value" => $shadowRow["15"]));
 	}
 	
 	
@@ -687,7 +687,7 @@
 			array_push($allRemoval, array("value" => $allRow["12"]));
 			array_push($allReactive, array("value" => $allRow["13"]));
 			array_push($allCardCycling, array("value" => $allRow["14"]));
-			array_push($allThinning, array("value" => $allRow["15"]));
+			array_push($allManipulation, array("value" => $allRow["15"]));
 	}
 	
 	while($noneRow = mysqli_fetch_array($noneResult)){
@@ -703,7 +703,7 @@
 			array_push($noneRemoval, array("value" => $noneRow["12"]));
 			array_push($noneReactive, array("value" => $noneRow["13"]));
 			array_push($noneCardCycling, array("value" => $noneRow["14"]));
-			array_push($noneThinning, array("value" => $noneRow["15"]));
+			array_push($noneManipulation, array("value" => $noneRow["15"]));
 	}
 	
 	while($monofireRow = mysqli_fetch_array($monofireResult)){
@@ -719,7 +719,7 @@
 			array_push($monofireRemoval, array("value" => $monofireRow["12"]));
 			array_push($monofireReactive, array("value" => $monofireRow["13"]));
 			array_push($monofireCardCycling, array("value" => $monofireRow["14"]));
-			array_push($monofireThinning, array("value" => $monofireRow["15"]));
+			array_push($monofireManipulation, array("value" => $monofireRow["15"]));
 	}
 	
 	while($monotimeRow = mysqli_fetch_array($monotimeResult)){
@@ -735,7 +735,7 @@
 			array_push($monotimeRemoval, array("value" => $monotimeRow["12"]));
 			array_push($monotimeReactive, array("value" => $monotimeRow["13"]));
 			array_push($monotimeCardCycling, array("value" => $monotimeRow["14"]));
-			array_push($monotimeThinning, array("value" => $monotimeRow["15"]));
+			array_push($monotimeManipulation, array("value" => $monotimeRow["15"]));
 	}
 	
 	while($monojusticeRow = mysqli_fetch_array($monojusticeResult)){
@@ -751,7 +751,7 @@
 			array_push($monojusticeRemoval, array("value" => $monojusticeRow["12"]));
 			array_push($monojusticeReactive, array("value" => $monojusticeRow["13"]));
 			array_push($monojusticeCardCycling, array("value" => $monojusticeRow["14"]));
-			array_push($monojusticeThinning, array("value" => $monojusticeRow["15"]));
+			array_push($monojusticeManipulation, array("value" => $monojusticeRow["15"]));
 	}
 	
 	while($monoprimalRow = mysqli_fetch_array($monoprimalResult)){
@@ -767,7 +767,7 @@
 			array_push($monoprimalRemoval, array("value" => $monoprimalRow["12"]));
 			array_push($monoprimalReactive, array("value" => $monoprimalRow["13"]));
 			array_push($monoprimalCardCycling, array("value" => $monoprimalRow["14"]));
-			array_push($monoprimalThinning, array("value" => $monoprimalRow["15"]));
+			array_push($monoprimalManipulation, array("value" => $monoprimalRow["15"]));
 	}
 	
 	while($monoshadowRow = mysqli_fetch_array($monoshadowResult)){
@@ -783,7 +783,7 @@
 			array_push($monoshadowRemoval, array("value" => $monoshadowRow["12"]));
 			array_push($monoshadowReactive, array("value" => $monoshadowRow["13"]));
 			array_push($monoshadowCardCycling, array("value" => $monoshadowRow["14"]));
-			array_push($monoshadowThinning, array("value" => $monoshadowRow["15"]));
+			array_push($monoshadowManipulation, array("value" => $monoshadowRow["15"]));
 	}
 
 	while($argenportRow = mysqli_fetch_array($argenportResult)){
@@ -799,7 +799,7 @@
 			array_push($argenportRemoval, array("value" => $argenportRow["12"]));
 			array_push($argenportReactive, array("value" => $argenportRow["13"]));
 			array_push($argenportCardCycling, array("value" => $argenportRow["14"]));
-			array_push($argenportThinning, array("value" => $argenportRow["15"]));
+			array_push($argenportManipulation, array("value" => $argenportRow["15"]));
 	}
 	
 	while($combreiRow = mysqli_fetch_array($combreiResult)){
@@ -815,7 +815,7 @@
 			array_push($combreiRemoval, array("value" => $combreiRow["12"]));
 			array_push($combreiReactive, array("value" => $combreiRow["13"]));
 			array_push($combreiCardCycling, array("value" => $combreiRow["14"]));
-			array_push($combreiThinning, array("value" => $combreiRow["15"]));
+			array_push($combreiManipulation, array("value" => $combreiRow["15"]));
 	}
 	
 	while($elysianRow = mysqli_fetch_array($elysianResult)){
@@ -831,7 +831,7 @@
 			array_push($elysianRemoval, array("value" => $elysianRow["12"]));
 			array_push($elysianReactive, array("value" => $elysianRow["13"]));
 			array_push($elysianCardCycling, array("value" => $elysianRow["14"]));
-			array_push($elysianThinning, array("value" => $elysianRow["15"]));
+			array_push($elysianManipulation, array("value" => $elysianRow["15"]));
 	}
 	
 	while($felnRow = mysqli_fetch_array($felnResult)){
@@ -847,7 +847,7 @@
 			array_push($felnRemoval, array("value" => $felnRow["12"]));
 			array_push($felnReactive, array("value" => $felnRow["13"]));
 			array_push($felnCardCycling, array("value" => $felnRow["14"]));
-			array_push($felnThinning, array("value" => $felnRow["15"]));
+			array_push($felnManipulation, array("value" => $felnRow["15"]));
 	}
 	
 	while($hooruRow = mysqli_fetch_array($hooruResult)){
@@ -863,7 +863,7 @@
 			array_push($hooruRemoval, array("value" => $hooruRow["12"]));
 			array_push($hooruReactive, array("value" => $hooruRow["13"]));
 			array_push($hooruCardCycling, array("value" => $hooruRow["14"]));
-			array_push($hooruThinning, array("value" => $hooruRow["15"]));
+			array_push($hooruManipulation, array("value" => $hooruRow["15"]));
 	}
 	
 	while($praxisRow = mysqli_fetch_array($praxisResult)){
@@ -879,7 +879,7 @@
 			array_push($praxisRemoval, array("value" => $praxisRow["12"]));
 			array_push($praxisReactive, array("value" => $praxisRow["13"]));
 			array_push($praxisCardCycling, array("value" => $praxisRow["14"]));
-			array_push($praxisThinning, array("value" => $praxisRow["15"]));
+			array_push($praxisManipulation, array("value" => $praxisRow["15"]));
 	}
 	
 	while($rakanoRow = mysqli_fetch_array($rakanoResult)){
@@ -895,7 +895,7 @@
 			array_push($rakanoRemoval, array("value" => $rakanoRow["12"]));
 			array_push($rakanoReactive, array("value" => $rakanoRow["13"]));
 			array_push($rakanoCardCycling, array("value" => $rakanoRow["14"]));
-			array_push($rakanoThinning, array("value" => $rakanoRow["15"]));
+			array_push($rakanoManipulation, array("value" => $rakanoRow["15"]));
 	}
 	
 	while($skycragRow = mysqli_fetch_array($skycragResult)){
@@ -911,7 +911,7 @@
 			array_push($skycragRemoval, array("value" => $skycragRow["12"]));
 			array_push($skycragReactive, array("value" => $skycragRow["13"]));
 			array_push($skycragCardCycling, array("value" => $skycragRow["14"]));
-			array_push($skycragThinning, array("value" => $skycragRow["15"]));
+			array_push($skycragManipulation, array("value" => $skycragRow["15"]));
 	}
 	
 	while($stonescarRow = mysqli_fetch_array($stonescarResult)){
@@ -927,7 +927,7 @@
 			array_push($stonescarRemoval, array("value" => $stonescarRow["12"]));
 			array_push($stonescarReactive, array("value" => $stonescarRow["13"]));
 			array_push($stonescarCardCycling, array("value" => $stonescarRow["14"]));
-			array_push($stonescarThinning, array("value" => $stonescarRow["15"]));
+			array_push($stonescarManipulation, array("value" => $stonescarRow["15"]));
 	}
 	
 	while($xenanRow = mysqli_fetch_array($xenanResult)){
@@ -943,7 +943,7 @@
 			array_push($xenanRemoval, array("value" => $xenanRow["12"]));
 			array_push($xenanReactive, array("value" => $xenanRow["13"]));
 			array_push($xenanCardCycling, array("value" => $xenanRow["14"]));
-			array_push($xenanThinning, array("value" => $xenanRow["15"]));
+			array_push($xenanManipulation, array("value" => $xenanRow["15"]));
 	}
 	
 		while($monofiredeckRow = mysqli_fetch_array($monofiredeckResult)){
@@ -959,7 +959,7 @@
 			array_push($monofiredeckRemoval, array("value" => $monofiredeckRow["12"]));
 			array_push($monofiredeckReactive, array("value" => $monofiredeckRow["13"]));
 			array_push($monofiredeckCardCycling, array("value" => $monofiredeckRow["14"]));
-			array_push($monofiredeckThinning, array("value" => $monofiredeckRow["15"]));
+			array_push($monofiredeckManipulation, array("value" => $monofiredeckRow["15"]));
 	}
 	
 	while($monotimedeckRow = mysqli_fetch_array($monotimedeckResult)){
@@ -975,7 +975,7 @@
 			array_push($monotimedeckRemoval, array("value" => $monotimedeckRow["12"]));
 			array_push($monotimedeckReactive, array("value" => $monotimedeckRow["13"]));
 			array_push($monotimedeckCardCycling, array("value" => $monotimedeckRow["14"]));
-			array_push($monotimedeckThinning, array("value" => $monotimedeckRow["15"]));
+			array_push($monotimedeckManipulation, array("value" => $monotimedeckRow["15"]));
 	}
 	
 	while($monojusticedeckRow = mysqli_fetch_array($monojusticedeckResult)){
@@ -991,7 +991,7 @@
 			array_push($monojusticedeckRemoval, array("value" => $monojusticedeckRow["12"]));
 			array_push($monojusticedeckReactive, array("value" => $monojusticedeckRow["13"]));
 			array_push($monojusticedeckCardCycling, array("value" => $monojusticedeckRow["14"]));
-			array_push($monojusticedeckThinning, array("value" => $monojusticedeckRow["15"]));
+			array_push($monojusticedeckManipulation, array("value" => $monojusticedeckRow["15"]));
 	}
 	
 	while($monoprimaldeckRow = mysqli_fetch_array($monoprimaldeckResult)){
@@ -1007,7 +1007,7 @@
 			array_push($monoprimaldeckRemoval, array("value" => $monoprimaldeckRow["12"]));
 			array_push($monoprimaldeckReactive, array("value" => $monoprimaldeckRow["13"]));
 			array_push($monoprimaldeckCardCycling, array("value" => $monoprimaldeckRow["14"]));
-			array_push($monoprimaldeckThinning, array("value" => $monoprimaldeckRow["15"]));
+			array_push($monoprimaldeckManipulation, array("value" => $monoprimaldeckRow["15"]));
 	}
 	
 	while($monoshadowdeckRow = mysqli_fetch_array($monoshadowdeckResult)){
@@ -1023,7 +1023,7 @@
 			array_push($monoshadowdeckRemoval, array("value" => $monoshadowdeckRow["12"]));
 			array_push($monoshadowdeckReactive, array("value" => $monoshadowdeckRow["13"]));
 			array_push($monoshadowdeckCardCycling, array("value" => $monoshadowdeckRow["14"]));
-			array_push($monoshadowdeckThinning, array("value" => $monoshadowdeckRow["15"]));
+			array_push($monoshadowdeckManipulation, array("value" => $monoshadowdeckRow["15"]));
 	}
 
 	while($argenportdeckRow = mysqli_fetch_array($argenportdeckResult)){
@@ -1039,7 +1039,7 @@
 			array_push($argenportdeckRemoval, array("value" => $argenportdeckRow["12"]));
 			array_push($argenportdeckReactive, array("value" => $argenportdeckRow["13"]));
 			array_push($argenportdeckCardCycling, array("value" => $argenportdeckRow["14"]));
-			array_push($argenportdeckThinning, array("value" => $argenportdeckRow["15"]));
+			array_push($argenportdeckManipulation, array("value" => $argenportdeckRow["15"]));
 	}
 	
 	while($combreideckRow = mysqli_fetch_array($combreideckResult)){
@@ -1055,7 +1055,7 @@
 			array_push($combreideckRemoval, array("value" => $combreideckRow["12"]));
 			array_push($combreideckReactive, array("value" => $combreideckRow["13"]));
 			array_push($combreideckCardCycling, array("value" => $combreideckRow["14"]));
-			array_push($combreideckThinning, array("value" => $combreideckRow["15"]));
+			array_push($combreideckManipulation, array("value" => $combreideckRow["15"]));
 	}
 	
 	while($elysiandeckRow = mysqli_fetch_array($elysiandeckResult)){
@@ -1071,7 +1071,7 @@
 			array_push($elysiandeckRemoval, array("value" => $elysiandeckRow["12"]));
 			array_push($elysiandeckReactive, array("value" => $elysiandeckRow["13"]));
 			array_push($elysiandeckCardCycling, array("value" => $elysiandeckRow["14"]));
-			array_push($elysiandeckThinning, array("value" => $elysiandeckRow["15"]));
+			array_push($elysiandeckManipulation, array("value" => $elysiandeckRow["15"]));
 	}
 	
 	while($felndeckRow = mysqli_fetch_array($felndeckResult)){
@@ -1087,7 +1087,7 @@
 			array_push($felndeckRemoval, array("value" => $felndeckRow["12"]));
 			array_push($felndeckReactive, array("value" => $felndeckRow["13"]));
 			array_push($felndeckCardCycling, array("value" => $felndeckRow["14"]));
-			array_push($felndeckThinning, array("value" => $felndeckRow["15"]));
+			array_push($felndeckManipulation, array("value" => $felndeckRow["15"]));
 	}
 	
 	while($hoorudeckRow = mysqli_fetch_array($hoorudeckResult)){
@@ -1103,7 +1103,7 @@
 			array_push($hoorudeckRemoval, array("value" => $hoorudeckRow["12"]));
 			array_push($hoorudeckReactive, array("value" => $hoorudeckRow["13"]));
 			array_push($hoorudeckCardCycling, array("value" => $hoorudeckRow["14"]));
-			array_push($hoorudeckThinning, array("value" => $hoorudeckRow["15"]));
+			array_push($hoorudeckManipulation, array("value" => $hoorudeckRow["15"]));
 	}
 	
 	while($praxisdeckRow = mysqli_fetch_array($praxisdeckResult)){
@@ -1119,7 +1119,7 @@
 			array_push($praxisdeckRemoval, array("value" => $praxisdeckRow["12"]));
 			array_push($praxisdeckReactive, array("value" => $praxisdeckRow["13"]));
 			array_push($praxisdeckCardCycling, array("value" => $praxisdeckRow["14"]));
-			array_push($praxisdeckThinning, array("value" => $praxisdeckRow["15"]));
+			array_push($praxisdeckManipulation, array("value" => $praxisdeckRow["15"]));
 	}
 	
 	while($rakanodeckRow = mysqli_fetch_array($rakanodeckResult)){
@@ -1135,7 +1135,7 @@
 			array_push($rakanodeckRemoval, array("value" => $rakanodeckRow["12"]));
 			array_push($rakanodeckReactive, array("value" => $rakanodeckRow["13"]));
 			array_push($rakanodeckCardCycling, array("value" => $rakanodeckRow["14"]));
-			array_push($rakanodeckThinning, array("value" => $rakanodeckRow["15"]));
+			array_push($rakanodeckManipulation, array("value" => $rakanodeckRow["15"]));
 	}
 	
 	while($skycragdeckRow = mysqli_fetch_array($skycragdeckResult)){
@@ -1151,7 +1151,7 @@
 			array_push($skycragdeckRemoval, array("value" => $skycragdeckRow["12"]));
 			array_push($skycragdeckReactive, array("value" => $skycragdeckRow["13"]));
 			array_push($skycragdeckCardCycling, array("value" => $skycragdeckRow["14"]));
-			array_push($skycragdeckThinning, array("value" => $skycragdeckRow["15"]));
+			array_push($skycragdeckManipulation, array("value" => $skycragdeckRow["15"]));
 	}
 	
 	while($stonescardeckRow = mysqli_fetch_array($stonescardeckResult)){
@@ -1167,7 +1167,7 @@
 			array_push($stonescardeckRemoval, array("value" => $stonescardeckRow["12"]));
 			array_push($stonescardeckReactive, array("value" => $stonescardeckRow["13"]));
 			array_push($stonescardeckCardCycling, array("value" => $stonescardeckRow["14"]));
-			array_push($stonescardeckThinning, array("value" => $stonescardeckRow["15"]));
+			array_push($stonescardeckManipulation, array("value" => $stonescardeckRow["15"]));
 	}
 	
 	while($xenandeckRow = mysqli_fetch_array($xenandeckResult)){
@@ -1183,7 +1183,7 @@
 			array_push($xenandeckRemoval, array("value" => $xenandeckRow["12"]));
 			array_push($xenandeckReactive, array("value" => $xenandeckRow["13"]));
 			array_push($xenandeckCardCycling, array("value" => $xenandeckRow["14"]));
-			array_push($xenandeckThinning, array("value" => $xenandeckRow["15"]));
+			array_push($xenandeckManipulation, array("value" => $xenandeckRow["15"]));
 	}
 	
 	$dbhandle->close();
@@ -1582,12 +1582,12 @@
               	)
            	);
 			
-			$deckThinningData = array(
+			$deckManipulationData = array(
 				"chart" => array(
-					"caption" => "Deck Thinning Availability",
+					"caption" => "Deck Manipulation Availability",
 					"subcaption" => "per Power Cost by Deck Type",
 					"xAxisName" => "Power Cost",
-					"yAxisName" => "# Cards Providing Thinning",
+					"yAxisName" => "# Cards Providing Manipulation",
 					"showValues" => "0",
 					"paletteColors" => $deckpalette,
 					"baseFontColor" => "#131313",
@@ -2039,12 +2039,12 @@
               	)
            	);
 			
-			$factionThinningData = array(
+			$factionManipulationData = array(
 				"chart" => array(
-					"caption" => "Deck Thinning Availability",
+					"caption" => "Deck Manipulation Availability",
 					"subcaption" => "per Power Cost by Faction",
 					"xAxisName" => "Power Cost",
-					"yAxisName" => "# Cards Providing Thinning",
+					"yAxisName" => "# Cards Providing Manipulation",
 					"showValues" => "0",
 					"paletteColors" => $factionpalette,
 					"baseFontColor" => "#131313",
@@ -2496,12 +2496,12 @@
               	)
            	);
 			
-			$elementThinningData = array(
+			$elementManipulationData = array(
 				"chart" => array(
-					"caption" => "Deck Thinning Availability",
+					"caption" => "Deck Manipulation Availability",
 					"subcaption" => "per Power Cost by Element",
 					"xAxisName" => "Power Cost",
-					"yAxisName" => "# Cards Providing Thinning",
+					"yAxisName" => "# Cards Providing Manipulation",
 					"showValues" => "0",
 					"paletteColors" => $elementpalette,
 					"baseFontColor" => "#131313",
@@ -2779,23 +2779,23 @@
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckReactive)
 			);
 			
-			$deckThinningData["categories"]= array(array("category"=>$powerArray));
-			$deckThinningData["dataset"] = array(
-				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckThinning), 
-				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckThinning),
-				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckThinning),
-				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckThinning),
-				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckThinning),
-				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckThinning), 
-				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckThinning),
-				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckThinning),
-				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckThinning),
-				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckThinning),
-				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckThinning), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckThinning),
-				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckThinning),
-				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckThinning),
-				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckThinning)
+			$deckManipulationData["categories"]= array(array("category"=>$powerArray));
+			$deckManipulationData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckManipulation), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckManipulation),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckManipulation),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckManipulation),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckManipulation),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckManipulation), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckManipulation),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckManipulation),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckManipulation),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckManipulation),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckManipulation), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckManipulation),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckManipulation),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckManipulation),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckManipulation)
 			);
 			
 			$deckCardCyclingData["categories"]= array(array("category"=>$powerArray));
@@ -3028,23 +3028,23 @@
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanReactive)
 			);
 			
-			$factionThinningData["categories"]= array(array("category"=>$powerArray));
-			$factionThinningData["dataset"] = array(
-				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofireThinning), 
-				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimeThinning),
-				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticeThinning),
-				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimalThinning),
-				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowThinning),
-				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportThinning), 
-				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreiThinning),
-				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysianThinning),
-				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnThinning),
-				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruThinning),
-				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisThinning), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoThinning),
-				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragThinning),
-				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarThinning),
-				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanThinning)
+			$factionManipulationData["categories"]= array(array("category"=>$powerArray));
+			$factionManipulationData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofireManipulation), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimeManipulation),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticeManipulation),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimalManipulation),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowManipulation),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportManipulation), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreiManipulation),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysianManipulation),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnManipulation),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruManipulation),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisManipulation), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoManipulation),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragManipulation),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarManipulation),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanManipulation)
 			);
 			
 			$factionCardCyclingData["categories"]= array(array("category"=>$powerArray));
@@ -3178,14 +3178,14 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneReactive)
 			);
 			
-			$elementThinningData["categories"]= array(array("category"=>$powerArray));
-			$elementThinningData["dataset"] = array(
-				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireThinning), 
-				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeThinning),
-				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceThinning),
-				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalThinning),
-				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowThinning),
-				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneThinning)
+			$elementManipulationData["categories"]= array(array("category"=>$powerArray));
+			$elementManipulationData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireManipulation), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeManipulation),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceManipulation),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalManipulation),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowManipulation),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneManipulation)
 			);
 			
 			$elementCardCyclingData["categories"]= array(array("category"=>$powerArray));
@@ -3205,7 +3205,7 @@
 		$deckRemovalJson = json_encode($deckRemovalData);
 		$deckReactiveJson = json_encode($deckReactiveData);
 		$deckCardCyclingJson = json_encode($deckCardCyclingData);
-		$deckThinningJson = json_encode($deckThinningData);
+		$deckManipulationJson = json_encode($deckManipulationData);
 		$deckUnitsJson = json_encode($deckUnitsData);
 		$deckSpellsJson = json_encode($deckSpellsData);
 		$deckAttachmentsJson = json_encode($deckAttachmentsData);
@@ -3220,7 +3220,7 @@
 		$factionRemovalJson = json_encode($factionRemovalData);
 		$factionReactiveJson = json_encode($factionReactiveData);
 		$factionCardCyclingJson = json_encode($factionCardCyclingData);
-		$factionThinningJson = json_encode($factionThinningData);
+		$factionManipulationJson = json_encode($factionManipulationData);
 		$factionUnitsJson = json_encode($factionUnitsData);
 		$factionSpellsJson = json_encode($factionSpellsData);
 		$factionAttachmentsJson = json_encode($factionAttachmentsData);
@@ -3235,7 +3235,7 @@
 		$elementRemovalJson = json_encode($elementRemovalData);
 		$elementReactiveJson = json_encode($elementReactiveData);
 		$elementCardCyclingJson = json_encode($elementCardCyclingData);
-		$elementThinningJson = json_encode($elementThinningData);
+		$elementManipulationJson = json_encode($elementManipulationData);
 		$elementUnitsJson = json_encode($elementUnitsData);
 		$elementSpellsJson = json_encode($elementSpellsData);
 		$elementAttachmentsJson = json_encode($elementAttachmentsData);
@@ -3252,7 +3252,7 @@
 		$deckRemovalChart = new FusionCharts("mscombi2d", "deckRemoval-js" , "600", "350", "deckRemoval", "json", $deckRemovalJson);
 		$deckReactiveChart = new FusionCharts("mscombi2d", "deckReactive-js" , "600", "350", "deckReactive", "json", $deckReactiveJson);
 		$deckCardCyclingChart = new FusionCharts("mscombi2d", "deckCardCycling-js" , "600", "350", "deckCardCycling", "json", $deckCardCyclingJson);
-		$deckThinningChart = new FusionCharts("mscombi2d", "deckThinning-js" , "600", "350", "deckThinning", "json", $deckThinningJson);
+		$deckManipulationChart = new FusionCharts("mscombi2d", "deckManipulation-js" , "600", "350", "deckManipulation", "json", $deckManipulationJson);
 		$deckUnitsChart = new FusionCharts("mscombi2d", "deckUnits-js" , "600", "350", "deckUnits", "json", $deckUnitsJson);
 		$deckSpellsChart = new FusionCharts("mscombi2d", "deckSpells-js" , "600", "350", "deckSpells", "json", $deckSpellsJson);
 		$deckAttachmentsChart = new FusionCharts("mscombi2d", "deckAttachments-js" , "600", "350", "deckAttachments", "json", $deckAttachmentsJson);
@@ -3267,7 +3267,7 @@
 		$factionRemovalChart = new FusionCharts("mscombi2d", "factionRemoval-js" , "600", "350", "factionRemoval", "json", $factionRemovalJson);
 		$factionReactiveChart = new FusionCharts("mscombi2d", "factionReactive-js" , "600", "350", "factionReactive", "json", $factionReactiveJson);
 		$factionCardCyclingChart = new FusionCharts("mscombi2d", "factionCardCycling-js" , "600", "350", "factionCardCycling", "json", $factionCardCyclingJson);
-		$factionThinningChart = new FusionCharts("mscombi2d", "factionThinning-js" , "600", "350", "factionThinning", "json", $factionThinningJson);
+		$factionManipulationChart = new FusionCharts("mscombi2d", "factionManipulation-js" , "600", "350", "factionManipulation", "json", $factionManipulationJson);
 		$factionUnitsChart = new FusionCharts("mscombi2d", "factionUnits-js" , "600", "350", "factionUnits", "json", $factionUnitsJson);
 		$factionSpellsChart = new FusionCharts("mscombi2d", "factionSpells-js" , "600", "350", "factionSpells", "json", $factionSpellsJson);
 		$factionAttachmentsChart = new FusionCharts("mscombi2d", "factionAttachments-js" , "600", "350", "factionAttachments", "json", $factionAttachmentsJson);
@@ -3282,7 +3282,7 @@
 		$elementRemovalChart = new FusionCharts("mscombi2d", "elementRemoval-js" , "600", "350", "elementRemoval", "json", $elementRemovalJson);
 		$elementReactiveChart = new FusionCharts("mscombi2d", "elementReactive-js" , "600", "350", "elementReactive", "json", $elementReactiveJson);
 		$elementCardCyclingChart = new FusionCharts("mscombi2d", "elementCardCycling-js" , "600", "350", "elementCardCycling", "json", $elementCardCyclingJson);
-		$elementThinningChart = new FusionCharts("mscombi2d", "elementThinning-js" , "600", "350", "elementThinning", "json", $elementThinningJson);
+		$elementManipulationChart = new FusionCharts("mscombi2d", "elementManipulation-js" , "600", "350", "elementManipulation", "json", $elementManipulationJson);
 		$elementUnitsChart = new FusionCharts("mscombi2d", "elementUnits-js" , "600", "350", "elementUnits", "json", $elementUnitsJson);
 		$elementSpellsChart = new FusionCharts("mscombi2d", "elementSpells-js" , "600", "350", "elementSpells", "json", $elementSpellsJson);
 		$elementAttachmentsChart = new FusionCharts("mscombi2d", "elementAttachments-js" , "600", "350", "elementAttachments", "json", $elementAttachmentsJson);
@@ -3299,7 +3299,7 @@
 		$deckRemovalChart->render();
 		$deckReactiveChart->render();
 		$deckCardCyclingChart->render();
-		$deckThinningChart->render();
+		$deckManipulationChart->render();
 		$deckUnitsChart->render();
 		$deckSpellsChart->render();
 		$deckAttachmentsChart->render();
@@ -3314,7 +3314,7 @@
 		$factionRemovalChart->render();
 		$factionReactiveChart->render();
 		$factionCardCyclingChart->render();
-		$factionThinningChart->render();
+		$factionManipulationChart->render();
 		$factionUnitsChart->render();
 		$factionSpellsChart->render();
 		$factionAttachmentsChart->render();
@@ -3329,7 +3329,7 @@
 		$elementRemovalChart->render();
 		$elementReactiveChart->render();
 		$elementCardCyclingChart->render();
-		$elementThinningChart->render();
+		$elementManipulationChart->render();
 		$elementUnitsChart->render();
 		$elementSpellsChart->render();
 		$elementAttachmentsChart->render();
