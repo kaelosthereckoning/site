@@ -1192,7 +1192,7 @@
 	
 	$deckpalette = "#ff0000,#ffd700,#008000,#0000ff,#4b0082,#556B2F,#BEFF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
 	$factionpalette = "#ff0000,#ffd700,#008000,#0000ff,#4b0082,#556B2F,#BEFF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
-	$elementpalette = "#ff0000,#008000,#ffd700,#0000ff,#4b0082,#708090";
+	$influencepalette = "#ff0000,#008000,#ffd700,#0000ff,#4b0082,#708090";
 
 	
 		// deck
@@ -2109,16 +2109,16 @@
               	)
            	);
 		
-		// element
+		// influence
 		
-			$elementTotalCardsData = array(
+			$influenceTotalCardsData = array(
 				"chart" => array(
 					"caption" => "Card Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Cards",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2146,14 +2146,14 @@
               	)
            	);
 			
-			$elementUnitsData = array(
+			$influenceUnitsData = array(
 				"chart" => array(
 					"caption" => "Unit Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Units",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2181,14 +2181,14 @@
               	)
            	);
 			
-			$elementSpellsData = array(
+			$influenceSpellsData = array(
 				"chart" => array(
 					"caption" => "Spell Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Spells",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2216,14 +2216,14 @@
               	)
            	);
 			
-			$elementAttachmentsData = array(
+			$influenceAttachmentsData = array(
 				"chart" => array(
 					"caption" => "Attachment Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Attachments",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2251,14 +2251,14 @@
               	)
            	);
 			
-			$elementWeaponsData = array(
+			$influenceWeaponsData = array(
 				"chart" => array(
 					"caption" => "Weapon Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Weapons (non-relic)",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2286,14 +2286,14 @@
               	)
            	);
 			
-			$elementRelicWeaponsData = array(
+			$influenceRelicWeaponsData = array(
 				"chart" => array(
 					"caption" => "Relic Weapon Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Relic Weapons",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2321,14 +2321,14 @@
               	)
            	);
 			
-			$elementRelicsData = array(
+			$influenceRelicsData = array(
 				"chart" => array(
 					"caption" => "Relic Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Relics (non-weapon, non-cursed)",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2356,14 +2356,14 @@
               	)
            	);
 			
-			$elementCursedRelicsData = array(
+			$influenceCursedRelicsData = array(
 				"chart" => array(
 					"caption" => "Cursed Relic Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Cursed Relics",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2391,14 +2391,14 @@
               	)
            	);
 			
-			$elementCursesData = array(
+			$influenceCursesData = array(
 				"chart" => array(
 					"caption" => "Curse Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Curses (non-relic)",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2426,14 +2426,14 @@
               	)
            	);
 			
-			$elementRemovalData = array(
+			$influenceRemovalData = array(
 				"chart" => array(
 					"caption" => "Removal Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Removal Cards",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2461,14 +2461,14 @@
               	)
            	);
 			
-			$elementReactiveData = array(
+			$influenceReactiveData = array(
 				"chart" => array(
 					"caption" => "Reactive Card Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Cards Permitting Reactive Play",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2496,14 +2496,14 @@
               	)
            	);
 			
-			$elementManipulationData = array(
+			$influenceManipulationData = array(
 				"chart" => array(
 					"caption" => "Deck Manipulation Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Cards Providing Manipulation",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -2531,14 +2531,14 @@
               	)
            	);
 			
-			$elementCardCyclingData = array(
+			$influenceCardCyclingData = array(
 				"chart" => array(
 					"caption" => "Card Cycling Availability",
-					"subcaption" => "per Power Cost by Element",
+					"subcaption" => "per Power Cost by Influence",
 					"xAxisName" => "Power Cost",
 					"yAxisName" => "# Cards Providing Cycling",
 					"showValues" => "0",
-					"paletteColors" => $elementpalette,
+					"paletteColors" => $influencepalette,
 					"baseFontColor" => "#131313",
 					"labelDisplay" => "auto",
 					"bgColor" => "#ffffff",
@@ -3066,10 +3066,10 @@
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCardCycling)
 			);
 		
-		// element
+		// influence
 		
-			$elementTotalCardsData["categories"]= array(array("category"=>$powerArray));
-			$elementTotalCardsData["dataset"] = array(
+			$influenceTotalCardsData["categories"]= array(array("category"=>$powerArray));
+			$influenceTotalCardsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireTotalCards), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeTotalCards),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceTotalCards),
@@ -3078,8 +3078,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneTotalCards)
 			);
 			
-			$elementUnitsData["categories"]= array(array("category"=>$powerArray));
-			$elementUnitsData["dataset"] = array(
+			$influenceUnitsData["categories"]= array(array("category"=>$powerArray));
+			$influenceUnitsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireUnits), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeUnits),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceUnits),
@@ -3088,8 +3088,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneUnits)
 			);
 			
-			$elementSpellsData["categories"]= array(array("category"=>$powerArray));
-			$elementSpellsData["dataset"] = array(
+			$influenceSpellsData["categories"]= array(array("category"=>$powerArray));
+			$influenceSpellsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireSpells), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeSpells),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceSpells),
@@ -3098,8 +3098,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneSpells)
 			);
 			
-			$elementAttachmentsData["categories"]= array(array("category"=>$powerArray));
-			$elementAttachmentsData["dataset"] = array(
+			$influenceAttachmentsData["categories"]= array(array("category"=>$powerArray));
+			$influenceAttachmentsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireAttachments), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeAttachments),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceAttachments),
@@ -3108,8 +3108,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneAttachments)
 			);
 			
-			$elementWeaponsData["categories"]= array(array("category"=>$powerArray));
-			$elementWeaponsData["dataset"] = array(
+			$influenceWeaponsData["categories"]= array(array("category"=>$powerArray));
+			$influenceWeaponsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireWeapons), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeWeapons),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceWeapons),
@@ -3118,8 +3118,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneWeapons)
 			);
 			
-			$elementRelicWeaponsData["categories"]= array(array("category"=>$powerArray));
-			$elementRelicWeaponsData["dataset"] = array(
+			$influenceRelicWeaponsData["categories"]= array(array("category"=>$powerArray));
+			$influenceRelicWeaponsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireRelicWeapons), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeRelicWeapons),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceRelicWeapons),
@@ -3128,8 +3128,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneRelicWeapons)
 			);
 			
-			$elementRelicsData["categories"]= array(array("category"=>$powerArray));
-			$elementRelicsData["dataset"] = array(
+			$influenceRelicsData["categories"]= array(array("category"=>$powerArray));
+			$influenceRelicsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireRelics), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeRelics),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceRelics),
@@ -3138,8 +3138,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneRelics)
 			);
 			
-			$elementCursedRelicsData["categories"]= array(array("category"=>$powerArray));
-			$elementCursedRelicsData["dataset"] = array(
+			$influenceCursedRelicsData["categories"]= array(array("category"=>$powerArray));
+			$influenceCursedRelicsData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireCursedRelics), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeCursedRelics),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceCursedRelics),
@@ -3148,8 +3148,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneCursedRelics)
 			);
 			
-			$elementCursesData["categories"]= array(array("category"=>$powerArray));
-			$elementCursesData["dataset"] = array(
+			$influenceCursesData["categories"]= array(array("category"=>$powerArray));
+			$influenceCursesData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireCurses), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeCurses),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceCurses),
@@ -3158,8 +3158,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneCurses)
 			);
 			
-			$elementRemovalData["categories"]= array(array("category"=>$powerArray));
-			$elementRemovalData["dataset"] = array(
+			$influenceRemovalData["categories"]= array(array("category"=>$powerArray));
+			$influenceRemovalData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireRemoval), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeRemoval),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceRemoval),
@@ -3168,8 +3168,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneRemoval)
 			);
 			
-			$elementReactiveData["categories"]= array(array("category"=>$powerArray));
-			$elementReactiveData["dataset"] = array(
+			$influenceReactiveData["categories"]= array(array("category"=>$powerArray));
+			$influenceReactiveData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireReactive), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeReactive),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceReactive),
@@ -3178,8 +3178,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneReactive)
 			);
 			
-			$elementManipulationData["categories"]= array(array("category"=>$powerArray));
-			$elementManipulationData["dataset"] = array(
+			$influenceManipulationData["categories"]= array(array("category"=>$powerArray));
+			$influenceManipulationData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireManipulation), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeManipulation),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceManipulation),
@@ -3188,8 +3188,8 @@
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneManipulation)
 			);
 			
-			$elementCardCyclingData["categories"]= array(array("category"=>$powerArray));
-			$elementCardCyclingData["dataset"] = array(
+			$influenceCardCyclingData["categories"]= array(array("category"=>$powerArray));
+			$influenceCardCyclingData["dataset"] = array(
 				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireCardCycling), 
 				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeCardCycling),
 				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceCardCycling),
@@ -3230,20 +3230,20 @@
 		$factionCursedRelicsJson = json_encode($factionCursedRelicsData);
 		$factionCursesJson = json_encode($factionCursesData);
 		
-	// element
-		$elementTotalCardsJson = json_encode($elementTotalCardsData);
-		$elementRemovalJson = json_encode($elementRemovalData);
-		$elementReactiveJson = json_encode($elementReactiveData);
-		$elementCardCyclingJson = json_encode($elementCardCyclingData);
-		$elementManipulationJson = json_encode($elementManipulationData);
-		$elementUnitsJson = json_encode($elementUnitsData);
-		$elementSpellsJson = json_encode($elementSpellsData);
-		$elementAttachmentsJson = json_encode($elementAttachmentsData);
-		$elementWeaponsJson = json_encode($elementWeaponsData);
-		$elementRelicWeaponsJson = json_encode($elementRelicWeaponsData);
-		$elementRelicsJson = json_encode($elementRelicsData);
-		$elementCursedRelicsJson = json_encode($elementCursedRelicsData);
-		$elementCursesJson = json_encode($elementCursesData);
+	// influence
+		$influenceTotalCardsJson = json_encode($influenceTotalCardsData);
+		$influenceRemovalJson = json_encode($influenceRemovalData);
+		$influenceReactiveJson = json_encode($influenceReactiveData);
+		$influenceCardCyclingJson = json_encode($influenceCardCyclingData);
+		$influenceManipulationJson = json_encode($influenceManipulationData);
+		$influenceUnitsJson = json_encode($influenceUnitsData);
+		$influenceSpellsJson = json_encode($influenceSpellsData);
+		$influenceAttachmentsJson = json_encode($influenceAttachmentsData);
+		$influenceWeaponsJson = json_encode($influenceWeaponsData);
+		$influenceRelicWeaponsJson = json_encode($influenceRelicWeaponsData);
+		$influenceRelicsJson = json_encode($influenceRelicsData);
+		$influenceCursedRelicsJson = json_encode($influenceCursedRelicsData);
+		$influenceCursesJson = json_encode($influenceCursesData);
 
 // prepare chart div info
 
@@ -3277,20 +3277,20 @@
 		$factionCursedRelicsChart = new FusionCharts("mscombi2d", "factionCursedRelics-js" , "600", "350", "factionCursedRelics", "json", $factionCursedRelicsJson);
 		$factionCursesChart = new FusionCharts("mscombi2d", "factionTotalCards-js" , "600", "350", "faction-type_power", "json", $factionCursesJson);
 		
-	// element
-		$elementTotalCardsChart = new FusionCharts("mscombi2d", "elementCards-js" , "600", "350", "elementTotalCards", "json", $elementTotalCardsJson);
-		$elementRemovalChart = new FusionCharts("mscombi2d", "elementRemoval-js" , "600", "350", "elementRemoval", "json", $elementRemovalJson);
-		$elementReactiveChart = new FusionCharts("mscombi2d", "elementReactive-js" , "600", "350", "elementReactive", "json", $elementReactiveJson);
-		$elementCardCyclingChart = new FusionCharts("mscombi2d", "elementCardCycling-js" , "600", "350", "elementCardCycling", "json", $elementCardCyclingJson);
-		$elementManipulationChart = new FusionCharts("mscombi2d", "elementManipulation-js" , "600", "350", "elementManipulation", "json", $elementManipulationJson);
-		$elementUnitsChart = new FusionCharts("mscombi2d", "elementUnits-js" , "600", "350", "elementUnits", "json", $elementUnitsJson);
-		$elementSpellsChart = new FusionCharts("mscombi2d", "elementSpells-js" , "600", "350", "elementSpells", "json", $elementSpellsJson);
-		$elementAttachmentsChart = new FusionCharts("mscombi2d", "elementAttachments-js" , "600", "350", "elementAttachments", "json", $elementAttachmentsJson);
-		$elementWeaponsChart = new FusionCharts("mscombi2d", "elementWeapons-js" , "600", "350", "elementWeapons", "json", $elementWeaponsJson);
-		$elementRelicWeaponsChart = new FusionCharts("mscombi2d", "elementRelicWeapons-js" , "600", "350", "elementRelicWeapons", "json", $elementRelicWeaponsJson);
-		$elementRelicsChart = new FusionCharts("mscombi2d", "elementRelics-js" , "600", "350", "elementRelics", "json", $elementRelicsJson);
-		$elementCursedRelicsChart = new FusionCharts("mscombi2d", "elementCursedRelics-js" , "600", "350", "elementCursedRelics", "json", $elementCursedRelicsJson);
-		$elementCursesChart = new FusionCharts("mscombi2d", "elementTotalCards-js" , "600", "350", "element-type_power", "json", $elementCursesJson);
+	// influence
+		$influenceTotalCardsChart = new FusionCharts("mscombi2d", "influenceCards-js" , "600", "350", "influenceTotalCards", "json", $influenceTotalCardsJson);
+		$influenceRemovalChart = new FusionCharts("mscombi2d", "influenceRemoval-js" , "600", "350", "influenceRemoval", "json", $influenceRemovalJson);
+		$influenceReactiveChart = new FusionCharts("mscombi2d", "influenceReactive-js" , "600", "350", "influenceReactive", "json", $influenceReactiveJson);
+		$influenceCardCyclingChart = new FusionCharts("mscombi2d", "influenceCardCycling-js" , "600", "350", "influenceCardCycling", "json", $influenceCardCyclingJson);
+		$influenceManipulationChart = new FusionCharts("mscombi2d", "influenceManipulation-js" , "600", "350", "influenceManipulation", "json", $influenceManipulationJson);
+		$influenceUnitsChart = new FusionCharts("mscombi2d", "influenceUnits-js" , "600", "350", "influenceUnits", "json", $influenceUnitsJson);
+		$influenceSpellsChart = new FusionCharts("mscombi2d", "influenceSpells-js" , "600", "350", "influenceSpells", "json", $influenceSpellsJson);
+		$influenceAttachmentsChart = new FusionCharts("mscombi2d", "influenceAttachments-js" , "600", "350", "influenceAttachments", "json", $influenceAttachmentsJson);
+		$influenceWeaponsChart = new FusionCharts("mscombi2d", "influenceWeapons-js" , "600", "350", "influenceWeapons", "json", $influenceWeaponsJson);
+		$influenceRelicWeaponsChart = new FusionCharts("mscombi2d", "influenceRelicWeapons-js" , "600", "350", "influenceRelicWeapons", "json", $influenceRelicWeaponsJson);
+		$influenceRelicsChart = new FusionCharts("mscombi2d", "influenceRelics-js" , "600", "350", "influenceRelics", "json", $influenceRelicsJson);
+		$influenceCursedRelicsChart = new FusionCharts("mscombi2d", "influenceCursedRelics-js" , "600", "350", "influenceCursedRelics", "json", $influenceCursedRelicsJson);
+		$influenceCursesChart = new FusionCharts("mscombi2d", "influenceTotalCards-js" , "600", "350", "influence-type_power", "json", $influenceCursesJson);
 		
 // render charts
 
@@ -3324,19 +3324,19 @@
 		$factionCursedRelicsChart->render();
 		$factionCursesChart->render();
 		
-		// element
-		$elementTotalCardsChart->render();
-		$elementRemovalChart->render();
-		$elementReactiveChart->render();
-		$elementCardCyclingChart->render();
-		$elementManipulationChart->render();
-		$elementUnitsChart->render();
-		$elementSpellsChart->render();
-		$elementAttachmentsChart->render();
-		$elementWeaponsChart->render();
-		$elementRelicWeaponsChart->render();
-		$elementRelicsChart->render();
-		$elementCursedRelicsChart->render();
-		$elementCursesChart->render();
+		// influence
+		$influenceTotalCardsChart->render();
+		$influenceRemovalChart->render();
+		$influenceReactiveChart->render();
+		$influenceCardCyclingChart->render();
+		$influenceManipulationChart->render();
+		$influenceUnitsChart->render();
+		$influenceSpellsChart->render();
+		$influenceAttachmentsChart->render();
+		$influenceWeaponsChart->render();
+		$influenceRelicWeaponsChart->render();
+		$influenceRelicsChart->render();
+		$influenceCursedRelicsChart->render();
+		$influenceCursesChart->render();
 	
 ?>
