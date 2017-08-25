@@ -3489,7 +3489,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckTotalCards),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckTotalCards),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckTotalCards), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckTotalCards),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckTotalCards),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckTotalCards),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckTotalCards),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckTotalCards)
@@ -3508,7 +3508,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckUnits),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckUnits),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckUnits), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckUnits),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckUnits),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckUnits),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckUnits),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckUnits)
@@ -3527,7 +3527,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckOffense),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckOffense),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckOffense), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckOffense),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckOffense),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckOffense),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckOffense)
@@ -3546,7 +3546,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDefense),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDefense),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDefense), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckDefense),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDefense),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDefense),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDefense)
@@ -3565,7 +3565,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckSpells),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckSpells),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckSpells), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckSpells),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckSpells),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckSpells),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckSpells),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckSpells)
@@ -3584,7 +3584,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckAttachments),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckAttachments),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckAttachments), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckAttachments),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckAttachments),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckAttachments),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckAttachments),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckAttachments)
@@ -3603,7 +3603,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckWeapons)
@@ -3622,7 +3622,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRelicWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRelicWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRelicWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRelicWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRelicWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRelicWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRelicWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRelicWeapons)
@@ -3641,7 +3641,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRelics)
@@ -3660,7 +3660,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCursedRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCursedRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCursedRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCursedRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCursedRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCursedRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCursedRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCursedRelics)
@@ -3679,7 +3679,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCurses),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCurses),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCurses), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCurses),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCurses),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCurses),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCurses),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCurses)
@@ -3698,7 +3698,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRemoval),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRemoval),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRemoval), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRemoval),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRemoval),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRemoval),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRemoval),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRemoval)
@@ -3717,7 +3717,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckReactive),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckReactive),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckReactive), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckReactive),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckReactive),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckReactive),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckReactive),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckReactive)
@@ -3736,7 +3736,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckManipulation),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckManipulation),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckManipulation), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckManipulation),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckManipulation),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckManipulation),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckManipulation),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckManipulation)
@@ -3755,7 +3755,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCardCycling),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCardCycling),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCardCycling), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCardCycling),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCardCycling),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCardCycling),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCardCycling),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCardCycling)
@@ -3774,7 +3774,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDebuff),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDebuff),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDebuff), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckDebuff),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDebuff),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDebuff),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDebuff)
@@ -3793,7 +3793,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckBuff),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckBuff),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckBuff), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckBuff),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckBuff),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckBuff),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckBuff)
@@ -3812,7 +3812,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckInfluence),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckInfluence),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckInfluence), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckInfluence),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckInfluence),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckInfluence),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckInfluence)
@@ -3833,7 +3833,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnTotalCards),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruTotalCards),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisTotalCards), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowTotalCards),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoTotalCards),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragTotalCards),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarTotalCards),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanTotalCards)
@@ -3852,7 +3852,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnUnits),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruUnits),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisUnits), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowUnits),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanowUnits),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragUnits),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarUnits),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanUnits)
@@ -3871,7 +3871,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckOffense),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckOffense),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckOffense), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckOffense),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckOffense),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckOffense),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckOffense)
@@ -3890,7 +3890,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDefense),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDefense),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDefense), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckDefense),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDefense),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDefense),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDefense)
@@ -3909,7 +3909,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnSpells),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruSpells),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisSpells), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowSpells),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoSpells),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragSpells),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarSpells),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanSpells)
@@ -3928,7 +3928,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnAttachments),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruAttachments),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisAttachments), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowAttachments),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoAttachments),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragAttachments),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarAttachments),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanAttachments)
@@ -3947,7 +3947,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanWeapons)
@@ -3966,7 +3966,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRelicWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRelicWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRelicWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRelicWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRelicWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRelicWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRelicWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRelicWeapons)
@@ -3985,7 +3985,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRelics)
@@ -4004,7 +4004,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCursedRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCursedRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCursedRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCursedRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCursedRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCursedRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCursedRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCursedRelics)
@@ -4023,7 +4023,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCurses),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCurses),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCurses), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCurses),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCurses),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCurses),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCurses),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCurses)
@@ -4042,7 +4042,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRemoval),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRemoval),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRemoval), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRemoval),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRemoval),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRemoval),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRemoval),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRemoval)
@@ -4061,7 +4061,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnReactive),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruReactive),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisReactive), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowReactive),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoReactive),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragReactive),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarReactive),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanReactive)
@@ -4080,7 +4080,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnManipulation),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruManipulation),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisManipulation), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowManipulation),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoManipulation),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragManipulation),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarManipulation),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanManipulation)
@@ -4099,7 +4099,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCardCycling),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCardCycling),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCardCycling), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCardCycling),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCardCycling),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCardCycling),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCardCycling),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCardCycling)
@@ -4118,7 +4118,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDebuff),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDebuff),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDebuff), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckDebuff),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDebuff),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDebuff),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDebuff)
@@ -4137,7 +4137,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckBuff),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckBuff),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckBuff), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckBuff),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckBuff),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckBuff),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckBuff)
@@ -4156,7 +4156,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckInfluence),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckInfluence),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckInfluence), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckInfluence),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckInfluence),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckInfluence),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckInfluence)
