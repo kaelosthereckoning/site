@@ -592,6 +592,202 @@
 	$stonescardeckManipulation=array();
 	$xenandeckManipulation=array();
 	
+// declare Debuff arrays			
+	$fireDebuff=array();
+	$timeDebuff=array();
+	$justiceDebuff=array();
+	$primalDebuff=array();
+	$shadowDebuff=array();
+	$allDebuff=array();
+	$noneDebuff=array();
+	$monofireDebuff=array();
+	$monotimeDebuff=array();
+	$monojusticeDebuff=array();
+	$monoprimalDebuff=array();
+	$monoshadowDebuff=array();
+	$argenportDebuff=array();
+	$combreiDebuff=array();
+	$elysianDebuff=array();
+	$felnDebuff=array();
+	$hooruDebuff=array();
+	$praxisDebuff=array();
+	$rakanoDebuff=array();
+	$skycragDebuff=array();
+	$stonescarDebuff=array();
+	$xenanDebuff=array();
+	$monofiredeckDebuff=array();
+	$monotimedeckDebuff=array();
+	$monojusticedeckDebuff=array();
+	$monoprimaldeckDebuff=array();
+	$monoshadowdeckDebuff=array();
+	$argenportdeckDebuff=array();
+	$combreideckDebuff=array();
+	$elysiandeckDebuff=array();
+	$felndeckDebuff=array();
+	$hoorudeckDebuff=array();
+	$praxisdeckDebuff=array();
+	$rakanodeckDebuff=array();
+	$skycragdeckDebuff=array();
+	$stonescardeckDebuff=array();
+	$xenandeckDebuff=array();
+	
+// declare Buff arrays			
+	$fireBuff=array();
+	$timeBuff=array();
+	$justiceBuff=array();
+	$primalBuff=array();
+	$shadowBuff=array();
+	$allBuff=array();
+	$noneBuff=array();
+	$monofireBuff=array();
+	$monotimeBuff=array();
+	$monojusticeBuff=array();
+	$monoprimalBuff=array();
+	$monoshadowBuff=array();
+	$argenportBuff=array();
+	$combreiBuff=array();
+	$elysianBuff=array();
+	$felnBuff=array();
+	$hooruBuff=array();
+	$praxisBuff=array();
+	$rakanoBuff=array();
+	$skycragBuff=array();
+	$stonescarBuff=array();
+	$xenanBuff=array();
+	$monofiredeckBuff=array();
+	$monotimedeckBuff=array();
+	$monojusticedeckBuff=array();
+	$monoprimaldeckBuff=array();
+	$monoshadowdeckBuff=array();
+	$argenportdeckBuff=array();
+	$combreideckBuff=array();
+	$elysiandeckBuff=array();
+	$felndeckBuff=array();
+	$hoorudeckBuff=array();
+	$praxisdeckBuff=array();
+	$rakanodeckBuff=array();
+	$skycragdeckBuff=array();
+	$stonescardeckBuff=array();
+	$xenandeckBuff=array();
+	
+// declare Influence arrays			
+	$fireInfluence=array();
+	$timeInfluence=array();
+	$justiceInfluence=array();
+	$primalInfluence=array();
+	$shadowInfluence=array();
+	$allInfluence=array();
+	$noneInfluence=array();
+	$monofireInfluence=array();
+	$monotimeInfluence=array();
+	$monojusticeInfluence=array();
+	$monoprimalInfluence=array();
+	$monoshadowInfluence=array();
+	$argenportInfluence=array();
+	$combreiInfluence=array();
+	$elysianInfluence=array();
+	$felnInfluence=array();
+	$hooruInfluence=array();
+	$praxisInfluence=array();
+	$rakanoInfluence=array();
+	$skycragInfluence=array();
+	$stonescarInfluence=array();
+	$xenanInfluence=array();
+	$monofiredeckInfluence=array();
+	$monotimedeckInfluence=array();
+	$monojusticedeckInfluence=array();
+	$monoprimaldeckInfluence=array();
+	$monoshadowdeckInfluence=array();
+	$argenportdeckInfluence=array();
+	$combreideckInfluence=array();
+	$elysiandeckInfluence=array();
+	$felndeckInfluence=array();
+	$hoorudeckInfluence=array();
+	$praxisdeckInfluence=array();
+	$rakanodeckInfluence=array();
+	$skycragdeckInfluence=array();
+	$stonescardeckInfluence=array();
+	$xenandeckInfluence=array();
+	
+// declare Offense arrays			
+	$fireOffense=array();
+	$timeOffense=array();
+	$justiceOffense=array();
+	$primalOffense=array();
+	$shadowOffense=array();
+	$allOffense=array();
+	$noneOffense=array();
+	$monofireOffense=array();
+	$monotimeOffense=array();
+	$monojusticeOffense=array();
+	$monoprimalOffense=array();
+	$monoshadowOffense=array();
+	$argenportOffense=array();
+	$combreiOffense=array();
+	$elysianOffense=array();
+	$felnOffense=array();
+	$hooruOffense=array();
+	$praxisOffense=array();
+	$rakanoOffense=array();
+	$skycragOffense=array();
+	$stonescarOffense=array();
+	$xenanOffense=array();
+	$monofiredeckOffense=array();
+	$monotimedeckOffense=array();
+	$monojusticedeckOffense=array();
+	$monoprimaldeckOffense=array();
+	$monoshadowdeckOffense=array();
+	$argenportdeckOffense=array();
+	$combreideckOffense=array();
+	$elysiandeckOffense=array();
+	$felndeckOffense=array();
+	$hoorudeckOffense=array();
+	$praxisdeckOffense=array();
+	$rakanodeckOffense=array();
+	$skycragdeckOffense=array();
+	$stonescardeckOffense=array();
+	$xenandeckOffense=array();
+	
+// declare Defense arrays			
+	$fireDefense=array();
+	$timeDefense=array();
+	$justiceDefense=array();
+	$primalDefense=array();
+	$shadowDefense=array();
+	$allDefense=array();
+	$noneDefense=array();
+	$monofireDefense=array();
+	$monotimeDefense=array();
+	$monojusticeDefense=array();
+	$monoprimalDefense=array();
+	$monoshadowDefense=array();
+	$argenportDefense=array();
+	$combreiDefense=array();
+	$elysianDefense=array();
+	$felnDefense=array();
+	$hooruDefense=array();
+	$praxisDefense=array();
+	$rakanoDefense=array();
+	$skycragDefense=array();
+	$stonescarDefense=array();
+	$xenanDefense=array();
+	$monofiredeckDefense=array();
+	$monotimedeckDefense=array();
+	$monojusticedeckDefense=array();
+	$monoprimaldeckDefense=array();
+	$monoshadowdeckDefense=array();
+	$argenportdeckDefense=array();
+	$combreideckDefense=array();
+	$elysiandeckDefense=array();
+	$felndeckDefense=array();
+	$hoorudeckDefense=array();
+	$praxisdeckDefense=array();
+	$rakanodeckDefense=array();
+	$skycragdeckDefense=array();
+	$stonescardeckDefense=array();
+	$xenandeckDefense=array();
+
+// push query results into arrays
 	while($fireRow = mysqli_fetch_array($fireResult)){
 			array_push($powerArray, array("label" => $fireRow["1"]));
 			array_push($fireTotalCards, array("value" => $fireRow["3"]));
@@ -607,6 +803,11 @@
 			array_push($fireReactive, array("value" => $fireRow["13"]));
 			array_push($fireCardCycling, array("value" => $fireRow["14"]));
 			array_push($fireManipulation, array("value" => $fireRow["15"]));
+			array_push($fireDebuff, array("value" => $fireRow["16"]));
+			array_push($fireBuff, array("value" => $fireRow["17"]));
+			array_push($fireInfluence, array("value" => $fireRow["18"]));
+			array_push($fireOffense, array("value" => $fireRow["19"]));
+			array_push($fireDefense, array("value" => $fireRow["20"]));
 	}
 	
 	while($timeRow = mysqli_fetch_array($timeResult)){
@@ -623,6 +824,11 @@
 			array_push($timeReactive, array("value" => $timeRow["13"]));
 			array_push($timeCardCycling, array("value" => $timeRow["14"]));
 			array_push($timeManipulation, array("value" => $timeRow["15"]));
+			array_push($timeDebuff, array("value" => $timeRow["16"]));
+			array_push($timeBuff, array("value" => $timeRow["17"]));
+			array_push($timeInfluence, array("value" => $timeRow["18"]));
+			array_push($timeOffense, array("value" => $timeRow["19"]));
+			array_push($timeDefense, array("value" => $timeRow["20"]));
 	}
 
 	while($justiceRow = mysqli_fetch_array($justiceResult)){
@@ -639,6 +845,11 @@
 			array_push($justiceReactive, array("value" => $justiceRow["13"]));
 			array_push($justiceCardCycling, array("value" => $justiceRow["14"]));
 			array_push($justiceManipulation, array("value" => $justiceRow["15"]));
+			array_push($justiceDebuff, array("value" => $justiceRow["16"]));
+			array_push($justiceBuff, array("value" => $justiceRow["17"]));
+			array_push($justiceInfluence, array("value" => $justiceRow["18"]));
+			array_push($justiceOffense, array("value" => $justiceRow["19"]));
+			array_push($justiceDefense, array("value" => $justiceRow["20"]));
 	}
 	
 	while($primalRow = mysqli_fetch_array($primalResult)){
@@ -655,6 +866,11 @@
 			array_push($primalReactive, array("value" => $primalRow["13"]));
 			array_push($primalCardCycling, array("value" => $primalRow["14"]));
 			array_push($primalManipulation, array("value" => $primalRow["15"]));
+			array_push($primalDebuff, array("value" => $primalRow["16"]));
+			array_push($primalBuff, array("value" => $primalRow["17"]));
+			array_push($primalInfluence, array("value" => $primalRow["18"]));
+			array_push($primalOffense, array("value" => $primalRow["19"]));
+			array_push($primalDefense, array("value" => $primalRow["20"]));
 	}
 	
 	while($shadowRow = mysqli_fetch_array($shadowResult)){
@@ -671,6 +887,11 @@
 			array_push($shadowReactive, array("value" => $shadowRow["13"]));
 			array_push($shadowCardCycling, array("value" => $shadowRow["14"]));
 			array_push($shadowManipulation, array("value" => $shadowRow["15"]));
+			array_push($shadowDebuff, array("value" => $shadowRow["16"]));
+			array_push($shadowBuff, array("value" => $shadowRow["17"]));
+			array_push($shadowInfluence, array("value" => $shadowRow["18"]));
+			array_push($shadowOffense, array("value" => $shadowRow["19"]));
+			array_push($shadowDefense, array("value" => $shadowRow["20"]));
 	}
 	
 	
@@ -688,6 +909,11 @@
 			array_push($allReactive, array("value" => $allRow["13"]));
 			array_push($allCardCycling, array("value" => $allRow["14"]));
 			array_push($allManipulation, array("value" => $allRow["15"]));
+			array_push($allDebuff, array("value" => $allRow["16"]));
+			array_push($allBuff, array("value" => $allRow["17"]));
+			array_push($allInfluence, array("value" => $allRow["18"]));
+			array_push($allOffense, array("value" => $allRow["19"]));
+			array_push($allDefense, array("value" => $allRow["20"]));
 	}
 	
 	while($noneRow = mysqli_fetch_array($noneResult)){
@@ -704,9 +930,14 @@
 			array_push($noneReactive, array("value" => $noneRow["13"]));
 			array_push($noneCardCycling, array("value" => $noneRow["14"]));
 			array_push($noneManipulation, array("value" => $noneRow["15"]));
+			array_push($noneDebuff, array("value" => $noneRow["16"]));
+			array_push($noneBuff, array("value" => $noneRow["17"]));
+			array_push($noneInfluence, array("value" => $noneRow["18"]));
+			array_push($noneOffense, array("value" => $noneRow["19"]));
+			array_push($noneDefense, array("value" => $noneRow["20"]));
 	}
 	
-	while($monofireRow = mysqli_fetch_array($monofireResult)){
+while($monofireRow = mysqli_fetch_array($monofireResult)){
 			array_push($monofireTotalCards, array("value" => $monofireRow["3"]));
 			array_push($monofireUnits, array("value" => $monofireRow["4"]));
 			array_push($monofireSpells, array("value" => $monofireRow["5"]));
@@ -720,6 +951,11 @@
 			array_push($monofireReactive, array("value" => $monofireRow["13"]));
 			array_push($monofireCardCycling, array("value" => $monofireRow["14"]));
 			array_push($monofireManipulation, array("value" => $monofireRow["15"]));
+			array_push($monofireDebuff, array("value" => $monofireRow["16"]));
+			array_push($monofireBuff, array("value" => $monofireRow["17"]));
+			array_push($monofireInfluence, array("value" => $monofireRow["18"]));
+			array_push($monofireOffense, array("value" => $monofireRow["19"]));
+			array_push($monofireDefense, array("value" => $monofireRow["20"]));
 	}
 	
 	while($monotimeRow = mysqli_fetch_array($monotimeResult)){
@@ -736,6 +972,11 @@
 			array_push($monotimeReactive, array("value" => $monotimeRow["13"]));
 			array_push($monotimeCardCycling, array("value" => $monotimeRow["14"]));
 			array_push($monotimeManipulation, array("value" => $monotimeRow["15"]));
+			array_push($monotimeDebuff, array("value" => $monotimeRow["16"]));
+			array_push($monotimeBuff, array("value" => $monotimeRow["17"]));
+			array_push($monotimeInfluence, array("value" => $monotimeRow["18"]));
+			array_push($monotimeOffense, array("value" => $monotimeRow["19"]));
+			array_push($monotimeDefense, array("value" => $monotimeRow["20"]));
 	}
 	
 	while($monojusticeRow = mysqli_fetch_array($monojusticeResult)){
@@ -752,6 +993,11 @@
 			array_push($monojusticeReactive, array("value" => $monojusticeRow["13"]));
 			array_push($monojusticeCardCycling, array("value" => $monojusticeRow["14"]));
 			array_push($monojusticeManipulation, array("value" => $monojusticeRow["15"]));
+			array_push($monojusticeDebuff, array("value" => $monojusticeRow["16"]));
+			array_push($monojusticeBuff, array("value" => $monojusticeRow["17"]));
+			array_push($monojusticeInfluence, array("value" => $monojusticeRow["18"]));
+			array_push($monojusticeOffense, array("value" => $monojusticeRow["19"]));
+			array_push($monojusticeDefense, array("value" => $monojusticeRow["20"]));
 	}
 	
 	while($monoprimalRow = mysqli_fetch_array($monoprimalResult)){
@@ -768,6 +1014,11 @@
 			array_push($monoprimalReactive, array("value" => $monoprimalRow["13"]));
 			array_push($monoprimalCardCycling, array("value" => $monoprimalRow["14"]));
 			array_push($monoprimalManipulation, array("value" => $monoprimalRow["15"]));
+			array_push($monoprimalDebuff, array("value" => $monoprimalRow["16"]));
+			array_push($monoprimalBuff, array("value" => $monoprimalRow["17"]));
+			array_push($monoprimalInfluence, array("value" => $monoprimalRow["18"]));
+			array_push($monoprimalOffense, array("value" => $monoprimalRow["19"]));
+			array_push($monoprimalDefense, array("value" => $monoprimalRow["20"]));
 	}
 	
 	while($monoshadowRow = mysqli_fetch_array($monoshadowResult)){
@@ -784,6 +1035,11 @@
 			array_push($monoshadowReactive, array("value" => $monoshadowRow["13"]));
 			array_push($monoshadowCardCycling, array("value" => $monoshadowRow["14"]));
 			array_push($monoshadowManipulation, array("value" => $monoshadowRow["15"]));
+			array_push($monoshadowDebuff, array("value" => $monoshadowRow["16"]));
+			array_push($monoshadowBuff, array("value" => $monoshadowRow["17"]));
+			array_push($monoshadowInfluence, array("value" => $monoshadowRow["18"]));
+			array_push($monoshadowOffense, array("value" => $monoshadowRow["19"]));
+			array_push($monoshadowDefense, array("value" => $monoshadowRow["20"]));
 	}
 
 	while($argenportRow = mysqli_fetch_array($argenportResult)){
@@ -800,6 +1056,11 @@
 			array_push($argenportReactive, array("value" => $argenportRow["13"]));
 			array_push($argenportCardCycling, array("value" => $argenportRow["14"]));
 			array_push($argenportManipulation, array("value" => $argenportRow["15"]));
+			array_push($argenportDebuff, array("value" => $argenportRow["16"]));
+			array_push($argenportBuff, array("value" => $argenportRow["17"]));
+			array_push($argenportInfluence, array("value" => $argenportRow["18"]));
+			array_push($argenportOffense, array("value" => $argenportRow["19"]));
+			array_push($argenportDefense, array("value" => $argenportRow["20"]));
 	}
 	
 	while($combreiRow = mysqli_fetch_array($combreiResult)){
@@ -816,6 +1077,11 @@
 			array_push($combreiReactive, array("value" => $combreiRow["13"]));
 			array_push($combreiCardCycling, array("value" => $combreiRow["14"]));
 			array_push($combreiManipulation, array("value" => $combreiRow["15"]));
+			array_push($combreiDebuff, array("value" => $combreiRow["16"]));
+			array_push($combreiBuff, array("value" => $combreiRow["17"]));
+			array_push($combreiInfluence, array("value" => $combreiRow["18"]));
+			array_push($combreiOffense, array("value" => $combreiRow["19"]));
+			array_push($combreiDefense, array("value" => $combreiRow["20"]));
 	}
 	
 	while($elysianRow = mysqli_fetch_array($elysianResult)){
@@ -832,6 +1098,11 @@
 			array_push($elysianReactive, array("value" => $elysianRow["13"]));
 			array_push($elysianCardCycling, array("value" => $elysianRow["14"]));
 			array_push($elysianManipulation, array("value" => $elysianRow["15"]));
+			array_push($elysianDebuff, array("value" => $elysianRow["16"]));
+			array_push($elysianBuff, array("value" => $elysianRow["17"]));
+			array_push($elysianInfluence, array("value" => $elysianRow["18"]));
+			array_push($elysianOffense, array("value" => $elysianRow["19"]));
+			array_push($elysianDefense, array("value" => $elysianRow["20"]));
 	}
 	
 	while($felnRow = mysqli_fetch_array($felnResult)){
@@ -848,6 +1119,11 @@
 			array_push($felnReactive, array("value" => $felnRow["13"]));
 			array_push($felnCardCycling, array("value" => $felnRow["14"]));
 			array_push($felnManipulation, array("value" => $felnRow["15"]));
+			array_push($felnDebuff, array("value" => $felnRow["16"]));
+			array_push($felnBuff, array("value" => $felnRow["17"]));
+			array_push($felnInfluence, array("value" => $felnRow["18"]));
+			array_push($felnOffense, array("value" => $felnRow["19"]));
+			array_push($felnDefense, array("value" => $felnRow["20"]));
 	}
 	
 	while($hooruRow = mysqli_fetch_array($hooruResult)){
@@ -864,6 +1140,11 @@
 			array_push($hooruReactive, array("value" => $hooruRow["13"]));
 			array_push($hooruCardCycling, array("value" => $hooruRow["14"]));
 			array_push($hooruManipulation, array("value" => $hooruRow["15"]));
+			array_push($hooruDebuff, array("value" => $hooruRow["16"]));
+			array_push($hooruBuff, array("value" => $hooruRow["17"]));
+			array_push($hooruInfluence, array("value" => $hooruRow["18"]));
+			array_push($hooruOffense, array("value" => $hooruRow["19"]));
+			array_push($hooruDefense, array("value" => $hooruRow["20"]));
 	}
 	
 	while($praxisRow = mysqli_fetch_array($praxisResult)){
@@ -880,6 +1161,11 @@
 			array_push($praxisReactive, array("value" => $praxisRow["13"]));
 			array_push($praxisCardCycling, array("value" => $praxisRow["14"]));
 			array_push($praxisManipulation, array("value" => $praxisRow["15"]));
+			array_push($praxisDebuff, array("value" => $praxisRow["16"]));
+			array_push($praxisBuff, array("value" => $praxisRow["17"]));
+			array_push($praxisInfluence, array("value" => $praxisRow["18"]));
+			array_push($monoprimalOffense, array("value" => $monoprimalRow["19"]));
+			array_push($monoprimalDefense, array("value" => $monoprimalRow["20"]));
 	}
 	
 	while($rakanoRow = mysqli_fetch_array($rakanoResult)){
@@ -896,6 +1182,11 @@
 			array_push($rakanoReactive, array("value" => $rakanoRow["13"]));
 			array_push($rakanoCardCycling, array("value" => $rakanoRow["14"]));
 			array_push($rakanoManipulation, array("value" => $rakanoRow["15"]));
+			array_push($rakanoDebuff, array("value" => $rakanoRow["16"]));
+			array_push($rakanoBuff, array("value" => $rakanoRow["17"]));
+			array_push($rakanoInfluence, array("value" => $rakanoRow["18"]));
+			array_push($rakanoOffense, array("value" => $rakanoRow["19"]));
+			array_push($rakanoDefense, array("value" => $rakanoRow["20"]));
 	}
 	
 	while($skycragRow = mysqli_fetch_array($skycragResult)){
@@ -912,6 +1203,11 @@
 			array_push($skycragReactive, array("value" => $skycragRow["13"]));
 			array_push($skycragCardCycling, array("value" => $skycragRow["14"]));
 			array_push($skycragManipulation, array("value" => $skycragRow["15"]));
+			array_push($skycragDebuff, array("value" => $skycragRow["16"]));
+			array_push($skycragBuff, array("value" => $skycragRow["17"]));
+			array_push($skycragInfluence, array("value" => $skycragRow["18"]));
+			array_push($skycragOffense, array("value" => $skycragRow["19"]));
+			array_push($skycragDefense, array("value" => $skycragRow["20"]));
 	}
 	
 	while($stonescarRow = mysqli_fetch_array($stonescarResult)){
@@ -928,6 +1224,11 @@
 			array_push($stonescarReactive, array("value" => $stonescarRow["13"]));
 			array_push($stonescarCardCycling, array("value" => $stonescarRow["14"]));
 			array_push($stonescarManipulation, array("value" => $stonescarRow["15"]));
+			array_push($stonescarDebuff, array("value" => $stonescarRow["16"]));
+			array_push($stonescarBuff, array("value" => $stonescarRow["17"]));
+			array_push($stonescarInfluence, array("value" => $stonescarRow["18"]));
+			array_push($stonescarOffense, array("value" => $stonescarRow["19"]));
+			array_push($stonescarDefense, array("value" => $stonescarRow["20"]));
 	}
 	
 	while($xenanRow = mysqli_fetch_array($xenanResult)){
@@ -944,9 +1245,14 @@
 			array_push($xenanReactive, array("value" => $xenanRow["13"]));
 			array_push($xenanCardCycling, array("value" => $xenanRow["14"]));
 			array_push($xenanManipulation, array("value" => $xenanRow["15"]));
+			array_push($xenanDebuff, array("value" => $xenanRow["16"]));
+			array_push($xenanBuff, array("value" => $xenanRow["17"]));
+			array_push($xenanInfluence, array("value" => $xenanRow["18"]));
+			array_push($xenanOffense, array("value" => $xenanRow["19"]));
+			array_push($xenanDefense, array("value" => $xenanRow["20"]));
 	}
 	
-		while($monofiredeckRow = mysqli_fetch_array($monofiredeckResult)){
+	while($monofiredeckRow = mysqli_fetch_array($monofiredeckResult)){
 			array_push($monofiredeckTotalCards, array("value" => $monofiredeckRow["3"]));
 			array_push($monofiredeckUnits, array("value" => $monofiredeckRow["4"]));
 			array_push($monofiredeckSpells, array("value" => $monofiredeckRow["5"]));
@@ -960,6 +1266,11 @@
 			array_push($monofiredeckReactive, array("value" => $monofiredeckRow["13"]));
 			array_push($monofiredeckCardCycling, array("value" => $monofiredeckRow["14"]));
 			array_push($monofiredeckManipulation, array("value" => $monofiredeckRow["15"]));
+			array_push($monofiredeckDebuff, array("value" => $monofiredeckRow["16"]));
+			array_push($monofiredeckBuff, array("value" => $monofiredeckRow["17"]));
+			array_push($monofiredeckInfluence, array("value" => $monofiredeckRow["18"]));
+			array_push($monofiredeckOffense, array("value" => $monofiredeckRow["19"]));
+			array_push($monofiredeckDefense, array("value" => $monofiredeckRow["20"]));
 	}
 	
 	while($monotimedeckRow = mysqli_fetch_array($monotimedeckResult)){
@@ -976,6 +1287,11 @@
 			array_push($monotimedeckReactive, array("value" => $monotimedeckRow["13"]));
 			array_push($monotimedeckCardCycling, array("value" => $monotimedeckRow["14"]));
 			array_push($monotimedeckManipulation, array("value" => $monotimedeckRow["15"]));
+			array_push($monotimedeckDebuff, array("value" => $monotimedeckRow["16"]));
+			array_push($monotimedeckBuff, array("value" => $monotimedeckRow["17"]));
+			array_push($monotimedeckInfluence, array("value" => $monotimedeckRow["18"]));
+			array_push($monotimedeckOffense, array("value" => $monotimedeckRow["19"]));
+			array_push($monotimedeckDefense, array("value" => $monotimedeckRow["20"]));
 	}
 	
 	while($monojusticedeckRow = mysqli_fetch_array($monojusticedeckResult)){
@@ -992,6 +1308,11 @@
 			array_push($monojusticedeckReactive, array("value" => $monojusticedeckRow["13"]));
 			array_push($monojusticedeckCardCycling, array("value" => $monojusticedeckRow["14"]));
 			array_push($monojusticedeckManipulation, array("value" => $monojusticedeckRow["15"]));
+			array_push($monojusticedeckDebuff, array("value" => $monojusticedeckRow["16"]));
+			array_push($monojusticedeckBuff, array("value" => $monojusticedeckRow["17"]));
+			array_push($monojusticedeckInfluence, array("value" => $monojusticedeckRow["18"]));
+			array_push($monojusticedeckOffense, array("value" => $monojusticedeckRow["19"]));
+			array_push($monojusticedeckDefense, array("value" => $monojusticedeckRow["20"]));
 	}
 	
 	while($monoprimaldeckRow = mysqli_fetch_array($monoprimaldeckResult)){
@@ -1008,6 +1329,11 @@
 			array_push($monoprimaldeckReactive, array("value" => $monoprimaldeckRow["13"]));
 			array_push($monoprimaldeckCardCycling, array("value" => $monoprimaldeckRow["14"]));
 			array_push($monoprimaldeckManipulation, array("value" => $monoprimaldeckRow["15"]));
+			array_push($monoprimaldeckDebuff, array("value" => $monoprimaldeckRow["16"]));
+			array_push($monoprimaldeckBuff, array("value" => $monoprimaldeckRow["17"]));
+			array_push($monoprimaldeckInfluence, array("value" => $monoprimaldeckRow["18"]));
+			array_push($monoprimaldeckOffense, array("value" => $monoprimaldeckRow["19"]));
+			array_push($monoprimaldeckDefense, array("value" => $monoprimaldeckRow["20"]));
 	}
 	
 	while($monoshadowdeckRow = mysqli_fetch_array($monoshadowdeckResult)){
@@ -1024,6 +1350,11 @@
 			array_push($monoshadowdeckReactive, array("value" => $monoshadowdeckRow["13"]));
 			array_push($monoshadowdeckCardCycling, array("value" => $monoshadowdeckRow["14"]));
 			array_push($monoshadowdeckManipulation, array("value" => $monoshadowdeckRow["15"]));
+			array_push($monoshadowdeckDebuff, array("value" => $monoshadowdeckRow["16"]));
+			array_push($monoshadowdeckBuff, array("value" => $monoshadowdeckRow["17"]));
+			array_push($monoshadowdeckInfluence, array("value" => $monoshadowdeckRow["18"]));
+			array_push($monoshadowdeckOffense, array("value" => $monoshadowdeckRow["19"]));
+			array_push($monoshadowdeckDefense, array("value" => $monoshadowdeckRow["20"]));
 	}
 
 	while($argenportdeckRow = mysqli_fetch_array($argenportdeckResult)){
@@ -1040,6 +1371,11 @@
 			array_push($argenportdeckReactive, array("value" => $argenportdeckRow["13"]));
 			array_push($argenportdeckCardCycling, array("value" => $argenportdeckRow["14"]));
 			array_push($argenportdeckManipulation, array("value" => $argenportdeckRow["15"]));
+			array_push($argenportdeckDebuff, array("value" => $argenportdeckRow["16"]));
+			array_push($argenportdeckBuff, array("value" => $argenportdeckRow["17"]));
+			array_push($argenportdeckInfluence, array("value" => $argenportdeckRow["18"]));
+			array_push($argenportdeckOffense, array("value" => $argenportdeckRow["19"]));
+			array_push($argenportdeckDefense, array("value" => $argenportdeckRow["20"]));
 	}
 	
 	while($combreideckRow = mysqli_fetch_array($combreideckResult)){
@@ -1056,6 +1392,11 @@
 			array_push($combreideckReactive, array("value" => $combreideckRow["13"]));
 			array_push($combreideckCardCycling, array("value" => $combreideckRow["14"]));
 			array_push($combreideckManipulation, array("value" => $combreideckRow["15"]));
+			array_push($combreideckDebuff, array("value" => $combreideckRow["16"]));
+			array_push($combreideckBuff, array("value" => $combreideckRow["17"]));
+			array_push($combreideckInfluence, array("value" => $combreideckRow["18"]));
+			array_push($combreideckOffense, array("value" => $combreiRow["19"]));
+			array_push($combreideckDefense, array("value" => $combreiRow["20"]));
 	}
 	
 	while($elysiandeckRow = mysqli_fetch_array($elysiandeckResult)){
@@ -1072,6 +1413,11 @@
 			array_push($elysiandeckReactive, array("value" => $elysiandeckRow["13"]));
 			array_push($elysiandeckCardCycling, array("value" => $elysiandeckRow["14"]));
 			array_push($elysiandeckManipulation, array("value" => $elysiandeckRow["15"]));
+			array_push($elysiandeckDebuff, array("value" => $elysiandeckRow["16"]));
+			array_push($elysiandeckBuff, array("value" => $elysiandeckRow["17"]));
+			array_push($elysiandeckInfluence, array("value" => $elysiandeckRow["18"]));
+			array_push($elysiandeckOffense, array("value" => $elysiandeckRow["19"]));
+			array_push($elysiandeckDefense, array("value" => $elysiandeckRow["20"]));
 	}
 	
 	while($felndeckRow = mysqli_fetch_array($felndeckResult)){
@@ -1088,6 +1434,11 @@
 			array_push($felndeckReactive, array("value" => $felndeckRow["13"]));
 			array_push($felndeckCardCycling, array("value" => $felndeckRow["14"]));
 			array_push($felndeckManipulation, array("value" => $felndeckRow["15"]));
+			array_push($felndeckDebuff, array("value" => $felndeckRow["16"]));
+			array_push($felndeckBuff, array("value" => $felndeckRow["17"]));
+			array_push($felndeckInfluence, array("value" => $felndeckRow["18"]));
+			array_push($felndeckOffense, array("value" => $felndeckRow["19"]));
+			array_push($felndeckDefense, array("value" => $felndeckRow["20"]));
 	}
 	
 	while($hoorudeckRow = mysqli_fetch_array($hoorudeckResult)){
@@ -1104,6 +1455,11 @@
 			array_push($hoorudeckReactive, array("value" => $hoorudeckRow["13"]));
 			array_push($hoorudeckCardCycling, array("value" => $hoorudeckRow["14"]));
 			array_push($hoorudeckManipulation, array("value" => $hoorudeckRow["15"]));
+			array_push($hoorudeckDebuff, array("value" => $hoorudeckRow["16"]));
+			array_push($hoorudeckBuff, array("value" => $hoorudeckRow["17"]));
+			array_push($hoorudeckInfluence, array("value" => $hoorudeckRow["18"]));
+			array_push($hoorudeckOffense, array("value" => $hoorudeckRow["19"]));
+			array_push($hoorudeckDefense, array("value" => $hoorudeckRow["20"]));
 	}
 	
 	while($praxisdeckRow = mysqli_fetch_array($praxisdeckResult)){
@@ -1120,22 +1476,32 @@
 			array_push($praxisdeckReactive, array("value" => $praxisdeckRow["13"]));
 			array_push($praxisdeckCardCycling, array("value" => $praxisdeckRow["14"]));
 			array_push($praxisdeckManipulation, array("value" => $praxisdeckRow["15"]));
+			array_push($praxisdeckDebuff, array("value" => $praxisdeckRow["16"]));
+			array_push($praxisdeckBuff, array("value" => $praxisdeckRow["17"]));
+			array_push($praxisdeckInfluence, array("value" => $praxisdeckRow["18"]));
+			array_push($monoprimalOffense, array("value" => $monoprimalRow["19"]));
+			array_push($monoprimalDefense, array("value" => $monoprimalRow["20"]));
 	}
 	
-	while($rakanodeckRow = mysqli_fetch_array($rakanodeckResult)){
-			array_push($rakanodeckTotalCards, array("value" => $rakanodeckRow["3"]));
-			array_push($rakanodeckUnits, array("value" => $rakanodeckRow["4"]));
-			array_push($rakanodeckSpells, array("value" => $rakanodeckRow["5"]));
-			array_push($rakanodeckAttachments, array("value" => $rakanodeckRow["6"]));
-			array_push($rakanodeckWeapons, array("value" => $rakanodeckRow["7"]));
-			array_push($rakanodeckRelicWeapons, array("value" => $rakanodeckRow["8"]));
-			array_push($rakanodeckRelics, array("value" => $rakanodeckRow["9"]));
-			array_push($rakanodeckCursedRelics, array("value" => $rakanodeckRow["10"]));
-			array_push($rakanodeckCurses, array("value" => $rakanodeckRow["11"]));
-			array_push($rakanodeckRemoval, array("value" => $rakanodeckRow["12"]));
-			array_push($rakanodeckReactive, array("value" => $rakanodeckRow["13"]));
-			array_push($rakanodeckCardCycling, array("value" => $rakanodeckRow["14"]));
-			array_push($rakanodeckManipulation, array("value" => $rakanodeckRow["15"]));
+	while($monoshadowdeckRow = mysqli_fetch_array($monoshadowdeckResult)){
+			array_push($monoshadowdeckTotalCards, array("value" => $monoshadowdeckRow["3"]));
+			array_push($monoshadowdeckUnits, array("value" => $monoshadowdeckRow["4"]));
+			array_push($monoshadowdeckSpells, array("value" => $monoshadowdeckRow["5"]));
+			array_push($monoshadowdeckAttachments, array("value" => $monoshadowdeckRow["6"]));
+			array_push($monoshadowdeckWeapons, array("value" => $monoshadowdeckRow["7"]));
+			array_push($monoshadowdeckRelicWeapons, array("value" => $monoshadowdeckRow["8"]));
+			array_push($monoshadowdeckRelics, array("value" => $monoshadowdeckRow["9"]));
+			array_push($monoshadowdeckCursedRelics, array("value" => $monoshadowdeckRow["10"]));
+			array_push($monoshadowdeckCurses, array("value" => $monoshadowdeckRow["11"]));
+			array_push($monoshadowdeckRemoval, array("value" => $monoshadowdeckRow["12"]));
+			array_push($monoshadowdeckReactive, array("value" => $monoshadowdeckRow["13"]));
+			array_push($monoshadowdeckCardCycling, array("value" => $monoshadowdeckRow["14"]));
+			array_push($monoshadowdeckManipulation, array("value" => $monoshadowdeckRow["15"]));
+			array_push($monoshadowdeckDebuff, array("value" => $monoshadowdeckRow["16"]));
+			array_push($monoshadowdeckBuff, array("value" => $monoshadowdeckRow["17"]));
+			array_push($monoshadowdeckInfluence, array("value" => $monoshadowdeckRow["18"]));
+			array_push($monoshadowOffense, array("value" => $monoshadowRow["19"]));
+			array_push($monoshadowDefense, array("value" => $monoshadowRow["20"]));
 	}
 	
 	while($skycragdeckRow = mysqli_fetch_array($skycragdeckResult)){
@@ -1152,6 +1518,11 @@
 			array_push($skycragdeckReactive, array("value" => $skycragdeckRow["13"]));
 			array_push($skycragdeckCardCycling, array("value" => $skycragdeckRow["14"]));
 			array_push($skycragdeckManipulation, array("value" => $skycragdeckRow["15"]));
+			array_push($skycragdeckDebuff, array("value" => $skycragdeckRow["16"]));
+			array_push($skycragdeckBuff, array("value" => $skycragdeckRow["17"]));
+			array_push($skycragdeckInfluence, array("value" => $skycragdeckRow["18"]));
+			array_push($skycragdeckOffense, array("value" => $skycragdeckRow["19"]));
+			array_push($skycragdeckDefense, array("value" => $skycragdeckRow["20"]));
 	}
 	
 	while($stonescardeckRow = mysqli_fetch_array($stonescardeckResult)){
@@ -1168,6 +1539,11 @@
 			array_push($stonescardeckReactive, array("value" => $stonescardeckRow["13"]));
 			array_push($stonescardeckCardCycling, array("value" => $stonescardeckRow["14"]));
 			array_push($stonescardeckManipulation, array("value" => $stonescardeckRow["15"]));
+			array_push($stonescardeckDebuff, array("value" => $stonescardeckRow["16"]));
+			array_push($stonescardeckBuff, array("value" => $stonescardeckRow["17"]));
+			array_push($stonescardeckInfluence, array("value" => $stonescardeckRow["18"]));
+			array_push($stonescardeckOffense, array("value" => $stonescardeckRow["19"]));
+			array_push($stonescardeckDefense, array("value" => $stonescardeckRow["20"]));
 	}
 	
 	while($xenandeckRow = mysqli_fetch_array($xenandeckResult)){
@@ -1184,15 +1560,20 @@
 			array_push($xenandeckReactive, array("value" => $xenandeckRow["13"]));
 			array_push($xenandeckCardCycling, array("value" => $xenandeckRow["14"]));
 			array_push($xenandeckManipulation, array("value" => $xenandeckRow["15"]));
+			array_push($xenandeckDebuff, array("value" => $xenandeckRow["16"]));
+			array_push($xenandeckBuff, array("value" => $xenandeckRow["17"]));
+			array_push($xenandeckInfluence, array("value" => $xenandeckRow["18"]));
+			array_push($xenandeckOffense, array("value" => $xenandeckRow["19"]));
+			array_push($xenandeckDefense, array("value" => $xenandeckRow["20"]));
 	}
 	
 	$dbhandle->close();
 	
 // chart formatting
 	
-	$deckpalette = "#ff0000,#ffd700,#008000,#0000ff,#4b0082,#556B2F,#BEFF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
-	$factionpalette = "#ff0000,#ffd700,#008000,#0000ff,#4b0082,#556B2F,#BEFF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
-	$influencepalette = "#ff0000,#008000,#ffd700,#0000ff,#4b0082,#708090";
+	$deckpalette = "#FF0000,#FFD700,#008000,#0000FF,#4B0082,#556B2F,#00FF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
+	$factionpalette = "#FF0000,#FFD700,#008000,#0000FF,#4B0082,#556B2F,#00FF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
+	$influencepalette = "#ff0000,#008000,#FFD700,#0000FF,#4B0082,#708090";
 
 	
 		// deck
@@ -1264,6 +1645,76 @@
 					"showToolTip" => "1",
 					"toolTipBgColor" => "#262626",
 					"toolTipColor" => "#ffffff",	
+              	)
+           	);
+			
+			$deckOffenseData = array(
+				"chart" => array(
+					"caption" => "Offense: Average Unit Strength",
+					"subcaption" => "per Power Cost by Deck Type",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Strength (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $deckpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$deckDefenseData = array(
+				"chart" => array(
+					"caption" => "Defense: Average Unit Health",
+					"subcaption" => "per Power Cost by Deck Type",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Health (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $deckpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
               	)
            	);
 			
@@ -1651,6 +2102,111 @@
 					"toolTipColor" => "#ffffff",
               	)
            	);
+			
+			$deckDebuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Debuff Availability",
+					"subcaption" => "per Power Cost by Deck Type",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $deckpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$deckBuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Buff Availability",
+					"subcaption" => "per Power Cost by Deck Type",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $deckpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$deckInfluenceData = array(
+				"chart" => array(
+					"caption" => "Card Influence Cost (Avg)",
+					"subcaption" => "per Power Cost by Deck Type",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $deckpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
 		
 		// faction
 		
@@ -1721,6 +2277,76 @@
 					"showToolTip" => "1",
 					"toolTipBgColor" => "#262626",
 					"toolTipColor" => "#ffffff",	
+              	)
+           	);
+			
+			$factionOffenseData = array(
+				"chart" => array(
+					"caption" => "Offense: Average Unit Strength",
+					"subcaption" => "per Power Cost by Faction",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Strength (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $factionpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$factionDefenseData = array(
+				"chart" => array(
+					"caption" => "Defense: Average Unit Health",
+					"subcaption" => "per Power Cost by Faction",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Health (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $factionpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
               	)
            	);
 			
@@ -2108,6 +2734,111 @@
 					"toolTipColor" => "#ffffff",
               	)
            	);
+			
+			$factionDebuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Debuff Availability",
+					"subcaption" => "per Power Cost by Faction",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $factionpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$factionBuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Buff Availability",
+					"subcaption" => "per Power Cost by Faction",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $factionpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$factionInfluenceData = array(
+				"chart" => array(
+					"caption" => "Card Influence Cost (Avg)",
+					"subcaption" => "per Power Cost by Faction",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $factionpalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
 		
 		// influence
 		
@@ -2178,6 +2909,76 @@
 					"showToolTip" => "1",
 					"toolTipBgColor" => "#262626",
 					"toolTipColor" => "#ffffff",	
+              	)
+           	);
+			
+			$influenceOffenseData = array(
+				"chart" => array(
+					"caption" => "Offense: Average Unit Strength",
+					"subcaption" => "per Power Cost by Influence",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Strength (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $influencepalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$influenceDefenseData = array(
+				"chart" => array(
+					"caption" => "Defense: Average Unit Health",
+					"subcaption" => "per Power Cost by Influence",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "Unit Health (Avg)",
+					"showValues" => "0",
+					"paletteColors" => $influencepalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
               	)
            	);
 			
@@ -2565,6 +3366,111 @@
 					"toolTipColor" => "#ffffff",
               	)
            	);
+			
+			$influenceDebuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Debuff Availability",
+					"subcaption" => "per Power Cost by Influence",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $influencepalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$influenceBuffsData = array(
+				"chart" => array(
+					"caption" => "Stat-Buff Availability",
+					"subcaption" => "per Power Cost by Influence",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $influencepalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
+			
+			$influenceInfluenceData = array(
+				"chart" => array(
+					"caption" => "Card Influence Cost (Avg)",
+					"subcaption" => "per Power Cost by Influence",
+					"xAxisName" => "Power Cost",
+					"yAxisName" => "# Cards Providing Cycling",
+					"showValues" => "0",
+					"paletteColors" => $influencepalette,
+					"baseFontColor" => "#131313",
+					"labelDisplay" => "auto",
+					"bgColor" => "#ffffff",
+					"canvasBgColor" => "#ffffff",
+					"showcanvasborder" => "1",
+					"plotCanvasThickness" => "1",
+					"drawFullAreaBorder" => "0",
+					"showPlotBorder" => "0",
+					"showBorder" => "0",
+					"numDivLines" => "4",
+					"divLineColor" => "#262626",
+					"divLineThickness" => "1",
+					"showAlternateHGridColor" => "0",
+					"numVDivLines" => "12",
+					"vDivLineColor" => "#262626",
+					"vDivLineThickness" => "1",
+					"vDivLineDashed" => "1",
+					"showAlternateVGridColor" => "0",
+					"drawCrossLine" => "1",
+					"crossLineColor" => "#262626",
+					"plotColorinTooltip" => "1",
+					"showToolTip" => "1",
+					"toolTipBgColor" => "#262626",
+					"toolTipColor" => "#ffffff",
+              	)
+           	);
 
 // format chart series data
 	
@@ -2583,7 +3489,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckTotalCards),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckTotalCards),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckTotalCards), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckTotalCards),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckTotalCards),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckTotalCards),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckTotalCards),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckTotalCards)
@@ -2602,10 +3508,48 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckUnits),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckUnits),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckUnits), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckUnits),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckUnits),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckUnits),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckUnits),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckUnits)
+			);
+			
+			$deckOffenseData["categories"]= array(array("category"=>$powerArray));
+			$deckOffenseData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckOffense), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckOffense),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckOffense),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckOffense),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckOffense), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckOffense),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckOffense),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckOffense),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckOffense),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckOffense), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckOffense),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckOffense),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckOffense)
+			);
+			
+			$deckDefenseData["categories"]= array(array("category"=>$powerArray));
+			$deckDefenseData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckDefense), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckDefense),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckDefense),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckDefense),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckDefense), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckDefense),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckDefense),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDefense),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDefense),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDefense), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDefense),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDefense),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDefense)
 			);
 			
 			$deckSpellsData["categories"]= array(array("category"=>$powerArray));
@@ -2621,7 +3565,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckSpells),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckSpells),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckSpells), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckSpells),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckSpells),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckSpells),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckSpells),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckSpells)
@@ -2640,7 +3584,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckAttachments),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckAttachments),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckAttachments), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckAttachments),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckAttachments),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckAttachments),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckAttachments),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckAttachments)
@@ -2659,7 +3603,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckWeapons)
@@ -2678,7 +3622,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRelicWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRelicWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRelicWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRelicWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRelicWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRelicWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRelicWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRelicWeapons)
@@ -2697,7 +3641,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRelics)
@@ -2716,7 +3660,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCursedRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCursedRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCursedRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCursedRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCursedRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCursedRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCursedRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCursedRelics)
@@ -2735,7 +3679,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCurses),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCurses),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCurses), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCurses),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCurses),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCurses),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCurses),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCurses)
@@ -2754,7 +3698,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckRemoval),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckRemoval),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckRemoval), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckRemoval),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckRemoval),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckRemoval),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckRemoval),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckRemoval)
@@ -2773,7 +3717,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckReactive),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckReactive),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckReactive), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckReactive),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckReactive),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckReactive),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckReactive),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckReactive)
@@ -2792,7 +3736,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckManipulation),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckManipulation),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckManipulation), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckManipulation),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckManipulation),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckManipulation),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckManipulation),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckManipulation)
@@ -2811,10 +3755,67 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckCardCycling),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckCardCycling),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckCardCycling), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanodeckCardCycling),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckCardCycling),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckCardCycling),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckCardCycling),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckCardCycling)
+			);
+			
+			$deckDebuffsData["categories"]= array(array("category"=>$powerArray));
+			$deckDebuffsData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckDebuff), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckDebuff),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckDebuff),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckDebuff),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckDebuff), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckDebuff),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckDebuff),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDebuff),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDebuff),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDebuff), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDebuff),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDebuff),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDebuff)
+			);
+			
+			$deckBuffsData["categories"]= array(array("category"=>$powerArray));
+			$deckBuffsData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckBuff), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckBuff),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckBuff),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckBuff),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckBuff), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckBuff),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckBuff),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckBuff),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckBuff),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckBuff), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckBuff),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckBuff),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckBuff)
+			);
+			
+			$deckInfluenceData["categories"]= array(array("category"=>$powerArray));
+			$deckInfluenceData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckInfluence), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckInfluence),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckInfluence),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckInfluence),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckInfluence), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckInfluence),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckInfluence),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckInfluence),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckInfluence),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckInfluence), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckInfluence),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckInfluence),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckInfluence)
 			);
 		
 		// faction
@@ -2832,7 +3833,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnTotalCards),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruTotalCards),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisTotalCards), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoTotalCards),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowTotalCards),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragTotalCards),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarTotalCards),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanTotalCards)
@@ -2851,10 +3852,48 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnUnits),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruUnits),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisUnits), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoUnits),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowUnits),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragUnits),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarUnits),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanUnits)
+			);
+			
+			$factionOffenseData["categories"]= array(array("category"=>$powerArray));
+			$factionOffenseData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckOffense), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckOffense),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckOffense),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckOffense),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckOffense), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckOffense),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckOffense),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckOffense),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckOffense),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckOffense), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckOffense),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckOffense),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckOffense),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckOffense)
+			);
+			
+			$influenceDefenseData["categories"]= array(array("category"=>$powerArray));
+			$influenceDefenseData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckDefense), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckDefense),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckDefense),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckDefense),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckDefense), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckDefense),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckDefense),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDefense),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDefense),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDefense), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDefense),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDefense),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDefense),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDefense)
 			);
 			
 			$factionSpellsData["categories"]= array(array("category"=>$powerArray));
@@ -2870,7 +3909,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnSpells),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruSpells),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisSpells), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoSpells),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowSpells),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragSpells),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarSpells),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanSpells)
@@ -2889,7 +3928,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnAttachments),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruAttachments),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisAttachments), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoAttachments),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowAttachments),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragAttachments),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarAttachments),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanAttachments)
@@ -2908,7 +3947,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanWeapons)
@@ -2927,7 +3966,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRelicWeapons),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRelicWeapons),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRelicWeapons), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRelicWeapons),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRelicWeapons),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRelicWeapons),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRelicWeapons),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRelicWeapons)
@@ -2946,7 +3985,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRelics)
@@ -2965,7 +4004,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCursedRelics),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCursedRelics),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCursedRelics), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCursedRelics),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCursedRelics),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCursedRelics),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCursedRelics),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCursedRelics)
@@ -2984,7 +4023,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCurses),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCurses),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCurses), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCurses),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCurses),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCurses),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCurses),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCurses)
@@ -3003,7 +4042,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnRemoval),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruRemoval),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisRemoval), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoRemoval),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowRemoval),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragRemoval),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarRemoval),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanRemoval)
@@ -3022,7 +4061,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnReactive),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruReactive),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisReactive), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoReactive),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowReactive),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragReactive),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarReactive),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanReactive)
@@ -3041,7 +4080,7 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnManipulation),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruManipulation),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisManipulation), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoManipulation),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowManipulation),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragManipulation),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarManipulation),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanManipulation)
@@ -3060,10 +4099,67 @@
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnCardCycling),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruCardCycling),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisCardCycling), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoCardCycling),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowCardCycling),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragCardCycling),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarCardCycling),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanCardCycling)
+			);
+			
+			$factionDebuffsData["categories"]= array(array("category"=>$powerArray));
+			$factionDebuffsData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckDebuff), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckDebuff),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckDebuff),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckDebuff),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckDebuff), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckDebuff),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckDebuff),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckDebuff),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckDebuff),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckDebuff), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckDebuff),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckDebuff),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckDebuff),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckDebuff)
+			);
+			
+			$factionBuffsData["categories"]= array(array("category"=>$powerArray));
+			$factionBuffsData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckBuff), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckBuff),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckBuff),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckBuff),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckBuff), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckBuff),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckBuff),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckBuff),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckBuff),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckBuff), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckBuff),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckBuff),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckBuff),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckBuff)
+			);
+			
+			$factionInfluenceData["categories"]= array(array("category"=>$powerArray));
+			$factionInfluenceData["dataset"] = array(
+				array("seriesName"=> "Mono Fire",  "renderAs"=>"line", "data"=>$monofiredeckInfluence), 
+				array("seriesName"=> "Mono Time",  "renderAs"=>"line", "data"=>$monotimedeckInfluence),
+				array("seriesName"=> "Mono Justice",  "renderAs"=>"line", "data"=>$monojusticedeckInfluence),
+				array("seriesName"=> "Mono Primal",  "renderAs"=>"line", "data"=>$monoprimaldeckInfluence),
+				array("seriesName"=> "Mono Shadow",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Argenport",  "renderAs"=>"line", "data"=>$argenportdeckInfluence), 
+				array("seriesName"=> "Combrei",  "renderAs"=>"line", "data"=>$combreideckInfluence),
+				array("seriesName"=> "Elysian",  "renderAs"=>"line", "data"=>$elysiandeckInfluence),
+				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felndeckInfluence),
+				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hoorudeckInfluence),
+				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisdeckInfluence), 
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$monoshadowdeckInfluence),
+				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragdeckInfluence),
+				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescardeckInfluence),
+				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenandeckInfluence)
 			);
 		
 		// influence
@@ -3086,6 +4182,26 @@
 				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalUnits),
 				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowUnits),
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneUnits)
+			);
+			
+			$influenceOffenseData["categories"]= array(array("category"=>$powerArray));
+			$influenceOffenseData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireOffense), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeOffense),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceOffense),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalOffense),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowOffense),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneOffense)
+			);
+			
+			$influenceDefenseData["categories"]= array(array("category"=>$powerArray));
+			$influenceDefenseData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireDefense), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeDefense),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceDefense),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalDefense),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowDefense),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneDefense)
 			);
 			
 			$influenceSpellsData["categories"]= array(array("category"=>$powerArray));
@@ -3197,6 +4313,36 @@
 				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowCardCycling),
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneCardCycling)
 			);
+			
+			$influenceDebuffsData["categories"]= array(array("category"=>$powerArray));
+			$influenceDebuffsData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireDebuff), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeDebuff),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceDebuff),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalDebuff),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowDebuff),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneDebuff)
+			);
+			
+			$influenceBuffsData["categories"]= array(array("category"=>$powerArray));
+			$influenceBuffsData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireBuff), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeBuff),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceBuff),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalBuff),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowBuff),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneBuff)
+			);
+			
+			$influenceInfluenceData["categories"]= array(array("category"=>$powerArray));
+			$influenceInfluenceData["dataset"] = array(
+				array("seriesName"=> "Fire",  "renderAs"=>"line", "data"=>$fireInfluence), 
+				array("seriesName"=> "Time",  "renderAs"=>"line", "data"=>$timeInfluence),
+				array("seriesName"=> "Justice",  "renderAs"=>"line", "data"=>$justiceInfluence),
+				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalInfluence),
+				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowInfluence),
+				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneInfluence)
+			);
 
 // encode arrays as json
 
@@ -3214,6 +4360,11 @@
 		$deckRelicsJson = json_encode($deckRelicsData);
 		$deckCursedRelicsJson = json_encode($deckCursedRelicsData);
 		$deckCursesJson = json_encode($deckCursesData);
+		$deckBuffsJson = json_encode($deckBuffsData);
+		$deckDebuffsJson = json_encode($deckDebuffsData);
+		$deckInfluenceJson = json_encode($deckInfluenceData);
+		$deckOffenseJson = json_encode($deckOffenseData);
+		$deckDefenseJson = json_encode($deckDefenseData);
 		
 	// faction
 		$factionTotalCardsJson = json_encode($factionTotalCardsData);
@@ -3229,6 +4380,11 @@
 		$factionRelicsJson = json_encode($factionRelicsData);
 		$factionCursedRelicsJson = json_encode($factionCursedRelicsData);
 		$factionCursesJson = json_encode($factionCursesData);
+		$factionBuffsJson = json_encode($factionBuffsData);
+		$factionDebuffsJson = json_encode($factionDebuffsData);
+		$factionInfluenceJson = json_encode($factionInfluenceData);
+		$factionOffenseJson = json_encode($factionOffenseData);
+		$factionDefenseJson = json_encode($factionDefenseData);
 		
 	// influence
 		$influenceTotalCardsJson = json_encode($influenceTotalCardsData);
@@ -3244,6 +4400,11 @@
 		$influenceRelicsJson = json_encode($influenceRelicsData);
 		$influenceCursedRelicsJson = json_encode($influenceCursedRelicsData);
 		$influenceCursesJson = json_encode($influenceCursesData);
+		$influenceBuffsJson = json_encode($influenceBuffsData);
+		$influenceDebuffsJson = json_encode($influenceDebuffsData);
+		$influenceInfluenceJson = json_encode($influenceInfluenceData);
+		$influenceOffenseJson = json_encode($influenceOffenseData);
+		$influenceDefenseJson = json_encode($influenceDefenseData);
 
 // prepare chart div info
 
@@ -3260,7 +4421,12 @@
 		$deckRelicWeaponsChart = new FusionCharts("mscombi2d", "deckRelicWeapons-js" , "600", "350", "deckRelicWeapons", "json", $deckRelicWeaponsJson);
 		$deckRelicsChart = new FusionCharts("mscombi2d", "deckRelics-js" , "600", "350", "deckRelics", "json", $deckRelicsJson);
 		$deckCursedRelicsChart = new FusionCharts("mscombi2d", "deckCursedRelics-js" , "600", "350", "deckCursedRelics", "json", $deckCursedRelicsJson);
-		$deckCursesChart = new FusionCharts("mscombi2d", "deckTotalCards-js" , "600", "350", "deck-type_power", "json", $deckCursesJson);
+		$deckCursesChart = new FusionCharts("mscombi2d", "deckCurses-js" , "600", "350", "deckCurses", "json", $deckCursesJson);
+		$deckBuffsChart = new FusionCharts("mscombi2d", "deckBuffs-js" , "600", "350", "deckBuffs", "json", $deckBuffsJson);
+		$deckDebuffsChart = new FusionCharts("mscombi2d", "deckDebuffs-js" , "600", "350", "deckDebuffs", "json", $deckDebuffsJson);
+		$deckInfluenceChart = new FusionCharts("mscombi2d", "deckInfluence-js" , "600", "350", "deckInfluence", "json", $deckInfluenceJson);
+		$deckOffenseChart = new FusionCharts("mscombi2d", "deckOffense-js" , "600", "350", "deckOffense", "json", $deckOffenseJson);
+		$deckDefenseChart = new FusionCharts("mscombi2d", "deckDefense-js" , "600", "350", "deckDefense", "json", $deckDefenseJson);
 		
 	// faction
 		$factionTotalCardsChart = new FusionCharts("mscombi2d", "factionCards-js" , "600", "350", "factionTotalCards", "json", $factionTotalCardsJson);
@@ -3275,7 +4441,12 @@
 		$factionRelicWeaponsChart = new FusionCharts("mscombi2d", "factionRelicWeapons-js" , "600", "350", "factionRelicWeapons", "json", $factionRelicWeaponsJson);
 		$factionRelicsChart = new FusionCharts("mscombi2d", "factionRelics-js" , "600", "350", "factionRelics", "json", $factionRelicsJson);
 		$factionCursedRelicsChart = new FusionCharts("mscombi2d", "factionCursedRelics-js" , "600", "350", "factionCursedRelics", "json", $factionCursedRelicsJson);
-		$factionCursesChart = new FusionCharts("mscombi2d", "factionTotalCards-js" , "600", "350", "faction-type_power", "json", $factionCursesJson);
+		$factionCursesChart = new FusionCharts("mscombi2d", "factionCurses-js" , "600", "350", "factionCurses", "json", $factionCursesJson);
+		$factionBuffsChart = new FusionCharts("mscombi2d", "factionBuffs-js" , "600", "350", "factionBuffs", "json", $factionBuffsJson);
+		$factionDebuffsChart = new FusionCharts("mscombi2d", "factionDebuffs-js" , "600", "350", "factionDebuffs", "json", $factionDebuffsJson);
+		$factionInfluenceChart = new FusionCharts("mscombi2d", "factionInfluence-js" , "600", "350", "factionInfluence", "json", $factionInfluenceJson);
+		$factionOffenseChart = new FusionCharts("mscombi2d", "factionOffense-js" , "600", "350", "factionOffense", "json", $factionOffenseJson);
+		$factionDefenseChart = new FusionCharts("mscombi2d", "factionDefense-js" , "600", "350", "factionDefense", "json", $factionDefenseJson);
 		
 	// influence
 		$influenceTotalCardsChart = new FusionCharts("mscombi2d", "influenceCards-js" , "600", "350", "influenceTotalCards", "json", $influenceTotalCardsJson);
@@ -3290,7 +4461,12 @@
 		$influenceRelicWeaponsChart = new FusionCharts("mscombi2d", "influenceRelicWeapons-js" , "600", "350", "influenceRelicWeapons", "json", $influenceRelicWeaponsJson);
 		$influenceRelicsChart = new FusionCharts("mscombi2d", "influenceRelics-js" , "600", "350", "influenceRelics", "json", $influenceRelicsJson);
 		$influenceCursedRelicsChart = new FusionCharts("mscombi2d", "influenceCursedRelics-js" , "600", "350", "influenceCursedRelics", "json", $influenceCursedRelicsJson);
-		$influenceCursesChart = new FusionCharts("mscombi2d", "influenceTotalCards-js" , "600", "350", "influence-type_power", "json", $influenceCursesJson);
+		$influenceCursesChart = new FusionCharts("mscombi2d", "influenceCurses-js" , "600", "350", "influenceCurses", "json", $influenceCursesJson);
+		$influenceBuffsChart = new FusionCharts("mscombi2d", "influenceBuffs-js" , "600", "350", "influenceBuffs", "json", $influenceBuffsJson);
+		$influenceDebuffsChart = new FusionCharts("mscombi2d", "influenceDebuffs-js" , "600", "350", "influenceDebuffs", "json", $influenceDebuffsJson);
+		$influenceInfluenceChart = new FusionCharts("mscombi2d", "influenceInfluence-js" , "600", "350", "influenceInfluence", "json", $influenceInfluenceJson);
+		$influenceOffenseChart = new FusionCharts("mscombi2d", "influenceOffense-js" , "600", "350", "influenceOffense", "json", $influenceOffenseJson);
+		$influenceDefenseChart = new FusionCharts("mscombi2d", "influenceDefense-js" , "600", "350", "influenceDefense", "json", $influenceDefenseJson);
 		
 // render charts
 
@@ -3308,6 +4484,11 @@
 		$deckRelicsChart->render();
 		$deckCursedRelicsChart->render();
 		$deckCursesChart->render();
+		$deckDebuffsChart->render();
+		$deckBuffsChart->render();
+		$deckInfluenceChart->render();
+		$deckOffenseChart->render();
+		$deckDefenseChart->render();
 		
 		// faction
 		$factionTotalCardsChart->render();
@@ -3323,6 +4504,11 @@
 		$factionRelicsChart->render();
 		$factionCursedRelicsChart->render();
 		$factionCursesChart->render();
+		$factionDebuffsChart->render();
+		$factionBuffsChart->render();
+		$factionInfluenceChart->render();
+		$factionOffenseChart->render();
+		$factionDefenseChart->render();
 		
 		// influence
 		$influenceTotalCardsChart->render();
@@ -3338,5 +4524,10 @@
 		$influenceRelicsChart->render();
 		$influenceCursedRelicsChart->render();
 		$influenceCursesChart->render();
+		$influenceDebuffsChart->render();
+		$influenceBuffsChart->render();
+		$influenceInfluenceChart->render();
+		$influenceOffenseChart->render();
+		$influenceDefenseChart->render();
 	
 ?>
