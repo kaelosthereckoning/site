@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+.chart {
+	height: 350px;
+	width: calc(100%-10px);
+}
