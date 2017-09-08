@@ -1479,29 +1479,29 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 			array_push($praxisdeckDebuff, array("value" => $praxisdeckRow["16"]));
 			array_push($praxisdeckBuff, array("value" => $praxisdeckRow["17"]));
 			array_push($praxisdeckInfluence, array("value" => $praxisdeckRow["18"]));
-			array_push($monoprimalOffense, array("value" => $monoprimalRow["19"]));
-			array_push($monoprimalDefense, array("value" => $monoprimalRow["20"]));
+			array_push($praxisdeckOffense, array("value" => $praxisdeckRow["19"]));
+			array_push($praxisdeckDefense, array("value" => $praxisdeckRow["20"]));
 	}
 	
-	while($monoshadowdeckRow = mysqli_fetch_array($monoshadowdeckResult)){
-			array_push($monoshadowdeckTotalCards, array("value" => $monoshadowdeckRow["3"]));
-			array_push($monoshadowdeckUnits, array("value" => $monoshadowdeckRow["4"]));
-			array_push($monoshadowdeckSpells, array("value" => $monoshadowdeckRow["5"]));
-			array_push($monoshadowdeckAttachments, array("value" => $monoshadowdeckRow["6"]));
-			array_push($monoshadowdeckWeapons, array("value" => $monoshadowdeckRow["7"]));
-			array_push($monoshadowdeckRelicWeapons, array("value" => $monoshadowdeckRow["8"]));
-			array_push($monoshadowdeckRelics, array("value" => $monoshadowdeckRow["9"]));
-			array_push($monoshadowdeckCursedRelics, array("value" => $monoshadowdeckRow["10"]));
-			array_push($monoshadowdeckCurses, array("value" => $monoshadowdeckRow["11"]));
-			array_push($monoshadowdeckRemoval, array("value" => $monoshadowdeckRow["12"]));
-			array_push($monoshadowdeckReactive, array("value" => $monoshadowdeckRow["13"]));
-			array_push($monoshadowdeckCardCycling, array("value" => $monoshadowdeckRow["14"]));
-			array_push($monoshadowdeckManipulation, array("value" => $monoshadowdeckRow["15"]));
-			array_push($monoshadowdeckDebuff, array("value" => $monoshadowdeckRow["16"]));
-			array_push($monoshadowdeckBuff, array("value" => $monoshadowdeckRow["17"]));
-			array_push($monoshadowdeckInfluence, array("value" => $monoshadowdeckRow["18"]));
-			array_push($monoshadowOffense, array("value" => $monoshadowRow["19"]));
-			array_push($monoshadowDefense, array("value" => $monoshadowRow["20"]));
+	while($rakanodeckRow = mysqli_fetch_array($rakanodeckResult)){
+			array_push($rakanodeckTotalCards, array("value" => $rakanodeckRow["3"]));
+			array_push($rakanodeckUnits, array("value" => $rakanodeckRow["4"]));
+			array_push($rakanodeckSpells, array("value" => $rakanodeckRow["5"]));
+			array_push($rakanodeckAttachments, array("value" => $rakanodeckRow["6"]));
+			array_push($rakanodeckWeapons, array("value" => $rakanodeckRow["7"]));
+			array_push($rakanodeckRelicWeapons, array("value" => $rakanodeckRow["8"]));
+			array_push($rakanodeckRelics, array("value" => $rakanodeckRow["9"]));
+			array_push($rakanodeckCursedRelics, array("value" => $rakanodeckRow["10"]));
+			array_push($rakanodeckCurses, array("value" => $rakanodeckRow["11"]));
+			array_push($rakanodeckRemoval, array("value" => $rakanodeckRow["12"]));
+			array_push($rakanodeckReactive, array("value" => $rakanodeckRow["13"]));
+			array_push($rakanodeckCardCycling, array("value" => $rakanodeckRow["14"]));
+			array_push($rakanodeckManipulation, array("value" => $rakanodeckRow["15"]));
+			array_push($rakanodeckDebuff, array("value" => $rakanodeckRow["16"]));
+			array_push($rakanodeckBuff, array("value" => $rakanodeckRow["17"]));
+			array_push($rakanodeckInfluence, array("value" => $rakanodeckRow["18"]));
+			array_push($rakanodeckOffense, array("value" => $rakanodeckRow["19"]));
+			array_push($rakanodeckDefense, array("value" => $rakanodeckRow["20"]));
 	}
 	
 	while($skycragdeckRow = mysqli_fetch_array($skycragdeckResult)){
@@ -3852,7 +3852,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Feln",  "renderAs"=>"line", "data"=>$felnUnits),
 				array("seriesName"=> "Hooru",  "renderAs"=>"line", "data"=>$hooruUnits),
 				array("seriesName"=> "Praxis",  "renderAs"=>"line", "data"=>$praxisUnits), 
-				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanowUnits),
+				array("seriesName"=> "Rakano",  "renderAs"=>"line", "data"=>$rakanoUnits),
 				array("seriesName"=> "Skycrag",  "renderAs"=>"line", "data"=>$skycragUnits),
 				array("seriesName"=> "Stonescar",  "renderAs"=>"line", "data"=>$stonescarUnits),
 				array("seriesName"=> "Xenan",  "renderAs"=>"line", "data"=>$xenanUnits)
@@ -4470,7 +4470,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		
 // render charts
 
-		//deck
+		// deck
 		$deckTotalCardsChart->render();
 		$deckRemovalChart->render();
 		$deckReactiveChart->render();
@@ -4529,5 +4529,124 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$influenceInfluenceChart->render();
 		$influenceOffenseChart->render();
 		$influenceDefenseChart->render();
+		
+// set data tables
+
+	$_SESSION['labels1'] = array("Power Cost","Mono Fire"," Mono Time"," Mono Justice","Mono Primal","Mono Shadow","Argenport","Combrei","Elysian","Feln","Hooru","Praxis","Rakano","Skycrag","Stonescar","Xenan");
+	$_SESSION['labels2'] = array("Power Cost","Fire","Time","Justice","Primal","Shadow","None");
+
+	// deck
+	
+	$_SESSION['deckTotalCardsData'] =  array($powerArray,$monofiredeckTotalCards,$monotimedeckTotalCards,$monojusticedeckTotalCards,$monoprimaldeckTotalCards,$monoshadowdeckTotalCards,$argenportdeckTotalCards,$combreideckTotalCards,$elysiandeckTotalCards,$felndeckTotalCards,$hoorudeckTotalCards,$praxisdeckTotalCards,$rakanodeckTotalCards,$skycragdeckTotalCards,$stonescardeckTotalCards,$xenandeckTotalCards);
+
+	$_SESSION['deckRemovalData'] =  array($powerArray,$monofiredeckRemoval,$monotimedeckRemoval,$monojusticedeckRemoval,$monoprimaldeckRemoval,$monoshadowdeckRemoval,$argenportdeckRemoval,$combreideckRemoval,$elysiandeckRemoval,$felndeckRemoval,$hoorudeckRemoval,$praxisdeckRemoval,$rakanodeckRemoval,$skycragdeckRemoval,$stonescardeckRemoval,$xenandeckRemoval);
+	
+	$_SESSION['deckReactiveData'] =  array($powerArray,$monofiredeckReactive,$monotimedeckReactive,$monojusticedeckReactive,$monoprimaldeckReactive,$monoshadowdeckReactive,$argenportdeckReactive,$combreideckReactive,$elysiandeckReactive,$felndeckReactive,$hoorudeckReactive,$praxisdeckReactive,$rakanodeckReactive,$skycragdeckReactive,$stonescardeckReactive,$xenandeckReactive);
+	
+	$_SESSION['deckCardCyclingData'] = array($powerArray,$monofiredeckCardCycling,$monotimedeckCardCycling,$monojusticedeckCardCycling,$monoprimaldeckCardCycling,$monoshadowdeckCardCycling,$argenportdeckCardCycling,$combreideckCardCycling,$elysiandeckCardCycling,$felndeckCardCycling,$hoorudeckCardCycling,$praxisdeckCardCycling,$rakanodeckCardCycling,$skycragdeckCardCycling,$stonescardeckCardCycling,$xenandeckCardCycling);
+	
+	$_SESSION['deckManipulationData'] = array($powerArray,$monofiredeckManipulation,$monotimedeckManipulation,$monojusticedeckManipulation,$monoprimaldeckManipulation,$monoshadowdeckManipulation,$argenportdeckManipulation,$combreideckManipulation,$elysiandeckManipulation,$felndeckManipulation,$hoorudeckManipulation,$praxisdeckManipulation,$rakanodeckManipulation,$skycragdeckManipulation,$stonescardeckManipulation,$xenandeckManipulation);
+	
+	$_SESSION['deckUnitsData'] = array($powerArray,$monofiredeckUnits,$monotimedeckUnits,$monojusticedeckUnits,$monoprimaldeckUnits,$monoshadowdeckUnits,$argenportdeckUnits,$combreideckUnits,$elysiandeckUnits,$felndeckUnits,$hoorudeckUnits,$praxisdeckUnits,$rakanodeckUnits,$skycragdeckUnits,$stonescardeckUnits,$xenandeckUnits);
+	
+	$_SESSION['deckOffenseData'] = array($powerArray,$monofiredeckOffense,$monotimedeckOffense,$monojusticedeckOffense,$monoprimaldeckOffense,$monoshadowdeckOffense,$argenportdeckOffense,$combreideckOffense,$elysiandeckOffense,$felndeckOffense,$hoorudeckOffense,$praxisdeckOffense,$rakanodeckOffense,$skycragdeckOffense,$stonescardeckOffense,$xenandeckOffense);
+	
+	$_SESSION['deckDefenseData'] = array($powerArray,$monofiredeckDefense,$monotimedeckDefense,$monojusticedeckDefense,$monoprimaldeckDefense,$monoshadowdeckDefense,$argenportdeckDefense,$combreideckDefense,$elysiandeckDefense,$felndeckDefense,$hoorudeckDefense,$praxisdeckDefense,$rakanodeckDefense,$skycragdeckDefense,$stonescardeckDefense,$xenandeckDefense);
+	
+	$_SESSION['deckSpellsData'] = array($powerArray,$monofiredeckSpells,$monotimedeckSpells,$monojusticedeckSpells,$monoprimaldeckSpells,$monoshadowdeckSpells,$argenportdeckSpells,$combreideckSpells,$elysiandeckSpells,$felndeckSpells,$hoorudeckSpells,$praxisdeckSpells,$rakanodeckSpells,$skycragdeckSpells,$stonescardeckSpells,$xenandeckSpells);
+	
+	$_SESSION['deckAttachmentsData'] = array($powerArray,$monofiredeckAttachments,$monotimedeckAttachments,$monojusticedeckAttachments,$monoprimaldeckAttachments,$monoshadowdeckAttachments,$argenportdeckAttachments,$combreideckAttachments,$elysiandeckAttachments,$felndeckAttachments,$hoorudeckAttachments,$praxisdeckAttachments,$rakanodeckAttachments,$skycragdeckAttachments,$stonescardeckAttachments,$xenandeckAttachments);
+	
+	$_SESSION['deckWeaponsData'] = array($powerArray,$monofiredeckWeapons,$monotimedeckWeapons,$monojusticedeckWeapons,$monoprimaldeckWeapons,$monoshadowdeckWeapons,$argenportdeckWeapons,$combreideckWeapons,$elysiandeckWeapons,$felndeckWeapons,$hoorudeckWeapons,$praxisdeckWeapons,$rakanodeckWeapons,$skycragdeckWeapons,$stonescardeckWeapons,$xenandeckWeapons);
+	
+	$_SESSION['deckRelicWeaponsData'] = array($powerArray,$monofiredeckRelicWeapons,$monotimedeckRelicWeapons,$monojusticedeckRelicWeapons,$monoprimaldeckRelicWeapons,$monoshadowdeckRelicWeapons,$argenportdeckRelicWeapons,$combreideckRelicWeapons,$elysiandeckRelicWeapons,$felndeckRelicWeapons,$hoorudeckRelicWeapons,$praxisdeckRelicWeapons,$rakanodeckRelicWeapons,$skycragdeckRelicWeapons,$stonescardeckRelicWeapons,$xenandeckRelicWeapons);
+	
+	$_SESSION['deckRelicsData'] = array($powerArray,$monofiredeckRelics,$monotimedeckRelics,$monojusticedeckRelics,$monoprimaldeckRelics,$monoshadowdeckRelics,$argenportdeckRelics,$combreideckRelics,$elysiandeckRelics,$felndeckRelics,$hoorudeckRelics,$praxisdeckRelics,$rakanodeckRelics,$skycragdeckRelics,$stonescardeckRelics,$xenandeckRelics);
+	
+	$_SESSION['deckCursedRelicsData'] = array($powerArray,$monofiredeckCursedRelics,$monotimedeckCursedRelics,$monojusticedeckCursedRelics,$monoprimaldeckCursedRelics,$monoshadowdeckCursedRelics,$argenportdeckCursedRelics,$combreideckCursedRelics,$elysiandeckCursedRelics,$felndeckCursedRelics,$hoorudeckCursedRelics,$praxisdeckCursedRelics,$rakanodeckCursedRelics,$skycragdeckCursedRelics,$stonescardeckCursedRelics,$xenandeckCursedRelics);
+	
+	$_SESSION['deckCursesData'] = array($powerArray,$monofiredeckCurses,$monotimedeckCurses,$monojusticedeckCurses,$monoprimaldeckCurses,$monoshadowdeckCurses,$argenportdeckCurses,$combreideckCurses,$elysiandeckCurses,$felndeckCurses,$hoorudeckCurses,$praxisdeckCurses,$rakanodeckCurses,$skycragdeckCurses,$stonescardeckCurses,$xenandeckCurses);
+	
+	$_SESSION['deckDebuffData'] = array($powerArray,$monofiredeckDebuff,$monotimedeckDebuff,$monojusticedeckDebuff,$monoprimaldeckDebuff,$monoshadowdeckDebuff,$argenportdeckDebuff,$combreideckDebuff,$elysiandeckDebuff,$felndeckDebuff,$hoorudeckDebuff,$praxisdeckDebuff,$rakanodeckDebuff,$skycragdeckDebuff,$stonescardeckDebuff,$xenandeckDebuff);
+	
+	$_SESSION['deckBuffData'] = array($powerArray,$monofiredeckBuff,$monotimedeckBuff,$monojusticedeckBuff,$monoprimaldeckBuff,$monoshadowdeckBuff,$argenportdeckBuff,$combreideckBuff,$elysiandeckBuff,$felndeckBuff,$hoorudeckBuff,$praxisdeckBuff,$rakanodeckBuff,$skycragdeckBuff,$stonescardeckBuff,$xenandeckBuff);
+	
+	$_SESSION['deckInfluenceData'] = array($powerArray,$monofiredeckInfluence,$monotimedeckInfluence,$monojusticedeckInfluence,$monoprimaldeckInfluence,$monoshadowdeckInfluence,$argenportdeckInfluence,$combreideckInfluence,$elysiandeckInfluence,$felndeckInfluence,$hoorudeckInfluence,$praxisdeckInfluence,$rakanodeckInfluence,$skycragdeckInfluence,$stonescardeckInfluence,$xenandeckInfluence);
+	
+	// faction
+	
+	$_SESSION['factionTotalCardsData'] =  array($powerArray,$monofireTotalCards,$monotimeTotalCards,$monojusticeTotalCards,$monoprimalTotalCards,$monoshadowTotalCards,$argenportTotalCards,$combreiTotalCards,$elysianTotalCards,$felnTotalCards,$hooruTotalCards,$praxisTotalCards,$rakanoTotalCards,$skycragTotalCards,$stonescarTotalCards,$xenanTotalCards);
+
+	$_SESSION['factionRemovalData'] =  array($powerArray,$monofireRemoval,$monotimeRemoval,$monojusticeRemoval,$monoprimalRemoval,$monoshadowRemoval,$argenportRemoval,$combreiRemoval,$elysianRemoval,$felnRemoval,$hooruRemoval,$praxisRemoval,$rakanoRemoval,$skycragRemoval,$stonescarRemoval,$xenanRemoval);
+	
+	$_SESSION['factionReactiveData'] =  array($powerArray,$monofireReactive,$monotimeReactive,$monojusticeReactive,$monoprimalReactive,$monoshadowReactive,$argenportReactive,$combreiReactive,$elysianReactive,$felnReactive,$hooruReactive,$praxisReactive,$rakanoReactive,$skycragReactive,$stonescarReactive,$xenanReactive);
+	
+	$_SESSION['factionCardCyclingData'] = array($powerArray,$monofireCardCycling,$monotimeCardCycling,$monojusticeCardCycling,$monoprimalCardCycling,$monoshadowCardCycling,$argenportCardCycling,$combreiCardCycling,$elysianCardCycling,$felnCardCycling,$hooruCardCycling,$praxisCardCycling,$rakanoCardCycling,$skycragCardCycling,$stonescarCardCycling,$xenanCardCycling);
+	
+	$_SESSION['factionManipulationData'] = array($powerArray,$monofireManipulation,$monotimeManipulation,$monojusticeManipulation,$monoprimalManipulation,$monoshadowManipulation,$argenportManipulation,$combreiManipulation,$elysianManipulation,$felnManipulation,$hooruManipulation,$praxisManipulation,$rakanoManipulation,$skycragManipulation,$stonescarManipulation,$xenanManipulation);
+	
+	$_SESSION['factionUnitsData'] = array($powerArray,$monofireUnits,$monotimeUnits,$monojusticeUnits,$monoprimalUnits,$monoshadowUnits,$argenportUnits,$combreiUnits,$elysianUnits,$felnUnits,$hooruUnits,$praxisUnits,$rakanoUnits,$skycragUnits,$stonescarUnits,$xenanUnits);
+	
+	$_SESSION['factionOffenseData'] = array($powerArray,$monofireOffense,$monotimeOffense,$monojusticeOffense,$monoprimalOffense,$monoshadowOffense,$argenportOffense,$combreiOffense,$elysianOffense,$felnOffense,$hooruOffense,$praxisOffense,$rakanoOffense,$skycragOffense,$stonescarOffense,$xenanOffense);
+	
+	$_SESSION['factionDefenseData'] = array($powerArray,$monofireDefense,$monotimeDefense,$monojusticeDefense,$monoprimalDefense,$monoshadowDefense,$argenportDefense,$combreiDefense,$elysianDefense,$felnDefense,$hooruDefense,$praxisDefense,$rakanoDefense,$skycragDefense,$stonescarDefense,$xenanDefense);
+	
+	$_SESSION['factionSpellsData'] = array($powerArray,$monofireSpells,$monotimeSpells,$monojusticeSpells,$monoprimalSpells,$monoshadowSpells,$argenportSpells,$combreiSpells,$elysianSpells,$felnSpells,$hooruSpells,$praxisSpells,$rakanoSpells,$skycragSpells,$stonescarSpells,$xenanSpells);
+	
+	$_SESSION['factionAttachmentsData'] = array($powerArray,$monofireAttachments,$monotimeAttachments,$monojusticeAttachments,$monoprimalAttachments,$monoshadowAttachments,$argenportAttachments,$combreiAttachments,$elysianAttachments,$felnAttachments,$hooruAttachments,$praxisAttachments,$rakanoAttachments,$skycragAttachments,$stonescarAttachments,$xenanAttachments);
+	
+	$_SESSION['factionWeaponsData'] = array($powerArray,$monofireWeapons,$monotimeWeapons,$monojusticeWeapons,$monoprimalWeapons,$monoshadowWeapons,$argenportWeapons,$combreiWeapons,$elysianWeapons,$felnWeapons,$hooruWeapons,$praxisWeapons,$rakanoWeapons,$skycragWeapons,$stonescarWeapons,$xenanWeapons);
+	
+	$_SESSION['factionRelicWeaponsData'] = array($powerArray,$monofireRelicWeapons,$monotimeRelicWeapons,$monojusticeRelicWeapons,$monoprimalRelicWeapons,$monoshadowRelicWeapons,$argenportRelicWeapons,$combreiRelicWeapons,$elysianRelicWeapons,$felnRelicWeapons,$hooruRelicWeapons,$praxisRelicWeapons,$rakanoRelicWeapons,$skycragRelicWeapons,$stonescarRelicWeapons,$xenanRelicWeapons);
+	
+	$_SESSION['factionRelicsData'] = array($powerArray,$monofireRelics,$monotimeRelics,$monojusticeRelics,$monoprimalRelics,$monoshadowRelics,$argenportRelics,$combreiRelics,$elysianRelics,$felnRelics,$hooruRelics,$praxisRelics,$rakanoRelics,$skycragRelics,$stonescarRelics,$xenanRelics);
+	
+	$_SESSION['factionCursedRelicsData'] = array($powerArray,$monofireCursedRelics,$monotimeCursedRelics,$monojusticeCursedRelics,$monoprimalCursedRelics,$monoshadowCursedRelics,$argenportCursedRelics,$combreiCursedRelics,$elysianCursedRelics,$felnCursedRelics,$hooruCursedRelics,$praxisCursedRelics,$rakanoCursedRelics,$skycragCursedRelics,$stonescarCursedRelics,$xenanCursedRelics);
+	
+	$_SESSION['factionCursesData'] = array($powerArray,$monofireCurses,$monotimeCurses,$monojusticeCurses,$monoprimalCurses,$monoshadowCurses,$argenportCurses,$combreiCurses,$elysianCurses,$felnCurses,$hooruCurses,$praxisCurses,$rakanoCurses,$skycragCurses,$stonescarCurses,$xenanCurses);
+	
+	$_SESSION['factionDebuffData'] = array($powerArray,$monofireDebuff,$monotimeDebuff,$monojusticeDebuff,$monoprimalDebuff,$monoshadowDebuff,$argenportDebuff,$combreiDebuff,$elysianDebuff,$felnDebuff,$hooruDebuff,$praxisDebuff,$rakanoDebuff,$skycragDebuff,$stonescarDebuff,$xenanDebuff);
+	
+	$_SESSION['factionBuffData'] = array($powerArray,$monofireBuff,$monotimeBuff,$monojusticeBuff,$monoprimalBuff,$monoshadowBuff,$argenportBuff,$combreiBuff,$elysianBuff,$felnBuff,$hooruBuff,$praxisBuff,$rakanoBuff,$skycragBuff,$stonescarBuff,$xenanBuff);
+	
+	$_SESSION['factionInfluenceData'] = array($powerArray,$monofireInfluence,$monotimeInfluence,$monojusticeInfluence,$monoprimalInfluence,$monoshadowInfluence,$argenportInfluence,$combreiInfluence,$elysianInfluence,$felnInfluence,$hooruInfluence,$praxisInfluence,$rakanoInfluence,$skycragInfluence,$stonescarInfluence,$xenanInfluence);
+	
+	// influence
+
+	$_SESSION['TotalCardsData'] =  array($powerArray,$fireTotalCards,$timeTotalCards,$justiceTotalCards,$primalTotalCards,$shadowTotalCards,$noneTotalCards);
+
+	$_SESSION['RemovalData'] =  array($powerArray,$fireRemoval,$timeRemoval,$justiceRemoval,$primalRemoval,$shadowRemoval,$noneRemoval);
+	
+	$_SESSION['ReactiveData'] =  array($powerArray,$fireReactive,$timeReactive,$justiceReactive,$primalReactive,$shadowReactive,$noneReactive);
+	
+	$_SESSION['CardCyclingData'] = array($powerArray,$fireCardCycling,$timeCardCycling,$justiceCardCycling,$primalCardCycling,$shadowCardCycling,$noneCardCycling);
+	
+	$_SESSION['ManipulationData'] = array($powerArray,$fireManipulation,$timeManipulation,$justiceManipulation,$primalManipulation,$shadowManipulation,$noneManipulation);
+	
+	$_SESSION['UnitsData'] = array($powerArray,$fireUnits,$timeUnits,$justiceUnits,$primalUnits,$shadowUnits,$noneUnits);
+	
+	$_SESSION['OffenseData'] = array($powerArray,$fireOffense,$timeOffense,$justiceOffense,$primalOffense,$shadowOffense,$noneOffense);
+	
+	$_SESSION['DefenseData'] = array($powerArray,$fireDefense,$timeDefense,$justiceDefense,$primalDefense,$shadowDefense,$noneDefense);
+	
+	$_SESSION['SpellsData'] = array($powerArray,$fireSpells,$timeSpells,$justiceSpells,$primalSpells,$shadowSpells,$noneSpells);
+	
+	$_SESSION['AttachmentsData'] = array($powerArray,$fireAttachments,$timeAttachments,$justiceAttachments,$primalAttachments,$shadowAttachments,$noneAttachments);
+	
+	$_SESSION['WeaponsData'] = array($powerArray,$fireWeapons,$timeWeapons,$justiceWeapons,$primalWeapons,$shadowWeapons,$noneWeapons);
+	
+	$_SESSION['RelicWeaponsData'] = array($powerArray,$fireRelicWeapons,$timeRelicWeapons,$justiceRelicWeapons,$primalRelicWeapons,$shadowRelicWeapons,$noneRelicWeapons);
+	
+	$_SESSION['RelicsData'] = array($powerArray,$fireRelics,$timeRelics,$justiceRelics,$primalRelics,$shadowRelics,$noneRelics);
+	
+	$_SESSION['CursedRelicsData'] = array($powerArray,$fireCursedRelics,$timeCursedRelics,$justiceCursedRelics,$primalCursedRelics,$shadowCursedRelics,$noneCursedRelics);
+	
+	$_SESSION['CursesData'] = array($powerArray,$fireCurses,$timeCurses,$justiceCurses,$primalCurses,$shadowCurses,$noneCurses);
+	
+	$_SESSION['DebuffData'] = array($powerArray,$fireDebuff,$timeDebuff,$justiceDebuff,$primalDebuff,$shadowDebuff,$noneDebuff);
+	
+	$_SESSION['BuffData'] = array($powerArray,$fireBuff,$timeBuff,$justiceBuff,$primalBuff,$shadowBuff,$noneBuff);
+	
+	$_SESSION['InfluenceData'] = array($powerArray,$fireInfluence,$timeInfluence,$justiceInfluence,$primalInfluence,$shadowInfluence,$noneInfluence);	
 	
 ?>
