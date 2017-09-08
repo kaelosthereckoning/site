@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+.sidebar a {
+	height: 80px;
+	width: 80px;
+	margin: 0;
+	padding: 0;
+	background-color: #262626;
+color: #ffffff;
+}
+
+.sidebar-icon {
+	height: 70px;
+	width: 70px;
+	padding: 0;
+	margin: 5px 5px 5px 5px;
+}
+
+/*@media (min-device-width: 768px){
+
+	.tab-menu{
+		width: 80px;
+	}
+
+	.sidebar a {
+		height: 75px;
+		width: 75px;
+	}
+
+	.sidebar-icon {
+		height: 75px;
+		width: 75px;
+		margin: 5px 5px 5px 5px;
+	}
+}*/
+
+.btn-group-vertical > a {
+	background: #262626;
+	outline: 0 !important;
+}
+
+.btn-mine > a:links,a:visited {
+	background: #262626 !important;
+	text-decoration: none !important;
+	color: #ffffff !important;
+}
+
+.btn-mine > a:focus, a:active {
+	background: #131313 !important;
+	text-decoration: none !important;
+	color: #ffffff !important;
+}
+
+.btn-mine > a:hover {
+	background: #131313 !important;
+	text-decoration: none !important;
+	color: #131313 !important;
+}
