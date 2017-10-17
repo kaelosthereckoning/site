@@ -1,20 +1,20 @@
-UPDATE `eternal_cards` SET `draw` = 1 WHERE(
+UPDATE `card_cycling` SET `draw` = 1 WHERE(
 	`cardtext` LIKE 'draw' AND
 	`cardtext` NOT LIKE 'draw gain'
 	);
-UPDATE `eternal_cards` SET `discard` = 1 WHERE(
+UPDATE `card_cycling` SET `discard` = 1 WHERE(
 	`cardtext` LIKE 'discard'
 	);
-UPDATE `eternal_cards` SET `deckreturn` = 1 WHERE(
+UPDATE `card_cycling` SET `deckreturn` = 1 WHERE(
 	`cardtext` LIKE 'put a card % on the top of your deck' OR
 	`cardtext` LIKE 'put a card % on top of your deck'
 	);
-UPDATE `eternal_cards` SET `shuffle` = 1 WHERE(
+UPDATE `card_cycling` SET `shuffle` = 1 WHERE(
 	`cardtext` LIKE 'look' OR
 	`cardtext` LIKE 'put % on the bottom'
 	);
 	
-UPDATE `eternal_cards` SET `cyclecards` = 1 WHERE(
+UPDATE `card_cycling` SET `cyclecards` = 1 WHERE(
 	`draw` > 0 OR
 	`discard` > 0 OR
 	`shuffle` > 0 OR
@@ -22,10 +22,10 @@ UPDATE `eternal_cards` SET `cyclecards` = 1 WHERE(
 	);
 
 
-UPDATE `eternal_cards` SET `cyclingtype` = CONCAT_WS(',',IF(`draw`=1,'Draw'),IF(`discard`=1,'Discard'),IF(`deckreturn`=1,'Return'),IF(`shuffle`=1,'Shuffle'));
+UPDATE `card_cycling` SET `cyclingtype` = CONCAT_WS(',',IF(`draw`=1,'Draw'),IF(`discard`=1,'Discard'),IF(`deckreturn`=1,'Return'),IF(`shuffle`=1,'Shuffle'));
 		
 		
-UPDATE `eternal_cards` SET `drawcards` = 1 WHERE(
+UPDATE `card_cycling` SET `drawcards` = 1 WHERE(
 	`cardtext` LIKE 'draw a' OR
 	`cardtext` LIKE 'draw an' OR
 	`cardtext` LIKE 'draw one' OR
@@ -39,18 +39,18 @@ UPDATE `eternal_cards` SET `drawcards` = 1 WHERE(
 	AND (
 	`cardtext` NOT LIKE 'draw a Minotaur and weapon'
 	);
-UPDATE `eternal_cards` SET `drawcards` = 2 WHERE(
+UPDATE `card_cycling` SET `drawcards` = 2 WHERE(
 	`cardtext` LIKE 'draw two' OR
 	`cardtext` LIKE 'draw a%and a' OR
 	`cardtext` LIKE 'draw Minotaur and weapon');		
-UPDATE `eternal_cards` SET `drawcards` = 3 WHERE(
+UPDATE `card_cycling` SET `drawcards` = 3 WHERE(
 	`cardtext` LIKE 'draw three' OR
 	`cardtext` LIKE 'draw one of the top three');
-UPDATE `eternal_cards` SET `drawcards` = 4 WHERE(
+UPDATE `card_cycling` SET `drawcards` = 4 WHERE(
 	`cardtext` LIKE 'draw four');
 	
 	
-UPDATE `eternal_cards` SET `discardcards` = 1 WHERE(
+UPDATE `card_cycling` SET `discardcards` = 1 WHERE(
 	`cardtext` LIKE 'discard a' OR
 	`cardtext` LIKE 'discard an' OR
 	`cardtext` LIKE 'discard one' OR
@@ -62,50 +62,50 @@ UPDATE `eternal_cards` SET `discardcards` = 1 WHERE(
 	`cardtext` NOT LIKE 'discard them' AND
 	`cardtext` NOT LIKE 'discarded'
 	);
-UPDATE `eternal_cards` SET `discardcards` = 2
+UPDATE `card_cycling` SET `discardcards` = 2
 	`cardtext` LIKE 'discard two'
 	);
-UPDATE `eternal_cards` SET `discardcards` = 3
+UPDATE `card_cycling` SET `discardcards` = 3
 	`cardtext` LIKE 'discard three'
 	);
-UPDATE `eternal_cards` SET `discardcards` = 4
+UPDATE `card_cycling` SET `discardcards` = 4
 	`cardtext` LIKE 'discard four'
 	);
-UPDATE `eternal_cards` SET `discardcards` = 5
+UPDATE `card_cycling` SET `discardcards` = 5
 	`cardtext` LIKE 'discard the top five'
 	);	
-UPDATE `eternal_cards` SET `discardcards` = 'variable' WHERE(
+UPDATE `card_cycling` SET `discardcards` = 'variable' WHERE(
 	`cardtext` LIKE 'discard your hand' OR
 	`cardtext` LIKE 'discard the rest' OR
 	`cardtext` LIKE 'discard that many' OR
 	`cardtext` LIKE 'discard their hand'
 	);	
 	
-UPDATE `eternal_cards` SET `returncards` = 1 WHERE(
+UPDATE `card_cycling` SET `returncards` = 1 WHERE(
 	`cardtext` LIKE 'put a card % on the top of your deck' OR
 	`cardtext` LIKE 'put a card % on top of your deck'
 	);
 
 	
 	
-UPDATE `eternal_cards` SET `shufflecards` = 1
+UPDATE `card_cycling` SET `shufflecards` = 1
 	`cardtext` LIKE 'you may put it on the bottom'
 	);		
-UPDATE `eternal_cards` SET `shufflecards` = 2
+UPDATE `card_cycling` SET `shufflecards` = 2
 	`cardtext` LIKE 'draw one of the top three%put the rest on the bottom'
 	);
-UPDATE `eternal_cards` SET `shufflecards` = 3
+UPDATE `card_cycling` SET `shufflecards` = 3
 	`cardtext` LIKE 'draw one of the top four%put the rest on the bottom'
 	);
 			
-UPDATE `eternal_cards` SET `cardscycled` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
+UPDATE `card_cycling` SET `cardscycled` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
 		
 
-UPDATE `eternal_cards` SET `occurences` = 'twice' WHERE(
+UPDATE `card_cycling` SET `occurences` = 'twice' WHERE(
 	`cardtype` LIKE 'Spell' AND
 	`cardtext` LIKE 'revenge'
 	);
-UPDATE `eternal_cards` SET `occurences` = 'variable' WHERE(
+UPDATE `card_cycling` SET `occurences` = 'variable' WHERE(
 	`cardtext` LIKE 'draw a card for' OR
 	`cardtext` LIKE '%pay%and exhaust%draw a card' OR
 	`cardtext` LIKE 'when%draw a' OR
@@ -124,10 +124,10 @@ UPDATE `eternal_cards` SET `occurences` = 'variable' WHERE(
 	`cardtext` LIKE 'discard that many' OR
 	`cardtext` LIKE 'discard their hand'
 	);
-UPDATE `eternal_cards` SET `occurences` = 'single' WHERE(
+UPDATE `card_cycling` SET `occurences` = 'single' WHERE(
 	`cyclecards` = 1 AND
 	(`occurences` NOT LIKE 'variable OR
 	`occurences` NOT LIKE 'twice'
 	);
 
-UPDATE `eternal_cards` SET `cycletype` = 'single use' WHERE `cycletype` NOT LIKE 'variable';
+UPDATE `card_cycling` SET `cycletype` = 'single use' WHERE `cycletype` NOT LIKE 'variable';
