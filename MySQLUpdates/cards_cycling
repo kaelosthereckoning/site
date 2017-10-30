@@ -156,3 +156,5 @@ UPDATE `card_cycling` SET `milling` = 0 WHERE(
 UPDATE `card_cycling` SET `cardscycled` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
 
 UPDATE `card_cycling` SET `cyclevalue`=CONCAT(`cardscycled`,' x ',`occurrences`,'') WHERE `cyclecards` = 1;
+
+UPDATE `card_cycling` SET `manipulate` = `shuffle` + `deckreturn`;
