@@ -1,11 +1,12 @@
 TRUNCATE `card_cycling`;
 
-INSERT INTO `card_cycling` (`cardname`,`cardtext`,`cardtype`)
-SELECT 	`cardname`,`cardtext`,`cardtype`
+INSERT INTO `card_cycling` (`cardname`,`cardtext`,`cardtype`,`faction`,`power`,`fire`,`time`,`justice`,`primal`,`shadow`)
+SELECT 	`cardname`,`cardtext`,`cardtype`,`faction`,`power`,`fire`,`time`,`justice`,`primal`,`shadow`
 FROM `eternal_cards`;
 
 UPDATE `card_cycling` SET `draw` = 1 WHERE(
-	`cardtext` LIKE '%draw%' AND
+	`cardtext` LIKE '%draw%' OR
+	`cardtext` LIKE '%warp%') AND(
 	`cardtext` NOT LIKE '%draw%gain%' AND
 	`cardtext` NOT LIKE '%quickdraw%'
 	);
@@ -14,7 +15,8 @@ UPDATE `card_cycling` SET `discard` = 1 WHERE(
 	);
 UPDATE `card_cycling` SET `deckreturn` = 1 WHERE(
 	`cardtext` LIKE '%put a card % on the top of your deck%' OR
-	`cardtext` LIKE '%put a card % on top of your deck%'
+	`cardtext` LIKE '%put a card % on top of your deck%' OR
+	`cardtext` LIKE '%revenge'
 	);
 UPDATE `card_cycling` SET `shuffle` = 1 WHERE(
 	`cardtext` LIKE '%look%' OR
@@ -41,7 +43,8 @@ UPDATE `card_cycling` SET `drawcards` = 1 WHERE(
 	`cardtext` LIKE '%draw them%' OR
 	`cardtext` LIKE '%draw Praxis Outlaw%' OR
 	`cardtext` LIKE '%draw Steelfang Chakram%' OR
-	`cardtext` LIKE '%draw Worldpyre Phoenix%')
+	`cardtext` LIKE '%draw Worldpyre Phoenix%' OR
+	`cardtext` LIKE '%warp%')
 	AND (
 	`cardtext` NOT LIKE '%draw a Minotaur and weapon%'
 	);
@@ -89,7 +92,8 @@ UPDATE `card_cycling` SET `discardcards` = 'variable' WHERE(
 	
 UPDATE `card_cycling` SET `returncards` = 1 WHERE(
 	`cardtext` LIKE '%put a card % on the top of your deck%' OR
-	`cardtext` LIKE '%put a card % on top of your deck%'
+	`cardtext` LIKE '%put a card % on top of your deck%' OR
+	`cardtext` LIKE '%revenge%'
 	);
 
 	
@@ -155,6 +159,6 @@ UPDATE `card_cycling` SET `milling` = 0 WHERE(
 	
 UPDATE `card_cycling` SET `cardscycled` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
 
-UPDATE `card_cycling` SET `cyclevalue`=CONCAT(`cardscycled`,' x ',`occurrences`,'') WHERE `cyclecards` = 1;
+UPDATE `card_cycling` SET `cyclevalue` = CONCAT(`cardscycled`,' x ',`occurrences`,'') WHERE `cyclecards` = 1;
 
 UPDATE `card_cycling` SET `manipulate` = `shuffle` + `deckreturn`;
