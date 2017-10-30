@@ -1,0 +1,158 @@
+TRUNCATE `card_cycling`;
+
+INSERT INTO `card_cycling` (`cardname`,`cardtext`,`cardtype`)
+SELECT 	`cardname`,`cardtext`,`cardtype`
+FROM `eternal_cards`;
+
+UPDATE `card_cycling` SET `draw` = 1 WHERE(
+	`cardtext` LIKE '%draw%' AND
+	`cardtext` NOT LIKE '%draw%gain%' AND
+	`cardtext` NOT LIKE '%quickdraw%'
+	);
+UPDATE `card_cycling` SET `discard` = 1 WHERE(
+	`cardtext` LIKE '%discard%'
+	);
+UPDATE `card_cycling` SET `deckreturn` = 1 WHERE(
+	`cardtext` LIKE '%put a card % on the top of your deck%' OR
+	`cardtext` LIKE '%put a card % on top of your deck%'
+	);
+UPDATE `card_cycling` SET `shuffle` = 1 WHERE(
+	`cardtext` LIKE '%look%' OR
+	`cardtext` LIKE '%put % on the bottom%'
+	);
+	
+UPDATE `card_cycling` SET `cyclecards` = 1 WHERE(
+	`draw` > 0 OR
+	`discard` > 0 OR
+	`shuffle` > 0 OR
+	`deckreturn` > 0
+	);
+
+UPDATE `card_cycling` SET `cyclingtype` = CONCAT_WS(',',IF(`draw`=1,'Draw',''),IF(`discard`=1,'Discard',''),IF(`deckreturn`=1,'Return',''),IF(`shuffle`=1,'Shuffle',''));
+		
+		
+UPDATE `card_cycling` SET `drawcards` = 1 WHERE(
+	`cardtext` LIKE '%draw a%' OR
+	`cardtext` LIKE '%draw an%' OR
+	`cardtext` LIKE '%draw one%' OR
+	`cardtext` LIKE '%draw the%' OR
+	`cardtext` LIKE '%draws a%' OR
+	`cardtext` LIKE '%draw it%' OR
+	`cardtext` LIKE '%draw them%' OR
+	`cardtext` LIKE '%draw Praxis Outlaw%' OR
+	`cardtext` LIKE '%draw Steelfang Chakram%' OR
+	`cardtext` LIKE '%draw Worldpyre Phoenix%')
+	AND (
+	`cardtext` NOT LIKE '%draw a Minotaur and weapon%'
+	);
+UPDATE `card_cycling` SET `drawcards` = 2 WHERE(
+	`cardtext` LIKE '%draw two%' OR
+	`cardtext` LIKE '%draw a%and a%' OR
+	`cardtext` LIKE '%draw Minotaur and weapon%');		
+UPDATE `card_cycling` SET `drawcards` = 3 WHERE(
+	`cardtext` LIKE '%draw three%' OR
+	`cardtext` LIKE '%draw one of the top three%');
+UPDATE `card_cycling` SET `drawcards` = 4 WHERE(
+	`cardtext` LIKE '%draw four%');
+	
+	
+UPDATE `card_cycling` SET `discardcards` = 1 WHERE(
+	`cardtext` LIKE '%discard a%' OR
+	`cardtext` LIKE '%discard an%' OR
+	`cardtext` LIKE '%discard one%' OR
+	`cardtext` LIKE '%discard the%' OR
+	`cardtext` LIKE '%discards a%' OR
+	`cardtext` LIKE '%discard it%' OR
+	`cardtext` LIKE '%discard them%'
+	) AND (
+	`cardtext` NOT LIKE '%discard them%' AND
+	`cardtext` NOT LIKE '%discarded%'
+	);
+UPDATE `card_cycling` SET `discardcards` = 2 WHERE(
+	`cardtext` LIKE '%discard two%'
+	);
+UPDATE `card_cycling` SET `discardcards` = 3 WHERE( 
+	`cardtext` LIKE '%discard three%'
+	);
+UPDATE `card_cycling` SET `discardcards` = 4 WHERE(
+	`cardtext` LIKE '%discard four%'
+	);
+UPDATE `card_cycling` SET `discardcards` = 5 WHERE(
+	`cardtext` LIKE '%discard the top five%'
+	);	
+UPDATE `card_cycling` SET `discardcards` = 'variable' WHERE(
+	`cardtext` LIKE '%discard your hand%' OR
+	`cardtext` LIKE '%discard the rest%' OR
+	`cardtext` LIKE '%discard that many%' OR
+	`cardtext` LIKE '%discard their hand%'
+	);	
+	
+UPDATE `card_cycling` SET `returncards` = 1 WHERE(
+	`cardtext` LIKE '%put a card % on the top of your deck%' OR
+	`cardtext` LIKE '%put a card % on top of your deck%'
+	);
+
+	
+UPDATE `card_cycling` SET `shufflecards` = 1 WHERE(
+	`cardtext` LIKE '%you may put it on the bottom%'
+	);		
+UPDATE `card_cycling` SET `shufflecards` = 2 WHERE(
+	`cardtext` LIKE '%draw one of the top three%put the rest on the bottom%'
+	);
+UPDATE `card_cycling` SET `shufflecards` = 3 WHERE(
+	`cardtext` LIKE '%draw one of the top four%put the rest on the bottom%'
+	);
+			
+UPDATE `card_cycling` SET `cyclecards` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
+		
+
+UPDATE `card_cycling` SET `occurrences` = 'twice' WHERE(
+	`cardtype` LIKE '%Spell%' AND
+	`cardtext` LIKE '%revenge%'
+	);
+UPDATE `card_cycling` SET `occurrences` = 'variable' WHERE(
+	`cardtext` LIKE '%draw a card for%' OR
+	`cardtext` LIKE '%pay%and exhaust%draw a card%' OR
+	`cardtext` LIKE '%when%draw a%' OR
+	`cardtext` LIKE '%draw Steelfang Chakram%' OR
+	`cardtext` LIKE '%draw Worldpyre Phoenix%' OR
+	`cardtext` LIKE '%if%draw a%' OR
+	`cardtext` LIKE 'Empower: % draw %' OR
+	`cardtext` LIKE 'Infiltrate: % draw%' OR
+	`cardtext` LIKE '%when%if%draw it%' OR
+	`cardtext` LIKE '%at%your turn%draw%' OR
+	`cardtext` LIKE '%pay%to draw%' OR
+	`cardtext` LIKE '%draw a card for each of%' OR
+	`cardtext` LIKE '%discard the rest%' OR
+	`cardtext` LIKE '%discard your hand%' OR
+	`cardtext` LIKE '%discard the rest%' OR
+	`cardtext` LIKE '%discard that many%' OR
+	`cardtext` LIKE '%discard their hand%'
+	);
+UPDATE `card_cycling` SET `occurrences` = 'single' WHERE(
+	`cyclecards` = 1 AND
+	(`occurrences` NOT LIKE '%variable%' OR
+	`occurrences` NOT LIKE '%twice%'
+	));
+
+UPDATE `card_cycling` SET `cycletype` = 'single use' WHERE(
+	`cycletype` NOT LIKE '%variable%' AND
+	`cyclecards` = 1);
+
+UPDATE `card_cycling` SET `milling` = 1 WHERE(
+	`cardtext` LIKE '%the enemy player discards%' OR
+	`cardtext` LIKE '%that player discards%' OR
+	`cardtext` LIKE '%the enemy player must choose%' OR
+	`cardtext` LIKE '%they discard it%'
+	);
+	
+UPDATE `card_cycling` SET `milling` = 0 WHERE(
+	`cardtext` NOT LIKE '%the enemy player discards%' AND
+	`cardtext` NOT LIKE '%that player discards%' AND
+	`cardtext` NOT LIKE '%the enemy player must choose%' AND
+	`cardtext` NOT LIKE '%they discard it%'
+	);
+	
+UPDATE `card_cycling` SET `cardscycled` = `drawcards` + `discardcards` + `returncards` + `shufflecards`;
+
+UPDATE `card_cycling` SET `cyclevalue`=CONCAT(`cardscycled`,' x ',`occurrences`,'') WHERE `cyclecards` = 1;
