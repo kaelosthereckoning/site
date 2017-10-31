@@ -149,7 +149,7 @@
 										<hr>
 										
 										<!-- Debuffs -->
-										<div id="deckDebuffs" class="line_graph chart" alt="Stat-Debuffs by Faction"></div>
+										<div id="deckDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
 													<br><div role="tablist" aria-multiselectable="true">
 														<a data-toggle="collapse" href="#deckDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckDebuffInfo" class="collapse" role="tabpanel">
@@ -164,11 +164,11 @@
 													</div>										
 										<hr>
 										
-										<!-- Buffs -->
-										<div id="deckBuffs" class="line_graph chart" alt="Stat-Buff Availability by Faction"></div>
+										<!-- Buff -->
+										<div id="deckBuff" class="line_graph chart" alt="Stat-Buff Availability by Faction"></div>
 													<br><div role="tablist" aria-multiselectable="true">
-														<a data-toggle="collapse" href="#deckBuffsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="deckBuffsInfo" class="collapse" role="tabpanel">
+														<a data-toggle="collapse" href="#deckBuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+															<div id="deckBuffInfo" class="collapse" role="tabpanel">
 																<BLOCKQUOTE>
 																	<br>Includes all spells, units, and attachments.
 																	<br>Debuffs must have been in one of four formats: +X/-X, +Armor, +Strength, or +Health.
@@ -334,24 +334,6 @@
 															</div>
 													</div>										
 										<hr>
-										<!-- Attachments -->
-										<div id="deckAttachments" class="line_graph chart" alt="Attachment Availability by Deck Type"></div>
-													<br><div role="tablist" aria-multiselectable="true">
-														<a data-toggle="collapse" href="#deckAttachmentsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="deckAttachmentsInfo" class="collapse" role="tabpanel">
-																<BLOCKQUOTE>
-																	<br>Includes all Curses, Cursed Relics, Relics, Relic Weapons, and Weapons.
-																	<br>Spells producing weapons (e.g. Hone) not included.
-																	<br>Transmuted Monuments included in count.
-																	<br>
-																	<br> Last update: August 23, 2017
-																</BLOCKQUOTE>
-															</div>
-													</div>										
-										<hr>
-										
-										
-										
 										<!-- Attachments -->
 										<div id="deckAttachments" class="line_graph chart" alt="Attachment Availability by Deck Type"></div>
 													<br><div role="tablist" aria-multiselectable="true">
@@ -544,7 +526,7 @@
 										<hr>
 										
 										<!-- Debuffs -->
-										<div id="factionDebuffs" class="line_graph chart" alt="Stat-Debuffs by Faction"></div>
+										<div id="factionDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
 													<br><div role="tablist" aria-multiselectable="true">
 														<a data-toggle="collapse" href="#factionDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionDebuffInfo" class="collapse" role="tabpanel">
@@ -559,11 +541,11 @@
 													</div>										
 										<hr>
 										
-										<!-- Buffs -->
-										<div id="factionBuffs" class="line_graph chart" alt="Stat-Buff Availability by Faction"></div>
+										<!-- Buff -->
+										<div id="factionBuff" class="line_graph chart" alt="Stat-Buff Availability by Faction"></div>
 													<br><div role="tablist" aria-multiselectable="true">
-														<a data-toggle="collapse" href="#factionBuffsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="factionBuffsInfo" class="collapse" role="tabpanel">
+														<a data-toggle="collapse" href="#factionBuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+															<div id="factionBuffInfo" class="collapse" role="tabpanel">
 																<BLOCKQUOTE>
 																	<br>Includes all spells, units, and attachments.
 																	<br>Debuffs must have been in one of four formats: +X/-X, +Armor, +Strength, or +Health.
@@ -727,6 +709,7 @@
 															</div>
 													</div>										
 										<hr>
+										
 										<!-- Attachments -->
 										<div id="factionAttachments" class="line_graph chart" alt="Attachment Availability by Faction"></div>
 													<br><div role="tablist" aria-multiselectable="true">
@@ -919,8 +902,8 @@
 													</div>														
 										<hr>
 										
-										<!-- Debuffs -->
-										<div id="influenceDebuffs" class="line_graph chart" alt="Stat-Debuffs by Faction"></div>
+										<!-- Debuff -->
+										<div id="influenceDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Influence"></div>
 													<br><div role="tablist" aria-multiselectable="true">
 														<a data-toggle="collapse" href="#influenceDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceDebuffInfo" class="collapse" role="tabpanel">
@@ -935,8 +918,8 @@
 													</div>										
 										<hr>
 										
-										<!-- Buffs -->
-										<div id="influenceBuffs" class="line_graph chart" alt="Stat-Buff Availability by Faction"></div>
+										<!-- Buff -->
+										<div id="influenceBuff" class="line_graph chart" alt="Stat-Buff Availability by Influence"></div>
 													<br><div role="tablist" aria-multiselectable="true">
 														<a data-toggle="collapse" href="#influenceBuffsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceBuffsInfo" class="collapse" role="tabpanel">
@@ -1108,7 +1091,7 @@
 										<hr>
 										
 										<!-- Attachments -->
-										<div id="influenceAttachments" class="line_graph chart" alt="Attachment Availability by Faction"></div>
+										<div id="influenceAttachments" class="line_graph chart" alt="Attachment Availability by Influence"></div>
 													<br><div role="tablist" aria-multiselectable="true">
 														<a data-toggle="collapse" href="#influenceAttachmentsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceAttachmentsInfo" class="collapse" role="tabpanel">
