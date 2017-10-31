@@ -44,7 +44,7 @@
 	$stonescardeckQuery = "SELECT * FROM `eternal_graphs` WHERE `series` = 'stonescardeck';";
 	$xenandeckQuery = "SELECT * FROM `eternal_graphs` WHERE `series` = 'xenandeck';";
 
-	$monoprimalResult = $dbhandle->query($fireQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
+	$fireResult = $dbhandle->query($fireQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
 	$timeResult = $dbhandle->query($timeQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
 	$justiceResult = $dbhandle->query($justiceQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
 	$primalResult = $dbhandle->query($primalQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
@@ -987,7 +987,6 @@
 // push query results into arrays
 	while($fireRow = mysqli_fetch_array($fireResult)){
 			array_push($powerArray, array("label" => $fireRow["1"]));
-			
 			array_push($fireTotalCards, array("value" => $fireRow["3"]));
 			array_push($fireUnits, array("value" => $fireRow["4"]));
 			array_push($fireSpells, array("value" => $fireRow["5"]));
@@ -5092,7 +5091,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 				array("seriesName"=> "Primal",  "renderAs"=>"line", "data"=>$primalDiscard),
 				array("seriesName"=> "Shadow",  "renderAs"=>"line", "data"=>$shadowDiscard),
 				array("seriesName"=> "None",  "renderAs"=>"line", "data"=>$noneDiscard),
-				array("seriesName"=> "All",  "renderAs"=>"line", "data"=>$allDiscards)
+				array("seriesName"=> "All",  "renderAs"=>"line", "data"=>$allDiscard)
 			);
 			
 			$influenceMillData["categories"]= array(array("category"=>$powerArray));
