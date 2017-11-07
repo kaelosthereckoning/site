@@ -52,6 +52,7 @@
 						<div class="tab-pane active" id="deck-type_pane">
 							<div class="container" id="deck-type">
 								<div class="row">
+								
 									<div id="deck-type_container" class="container">
 										<h3><strong>Deck Type</strong>: </h3> <h4>Statistics in this category include all cards which might be played in a given deck type.</h4>
 										<h4>E.g. Mono Fire includes only Fire cards, while Rakano includes Mono Fire, Mono Justice, and dual-color Rakano cards.</h4>
@@ -61,6 +62,7 @@
 															<div id="deckGeneral" class="collapse" role="tabpanel">
 																<!-- Card Availability -->
 																<div id="deckTotalCards" class="line_graph chart" alt="Card Availability by Deck Type"></div>
+																			
 																			<br><div role="tablist" aria-multiselectable="true">
 																				<a data-toggle="collapse" href="#deckTotalCardsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 																					<div id="deckTotalCardsInfo" class="collapse" role="tabpanel">
@@ -73,34 +75,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>
-																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckTotalCardsData" aria-expanded="true">Raw data<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckTotalCardsData" class="collapse" role="tabpanel">
-																						<BLOCKQUOTE>	
-																							<?php if (count($_SESSION['deckTotalCardsData']) > 0): ?>		<table class="sorttable datatable">
-																										<thead>
-																												<?php 
-																													for($i = 0; $i < count($_SESSION['deckTotalCardsData']); $i++) {
-																														echo '<tr>';
-																														echo '<td>'.($_SESSION['labels1'][$i]).'</td>';
-																														$arr1 = $_SESSION['deckTotalCardsData'][$i];
-																														for($j = 0; $j < count($arr1); $j++) {
-																															$arr2 = array_values($arr1[$j]);
-																															for($k = 0; $k < count($arr2); $k++) {
-																																echo '<td>'.$arr2[$k].'</td>';
-																																if ($k==14) echo '</tr>';
-																																};
-																															};
-																														};
-																													 ?>
-																										</thead>
-																									</table>
-																								<?php endif; ?>
-																						</BLOCKQUOTE>
-																					</div>
-																			</div>
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->
 																<hr>
 																
 																<!-- Avg Influence -->									
@@ -115,14 +91,14 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																	
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+											</div> <!--end bigcat infotab-->
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckRemoval">
-														<a data-toggle="collapse" href="#deckRemoval" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="deckRemoval" class="collapse" role="tabpanel">
+														<a data-toggle="collapse" href="#deckRemovalpane" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
+															<div id="deckRemovalpane" class="collapse" role="tabpanel">
 																<!-- Removal -->
 																<div id="deckRemoval" class="line_graph chart" alt="Removal Availability by Deck Type"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
@@ -151,24 +127,24 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>														
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->														
 																<hr>
 																
 																<!-- Debuffs -->
-																<div id="deckDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
-																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckDebuffInfo" class="collapse" role="tabpanel">
-																						<BLOCKQUOTE>
-																							<br>Includes all spells, units, and attachments.
-																							<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
-																							<br>Variable debuffs were included as long as they had some real, numeric value at time of cast / play.
-																							<br>
-																							<br> Last update: October 30, 2017
-																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																	<div id="deckDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
+																				<br><div role="tablist" aria-multiselectable="true">
+																					<a data-toggle="collapse" href="#deckDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																						<div id="deckDebuffInfo" class="collapse" role="tabpanel">
+																							<BLOCKQUOTE>
+																								<br>Includes all spells, units, and attachments.
+																								<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
+																								<br>Variable debuffs were included as long as they had some real, numeric value at time of cast / play.
+																								<br>
+																								<br> Last update: October 30, 2017
+																							</BLOCKQUOTE>
+																						</div><!--end infoblock-->
+																				</div><!--end infotab-->	
 																<hr>
 																
 																<!-- Forced Discard -->
@@ -184,8 +160,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Reactive -->
@@ -202,11 +178,12 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>				
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckBuffVDebuff">
 														<a data-toggle="collapse" href="#deckBuffVDebuff" aria-expanded="true">BUFFS V. DEBUFFS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckBuffVDebuff" class="collapse" role="tabpanel">										
@@ -222,27 +199,28 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>		
-										
+																
 																<!-- Debuffs -->
-																<div id="deckDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
-																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckDebuffInfo" class="collapse" role="tabpanel">
-																						<BLOCKQUOTE>
-																							<br>Includes all spells, units, and attachments.
-																							<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
-																							<br>Variable debuffs were included as long as they had some real, numeric value at time of cast / play.
-																							<br>
-																							<br> Last update: October 30, 2017
-																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																	<div id="deckDebuff2" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
+																				<br><div role="tablist" aria-multiselectable="true">
+																					<a data-toggle="collapse" href="#deckDebuffInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																						<div id="deckDebuffInfo2" class="collapse" role="tabpanel">
+																							<BLOCKQUOTE>
+																								<br>Includes all spells, units, and attachments.
+																								<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
+																								<br>Variable debuffs were included as long as they had some real, numeric value at time of cast / play.
+																								<br>
+																								<br> Last update: October 30, 2017
+																							</BLOCKQUOTE>
+																						</div><!--end infoblock-->
+																				</div><!--end infotab-->						
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckSpellsCurses">
 														<a data-toggle="collapse" href="#deckSpellsCurses" aria-expanded="true">SPELLS AND CURSES<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckSpellsCurses" class="collapse" role="tabpanel">
@@ -257,26 +235,27 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Curses -->
-																<div id="deckCurses" class="line_graph chart" alt="Curse Availability by Deck Type"></div>
+																<div id="deckCurses2" class="line_graph chart" alt="Curse Availability by Deck Type"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckCursesInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckCursesInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#deckCursesInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="deckCursesInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Curses, but not Cursed Relics, included.
 																							<br>Spells not included.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckUnitOD">
 														<a data-toggle="collapse" href="#deckUnitOD" aria-expanded="true">UNITS: Offense and Defense<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckUnitOD" class="collapse" role="tabpanel">
@@ -292,8 +271,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Offense -->
@@ -308,8 +287,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Defense -->
@@ -324,11 +303,12 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckAllAttachments">
 														<a data-toggle="collapse" href="#deckAllAttachments" aria-expanded="true">ATTACHMENTS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckAllAttachments" class="collapse" role="tabpanel">
@@ -344,8 +324,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Weapons -->
 																<div id="deckWeapons" class="line_graph chart" alt="Weapon Availability by Deck Type"></div>
@@ -360,8 +340,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																<!-- Relic Weapons -->
 																<div id="deckRelicWeapons" class="line_graph chart" alt="Relic Weapon Availability by Deck Type"></div>
@@ -373,10 +353,9 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>			
-
-																			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->			
+	
 																<hr>
 																<!-- Relics -->
 																<div id="deckRelics" class="line_graph chart" alt="Relic Availability by Deck Type"></div>	
@@ -389,11 +368,11 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Cursed Relics -->
-																<div id="deckCursedRelics" class="line_graph chart" alt="Cursed Relic Availability by Deck Type"></div>										
+																<div id="deckCursedRelics" class="line_graph chart" alt="Cursed Relic Availability by Deck Type"></div>					
 																			<br><div role="tablist" aria-multiselectable="true">
 																				<a data-toggle="collapse" href="#deckCursedRelicsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 																					<div id="deckCursedRelicsInfo" class="collapse" role="tabpanel">
@@ -402,25 +381,26 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Curses -->
-																<div id="deckCurses" class="line_graph chart" alt="Curse Availability by Deck Type"></div>
+																<div id="deckCurses2" class="line_graph chart" alt="Curse Availability by Deck Type"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckCursesInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckCursesInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#deckCursesInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="deckCursesInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Curses, but not Cursed Relics, included.
 																							<br>Spells not included.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
 										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckCycling">
 														<a data-toggle="collapse" href="#deckCycling" aria-expanded="true">CARD CYCLING<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="deckCycling" class="collapse" role="tabpanel">
@@ -444,8 +424,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Card Draw -->
@@ -463,8 +443,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Deck Manipulation -->
@@ -474,16 +454,16 @@
 																					<div id="deckManipulateInfo" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Deck Manipulation:
-																							<br>	- Return card to deck
-																							<br>	- Reorder deck (i.e. "place on bottom" / "place on top")
+																							<br>	- Deck Return
+																							<br>	- Shuffle
 																							<br>	- View top card and optionally reorder
 																							<br>
 																							<br>All spells, units, and attachments were counted.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Discard -->
@@ -501,15 +481,15 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Forced Discard -->
-																<div id="deckMill" class="line_graph chart" alt="Forced Discard Availability by Deck Type"></div>
+																<div id="deckMill2" class="line_graph chart" alt="Forced Discard Availability by Deck Type"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#deckMillInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="deckMillInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#deckMillInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="deckMillInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Forced Discard:
 																							<br>	- All "Discard" targeting opponent deck or hand.
@@ -518,11 +498,11 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
 										<div id="" class="" alt=""></div>
 									</div><!--close deck-type_container-->
 								</div><!--close row-->
@@ -537,11 +517,12 @@
 										<h3><strong>Faction</strong>: </h3> <h4>Statistics in this category allow each card to fit into precisely one faction based on its per-card influence types.</h4>
 										<h4>E.g. Mono Fire includes only cards with only Fire influence, while Rakano includes only dual-color Fire/Justice cards.</h4>
 										<hr>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionGeneral">
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckGeneral">
 														<a data-toggle="collapse" href="#factionGeneral" aria-expanded="true">GENERAL OVERVIEW<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionGeneral" class="collapse" role="tabpanel">
 																<!-- Card Availability -->
 																<div id="factionTotalCards" class="line_graph chart" alt="Card Availability by Faction"></div>
+																			
 																			<br><div role="tablist" aria-multiselectable="true">
 																				<a data-toggle="collapse" href="#factionTotalCardsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 																					<div id="factionTotalCardsInfo" class="collapse" role="tabpanel">
@@ -554,34 +535,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>
-																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#factionTotalCardsData" aria-expanded="true">Raw data<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="factionTotalCardsData" class="collapse" role="tabpanel">
-																						<BLOCKQUOTE>	
-																							<?php if (count($_SESSION['factionTotalCardsData']) > 0): ?>		<table class="sorttable datatable">
-																										<thead>
-																												<?php 
-																													for($i = 0; $i < count($_SESSION['factionTotalCardsData']); $i++) {
-																														echo '<tr>';
-																														echo '<td>'.($_SESSION['labels1'][$i]).'</td>';
-																														$arr1 = $_SESSION['factionTotalCardsData'][$i];
-																														for($j = 0; $j < count($arr1); $j++) {
-																															$arr2 = array_values($arr1[$j]);
-																															for($k = 0; $k < count($arr2); $k++) {
-																																echo '<td>'.$arr2[$k].'</td>';
-																																if ($k==14) echo '</tr>';
-																																};
-																															};
-																														};
-																													 ?>
-																										</thead>
-																									</table>
-																								<?php endif; ?>
-																						</BLOCKQUOTE>
-																					</div>
-																			</div>
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->
 																<hr>
 																
 																<!-- Avg Influence -->									
@@ -596,14 +551,14 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																	
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionRemoval">
-														<a data-toggle="collapse" href="#factionRemoval" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="factionRemoval" class="collapse" role="tabpanel">
+															</div><!--end bigcat infoblock-->
+											</div> <!--end bigcat infotab-->
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckRemoval">
+														<a data-toggle="collapse" href="#factionRemovalPane" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
+															<div id="factionRemovalPane" class="collapse" role="tabpanel">
 																<!-- Removal -->
 																<div id="factionRemoval" class="line_graph chart" alt="Removal Availability by Faction"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
@@ -632,8 +587,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>														
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->														
 																<hr>
 																
 																<!-- Debuffs -->
@@ -648,8 +603,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Forced Discard -->
@@ -659,14 +614,14 @@
 																					<div id="factionMillInfo" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Forced Discard:
-																							<br>	- All "Discard" targeting opponent deck or hand.
+																							<br>	- All "Discard" targeting opponent faction or hand.
 																							<br>
 																							<br>All spells, units, and attachments were counted.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Reactive -->
@@ -683,12 +638,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>				
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionBuffVDebuff">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckBuffVDebuff">
 														<a data-toggle="collapse" href="#factionBuffVDebuff" aria-expanded="true">BUFFS V. DEBUFFS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionBuffVDebuff" class="collapse" role="tabpanel">										
 																<!-- Buff -->
@@ -703,15 +659,15 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>		
 										
 																<!-- Debuffs -->
-																<div id="factionDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
+																<div id="factionDebuff2" class="line_graph chart" alt="Stat-Debuff Availability by Faction"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#factionDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="factionDebuffInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#factionDebuffInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="factionDebuffInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Includes all spells, units, and attachments.
 																							<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
@@ -719,12 +675,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionSpellsCurses">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckSpellsCurses">
 														<a data-toggle="collapse" href="#factionSpellsCurses" aria-expanded="true">SPELLS AND CURSES<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionSpellsCurses" class="collapse" role="tabpanel">
 																<!-- Spells -->
@@ -738,27 +695,28 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Curses -->
-																<div id="factionCurses" class="line_graph chart" alt="Curse Availability by Faction"></div>
+																<div id="factionCurses2" class="line_graph chart" alt="Curse Availability by Faction"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#factionCursesInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="factionCursesInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#factionCursesInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="factionCursesInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Curses, but not Cursed Relics, included.
 																							<br>Spells not included.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionUnitOD">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckUnitOD">
 														<a data-toggle="collapse" href="#factionUnitOD" aria-expanded="true">UNITS: Offense and Defense<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionUnitOD" class="collapse" role="tabpanel">
 																<!-- Units -->
@@ -773,8 +731,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Offense -->
@@ -789,8 +747,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Defense -->
@@ -805,12 +763,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionAllAttachments">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckAllAttachments">
 														<a data-toggle="collapse" href="#factionAllAttachments" aria-expanded="true">ATTACHMENTS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionAllAttachments" class="collapse" role="tabpanel">
 																<!-- Attachments -->
@@ -825,8 +784,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Weapons -->
 																<div id="factionWeapons" class="line_graph chart" alt="Weapon Availability by Faction"></div>
@@ -841,8 +800,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																<!-- Relic Weapons -->
 																<div id="factionRelicWeapons" class="line_graph chart" alt="Relic Weapon Availability by Faction"></div>
@@ -854,8 +813,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->			
 
 																			
 																<hr>
@@ -870,8 +829,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Cursed Relics -->
 																<div id="factionCursedRelics" class="line_graph chart" alt="Cursed Relic Availability by Faction"></div>										
@@ -883,8 +842,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Curses -->
 																<div id="factionCurses" class="line_graph chart" alt="Curse Availability by Faction"></div>
@@ -897,12 +856,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryFactionCycling">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckCycling">
 														<a data-toggle="collapse" href="#factionCycling" aria-expanded="true">CARD CYCLING<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="factionCycling" class="collapse" role="tabpanel">
 																<!-- Card Cycling -->
@@ -925,8 +885,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Card Draw -->
@@ -944,8 +904,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Deck Manipulation -->
@@ -955,16 +915,16 @@
 																					<div id="factionManipulateInfo" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Deck Manipulation:
-																							<br>	- Return card to deck
-																							<br>	- Reorder deck (i.e. "place on bottom" / "place on top")
+																							<br>	- Deck Return
+																							<br>	- Shuffle
 																							<br>	- View top card and optionally reorder
 																							<br>
 																							<br>All spells, units, and attachments were counted.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Discard -->
@@ -982,15 +942,15 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Forced Discard -->
-																<div id="factionMill" class="line_graph chart" alt="Forced Discard Availability by Faction"></div>
+																<div id="factionMill2" class="line_graph chart" alt="Forced Discard Availability by Faction"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#factionMillInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="factionMillInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#factionMillInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="factionMillInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Forced Discard:
 																							<br>	- All "Discard" targeting opponent deck or hand.
@@ -999,11 +959,11 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
 										<div id="" class="" alt=""></div>
 									</div><!--close faction_container-->
 								</div><!--close row-->
@@ -1018,11 +978,12 @@
 										<h3><strong>Influence</strong>: </h3> <h4>Statistics in this category include every card with a given Influence requirement, as a means of broadly characterizing each Influence.</h4>
 										<h4>E.g. Fire includes every single card with any Fire Influence required (Fire + Rakano + Skycrag + Stonescar + Praxis).</h4>
 										<hr>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceGeneral">
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckGeneral">
 														<a data-toggle="collapse" href="#influenceGeneral" aria-expanded="true">GENERAL OVERVIEW<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceGeneral" class="collapse" role="tabpanel">
 																<!-- Card Availability -->
 																<div id="influenceTotalCards" class="line_graph chart" alt="Card Availability by Influence"></div>
+																			
 																			<br><div role="tablist" aria-multiselectable="true">
 																				<a data-toggle="collapse" href="#influenceTotalCardsInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
 																					<div id="influenceTotalCardsInfo" class="collapse" role="tabpanel">
@@ -1035,34 +996,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>
-																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#influenceTotalCardsData" aria-expanded="true">Raw data<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="influenceTotalCardsData" class="collapse" role="tabpanel">
-																						<BLOCKQUOTE>	
-																							<?php if (count($_SESSION['influenceTotalCardsData']) > 0): ?>		<table class="sorttable datatable">
-																										<thead>
-																												<?php 
-																													for($i = 0; $i < count($_SESSION['influenceTotalCardsData']); $i++) {
-																														echo '<tr>';
-																														echo '<td>'.($_SESSION['labels1'][$i]).'</td>';
-																														$arr1 = $_SESSION['influenceTotalCardsData'][$i];
-																														for($j = 0; $j < count($arr1); $j++) {
-																															$arr2 = array_values($arr1[$j]);
-																															for($k = 0; $k < count($arr2); $k++) {
-																																echo '<td>'.$arr2[$k].'</td>';
-																																if ($k==14) echo '</tr>';
-																																};
-																															};
-																														};
-																													 ?>
-																										</thead>
-																									</table>
-																								<?php endif; ?>
-																						</BLOCKQUOTE>
-																					</div>
-																			</div>
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->
 																<hr>
 																
 																<!-- Avg Influence -->									
@@ -1077,14 +1012,14 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																	
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceRemoval">
-														<a data-toggle="collapse" href="#influenceRemoval" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
-															<div id="influenceRemoval" class="collapse" role="tabpanel">
+															</div><!--end bigcat infoblock-->
+											</div> <!--end bigcat infotab-->
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckRemoval">
+														<a data-toggle="collapse" href="#influenceRemovalPane" aria-expanded="true">REMOVAL<span class="glyphicon glyphicon-plus-sign"></span></a>
+															<div id="influenceRemovalPane" class="collapse" role="tabpanel">
 																<!-- Removal -->
 																<div id="influenceRemoval" class="line_graph chart" alt="Removal Availability by Influence"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
@@ -1113,8 +1048,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>														
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->														
 																<hr>
 																
 																<!-- Debuffs -->
@@ -1129,8 +1064,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Forced Discard -->
@@ -1140,14 +1075,14 @@
 																					<div id="influenceMillInfo" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Forced Discard:
-																							<br>	- All "Discard" targeting opponent deck or hand.
+																							<br>	- All "Discard" targeting opponent influence or hand.
 																							<br>
 																							<br>All spells, units, and attachments were counted.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Reactive -->
@@ -1164,12 +1099,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>				
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceBuffVDebuff">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckBuffVDebuff">
 														<a data-toggle="collapse" href="#influenceBuffVDebuff" aria-expanded="true">BUFFS V. DEBUFFS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceBuffVDebuff" class="collapse" role="tabpanel">										
 																<!-- Buff -->
@@ -1184,15 +1120,15 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>		
 										
 																<!-- Debuffs -->
-																<div id="influenceDebuff" class="line_graph chart" alt="Stat-Debuff Availability by Influence"></div>
+																<div id="influenceDebuff2" class="line_graph chart" alt="Stat-Debuff Availability by Influence"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#influenceDebuffInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="influenceDebuffInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#influenceDebuffInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="influenceDebuffInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Includes all spells, units, and attachments.
 																							<br>Debuffs must have been in one of four formats: -X/-X, -Armor, -Strength, or -Health.
@@ -1200,12 +1136,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceSpellsCurses">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckSpellsCurses">
 														<a data-toggle="collapse" href="#influenceSpellsCurses" aria-expanded="true">SPELLS AND CURSES<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceSpellsCurses" class="collapse" role="tabpanel">
 																<!-- Spells -->
@@ -1219,27 +1156,28 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Curses -->
-																<div id="influenceCurses" class="line_graph chart" alt="Curse Availability by Influence"></div>
+																<div id="influenceCurses2" class="line_graph chart" alt="Curse Availability by Influence"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#influenceCursesInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="influenceCursesInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#influenceCursesInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="influenceCursesInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Curses, but not Cursed Relics, included.
 																							<br>Spells not included.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceUnitOD">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckUnitOD">
 														<a data-toggle="collapse" href="#influenceUnitOD" aria-expanded="true">UNITS: Offense and Defense<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceUnitOD" class="collapse" role="tabpanel">
 																<!-- Units -->
@@ -1254,8 +1192,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Offense -->
@@ -1270,8 +1208,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																
 																<!-- Unit Defense -->
@@ -1286,12 +1224,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceAllAttachments">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckAllAttachments">
 														<a data-toggle="collapse" href="#influenceAllAttachments" aria-expanded="true">ATTACHMENTS<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceAllAttachments" class="collapse" role="tabpanel">
 																<!-- Attachments -->
@@ -1306,8 +1245,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Weapons -->
 																<div id="influenceWeapons" class="line_graph chart" alt="Weapon Availability by Influence"></div>
@@ -1322,8 +1261,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
 																<!-- Relic Weapons -->
 																<div id="influenceRelicWeapons" class="line_graph chart" alt="Relic Weapon Availability by Influence"></div>
@@ -1335,8 +1274,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>			
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->			
 
 																			
 																<hr>
@@ -1351,8 +1290,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Cursed Relics -->
 																<div id="influenceCursedRelics" class="line_graph chart" alt="Cursed Relic Availability by Influence"></div>										
@@ -1364,8 +1303,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																<!-- Curses -->
 																<div id="influenceCurses" class="line_graph chart" alt="Curse Availability by Influence"></div>
@@ -1378,12 +1317,13 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>																				
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->																				
 																<hr>
-															</div>
-														</div>
-										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryInfluenceCycling">
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
+														
+										<br><div role="tablist" aria-multiselectable="true" class="bigcat" id="categoryDeckCycling">
 														<a data-toggle="collapse" href="#influenceCycling" aria-expanded="true">CARD CYCLING<span class="glyphicon glyphicon-plus-sign"></span></a>
 															<div id="influenceCycling" class="collapse" role="tabpanel">
 																<!-- Card Cycling -->
@@ -1406,8 +1346,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Card Draw -->
@@ -1425,8 +1365,8 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Deck Manipulation -->
@@ -1436,16 +1376,16 @@
 																					<div id="influenceManipulateInfo" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Deck Manipulation:
-																							<br>	- Return card to deck
-																							<br>	- Reorder deck (i.e. "place on bottom" / "place on top")
+																							<br>	- Deck Return
+																							<br>	- Shuffle
 																							<br>	- View top card and optionally reorder
 																							<br>
 																							<br>All spells, units, and attachments were counted.
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Discard -->
@@ -1463,15 +1403,15 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
 																
 																<!-- Forced Discard -->
-																<div id="influenceMill" class="line_graph chart" alt="Forced Discard Availability by Influence"></div>
+																<div id="influenceMill2" class="line_graph chart" alt="Forced Discard Availability by Influence"></div>
 																			<br><div role="tablist" aria-multiselectable="true">
-																				<a data-toggle="collapse" href="#influenceMillInfo" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
-																					<div id="influenceMillInfo" class="collapse" role="tabpanel">
+																				<a data-toggle="collapse" href="#influenceMillInfo2" aria-expanded="true">Data description<span class="glyphicon glyphicon-plus-sign"></span></a>
+																					<div id="influenceMillInfo2" class="collapse" role="tabpanel">
 																						<BLOCKQUOTE>
 																							<br>Card types represented as Forced Discard:
 																							<br>	- All "Discard" targeting opponent deck or hand.
@@ -1480,11 +1420,11 @@
 																							<br>
 																							<br> Last update: October 30, 2017
 																						</BLOCKQUOTE>
-																					</div>
-																			</div>										
+																					</div><!--end infoblock-->
+																			</div><!--end infotab-->										
 																<hr>
-															</div>
-														</div>
+															</div><!--end bigcat infoblock-->
+														</div><!--end bigcat infotab-->
 										<div id="" class="" alt=""></div>
 									</div><!--close influence_container-->
 								</div><!--close row-->
