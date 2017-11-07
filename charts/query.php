@@ -5224,6 +5224,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$deckRelicsChart = new FusionCharts("mscombi2d", "deckRelics-js" , "600", "350", "deckRelics", "json", $deckRelicsJson);
 		$deckCursedRelicsChart = new FusionCharts("mscombi2d", "deckCursedRelics-js" , "600", "350", "deckCursedRelics", "json", $deckCursedRelicsJson);
 		$deckCursesChart = new FusionCharts("mscombi2d", "deckCurses-js" , "600", "350", "deckCurses", "json", $deckCursesJson);
+		$deckCurses2Chart = new FusionCharts("mscombi2d", "deckCurses2-js" , "600", "350", "deckCurses2", "json", $deckCursesJson);
 		$deckRemovalChart = new FusionCharts("mscombi2d", "deckRemoval-js" , "600", "350", "deckRemoval", "json", $deckRemovalJson);
 		$deckReactiveChart = new FusionCharts("mscombi2d", "deckReactive-js" , "600", "350", "deckReactive", "json", $deckReactiveJson);
 		$deckCycleChart = new FusionCharts("mscombi2d", "deckCycle-js" , "600", "350", "deckCycle", "json", $deckCycleJson);
@@ -5231,13 +5232,13 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$deckDrawChart = new FusionCharts("mscombi2d", "deckDraw-js" , "600", "350", "deckDraw", "json", $deckDrawJson);
 		$deckDiscardChart = new FusionCharts("mscombi2d", "deckDiscard-js" , "600", "350", "deckDiscard", "json", $deckDiscardJson);
 		$deckMillChart = new FusionCharts("mscombi2d", "deckMill-js" , "600", "350", "deckMill", "json", $deckMillJson);
+		$deckMill2Chart = new FusionCharts("mscombi2d", "deckMill2-js" , "600", "350", "deckMill2", "json", $deckMillJson);
 		$deckBuffChart = new FusionCharts("mscombi2d", "deckBuff-js" , "600", "350", "deckBuff", "json", $deckBuffJson);
 		$deckDebuffChart = new FusionCharts("mscombi2d", "deckDebuff-js" , "600", "350", "deckDebuff", "json", $deckDebuffJson);
+		$deckDebuff2Chart = new FusionCharts("mscombi2d", "deckDebuff2-js" , "600", "350", "deckDebuff2", "json", $deckDebuffJson);
 		$deckInfluenceChart = new FusionCharts("mscombi2d", "deckInfluence-js" , "600", "350", "deckInfluence", "json", $deckInfluenceJson);
 		
-		
-		
-	// faction
+	//faction
 		$factionTotalCardsChart = new FusionCharts("mscombi2d", "factionCards-js" , "600", "350", "factionTotalCards", "json", $factionTotalCardsJson);
 		$factionUnitsChart = new FusionCharts("mscombi2d", "factionUnits-js" , "600", "350", "factionUnits", "json", $factionUnitsJson);
 		$factionOffenseChart = new FusionCharts("mscombi2d", "factionOffense-js" , "600", "350", "factionOffense", "json", $factionOffenseJson);
@@ -5249,6 +5250,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$factionRelicsChart = new FusionCharts("mscombi2d", "factionRelics-js" , "600", "350", "factionRelics", "json", $factionRelicsJson);
 		$factionCursedRelicsChart = new FusionCharts("mscombi2d", "factionCursedRelics-js" , "600", "350", "factionCursedRelics", "json", $factionCursedRelicsJson);
 		$factionCursesChart = new FusionCharts("mscombi2d", "factionCurses-js" , "600", "350", "factionCurses", "json", $factionCursesJson);
+		$factionCurses2Chart = new FusionCharts("mscombi2d", "factionCurses2-js" , "600", "350", "factionCurses2", "json", $factionCursesJson);
 		$factionRemovalChart = new FusionCharts("mscombi2d", "factionRemoval-js" , "600", "350", "factionRemoval", "json", $factionRemovalJson);
 		$factionReactiveChart = new FusionCharts("mscombi2d", "factionReactive-js" , "600", "350", "factionReactive", "json", $factionReactiveJson);
 		$factionCycleChart = new FusionCharts("mscombi2d", "factionCycle-js" , "600", "350", "factionCycle", "json", $factionCycleJson);
@@ -5256,11 +5258,13 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$factionDrawChart = new FusionCharts("mscombi2d", "factionDraw-js" , "600", "350", "factionDraw", "json", $factionDrawJson);
 		$factionDiscardChart = new FusionCharts("mscombi2d", "factionDiscard-js" , "600", "350", "factionDiscard", "json", $factionDiscardJson);
 		$factionMillChart = new FusionCharts("mscombi2d", "factionMill-js" , "600", "350", "factionMill", "json", $factionMillJson);
+		$factionMill2Chart = new FusionCharts("mscombi2d", "factionMill2-js" , "600", "350", "factionMill2", "json", $factionMillJson);
 		$factionBuffChart = new FusionCharts("mscombi2d", "factionBuff-js" , "600", "350", "factionBuff", "json", $factionBuffJson);
 		$factionDebuffChart = new FusionCharts("mscombi2d", "factionDebuff-js" , "600", "350", "factionDebuff", "json", $factionDebuffJson);
+		$factionDebuff2Chart = new FusionCharts("mscombi2d", "factionDebuff2-js" , "600", "350", "factionDebuff2", "json", $factionDebuffJson);
 		$factionInfluenceChart = new FusionCharts("mscombi2d", "factionInfluence-js" , "600", "350", "factionInfluence", "json", $factionInfluenceJson);
-		
-	// influence
+
+	//influence
 		$influenceTotalCardsChart = new FusionCharts("mscombi2d", "influenceCards-js" , "600", "350", "influenceTotalCards", "json", $influenceTotalCardsJson);
 		$influenceUnitsChart = new FusionCharts("mscombi2d", "influenceUnits-js" , "600", "350", "influenceUnits", "json", $influenceUnitsJson);
 		$influenceOffenseChart = new FusionCharts("mscombi2d", "influenceOffense-js" , "600", "350", "influenceOffense", "json", $influenceOffenseJson);
@@ -5272,6 +5276,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$influenceRelicsChart = new FusionCharts("mscombi2d", "influenceRelics-js" , "600", "350", "influenceRelics", "json", $influenceRelicsJson);
 		$influenceCursedRelicsChart = new FusionCharts("mscombi2d", "influenceCursedRelics-js" , "600", "350", "influenceCursedRelics", "json", $influenceCursedRelicsJson);
 		$influenceCursesChart = new FusionCharts("mscombi2d", "influenceCurses-js" , "600", "350", "influenceCurses", "json", $influenceCursesJson);
+		$influenceCurses2Chart = new FusionCharts("mscombi2d", "influenceCurses2-js" , "600", "350", "influenceCurses2", "json", $influenceCursesJson);
 		$influenceRemovalChart = new FusionCharts("mscombi2d", "influenceRemoval-js" , "600", "350", "influenceRemoval", "json", $influenceRemovalJson);
 		$influenceReactiveChart = new FusionCharts("mscombi2d", "influenceReactive-js" , "600", "350", "influenceReactive", "json", $influenceReactiveJson);
 		$influenceCycleChart = new FusionCharts("mscombi2d", "influenceCycle-js" , "600", "350", "influenceCycle", "json", $influenceCycleJson);
@@ -5279,8 +5284,10 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$influenceDrawChart = new FusionCharts("mscombi2d", "influenceDraw-js" , "600", "350", "influenceDraw", "json", $influenceDrawJson);
 		$influenceDiscardChart = new FusionCharts("mscombi2d", "influenceDiscard-js" , "600", "350", "influenceDiscard", "json", $influenceDiscardJson);
 		$influenceMillChart = new FusionCharts("mscombi2d", "influenceMill-js" , "600", "350", "influenceMill", "json", $influenceMillJson);
+		$influenceMill2Chart = new FusionCharts("mscombi2d", "influenceMill2-js" , "600", "350", "influenceMill2", "json", $influenceMillJson);
 		$influenceBuffChart = new FusionCharts("mscombi2d", "influenceBuff-js" , "600", "350", "influenceBuff", "json", $influenceBuffJson);
 		$influenceDebuffChart = new FusionCharts("mscombi2d", "influenceDebuff-js" , "600", "350", "influenceDebuff", "json", $influenceDebuffJson);
+		$influenceDebuff2Chart = new FusionCharts("mscombi2d", "influenceDebuff2-js" , "600", "350", "influenceDebuff2", "json", $influenceDebuffJson);
 		$influenceInfluenceChart = new FusionCharts("mscombi2d", "influenceInfluence-js" , "600", "350", "influenceInfluence", "json", $influenceInfluenceJson);
 		
 // render charts
@@ -5299,12 +5306,15 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$deckRelicsChart->render();
 		$deckCursedRelicsChart->render();
 		$deckCursesChart->render();
+		$deckCurses2Chart->render();
 		$deckCycleChart->render();
 		$deckDrawChart->render();
 		$deckManipulateChart->render();
 		$deckDiscardChart->render();
 		$deckMillChart->render();
+		$deckMill2Chart->render();
 		$deckDebuffChart->render();
+		$deckDebuff2Chart->render();
 		$deckBuffChart->render();
 		$deckInfluenceChart->render();
 		
@@ -5322,12 +5332,15 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$factionRelicsChart->render();
 		$factionCursedRelicsChart->render();
 		$factionCursesChart->render();
+		$factionCurses2Chart->render();
 		$factionCycleChart->render();
 		$factionDrawChart->render();
 		$factionManipulateChart->render();
 		$factionDiscardChart->render();
 		$factionMillChart->render();
+		$factionMill2Chart->render();
 		$factionDebuffChart->render();
+		$factionDebuff2Chart->render();
 		$factionBuffChart->render();
 		$factionInfluenceChart->render();
 		
@@ -5345,12 +5358,15 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 		$influenceRelicsChart->render();
 		$influenceCursedRelicsChart->render();
 		$influenceCursesChart->render();
+		$influenceCurses2Chart->render();
 		$influenceCycleChart->render();
 		$influenceDrawChart->render();
 		$influenceManipulateChart->render();
 		$influenceDiscardChart->render();
 		$influenceMillChart->render();
+		$influenceMill2Chart->render();
 		$influenceDebuffChart->render();
+		$influenceDebuff2Chart->render();
 		$influenceBuffChart->render();
 		$influenceInfluenceChart->render();
 		
@@ -5387,7 +5403,11 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	
 	$_SESSION['deckCursesData'] = array($powerArray,$monofiredeckCurses,$monotimedeckCurses,$monojusticedeckCurses,$monoprimaldeckCurses,$monoshadowdeckCurses,$argenportdeckCurses,$combreideckCurses,$elysiandeckCurses,$felndeckCurses,$hoorudeckCurses,$praxisdeckCurses,$rakanodeckCurses,$skycragdeckCurses,$stonescardeckCurses,$xenandeckCurses);
 	
+	$_SESSION['deckCurses2Data'] = $_SESSION['deckCursesData'];
+	
 	$_SESSION['deckDebuffData'] = array($powerArray,$monofiredeckDebuff,$monotimedeckDebuff,$monojusticedeckDebuff,$monoprimaldeckDebuff,$monoshadowdeckDebuff,$argenportdeckDebuff,$combreideckDebuff,$elysiandeckDebuff,$felndeckDebuff,$hoorudeckDebuff,$praxisdeckDebuff,$rakanodeckDebuff,$skycragdeckDebuff,$stonescardeckDebuff,$xenandeckDebuff);
+	
+	$_SESSION['deckDebuff2Data'] = $_SESSION['deckDebuffData'];
 	
 	$_SESSION['deckBuffData'] = array($powerArray,$monofiredeckBuff,$monotimedeckBuff,$monojusticedeckBuff,$monoprimaldeckBuff,$monoshadowdeckBuff,$argenportdeckBuff,$combreideckBuff,$elysiandeckBuff,$felndeckBuff,$hoorudeckBuff,$praxisdeckBuff,$rakanodeckBuff,$skycragdeckBuff,$stonescardeckBuff,$xenandeckBuff);
 	
@@ -5402,6 +5422,8 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	$_SESSION['deckDiscardData'] = array($powerArray,$monofiredeckDiscard,$monotimedeckDiscard,$monojusticedeckDiscard,$monoprimaldeckDiscard,$monoshadowdeckDiscard,$argenportdeckDiscard,$combreideckDiscard,$elysiandeckDiscard,$felndeckDiscard,$hoorudeckDiscard,$praxisdeckDiscard,$rakanodeckDiscard,$skycragdeckDiscard,$stonescardeckDiscard,$xenandeckDiscard);
 	
 	$_SESSION['deckMillData'] = array($powerArray,$monofiredeckMill,$monotimedeckMill,$monojusticedeckMill,$monoprimaldeckMill,$monoshadowdeckMill,$argenportdeckMill,$combreideckMill,$elysiandeckMill,$felndeckMill,$hoorudeckMill,$praxisdeckMill,$rakanodeckMill,$skycragdeckMill,$stonescardeckMill,$xenandeckMill);
+	
+	$_SESSION['deckMill2Data'] = $_SESSION['deckMillData'];
 	
 	// faction
 	
@@ -5435,7 +5457,11 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	
 	$_SESSION['factionCursesData'] = array($powerArray,$monofireCurses,$monotimeCurses,$monojusticeCurses,$monoprimalCurses,$monoshadowCurses,$argenportCurses,$combreiCurses,$elysianCurses,$felnCurses,$hooruCurses,$praxisCurses,$rakanoCurses,$skycragCurses,$stonescarCurses,$xenanCurses);
 	
+	$_SESSION['factionCurses2Data'] = $_SESSION['factionCursesData'];
+	
 	$_SESSION['factionDebuffData'] = array($powerArray,$monofireDebuff,$monotimeDebuff,$monojusticeDebuff,$monoprimalDebuff,$monoshadowDebuff,$argenportDebuff,$combreiDebuff,$elysianDebuff,$felnDebuff,$hooruDebuff,$praxisDebuff,$rakanoDebuff,$skycragDebuff,$stonescarDebuff,$xenanDebuff);
+	
+	$_SESSION['factionDebuff2Data'] = $_SESSION['factionDebuffData'];
 	
 	$_SESSION['factionBuffData'] = array($powerArray,$monofireBuff,$monotimeBuff,$monojusticeBuff,$monoprimalBuff,$monoshadowBuff,$argenportBuff,$combreiBuff,$elysianBuff,$felnBuff,$hooruBuff,$praxisBuff,$rakanoBuff,$skycragBuff,$stonescarBuff,$xenanBuff);
 	
@@ -5450,6 +5476,8 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	$_SESSION['factionDiscardData'] = array($powerArray,$monofireDiscard,$monotimeDiscard,$monojusticeDiscard,$monoprimalDiscard,$monoshadowDiscard,$argenportDiscard,$combreiDiscard,$elysianDiscard,$felnDiscard,$hooruDiscard,$praxisDiscard,$rakanoDiscard,$skycragDiscard,$stonescarDiscard,$xenanDiscard);
 	
 	$_SESSION['factionMillData'] = array($powerArray,$monofireMill,$monotimeMill,$monojusticeMill,$monoprimalMill,$monoshadowMill,$argenportMill,$combreiMill,$elysianMill,$felnMill,$hooruMill,$praxisMill,$rakanoMill,$skycragMill,$stonescarMill,$xenanMill);
+	
+	$_SESSION['factionMill2Data'] = $_SESSION['factionMillData'];
 	
 	// influence
 
@@ -5479,7 +5507,11 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	
 	$_SESSION['CursesData'] = array($powerArray,$fireCurses,$timeCurses,$justiceCurses,$primalCurses,$shadowCurses,$noneCurses,$allCurses);
 	
+	$_SESSION['Curses2Data'] = $_SESSION['CursesData'];
+	
 	$_SESSION['DebuffData'] = array($powerArray,$fireDebuff,$timeDebuff,$justiceDebuff,$primalDebuff,$shadowDebuff,$noneDebuff,$allDebuff);
+	
+	$_SESSION['Debuff2Data'] = $_SESSION['DebuffData'];
 	
 	$_SESSION['BuffData'] = array($powerArray,$fireBuff,$timeBuff,$justiceBuff,$primalBuff,$shadowBuff,$noneBuff,$allBuff);
 	
@@ -5494,5 +5526,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	$_SESSION['DiscardData'] = array($powerArray,$fireDiscard,$timeDiscard,$justiceDiscard,$primalDiscard,$shadowDiscard,$noneDiscard,$allDiscard);	
 	
 	$_SESSION['MillData'] = array($powerArray,$fireMill,$timeMill,$justiceMill,$primalMill,$shadowMill,$noneMill,$allMill);	
+	
+	$_SESSION['Mill2Data'] = $_SESSION['MillData'];
 	
 ?>
