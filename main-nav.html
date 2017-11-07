@@ -6,18 +6,25 @@
 			<div class="nav nav-pills nav-justified flex-column flex-sm-row collapse" id="collapsible-menu">
 				<li class="nav-item" id="nav-home"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/index.php">Home</a></li>
 				<li class="nav-item dropdown" id="nav-topics">
-					<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Topics</a>
-						<ul class="dropdown-menu">
-							<a class="dropdown-item" href="https://kaelosthereckoning.com/topics/ranked.php">Deck Construction</a>
-							<a class="dropdown-item" href="https://kaelosthereckoning.com/topics/draft.php">Draft</a>
-							<a class="dropdown-item" href="https://kaelosthereckoning.com/topics/tournament.php">Tournament</a>
-							<a class="dropdown-item" href="https://kaelosthereckoning.com/topics/Eternal_AI.php">Eternal AI</a>
-							</ul>
+					<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle btn" data-toggle="dropdown" role="button" href="#">Topics</a>
+						<ul class="dropdown-menu" id="topics-dropdown">
+							<li><a class="dropdown-item" href="https://kaelosthereckoning.com/topics/ranked.php">Deck Construction</a></li>
+							<li><a class="dropdown-item" href="https://kaelosthereckoning.com/topics/draft.php">Draft</a></li>
+							<li><a class="dropdown-item" href="https://kaelosthereckoning.com/topics/tournament.php">Tournament</a></li>
+							<li><a class="dropdown-item" href="https://kaelosthereckoning.com/topics/Eternal_AI.php">Eternal AI</a></li>
+						</ul>
 				</li>
 				<li class="nav-item" id="nav-analyses"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/analyses.php">Analyses</a></li>
 				<li class="nav-item" id="nav-charts"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/charts.php">Charts</a></li>
 				<li class="nav-item" id="nav-programs"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/programs.php">Programs</a></li>
-				<li class="nav-item" id="nav-reference"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/reference.php">Reference</a>
+				<li class="nav-item dropdown" id="nav-reference">
+					<a class="flex-sm-fill text-sm-center nav-link dropdown-toggle" data-toggle="dropdown" role="button" href="#">Reference</a>
+						<ul class="dropdown-menu">
+							<a class="dropdown-item" href="https://kaelosthereckoning.com/reference/tournament-data.php">Tournament Data</a>
+							<a class="dropdown-item" href="https://kaelosthereckoning.com/reference/prob-tables.php">Probability Tables</a>
+							<a class="dropdown-item" href="https://kaelosthereckoning.com/reference/patch-notes.php">Patch Notes</a>
+						</ul>
+				</li>
 				<li class="nav-item" id="nav-search"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/card-search.php">Card Search</a>
 				<li class="nav-item" id="nav-builder"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/deck-builder.php">Deck Builder</a>
 				<li class="nav-item bottom"  id="nav-donate"><a class="flex-sm-fill text-sm-center nav-link" href="https://kaelosthereckoning.com/donate.php">Donate</a></li>
