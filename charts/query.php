@@ -1881,7 +1881,7 @@ while($monofireRow = mysqli_fetch_array($monofireResult)){
 	
 	$deckpalette = "#FF0000,#FFD700,#008000,#0000FF,#4B0082,#556B2F,#00FF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
 	$factionpalette = "#FF0000,#FFD700,#008000,#0000FF,#4B0082,#556B2F,#00FF00,#4385FF,#8A2BE2,#008080,#FA8072,#FF4500,#00FFFF, #800000, #483D8B";
-	$influencepalette = "#ff0000,#008000,#FFD700,#0000FF,#4B0082,#708090";
+	$influencepalette = "#ff0000,#FFD700,#008000,#0000FF,#4B0082,#708090";
 
 	
 		// deck
