@@ -1,14 +1,14 @@
 
-UPDATE `eternal_cards` SET `[Deadly]` = 1 WHERE MATCH `cardtext` AGAINST ('"deadly"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Deal]` = 1 WHERE MATCH `cardtext` AGAINST ('"deal"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Discard]` = 1 WHERE MATCH `cardtext` AGAINST ('"discard"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Exhaust]` = 1 WHERE MATCH `cardtext` AGAINST ('"exhaust"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Kill]` = 1 WHERE MATCH `cardtext` AGAINST ('"kill"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Killer]` = 1 WHERE MATCH `cardtext` AGAINST ('"killer"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Negate]` = 1 WHERE MATCH `cardtext` AGAINST ('"negate"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Sacrifice]` = 1 WHERE MATCH `cardtext` AGAINST ('"sacrifice"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Silence]` = 1 WHERE MATCH `cardtext` AGAINST ('"silence"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Slow]` = 1 WHERE MATCH `cardtext` AGAINST ('"double the cost of a card"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Deadly]` = IF((`cardtext` LIKE '%Deadly%'),1,0);
+UPDATE `eternal_cards` SET `[Deal]` = IF((`cardtext` LIKE '%Deal%'),1,0);
+UPDATE `eternal_cards` SET `[Discard]` = IF((`cardtext` LIKE '%Discard%'),1,0);
+UPDATE `eternal_cards` SET `[Exhaust]` = IF((`cardtext` LIKE '%Exhaust%'),1,0);
+UPDATE `eternal_cards` SET `[Kill]` = IF((`cardtext` LIKE '%Kill %'),1,0);
+UPDATE `eternal_cards` SET `[Killer]` = IF((`cardtext` LIKE '%Killer%'),1,0);
+UPDATE `eternal_cards` SET `[Negate]` = IF((`cardtext` LIKE '%Negate%'),1,0);
+UPDATE `eternal_cards` SET `[Sacrifice]` = IF((`cardtext` LIKE '%Sacrifice%'),1,0);
+UPDATE `eternal_cards` SET `[Silence]` = IF((`cardtext` LIKE '%Silence%'),1,0);
+UPDATE `eternal_cards` SET `[Slow]` = IF((`cardtext` LIKE '%double the cost of a card%'),1,0);
 UPDATE `eternal_cards` SET `[Steal]` = 1 WHERE( 
 		`cardtext` LIKE '% steal %' OR 
 		`cardtext` LIKE	'%draw%enemy deck%' OR 
@@ -25,10 +25,9 @@ UPDATE `eternal_cards` SET `[Steal]` = 0 WHERE(
 		`cardtext` NOT LIKE '%draw%enemy player_s hand%' AND 
 		`cardtext` NOT LIKE '%draw%each player_s deck%' AND
 		`cardtext` NOT LIKE '%when an enemy unit dies_ it goes into your void%');
-UPDATE `eternal_cards` SET `[Stun]` = 1 WHERE MATCH `cardtext` AGAINST ('"stun"' IN BOOLEAN MODE);
-UPDATE `eternal_cards` SET `[Teleport]` = 1 WHERE`cardtext` LIKE '%put%unit%into%owner_s hand%';
-UPDATE `eternal_cards` SET `[Teleport]` = 0 WHERE`cardtext` NOT LIKE '%put%unit%into%owner_s hand%';
-UPDATE `eternal_cards` SET `[Transform]` = 1 WHERE MATCH `cardtext` AGAINST ('"transform"' IN BOOLEAN MODE);
+UPDATE `eternal_cards` SET `[Stun]` = IF((`cardtext` LIKE '%Stun%'),1,0);
+UPDATE `eternal_cards` SET `[Teleport]` = IF((`cardtext` LIKE '%put%unit%into%owner_s hand%'),1,0);
+UPDATE `eternal_cards` SET `[Transform]` = IF((`cardtext` LIKE '%Transform%'),1,0);;
 UPDATE `eternal_cards` SET `removal` = 1 WHERE (
 	`[Deadly]` = 1 OR
 	`[Deal]` = 1 OR
