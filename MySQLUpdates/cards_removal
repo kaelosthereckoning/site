@@ -1,6 +1,5 @@
-
+UPDATE `eternal_cards` SET `[Damage]` = IF((`cardtext` LIKE '%Damage%'),1,0);
 UPDATE `eternal_cards` SET `[Deadly]` = IF((`cardtext` LIKE '%Deadly%'),1,0);
-UPDATE `eternal_cards` SET `[Deal]` = IF((`cardtext` LIKE '%Deal%'),1,0);
 UPDATE `eternal_cards` SET `[Discard]` = IF((`cardtext` LIKE '%Discard%'),1,0);
 UPDATE `eternal_cards` SET `[Exhaust]` = IF((`cardtext` LIKE '%Exhaust%'),1,0);
 UPDATE `eternal_cards` SET `[Kill]` = IF((`cardtext` LIKE '%Kill %'),1,0);
@@ -29,8 +28,8 @@ UPDATE `eternal_cards` SET `[Stun]` = IF((`cardtext` LIKE '%Stun%'),1,0);
 UPDATE `eternal_cards` SET `[Teleport]` = IF((`cardtext` LIKE '%put%unit%into%owner_s hand%'),1,0);
 UPDATE `eternal_cards` SET `[Transform]` = IF((`cardtext` LIKE '%Transform%'),1,0);;
 UPDATE `eternal_cards` SET `removal` = 1 WHERE (
+	`[Damage]` = 1 OR
 	`[Deadly]` = 1 OR
-	`[Deal]` = 1 OR
 	`[Discard]` = 1 OR
 	`[Exhaust]` = 1 OR
 	`[Kill]` = 1 OR
