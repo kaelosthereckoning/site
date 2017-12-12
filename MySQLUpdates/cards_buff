@@ -1,11 +1,7 @@
-UPDATE `eternal_cards` SET `buffarmor` = 0 WHERE `cardtext` NOT LIKE '%+_[Armor]%';
-UPDATE `eternal_cards` SET `buffstrength` = 0 WHERE `cardtext` NOT LIKE '%+_[Strength]%';
-UPDATE `eternal_cards` SET `buffhealth` = 0 WHERE `cardtext` NOT LIKE '%+_[Health]%';
-UPDATE `eternal_cards` SET `buffunit` = 0 WHERE `cardtext` NOT LIKE '%+_/+%';
-UPDATE `eternal_cards` SET `buffarmor` = 1 WHERE `cardtext` LIKE '%+_[Armor]%';
-UPDATE `eternal_cards` SET `buffstrength` = 1 WHERE `cardtext` LIKE '%+_[Strength]%';
-UPDATE `eternal_cards` SET `buffhealth` = 1 WHERE `cardtext` LIKE '%+_[Health]%';
-UPDATE `eternal_cards` SET `buffunit` = 1 WHERE `cardtext` LIKE '%+_/-%';
+UPDATE `eternal_cards` SET `buffarmor` = IF((`cardtext` LIKE '%+_[Armor]%'),0,1);
+UPDATE `eternal_cards` SET `buffhealth` = IF((`cardtext` LIKE '%+_[Health]%'),0,1);
+UPDATE `eternal_cards` SET `buffstrength` = IF((`cardtext` LIKE '%+_[Strength]%'),0,1);
+UPDATE `eternal_cards` SET `buffunit` = IF((`cardtext` LIKE '%+_/+%'),0,1);
 UPDATE `eternal_cards` SET `buff` = 1 WHERE( 
 		`buffarmor` = 1 OR 
 		`buffstrength` = 1 OR 
