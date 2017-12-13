@@ -112,24 +112,34 @@
 	UPDATE `eternal_cards` SET `[Warcry]` = IF ((`cardtext` LIKE '%Warcry%'),1,0);
 	UPDATE `eternal_cards` SET `[Warp]` = IF ((`cardtext` LIKE '%Warp%'),1,0);
 	UPDATE `eternal_cards` SET `[When]` = IF ((`cardtext` LIKE '%when%'),1,0);
-	UPDATE `eternal_cards` SET `buff` = 1 WHERE `buffarmor` = 1 OR `buffstrength` = 1 OR `buffhealth` = 1 OR `buffunit` = 1;
-	UPDATE `eternal_cards` SET `debuff` = 1 WHERE `debuffarmor` = 1 or `debuffstrength` = 1 OR `debuffhealth` = 1 OR `debuffunit` = 1;
-	UPDATE `eternal_cards` SET `buffarmor` = 0 WHERE `cardtext` NOT LIKE '%+_[Armor]%';
-	UPDATE `eternal_cards` SET `buffstrength` = 0 WHERE `cardtext` NOT LIKE '%+_[Strength]%';
-	UPDATE `eternal_cards` SET `buffhealth` = 0 WHERE `cardtext` NOT LIKE '%+_[Health]%';
-	UPDATE `eternal_cards` SET `buffunit` = 0 WHERE `cardtext` NOT LIKE '%+_/+%';
-	UPDATE `eternal_cards` SET `debuffarmor` = 0 WHERE `cardtext` NOT LIKE '%-_[Armor]%';
-	UPDATE `eternal_cards` SET `debuffstrength` = 0 WHERE `cardtext` NOT LIKE '%-_[Strength]%';
-	UPDATE `eternal_cards` SET `debuffhealth` = 0 WHERE `cardtext` NOT LIKE '%-_[Health]%';
-	UPDATE `eternal_cards` SET `debuffunit` = 0 WHERE `cardtext` NOT LIKE '%-_/-%';
-	UPDATE `eternal_cards` SET `buffarmor` = 1 WHERE `cardtext` LIKE '%+_[Armor]%';
-	UPDATE `eternal_cards` SET `buffstrength` = 1 WHERE `cardtext` LIKE '%+_[Strength]%';
-	UPDATE `eternal_cards` SET `buffhealth` = 1 WHERE `cardtext` LIKE '%+_[Health]%';
-	UPDATE `eternal_cards` SET `buffunit` = 1 WHERE `cardtext` LIKE '%+_/+%';
-	UPDATE `eternal_cards` SET `debuffarmor` = 1 WHERE `cardtext` LIKE '%-_[Armor]%';
-	UPDATE `eternal_cards` SET `debuffstrength` = 1 WHERE `cardtext` LIKE '%-_[Strength]%';
-	UPDATE `eternal_cards` SET `debuffhealth` = 1 WHERE `cardtext` LIKE '%-_[Health]%';
-	UPDATE `eternal_cards` SET `debuffunit` = 1 WHERE `cardtext` LIKE '%-_/-%';
+	UPDATE `eternal_cards` SET `buffarmor` = IF((`cardtext` LIKE '%+_[Armor]%'),1,0);
+	UPDATE `eternal_cards` SET `buffhealth` = IF((`cardtext` LIKE '%+_[Health]%'),1,0);
+	UPDATE `eternal_cards` SET `buffstrength` = IF((`cardtext` LIKE '%+_[Strength]%'),1,0);
+	UPDATE `eternal_cards` SET `buffunit` = IF((`cardtext` LIKE '%+_/+%'),1,0);
+	UPDATE `eternal_cards` SET `buff` = 1 WHERE( 
+			`buffarmor` = 1 OR 
+			`buffstrength` = 1 OR 
+			`buffhealth` = 1 OR 
+			`buffunit` = 1);
+	UPDATE `eternal_cards` SET `buff` = 0 WHERE( 
+			`buffarmor` = 0 AND  
+			`buffstrength` = 0 AND  
+			`buffhealth` = 0 AND  
+			`buffunit` = 0);
+	UPDATE `eternal_cards` SET `debuffarmor` = IF((`cardtext` LIKE '%-_[Armor]%'),1,0);
+	UPDATE `eternal_cards` SET `debuffhealth` = IF((`cardtext` LIKE '%-_[Health]%'),1,0);
+	UPDATE `eternal_cards` SET `debuffstrength` = IF((`cardtext` LIKE '%-_[Strength]%'),1,0);
+	UPDATE `eternal_cards` SET `debuffunit` = IF((`cardtext` LIKE '%-_/-%'),1,0);
+	UPDATE `eternal_cards` SET `debuff` = 1 WHERE( 
+			`debuffarmor` = 1 OR 
+			`debuffstrength` = 1 OR 
+			`debuffhealth` = 1 OR 
+			`debuffunit` = 1);
+	UPDATE `eternal_cards` SET `debuff` = 0 WHERE( 
+			`debuffarmor` = 0 AND  
+			`debuffstrength` = 0 AND  
+			`debuffhealth` = 0 AND  
+			`debuffunit` = 0);
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport90` = IF(`power_curve`.`power90` > 0, `power_curve`.`power90`, `eternal_cards`.`powersupport90`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport80` = IF(`power_curve`.`power80` > 0, `power_curve`.`power80`, `eternal_cards`.`powersupport80`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport70` = IF(`power_curve`.`power70` > 0, `power_curve`.`power70`, `eternal_cards`.`powersupport70`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
