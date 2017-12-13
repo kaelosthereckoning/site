@@ -14,10 +14,7 @@
 	UPDATE `eternal_cards` SET `skycragdeck` = IF ((`faction` LIKE 'Skycrag'),1,0);
 	UPDATE `eternal_cards` SET `stonescardeck` = IF ((`faction` LIKE 'Stonescar'),1,0);
 	UPDATE `eternal_cards` SET `xenandeck` = IF ((`faction` LIKE 'Xenan'),1,0);
-	UPDATE `eternal_cards` SET `[Aegis]` = IF ((
-	`cardtext` LIKE '%Aegis%' AND
-	`cardtext` NOT LIKE '%can't be negated or blocked by Aegis%'
-	),1,0);
+	UPDATE `eternal_cards` SET `[Aegis]` = IF ((`cardtext` LIKE '%Aegis%' AND `cardtext` NOT LIKE '%blocked by Aegis%'),1,0);
 	UPDATE `eternal_cards` SET `[All]` = IF ((`cardtext` LIKE '%all%'),1,0);
 	UPDATE `eternal_cards` SET `[Ally]` = IF ((`cardtext` LIKE '%Ally%'),1,0);
 	UPDATE `eternal_cards` SET `[Ambush]` = IF ((`cardtext` LIKE '%Ambush%'),1,0);
@@ -30,7 +27,7 @@
 	UPDATE `eternal_cards` SET `[Charge]` = IF ((`cardtext` LIKE '%Charge%'),1,0);
 	UPDATE `eternal_cards` SET `[Choice]` = IF ((`cardtext` LIKE '%choice%' OR `cardtext` LIKE '%choose%'),1,0);
 	UPDATE `eternal_cards` SET `[Copy: as noun]` = IF ((`cardtext` LIKE '%each copy%' OR `cardtext` LIKE '%copies%'),1,0);
-	UPDATE `eternal_cards` SET `[Copy: as verb]` = IF ((`cardtext` LIKE '%copy%' AND `cardtext NOT LIKE '%each copy%'),1,0);
+	UPDATE `eternal_cards` SET `[Copy: as verb]` = IF ((`cardtext` LIKE '%copy%' AND `cardtext` NOT LIKE '%each copy%'),1,0);
 	UPDATE `eternal_cards` SET `[Cost]` = IF ((`cardtext` LIKE '%cost%'),1,0);
 	UPDATE `eternal_cards` SET `[Damage]` = IF ((`cardtext` LIKE '%damage%'),1,0);
 	UPDATE `eternal_cards` SET `[Deadly]` = IF ((`cardtext` LIKE '%Deadly%'),1,0);
