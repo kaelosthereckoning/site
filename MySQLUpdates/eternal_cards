@@ -307,3 +307,26 @@
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport70` = IF(`power_curve`.`power70` > 0, `power_curve`.`power70`, `eternal_cards`.`powersupport70`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport60` = IF(`power_curve`.`power60` > 0, `power_curve`.`power60`, `eternal_cards`.`powersupport60`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport50` = IF(`power_curve`.`power50` > 0, `power_curve`.`power50`, `eternal_cards`.`powersupport50`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
+	UPDATE `eternal_cards` SET `removal` = IF((
+	`[Affliction]` <> 0 OR
+	`[Ambush]` <> 0 OR
+	`[Deadly]` <> 0 OR
+	`debuffhealth` <> 0 OR
+	`debuffunit` <> 0 OR
+	`[Exhaust]` <> 0 OR
+	`[Kill]` <> 0 OR
+	`[Killer]` <> 0 OR
+	`milling` <> 0 OR
+	`[Negate]` <> 0 OR
+	`cardtype` = "Relic Weapon" OR
+	`[Sacrifice]` <> 0 OR
+	`[Silence]` <> 0 OR
+	`[Slow]` <> 0 OR
+	`[Steal]` <> 0 OR
+	`[Stun]` <> 0 OR
+	`[Teleport]` <> 0 OR
+	`[Transform]` <> 0 OR
+	`[Killer]` <> 0 OR
+	(`[Damage]` <> 0 AND `targetunit` <> 0)
+	),1,0);
+	
