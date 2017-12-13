@@ -114,120 +114,114 @@
 	UPDATE `eternal_cards` SET `buffhealth` = IF((`cardtext` LIKE '%+_[Health]%'),1,0);
 	UPDATE `eternal_cards` SET `buffstrength` = IF((`cardtext` LIKE '%+_[Strength]%'),1,0);
 	UPDATE `eternal_cards` SET `buffunit` = IF((`cardtext` LIKE '%+_/+%'),1,0);
-	UPDATE `eternal_cards` SET `buff` = 1 WHERE( 
+	UPDATE `eternal_cards` SET `buff` = IF(( 
 			`buffarmor` = 1 OR 
 			`buffstrength` = 1 OR 
 			`buffhealth` = 1 OR 
-			`buffunit` = 1);
-	UPDATE `eternal_cards` SET `buff` = 0 WHERE( 
-			`buffarmor` = 0 AND  
-			`buffstrength` = 0 AND  
-			`buffhealth` = 0 AND  
-			`buffunit` = 0);
+			`buffunit` = 1),1,0);
 	UPDATE `eternal_cards` SET `debuffarmor` = IF((`cardtext` LIKE '%-_[Armor]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffhealth` = IF((`cardtext` LIKE '%-_[Health]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffstrength` = IF((`cardtext` LIKE '%-_[Strength]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffunit` = IF((`cardtext` LIKE '%-_/-%'),1,0);
-	UPDATE `eternal_cards` SET `debuff` = 1 WHERE( 
+	UPDATE `eternal_cards` SET `debuff` = IF(( 
 			`debuffarmor` = 1 OR 
 			`debuffstrength` = 1 OR 
 			`debuffhealth` = 1 OR 
-			`debuffunit` = 1);
-	UPDATE `eternal_cards` SET `debuff` = 0 WHERE( 
-			`debuffarmor` = 0 AND  
-			`debuffstrength` = 0 AND  
-			`debuffhealth` = 0 AND  
-			`debuffunit` = 0);
-			UPDATE `eternal_cards` SET `draw` = 1 WHERE(
-				`cardtext` LIKE '%draw%' OR
-				`cardtext` LIKE '%warp%') AND(
-				`cardtext` NOT LIKE '%draw%gain%' AND
-				`cardtext` NOT LIKE '%quickdraw%'
-				);
-			UPDATE `eternal_cards` SET `discard` = 1 WHERE(
-				`cardtext` LIKE '%discard%'
-				);
-			UPDATE `eternal_cards` SET `deckreturn` = 1 WHERE(
-				`cardtext` LIKE '%put a card % on the top of your deck%' OR
-				`cardtext` LIKE '%put a card % on top of your deck%' OR
-				`cardtext` LIKE '%revenge'
-				);
-			UPDATE `eternal_cards` SET `shuffle` = 1 WHERE(
-				`cardtext` LIKE '%look%' OR
-				`cardtext` LIKE '%put % on the bottom%'
-				);
-			UPDATE `eternal_cards` SET `cyclecards` = 1 WHERE(
-				`draw` > 0 OR
-				`discard` > 0 OR
-				`shuffle` > 0 OR
-				`deckreturn` > 0
-				);
-			UPDATE `eternal_cards` SET `cyclingtype` = CONCAT_WS(',',IF(`draw`=1,'Draw',''),IF(`discard`=1,'Discard',''),IF(`deckreturn`=1,'Return',''),IF(`shuffle`=1,'Shuffle',''));
-			UPDATE `eternal_cards` SET `drawcards` = 1 WHERE(
-				`cardtext` LIKE '%draw a%' OR
-				`cardtext` LIKE '%draw an%' OR
-				`cardtext` LIKE '%draw one%' OR
-				`cardtext` LIKE '%draw the%' OR
-				`cardtext` LIKE '%draws a%' OR
-				`cardtext` LIKE '%draw it%' OR
-				`cardtext` LIKE '%draw them%' OR
-				`cardtext` LIKE '%draw Praxis Outlaw%' OR
-				`cardtext` LIKE '%draw Steelfang Chakram%' OR
-				`cardtext` LIKE '%draw Worldpyre Phoenix%' OR
-				`cardtext` LIKE '%warp%')
-				AND (
-				`cardtext` NOT LIKE '%draw a Minotaur and weapon%'
-				);
-			UPDATE `eternal_cards` SET `drawcards` = 2 WHERE(
-				`cardtext` LIKE '%draw two%' OR
-				`cardtext` LIKE '%draw a%and a%' OR
-				`cardtext` LIKE '%draw Minotaur and weapon%');		
-			UPDATE `eternal_cards` SET `drawcards` = 3 WHERE(
-				`cardtext` LIKE '%draw three%' OR
-				`cardtext` LIKE '%draw one of the top three%');
-			UPDATE `eternal_cards` SET `drawcards` = 4 WHERE(
-				`cardtext` LIKE '%draw four%');
-			UPDATE `eternal_cards` SET `discardcards` = 1 WHERE(
-				`cardtext` LIKE '%discard a%' OR
-				`cardtext` LIKE '%discard an%' OR
-				`cardtext` LIKE '%discard one%' OR
-				`cardtext` LIKE '%discard the%' OR
-				`cardtext` LIKE '%discards a%' OR
-				`cardtext` LIKE '%discard it%' OR
-				`cardtext` LIKE '%discard them%'
-				) AND (
-				`cardtext` NOT LIKE '%discard them%' AND
-				`cardtext` NOT LIKE '%discarded%'
-				);
-			UPDATE `eternal_cards` SET `discardcards` = 2 WHERE(
-				`cardtext` LIKE '%discard two%'
-				);
-			UPDATE `eternal_cards` SET `discardcards` = 3 WHERE( 
-				`cardtext` LIKE '%discard three%'
-				);
-			UPDATE `eternal_cards` SET `discardcards` = 4 WHERE(
-				`cardtext` LIKE '%discard four%'
-				);
-			UPDATE `eternal_cards` SET `discardcards` = 5 WHERE(
-				`cardtext` LIKE '%discard the top five%'
-				);	
-			UPDATE `eternal_cards` SET `discardcards` = 6 WHERE(
-				`cardtext` LIKE '%discard your hand%' OR
-				`cardtext` LIKE '%discard the rest%' OR
-				`cardtext` LIKE '%discard that many%' OR
-				`cardtext` LIKE '%discard their hand%'
-				);	
-			UPDATE `eternal_cards` SET `returncards` = 1 WHERE(
-				`cardtext` LIKE '%put a card % on the top of your deck%' OR
-				`cardtext` LIKE '%put a card % on top of your deck%' OR
-				`cardtext` LIKE '%revenge%'
-				);
-			UPDATE `eternal_cards` SET `shufflecards` = 1 WHERE(
-				`cardtext` LIKE '%you may put it on the bottom%'
-				);		
-			UPDATE `eternal_cards` SET `shufflecards` = 2 WHERE(
-				`cardtext` LIKE '%draw one of the top three%put the rest on the bottom%'
-				);
+			`debuffunit` = 1),1,0);
+	UPDATE `eternal_cards` SET `draw` = IF(((
+		`cardtext` LIKE '%draw%' OR
+		`cardtext` LIKE '%warp%' OR
+		`cardtext` LIKE '%night%' OR
+		`cardtext` LIKE '%destiny%') AND(
+		`cardtext` NOT LIKE '%draw%gain%' AND
+		`cardtext` NOT LIKE '%quickdraw%')),1,0);
+	UPDATE `eternal_cards` SET `discard` = IF((
+		`cardtext` LIKE '%discard%'),1,0);
+	UPDATE `eternal_cards` SET `deckreturn` = IF((
+		`cardtext` LIKE '%put a card % on the top of your deck%' OR
+		`cardtext` LIKE '%put a card % on top of your deck%' OR
+		`cardtext` LIKE '%revenge'),1,0);
+	UPDATE `eternal_cards` SET `shuffle` = IF((
+		`cardtext` LIKE '%look%' OR
+		`cardtext` LIKE '%scout%' OR
+		`cardtext` LIKE '%put % on the bottom%'),1,0);
+	UPDATE `eternal_cards` SET `cyclecards` = IF((
+		`draw` > 0 OR
+		`discard` > 0 OR
+		`shuffle` > 0 OR
+		`deckreturn` > 0),1,0);
+	UPDATE `eternal_cards` SET `cyclingtype` = CONCAT_WS(',',IF(`draw`=1,'Draw',''),IF(`discard`=1,'Discard',''),IF(`deckreturn`=1,'Return',''),IF(`shuffle`=1,'Shuffle',''));
+	UPDATE `eternal_cards` SET `drawcards` = 1 WHERE(
+		`cardtext` LIKE '%draw a%' OR
+		`cardtext` LIKE '%draw an%' OR
+		`cardtext` LIKE '%draw one%' OR
+		`cardtext` LIKE '%draw the%' OR
+		`cardtext` LIKE '%draws a%' OR
+		`cardtext` LIKE '%draw it%' OR
+		`cardtext` LIKE '%draw them%' OR
+		`cardtext` LIKE '%draw Praxis Outlaw%' OR
+		`cardtext` LIKE '%draw Steelfang Chakram%' OR
+		`cardtext` LIKE '%draw Worldpyre Phoenix%' OR
+		`cardtext` LIKE '%warp%' OR
+		`cardtext` LIKE '%destiny%' OR
+		`cardtext` LIKE '%night%')
+		AND (
+		`cardtext` NOT LIKE '%draw a Minotaur and weapon%'
+		`cardtext` NOT LIKE '%Your%have Destiny%'
+		);
+	UPDATE `eternal_cards` SET `drawcards` = 2 WHERE(
+		`cardtext` LIKE '%draw two%' OR
+		`cardtext` LIKE '%draw a%and a%' OR
+		`cardtext` LIKE '%draw Minotaur and weapon%');		
+	UPDATE `eternal_cards` SET `drawcards` = 3 WHERE(
+		`cardtext` LIKE '%draw three%' OR
+		`cardtext` LIKE '%draw one of the top three%');
+	UPDATE `eternal_cards` SET `drawcards` = 4 WHERE(
+		`cardtext` LIKE '%draw four%');
+	UPDATE `eternal_cards` SET `drawcards` = 5 WHERE(
+		`cardtext` LIKE '%Your%have Destiny%');
+	UPDATE `eternal_cards` SET `discardcards` = 1 WHERE(
+		`cardtext` LIKE '%discard a%' OR
+		`cardtext` LIKE '%discard an%' OR
+		`cardtext` LIKE '%discard one%' OR
+		`cardtext` LIKE '%discard the%' OR
+		`cardtext` LIKE '%discards a%' OR
+		`cardtext` LIKE '%discard it%' OR
+		`cardtext` LIKE '%discard them%'
+		) AND (
+		`cardtext` NOT LIKE '%discard them%' AND
+		`cardtext` NOT LIKE '%discarded%'
+		);
+	UPDATE `eternal_cards` SET `discardcards` = 2 WHERE(
+		`cardtext` LIKE '%discard two%'
+		);
+	UPDATE `eternal_cards` SET `discardcards` = 3 WHERE( 
+		`cardtext` LIKE '%discard three%'
+		);
+	UPDATE `eternal_cards` SET `discardcards` = 4 WHERE(
+		`cardtext` LIKE '%discard four%'
+		);
+	UPDATE `eternal_cards` SET `discardcards` = 5 WHERE(
+		`cardtext` LIKE '%discard the top five%'
+		);	
+	UPDATE `eternal_cards` SET `discardcards` = 6 WHERE(
+		`cardtext` LIKE '%discard your hand%' OR
+		`cardtext` LIKE '%discard the rest%' OR
+		`cardtext` LIKE '%discard that many%' OR
+		`cardtext` LIKE '%discard their hand%'
+		);	
+	UPDATE `eternal_cards` SET `returncards` = 1 WHERE(
+		`cardtext` LIKE '%put a card % on the top of your deck%' OR
+		`cardtext` LIKE '%put a card % on top of your deck%' OR
+		`cardtext` LIKE '%revenge%'
+		);
+	UPDATE `eternal_cards` SET `shufflecards` = 1 WHERE(
+		`cardtext` LIKE '%you may put it on the bottom%' OR
+		`cardtext` LIKE '%Scout%'
+		);		
+	UPDATE `eternal_cards` SET `shufflecards` = 2 WHERE(
+		`cardtext` LIKE '%draw one of the top three%put the rest on the bottom%'
+		);
 			UPDATE `eternal_cards` SET `shufflecards` = 3 WHERE(
 				`cardtext` LIKE '%draw one of the top four%put the rest on the bottom%'
 				);		
