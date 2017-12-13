@@ -166,7 +166,7 @@
 		`cardtext` LIKE '%destiny%' OR
 		`cardtext` LIKE '%night%')
 		AND (
-		`cardtext` NOT LIKE '%draw a Minotaur and weapon%'
+		`cardtext` NOT LIKE '%draw a Minotaur and weapon%' OR
 		`cardtext` NOT LIKE '%Your%have Destiny%'
 		);
 	UPDATE `eternal_cards` SET `drawcards` = 2 WHERE(
