@@ -15,6 +15,7 @@
 	UPDATE `eternal_cards` SET `stonescardeck` = IF ((`faction` LIKE 'Stonescar'),1,0);
 	UPDATE `eternal_cards` SET `xenandeck` = IF ((`faction` LIKE 'Xenan'),1,0);
 	UPDATE `eternal_cards` SET `[Aegis]` = IF ((`cardtext` LIKE '%Aegis%' AND `cardtext` NOT LIKE '%blocked by Aegis%'),1,0);
+	UPDATE `eternal_cards` SET `[Affliction]` = IF ((`cardtext` LIKE '%Affliction%'),1,0);
 	UPDATE `eternal_cards` SET `[All]` = IF ((`cardtext` LIKE '%all%'),1,0);
 	UPDATE `eternal_cards` SET `[Ally]` = IF ((`cardtext` LIKE '%Ally%'),1,0);
 	UPDATE `eternal_cards` SET `[Ambush]` = IF ((`cardtext` LIKE '%Ambush%'),1,0);
