@@ -1,4 +1,5 @@
 	UPDATE `eternal_cards` SET `attachment` = IF((`cardtype` IN ('Weapon','Relic Weapon','Relic','Cursed Relic','Curse')),1,0);
+	UPDATE `eternal_cards` SET `spell` = IF((`cardtype` IN ('Spell','Fast Spell')),1,0);
 	UPDATE `eternal_cards` SET `resurrectunits` = IF ((
 	(`cardtext` LIKE '%play%from your void%' OR
 	`cardtext` LIKE '%play%from the enemy void%' OR
@@ -83,8 +84,16 @@
 	UPDATE `eternal_cards` SET `[Fate]` = IF ((`cardtext` LIKE '%Fate%'),1,0);
 	UPDATE `eternal_cards` SET `[Flying]` = IF ((
 	`cardtext` LIKE '%Flying%' AND 
-	`cardtext` NOT LIKE '%unit with flying%' AND
+	`cardtext` NOT LIKE '%with Flying%' AND
 	`cardtext` NOT LIKE '%a flying unit%'
+	),1,0);
+	UPDATE `eternal_cards` SET `[Flying]` = IF ((
+	`cardname` LIKE '%Amilli%' OR
+	`cardname` LIKE 'Wild Cloudsnake' OR
+	`cardname` LIKE 'Skyrider Vanguard' OR
+	`cardname` LIKE 'Serpent Trainer' OR
+	`cardname` LIKE 'Colony Matron' OR
+	`cardname` LIKE '%Kothon%'
 	),1,0);
 	UPDATE `eternal_cards` SET `[Free]` = IF ((`cardtext` LIKE '%free %'),1,0);
 	UPDATE `eternal_cards` SET `[Gain]` = IF ((`cardtext` LIKE '% gain %'),1,0);
@@ -170,8 +179,8 @@
 	UPDATE `eternal_cards` SET `draw` = IF(((
 		`cardtext` LIKE '%draw%' OR
 		`cardtext` LIKE '%warp%' OR
-		`cardtext` LIKE '%night%' OR
-		`cardtext` LIKE '%destiny%') AND(
+		`cardtext` LIKE '%Nightfall%' OR
+		`cardtext` LIKE '%Destiny%') AND(
 		`cardtext` NOT LIKE '%draw%gain%' AND
 		`cardtext` NOT LIKE '%quickdraw%')),1,0);
 	UPDATE `eternal_cards` SET `discard` = IF((
@@ -179,10 +188,11 @@
 	UPDATE `eternal_cards` SET `deckreturn` = IF((
 		`cardtext` LIKE '%put a card % on the top of your deck%' OR
 		`cardtext` LIKE '%put a card % on top of your deck%' OR
-		`cardtext` LIKE '%revenge'),1,0);
+		`cardtext` LIKE '%revenge%' OR
+		`cardname` LIKE 'Strategize'),1,0);
 	UPDATE `eternal_cards` SET `shuffle` = IF((
 		`cardtext` LIKE '%look%' OR
-		`cardtext` LIKE '%scout%' OR
+		`cardtext` LIKE '%Scout%' OR
 		`cardtext` LIKE '%put % on the bottom%'),1,0);
 	UPDATE `eternal_cards` SET `cyclecards` = IF((
 		`draw` > 0 OR
