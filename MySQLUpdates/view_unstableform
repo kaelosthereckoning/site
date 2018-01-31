@@ -11,6 +11,10 @@ CREATE VIEW `unstableform_power09` AS SELECT `cardname` FROM `eternal_cards` WHE
 CREATE VIEW `unstableform_power10` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 10 AND `rarity` NOT LIKE '%Token%');
 CREATE VIEW `unstableform_power11` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 11 AND `rarity` NOT LIKE '%Token%');
 CREATE VIEW `unstableform_power12` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 12 AND `rarity` NOT LIKE '%Token%');
+CREATE VIEW `unstableform_power13` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 13 AND `rarity` NOT LIKE '%Token%');
+CREATE VIEW `unstableform_power14` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 14 AND `rarity` NOT LIKE '%Token%');
+CREATE VIEW `unstableform_power15` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 15 AND `rarity` NOT LIKE '%Token%');
+CREATE VIEW `unstableform_power16` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 16 AND `rarity` NOT LIKE '%Token%');
 CREATE VIEW `unstableform_powerX` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` NOT LIKE '%Token%');
 	
 	
@@ -27,6 +31,10 @@ CREATE VIEW `unstableform_flying09` AS SELECT `cardname` FROM `eternal_cards` WH
 CREATE VIEW `unstableform_flying10` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 10 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
 CREATE VIEW `unstableform_flying11` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 11 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
 CREATE VIEW `unstableform_flying12` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 12 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
+CREATE VIEW `unstableform_flying13` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 13 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
+CREATE VIEW `unstableform_flying14` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 14 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
+CREATE VIEW `unstableform_flying15` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 15 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
+CREATE VIEW `unstableform_flying16` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 16 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
 CREATE VIEW `unstableform_flyingX` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1);
 
 CREATE VIEW `unstableform_legendary00` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 0 AND `rarity` LIKE '%Legendary%');
@@ -42,6 +50,10 @@ CREATE VIEW `unstableform_legendary09` AS SELECT `cardname` FROM `eternal_cards`
 CREATE VIEW `unstableform_legendary10` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 10 AND `rarity` LIKE '%Legendary%');
 CREATE VIEW `unstableform_legendary11` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 11 AND `rarity` LIKE '%Legendary%');
 CREATE VIEW `unstableform_legendary12` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 12 AND `rarity` LIKE '%Legendary%');
+CREATE VIEW `unstableform_legendary13` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 13 AND `rarity` LIKE '%Legendary%');
+CREATE VIEW `unstableform_legendary14` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 14 AND `rarity` LIKE '%Legendary%');
+CREATE VIEW `unstableform_legendary15` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 15 AND `rarity` LIKE '%Legendary%');
+CREATE VIEW `unstableform_legendary16` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 16 AND `rarity` LIKE '%Legendary%');
 CREATE VIEW `unstableform_legendaryX` AS SELECT `cardname` FROM `eternal_cards` WHERE (`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` LIKE '%Legendary%');
 
 CREATE VIEW `uf_avgflying00` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 0 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
@@ -57,6 +69,10 @@ CREATE VIEW `uf_avgflying09` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 9 
 CREATE VIEW `uf_avgflying10` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 10 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_avgflying11` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 11 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_avgflying12` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 12 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_avgflying13` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 13 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_avgflying14` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 14 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_avgflying15` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 15 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_avgflying16` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 16 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_avgflyingX` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 
 CREATE VIEW `uf_avglegendary00` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 0 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
@@ -72,6 +88,10 @@ CREATE VIEW `uf_avglegendary09` AS SELECT AVG (`cardtype` = 'Unit' AND `power` =
 CREATE VIEW `uf_avglegendary10` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 10 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_avglegendary11` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 11 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_avglegendary12` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 12 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_avglegendary13` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 13 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_avglegendary14` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 14 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_avglegendary15` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 15 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_avglegendary16` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 16 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_avglegendaryX` AS SELECT AVG (`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 
 CREATE VIEW `uf_countpower00` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 0 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
@@ -87,6 +107,10 @@ CREATE VIEW `uf_countpower09` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 
 CREATE VIEW `uf_countpower10` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 10 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
 CREATE VIEW `uf_countpower11` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 11 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
 CREATE VIEW `uf_countpower12` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 12 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
+CREATE VIEW `uf_countpower13` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 13 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
+CREATE VIEW `uf_countpower14` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 14 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
+CREATE VIEW `uf_countpower15` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 15 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
+CREATE VIEW `uf_countpower16` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 16 AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
 CREATE VIEW `uf_countpowerX` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` NOT LIKE '%Token%') FROM `eternal_cards`;
 
 CREATE VIEW `uf_countflying00` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 0 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
@@ -102,6 +126,10 @@ CREATE VIEW `uf_countflying09` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` =
 CREATE VIEW `uf_countflying10` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 10 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_countflying11` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 11 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_countflying12` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 12 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_countflying13` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 13 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_countflying14` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 14 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_countflying15` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 15 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
+CREATE VIEW `uf_countflying16` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 16 AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 CREATE VIEW `uf_countflyingX` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` NOT LIKE '%Token%' AND `[Flying]` = 1) FROM `eternal_cards`;
 
 CREATE VIEW `uf_countlegendary00` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 0 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
@@ -117,4 +145,8 @@ CREATE VIEW `uf_countlegendary09` AS SELECT COUNT(`cardtype` = 'Unit' AND `power
 CREATE VIEW `uf_countlegendary10` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 10 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_countlegendary11` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 11 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_countlegendary12` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 12 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_countlegendary13` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 13 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_countlegendary14` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 14 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_countlegendary15` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 15 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
+CREATE VIEW `uf_countlegendary16` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 16 AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
 CREATE VIEW `uf_countlegendaryX` AS SELECT COUNT(`cardtype` = 'Unit' AND `power` = 'X' AND `rarity` LIKE '%Legendary%') FROM `eternal_cards`;
