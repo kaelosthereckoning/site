@@ -42,32 +42,27 @@
 	UPDATE `eternal_cards` SET `monojusticedeck` = IF ((`faction` LIKE 'Justice'),1,0);
 	UPDATE `eternal_cards` SET `monoprimaldeck` = IF ((`faction` LIKE 'Primal'),1,0);
 	UPDATE `eternal_cards` SET `monoshadowdeck` = IF ((`faction` LIKE 'Shadow'),1,0);
-	UPDATE `eternal_cards` SET `argenportdeck` = IF ((`faction` LIKE 'Argenport'),1,0);
-	UPDATE `eternal_cards` SET `combreideck` = IF ((`faction` LIKE 'Combrei'),1,0);
-	UPDATE `eternal_cards` SET `elysiandeck` = IF ((`faction` LIKE 'Elysian'),1,0);
-	UPDATE `eternal_cards` SET `felndeck` = IF ((`faction` LIKE 'Feln'),1,0);
-	UPDATE `eternal_cards` SET `hoorudeck` = IF ((`faction` LIKE 'Hooru'),1,0);
-	UPDATE `eternal_cards` SET `praxisdeck` = IF ((`faction` LIKE 'Praxis'),1,0);
-	UPDATE `eternal_cards` SET `rakanodeck` = IF ((`faction` LIKE 'Rakano'),1,0);
-	UPDATE `eternal_cards` SET `skycragdeck` = IF ((`faction` LIKE 'Skycrag'),1,0);
-	UPDATE `eternal_cards` SET `stonescardeck` = IF ((`faction` LIKE 'Stonescar'),1,0);
-	UPDATE `eternal_cards` SET `xenandeck` = IF ((`faction` LIKE 'Xenan'),1,0);
+	UPDATE `eternal_cards` SET `argenportdeck` = IF ((`faction` LIKE 'Argenport' OR `faction` LIKE 'Justice' OR `faction` LIKE 'Shadow'),1,0);
+	UPDATE `eternal_cards` SET `combreideck` = IF ((`faction` LIKE 'Combrei' OR `faction` LIKE 'Time' OR `faction` LIKE 'Justice'),1,0);
+	UPDATE `eternal_cards` SET `elysiandeck` = IF ((`faction` LIKE 'Elysian' OR `faction` LIKE 'Time' OR `faction` LIKE 'Primal'),1,0);
+	UPDATE `eternal_cards` SET `felndeck` = IF ((`faction` LIKE 'Feln' OR `faction` LIKE 'Primal' OR `faction` LIKE 'Shadow'),1,0);
+	UPDATE `eternal_cards` SET `hoorudeck` = IF ((`faction` LIKE 'Hooru' OR `faction` LIKE 'Justice' OR `faction` LIKE 'Primal'),1,0);
+	UPDATE `eternal_cards` SET `praxisdeck` = IF ((`faction` LIKE 'Praxis' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Time'),1,0);
+	UPDATE `eternal_cards` SET `rakanodeck` = IF ((`faction` LIKE 'Rakano' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Justice'),1,0);
+	UPDATE `eternal_cards` SET `skycragdeck` = IF ((`faction` LIKE 'Skycrag' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Primal'),1,0);
+	UPDATE `eternal_cards` SET `stonescardeck` = IF ((`faction` LIKE 'Stonescar' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Shadow'),1,0);
+	UPDATE `eternal_cards` SET `xenandeck` = IF ((`faction` LIKE 'Xenan' OR `faction` LIKE 'Time' OR `faction` LIKE 'Shadow'),1,0);
 	UPDATE `eternal_cards` SET `[Aegis]` = IF ((`cardtext` LIKE '%Aegis%' AND `cardtext` NOT LIKE '%blocked by Aegis%'),1,0);
-	UPDATE `eternal_cards` SET `[Affliction]` = IF ((`cardtext` LIKE '%Affliction%'),1,0);
 	UPDATE `eternal_cards` SET `[All]` = IF ((`cardtext` LIKE '%all%'),1,0);
 	UPDATE `eternal_cards` SET `[Ally]` = IF ((`cardtext` LIKE '%Ally%'),1,0);
 	UPDATE `eternal_cards` SET `[Ambush]` = IF ((`cardtext` LIKE '%Ambush%'),1,0);
 	UPDATE `eternal_cards` SET `[Are]` = IF ((`cardtext` LIKE '% are %'),1,0);
 	UPDATE `eternal_cards` SET `[Armor]` = IF ((`cardtext` LIKE '%[Armor]%'),1,0);
 	UPDATE `eternal_cards` SET `[Attack]` = IF ((`cardtext` LIKE '%attack%'),1,0);
-	UPDATE `eternal_cards` SET `[Battle Skill]` = IF ((`cardtext` LIKE '%battle skill%'),1,0);
 	UPDATE `eternal_cards` SET `[Block]` = IF ((`cardtext` LIKE '%block%'),1,0);
 	UPDATE `eternal_cards` SET `[Bond]` = IF ((`cardtext` LIKE '%Bond%'),1,0);
 	UPDATE `eternal_cards` SET `[Charge]` = IF ((`cardtext` LIKE '%Charge%'),1,0);
 	UPDATE `eternal_cards` SET `[Choice]` = IF ((`cardtext` LIKE '%choice%' OR `cardtext` LIKE '%choose%'),1,0);
-	UPDATE `eternal_cards` SET `[Copy: as noun]` = IF ((`cardtext` LIKE '%each copy%' OR `cardtext` LIKE '%copies%'),1,0);
-	UPDATE `eternal_cards` SET `[Copy: as verb]` = IF ((`cardtext` LIKE '%copy%' AND `cardtext` NOT LIKE '%each copy%'),1,0);
-	UPDATE `eternal_cards` SET `[Cost]` = IF ((`cardtext` LIKE '%cost%'),1,0);
 	UPDATE `eternal_cards` SET `[Damage]` = IF ((`cardtext` LIKE '%damage%'),1,0);
 	UPDATE `eternal_cards` SET `[Deadly]` = IF ((`cardtext` LIKE '%Deadly%'),1,0);
 	UPDATE `eternal_cards` SET `[Depleted]` = IF ((`cardtext` LIKE '%depleted%'),1,0);
@@ -83,19 +78,16 @@
 	UPDATE `eternal_cards` SET `[Exhaust]` = IF ((`cardtext` LIKE '%exhaust%'),1,0);
 	UPDATE `eternal_cards` SET `[Fate]` = IF ((`cardtext` LIKE '%Fate%'),1,0);
 	UPDATE `eternal_cards` SET `[Flying]` = IF ((
-	`cardtext` LIKE '%Flying%' AND 
+	(`cardtext` LIKE '%Flying%' AND 
 	`cardtext` NOT LIKE '%with Flying%' AND
-	`cardtext` NOT LIKE '%a flying unit%'
-	),1,0);
-	UPDATE `eternal_cards` SET `[Flying]` = IF ((
+	`cardtext` NOT LIKE '%a flying unit%') OR (
 	`cardname` LIKE '%Amilli%' OR
 	`cardname` LIKE 'Wild Cloudsnake' OR
 	`cardname` LIKE 'Skyrider Vanguard' OR
 	`cardname` LIKE 'Serpent Trainer' OR
 	`cardname` LIKE 'Colony Matron' OR
-	`cardname` LIKE '%Kothon%'
+	`cardname` LIKE '%Kothon%')
 	),1,0);
-	UPDATE `eternal_cards` SET `[Free]` = IF ((`cardtext` LIKE '%free %'),1,0);
 	UPDATE `eternal_cards` SET `[Gain]` = IF ((`cardtext` LIKE '% gain %'),1,0);
 	UPDATE `eternal_cards` SET `[Get-MT]` = IF ((`cardtext` LIKE '% get %' OR `cardtext` LIKE '%each%gets%'),1,0);
 	UPDATE `eternal_cards` SET `[Get-ST]` = IF ((`cardtext` LIKE '% gets %' AND `cardtext` NOT LIKE '%each%gets%'),1,0);
@@ -318,7 +310,6 @@
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport60` = IF(`power_curve`.`power60` > 0, `power_curve`.`power60`, `eternal_cards`.`powersupport60`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` INNER JOIN `power_curve` ON `eternal_cards`.`power` = `power_curve`.`powercost` SET `eternal_cards`.`powersupport50` = IF(`power_curve`.`power50` > 0, `power_curve`.`power50`, `eternal_cards`.`powersupport50`) WHERE `power_curve`.`powercost` = `eternal_cards`.`power`;
 	UPDATE `eternal_cards` SET `removal` = IF((
-	`[Affliction]` <> 0 OR
 	`[Ambush]` <> 0 OR
 	`[Deadly]` <> 0 OR
 	`debuffhealth` <> 0 OR
@@ -339,4 +330,3 @@
 	`[Killer]` <> 0 OR
 	(`[Damage]` <> 0 AND `targetunit` <> 0)
 	),1,0);
-	
