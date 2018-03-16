@@ -52,7 +52,11 @@
 	UPDATE `eternal_cards` SET `skycragdeck` = IF ((`faction` LIKE 'Skycrag' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Primal'),1,0);
 	UPDATE `eternal_cards` SET `stonescardeck` = IF ((`faction` LIKE 'Stonescar' OR `faction` LIKE 'Fire' OR `faction` LIKE 'Shadow'),1,0);
 	UPDATE `eternal_cards` SET `xenandeck` = IF ((`faction` LIKE 'Xenan' OR `faction` LIKE 'Time' OR `faction` LIKE 'Shadow'),1,0);
-	UPDATE `eternal_cards` SET `[Aegis]` = IF ((`cardtext` LIKE '%Aegis%' AND `cardtext` NOT LIKE '%blocked by Aegis%'),1,0);
+	UPDATE `eternal_cards` SET `[Aegis]` = IF (
+		(`cardtext` LIKE '%Aegis%' AND 
+		`cardtext` NOT LIKE '%blocked by Aegis%' AND 
+		`cardtext` NOT LIKE '%while you have Aegis%')
+		,1,0);
 	UPDATE `eternal_cards` SET `[All]` = IF ((`cardtext` LIKE '%all%'),1,0);
 	UPDATE `eternal_cards` SET `[Ally]` = IF ((`cardtext` LIKE '%Ally%'),1,0);
 	UPDATE `eternal_cards` SET `[Ambush]` = IF ((`cardtext` LIKE '%Ambush%'),1,0);
@@ -122,8 +126,15 @@
 	UPDATE `eternal_cards` SET `[Random]` = IF ((`cardtext` LIKE '%random%'),1,0);
 	UPDATE `eternal_cards` SET `[Ready]` = IF ((`cardtext` LIKE '%ready%' AND `cardtext` NOT LIKE '%already%'),1,0);
 	UPDATE `eternal_cards` SET `[Reckless]` = IF ((`cardtext` LIKE '%Reckless%'),1,0);
-	UPDATE `eternal_cards` SET `[Reduce]` = IF ((`cardtext` LIKE '%reduce%'),1,0);
-	UPDATE `eternal_cards` SET `[Revenge]` = IF ((`cardtext` LIKE '%Revenge%'),1,0);
+	UPDATE `eternal_cards` SET `[Reduce]` = IF (
+		(`cardtext` LIKE '%reduce%' OR 
+		`cardtext LIKE '%cost _ less%')
+		,1,0);
+	UPDATE `eternal_cards` SET `[Revenge]` = IF (
+		(`cardtext` LIKE '%Revenge%' OR
+		`cardtext` LIKE '%Destiny and put it into the top ten cards of your deck%'
+		)
+		,1,0);
 	UPDATE `eternal_cards` SET `[Sacrifice]` = IF ((`cardtext` LIKE '%sacrifice%'),1,0);
 	UPDATE `eternal_cards` SET `[Scout]` = IF ((`cardtext` LIKE '%Scout%'),1,0);
 	UPDATE `eternal_cards` SET `[Silence]` = IF ((`cardtext` LIKE '%Silence%'),1,0);
