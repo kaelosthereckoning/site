@@ -341,3 +341,10 @@
 	`[Killer]` <> 0 OR
 	(`[Damage]` <> 0 AND `targetunit` <> 0)
 	),1,0);
+	UPDATE `eternal_cards` SET `createcards` = IF (
+		(`[Echo]` = 1 OR
+		`cardtext` LIKE '%create and draw%' OR
+		`cardtext` LIKE '%create and play%' OR
+		`cardtext` LIKE '%play an additional copy%' OR
+		`cardtext` LIKE '%play a copy%')
+		,1,0);
