@@ -128,7 +128,7 @@
 	UPDATE `eternal_cards` SET `[Reckless]` = IF ((`cardtext` LIKE '%Reckless%'),1,0);
 	UPDATE `eternal_cards` SET `[Reduce]` = IF (
 		(`cardtext` LIKE '%reduce%' OR 
-		`cardtext LIKE '%cost _ less%')
+		`cardtext` LIKE '%cost _ less%')
 		,1,0);
 	UPDATE `eternal_cards` SET `[Revenge]` = IF (
 		(`cardtext` LIKE '%Revenge%' OR
@@ -166,19 +166,19 @@
 	UPDATE `eternal_cards` SET `buffstrength` = IF((`cardtext` LIKE '%+_[Strength]%'),1,0);
 	UPDATE `eternal_cards` SET `buffunit` = IF((`cardtext` LIKE '%+_/+%'),1,0);
 	UPDATE `eternal_cards` SET `buff` = IF(( 
-			`buffarmor` = 1 OR 
-			`buffstrength` = 1 OR 
-			`buffhealth` = 1 OR 
-			`buffunit` = 1),1,0);
+		`buffarmor` = 1 OR 
+		`buffstrength` = 1 OR 
+		`buffhealth` = 1 OR 
+		`buffunit` = 1),1,0);
 	UPDATE `eternal_cards` SET `debuffarmor` = IF((`cardtext` LIKE '%-_[Armor]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffhealth` = IF((`cardtext` LIKE '%-_[Health]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffstrength` = IF((`cardtext` LIKE '%-_[Strength]%'),1,0);
 	UPDATE `eternal_cards` SET `debuffunit` = IF((`cardtext` LIKE '%-_/-%'),1,0);
 	UPDATE `eternal_cards` SET `debuff` = IF(( 
-			`debuffarmor` = 1 OR 
-			`debuffstrength` = 1 OR 
-			`debuffhealth` = 1 OR 
-			`debuffunit` = 1),1,0);
+		`debuffarmor` = 1 OR 
+		`debuffstrength` = 1 OR 
+		`debuffhealth` = 1 OR 
+		`debuffunit` = 1),1,0);
 	UPDATE `eternal_cards` SET `draw` = IF(((
 		`cardtext` LIKE '%draw%' OR
 		`cardtext` LIKE '%warp%' OR
