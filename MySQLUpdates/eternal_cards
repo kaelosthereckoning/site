@@ -584,7 +584,9 @@
 							opponenthit = 1,
 							selfhit = 1
 							WHERE `cardtext` LIKE BINARY '%Deal _ damage.%' ;
-							
+
+UPDATE `eternal_cards` SET `wstrengthbuff` = 0;
+
 UPDATE `eternal_cards` SET `wstrengthbuff` = 1 WHERE (
 	((`cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
 		(`cardtext` LIKE '%Spark: +1/+1%' OR
@@ -739,6 +741,8 @@ UPDATE `eternal_cards` SET `WSBvariable` = IF(
 	((`cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
 		(`cardtext` LIKE '%+1/+1 for each%' OR
 		`cardtext` LIKE '%+1[Strength] for each%')),1,0);
+		
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 0;
 
 UPDATE `eternal_cards` SET `rwstrengthbuff` = 1 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
@@ -855,11 +859,13 @@ UPDATE `eternal_cards` SET `RWSBvariable` = IF(
 		`cardtext` LIKE '%gain 1[Strength] for each%' OR
 		`cardtext` LIKE '%double your [Strength] and [Armor]%'),1,0);
 
+UPDATE `eternal_cards` SET `armorbuff` = 0;
+
 UPDATE `eternal_cards` SET `armorbuff` = 1 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +1/+1%' OR
 		`cardtext` LIKE '%gets%+1/+1%' OR
-		`cardtext` LIKE '%give%+1/+1%')
+		`cardtext` LIKE '%give%+1/+1%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+1[Armor]%' OR
 	`cardtext` LIKE '%gain 1[Armor]%' OR
@@ -869,7 +875,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 2 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +2/+2%' OR
 		`cardtext` LIKE '%gets%+2/+2%' OR
-		`cardtext` LIKE '%give%+2/+2%')
+		`cardtext` LIKE '%give%+2/+2%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+2[Armor]%' OR
 	`cardtext` LIKE '%gain 2[Armor]%' OR
@@ -879,7 +885,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 3 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +3/+3%' OR
 		`cardtext` LIKE '%gets%+3/+3%' OR
-		`cardtext` LIKE '%give%+3/+3%')
+		`cardtext` LIKE '%give%+3/+3%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+3[Armor]%' OR
 	`cardtext` LIKE '%gain 3[Armor]%' OR
@@ -890,7 +896,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 4 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +4/+4%' OR
 		`cardtext` LIKE '%gets%+4/+4%' OR
-		`cardtext` LIKE '%give%+4/+4%')
+		`cardtext` LIKE '%give%+4/+4%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+4[Armor]%' OR
 	`cardtext` LIKE '%gain 4[Armor]%' OR
@@ -901,7 +907,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 5 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +5/+5%' OR
 		`cardtext` LIKE '%gets%+5/+5%' OR
-		`cardtext` LIKE '%give%+5/+5%')
+		`cardtext` LIKE '%give%+5/+5%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+5[Armor]%' OR
 	`cardtext` LIKE '%gain 5[Armor]%' OR
@@ -912,7 +918,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 6 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +6/+6%' OR
 		`cardtext` LIKE '%gets%+6/+6%' OR
-		`cardtext` LIKE '%give%+6/+6%')
+		`cardtext` LIKE '%give%+6/+6%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+6[Armor]%' OR
 	`cardtext` LIKE '%gain 6[Armor]%' OR
@@ -923,7 +929,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 7 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +7/+7%' OR
 		`cardtext` LIKE '%gets%+7/+7%' OR
-		`cardtext` LIKE '%give%+7/+7%')
+		`cardtext` LIKE '%give%+7/+7%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+7[Armor]%' OR
 	`cardtext` LIKE '%gain 7[Armor]%' OR
@@ -934,7 +940,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 8 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +8/+8%' OR
 		`cardtext` LIKE '%gets%+8/+8%' OR
-		`cardtext` LIKE '%give%+8/+8%')
+		`cardtext` LIKE '%give%+8/+8%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+8[Armor]%' OR
 	`cardtext` LIKE '%gain 8[Armor]%' OR
@@ -945,7 +951,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 9 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +9/+9%' OR
 		`cardtext` LIKE '%gets%+9/+9%' OR
-		`cardtext` LIKE '%give%+9/+9%')
+		`cardtext` LIKE '%give%+9/+9%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+9[Armor]%' OR
 	`cardtext` LIKE '%gain 9[Armor]%' OR
@@ -956,7 +962,7 @@ UPDATE `eternal_cards` SET `armorbuff` = 10 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +10/+10%' OR
 		`cardtext` LIKE '%gets%+10/+10%' OR
-		`cardtext` LIKE '%give%+10/+10%')
+		`cardtext` LIKE '%give%+10/+10%') AND `cardtext` NOT LIKE '%give one of your units%+%/+%'
 	) OR
 	`cardtext` LIKE '%+10[Armor]%' OR
 	`cardtext` LIKE '%gain 10[Armor]%' OR
