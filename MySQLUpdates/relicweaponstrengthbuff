@@ -1,0 +1,114 @@
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 1 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +1/+1%' OR
+		`cardtext` LIKE '%Hatecleaver gets +1/+1%')
+	) OR
+	`cardtext` LIKE '%when you play a relic weapon, it gets +1[Strength]%' OR
+	`cardtext` LIKE '%gain 1[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 1[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +1/+1%' OR
+	`wstrengthbuff` = 1
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 2 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +2/+2%' OR
+		`cardtext` LIKE '%give Sanguine Sword +2/+2%' OR
+		`cardtext` LIKE '%Bloodrite Kalis gets +2/+2%')
+	) OR
+	`cardtext` LIKE '%+2[Strength]%' OR
+	`cardtext` LIKE '%gain 2[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 2[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +2/+2%' OR
+	`wstrengthbuff` = 2
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 3 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +3/+3%')
+	) OR
+	`cardtext` LIKE '%gain 3[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 3[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +3/+3%' OR
+	`wstrengthbuff` = 3
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 4 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +4/+4%')
+	) OR
+	`cardtext` LIKE '%gain 4[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 4[Strength]%' OR
+	`wstrengthbuff` = 4
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 5 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +5/+5%')
+	) OR
+	`cardtext` LIKE '%gain 5[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 5[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +5/+5%' OR
+	`wstrengthbuff` = 5
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 6 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +6/+6%')
+	) OR
+	`cardtext` LIKE '%gain 6[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 6[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +6/+6%' OR
+	`wstrengthbuff` = 6
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 7 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +7/+7%')
+	) OR
+	`cardtext` LIKE '%gain 7[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 7[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +7/+7%' OR
+	`wstrengthbuff` = 7
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 8 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +8/+8%')
+	) OR
+	`cardtext` LIKE '%gain 8[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 8[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +8/+8%' OR
+	`wstrengthbuff` = 8
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 9 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +9/+9%')
+	) OR
+	`cardtext` LIKE '%gain 9[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 9[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +9/+9%' OR
+	`wstrengthbuff` = 9
+	);
+	
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 10 WHERE (
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%Spark: +10/+10%')
+	) OR
+	`cardtext` LIKE '%gain 10[Strength]%' OR
+	`cardtext` LIKE '%you gain%[Health] and 10[Strength]%' OR
+	`cardtext` LIKE '%give your current relic weapon +10/+10%' OR
+	`wstrengthbuff` = 10
+	);
+	
+UPDATE `eternal_cards` SET `RWSBvariable` = IF(
+	((`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%+[Strength] equal to your [Armor].%' OR
+		`cardtext` LIKE '%gets%for each%' OR
+		`cardtext` LIKE '%+1[Strength] for each%')
+	) OR
+		`WSBvariable` = 1 OR
+		`cardtext` LIKE '%gain [Strength] equal to%' OR
+		`cardtext` LIKE '%gain 1[Strength] for each%' OR
+		`cardtext` LIKE '%double your [Strength] and [Armor]%'),1,0);
