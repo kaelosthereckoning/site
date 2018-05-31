@@ -1,0 +1,232 @@
+UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 0, 
+							minutargets = 0,
+							maxutargets = 0,
+							enemyuhit = 0,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE ( 
+								`cardtext` LIKE '%to the enemy player%' OR
+								`cardtext` LIKE '%to that player%' OR
+								`cardtext` LIKE '%to the defending player%' OR
+								`cardtext` LIKE '%to the cursed player%') ;
+
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 1, 
+							minutargets = 0,
+							maxutargets = 1,
+							enemyuhit = 1,
+							playeruhit = 0,
+							targetplayer = 1,
+							minptargets = 0,
+							maxptargets = 1,
+							opponenthit = 1,
+							selfhit = 0
+							WHERE ( 
+								`cardtext` LIKE '%to an enemy%' OR
+								`cardtext` LIKE '%to a random enemy%' OR
+								`cardtext` LIKE '%to an attacking enemy%') ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 12, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 12,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE ( 
+								`cardtext` LIKE '%to an additional enemy unit%' OR
+								`cardtext` LIKE '%to each enemy unit%') ;
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 1,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to an enemy unit%' ;
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 2, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 2,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 1,
+							minptargets = 0,
+							maxptargets = 1,
+							opponenthit = 1,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to two enemies%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 3, 
+							targetunit = 2, 
+							minutargets = 2,
+							maxutargets = 3,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 1,
+							minptargets = 0,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to three enemies%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 13, 
+							targetunit = 2, 
+							minutargets = 0,
+							maxutargets = 12,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to each enemy%'	;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 13, 
+							targetunit = 1, 
+							minutargets = 0,
+							maxutargets = 12,
+							enemyuhit = 1,
+							playeruhit = 0,
+							targetplayer = 1,
+							minptargets = 0,
+							maxptargets = 1,
+							opponenthit = 1,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to an additional enemy%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 1,
+							enemyuhit = 1,
+							playeruhit = 1,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE (
+								`cardtext` LIKE '%to a unit%' OR
+								`cardtext` LIKE '%to it%') ;		
+
+		UPDATE `eternal_cards` SET 	maxtargets = 24, 
+							targetunit = 2, 
+							minutargets = 0,
+							maxutargets = 24,
+							enemyuhit = 2,
+							playeruhit = 2,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to each unit%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 0, 
+							minutargets = 0,
+							maxutargets = 0,
+							enemyuhit = 0,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 1,
+							selfhit = 1
+							WHERE `cardtext` LIKE '%to its owner%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 0, 
+							minutargets = 0,
+							maxutargets = 0,
+							enemyuhit = 0,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 0,
+							selfhit = 2
+							WHERE `cardtext` LIKE '%to you%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 2, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 1,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to an enemy unit and%damage to the enemy player%' ;
+
+		UPDATE `eternal_cards` SET 	maxtargets = 2, 
+							targetunit = 1, 
+							minutargets = 0,
+							maxutargets = 1,
+							enemyuhit = 2,
+							playeruhit = 0,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to an enemy player and%damage to an enemy unit%' ;						
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 25, 
+							targetunit = 2, 
+							minutargets = 0,
+							maxutargets = 24,
+							enemyuhit = 2,
+							playeruhit = 2,
+							targetplayer = 2,
+							minptargets = 1,
+							maxptargets = 1,
+							opponenthit = 2,
+							selfhit = 0
+							WHERE `cardtext` LIKE '%to each unit and the enemy player%' ;
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 25, 
+							targetunit = 2, 
+							minutargets = 0,
+							maxutargets = 23,
+							enemyuhit = 2,
+							playeruhit = 2,
+							targetplayer = 2,
+							minptargets = 2,
+							maxptargets = 2,
+							opponenthit = 2,
+							selfhit = 2
+							WHERE `cardtext` LIKE '%to each other unit and each player%' ;
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 1, 
+							targetunit = 1, 
+							minutargets = 0,
+							maxutargets = 1,
+							enemyuhit = 1,
+							playeruhit = 1,
+							targetplayer = 1,
+							minptargets = 0,
+							maxptargets = 1,
+							opponenthit = 1,
+							selfhit = 1
+							WHERE `cardtext` LIKE BINARY '%Deal _ damage.%' ;
