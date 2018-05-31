@@ -11,6 +11,7 @@ UPDATE `eternal_cards` SET 	maxtargets = 1,
 							selfhit = 0
 							WHERE ( 
 								`cardtext` LIKE '%to the enemy player%' OR
+								`cardtext` LIKE '%to them%' OR
 								`cardtext` LIKE '%to that player%' OR
 								`cardtext` LIKE '%to the defending player%' OR
 								`cardtext` LIKE '%to the cursed player%') ;
