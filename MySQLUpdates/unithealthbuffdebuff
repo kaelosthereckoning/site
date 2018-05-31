@@ -1,0 +1,630 @@
+UPDATE `eternal_cards` SET `uhealthbuff` = 0;
+
+UPDATE `eternal_cards` SET `uhealthbuff` = 1 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+1[Health]%' OR
+		`cardtext` LIKE '%gets %+1[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+1%' OR
+		`cardtext` LIKE '%get %+%/+1%' OR
+		`cardtext` LIKE '%has +%/+1%' OR
+		`cardtext` LIKE '%has +1[Health]%' OR
+		`cardtext` LIKE '%have +%/+1%' OR
+		`cardtext` LIKE '%have +1[Health]%' OR
+		`cardtext` LIKE '%+1[Health] while%' OR
+		`cardtext` LIKE '%+1/+1 while%' OR
+		`cardtext` LIKE '%+1[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+1 and % while%' OR
+		`cardtext` LIKE '%+%/+1 for each%' OR
+		`cardtext` LIKE '%+1[Health] for each%' OR
+		`cardtext` LIKE '%give%+1/+1%' OR
+		`cardtext` LIKE '%give%+1[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+1%' OR
+		`cardtext` LIKE '%Spark: +%/+1%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry%'))
+	OR
+		`cardtext` LIKE '%give a unit +1[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+1%' OR
+		`cardtext` LIKE '%give another unit +1[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+1%' OR
+		`cardtext` LIKE '%units get +%/+1%' OR
+		`cardtext` LIKE '%units get +1[Health]%' OR
+		`cardtext` LIKE '%unit each get +1[Health]%' OR
+		`cardtext` LIKE '%unit gets +1[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+1%' OR
+		`cardtext` LIKE '%units have +1[Health]%' OR
+		`cardtext` LIKE '%units have +%/+1%' OR
+		`cardtext` LIKE '%give yourself or a unit +1[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+1%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+1%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+1%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+1%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+1%'
+	);
+
+UPDATE `eternal_cards` SET `uhealthbuff` = 2 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+2[Health]%' OR
+		`cardtext` LIKE '%gets %+2[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+2%' OR
+		`cardtext` LIKE '%get %+%/+2%' OR
+		`cardtext` LIKE '%has +%/+2%' OR
+		`cardtext` LIKE '%has +2[Health]%' OR
+		`cardtext` LIKE '%have +%/+2%' OR
+		`cardtext` LIKE '%have +2[Health]%' OR
+		`cardtext` LIKE '%+2[Health] while%' OR
+		`cardtext` LIKE '%+2/+2 while%' OR
+		`cardtext` LIKE '%+2[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+2 and % while%' OR
+		`cardtext` LIKE '%+%/+2 for each%' OR
+		`cardtext` LIKE '%+2[Health] for each%' OR
+		`cardtext` LIKE '%give%+2/+2%' OR
+		`cardtext` LIKE '%give%+2[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+2%' OR
+		`cardtext` LIKE '%Spark: +%/+2%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 2%'))
+	OR
+		`cardtext` LIKE '%give a unit +2[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+2%' OR
+		`cardtext` LIKE '%give another unit +2[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+2%' OR
+		`cardtext` LIKE '%units get +%/+2%' OR
+		`cardtext` LIKE '%units get +2[Health]%' OR
+		`cardtext` LIKE '%unit each get +2[Health]%' OR
+		`cardtext` LIKE '%unit gets +2[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+2%' OR
+		`cardtext` LIKE '%units have +2[Health]%' OR
+		`cardtext` LIKE '%units have +%/+2%' OR
+		`cardtext` LIKE '%give yourself or a unit +2[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+2%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+2%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+2%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+2%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+2%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 3 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+3[Health]%' OR
+		`cardtext` LIKE '%gets %+3[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+3%' OR
+		`cardtext` LIKE '%get %+%/+3%' OR
+		`cardtext` LIKE '%has +%/+3%' OR
+		`cardtext` LIKE '%has +3[Health]%' OR
+		`cardtext` LIKE '%have +%/+3%' OR
+		`cardtext` LIKE '%have +3[Health]%' OR
+		`cardtext` LIKE '%+3[Health] while%' OR
+		`cardtext` LIKE '%+3/+3 while%' OR
+		`cardtext` LIKE '%+3[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+3 and % while%' OR
+		`cardtext` LIKE '%+%/+3 for each%' OR
+		`cardtext` LIKE '%+3[Health] for each%' OR
+		`cardtext` LIKE '%give%+3/+3%' OR
+		`cardtext` LIKE '%give%+3[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+3%' OR
+		`cardtext` LIKE '%Spark: +%/+3%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 3%'))
+	OR
+		`cardtext` LIKE '%give a unit +3[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+3%' OR
+		`cardtext` LIKE '%give another unit +3[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+3%' OR
+		`cardtext` LIKE '%units get +%/+3%' OR
+		`cardtext` LIKE '%units get +3[Health]%' OR
+		`cardtext` LIKE '%unit each get +3[Health]%' OR
+		`cardtext` LIKE '%unit gets +3[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+3%' OR
+		`cardtext` LIKE '%units have +3[Health]%' OR
+		`cardtext` LIKE '%units have +%/+3%' OR
+		`cardtext` LIKE '%give yourself or a unit +3[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+3%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+3%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+3%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+3%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+3%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 4 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+4[Health]%' OR
+		`cardtext` LIKE '%gets %+4[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+4%' OR
+		`cardtext` LIKE '%get %+%/+4%' OR
+		`cardtext` LIKE '%has +%/+4%' OR
+		`cardtext` LIKE '%has +4[Health]%' OR
+		`cardtext` LIKE '%have +%/+4%' OR
+		`cardtext` LIKE '%have +4[Health]%' OR
+		`cardtext` LIKE '%+4[Health] while%' OR
+		`cardtext` LIKE '%+4/+4 while%' OR
+		`cardtext` LIKE '%+4[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+4 and % while%' OR
+		`cardtext` LIKE '%+%/+4 for each%' OR
+		`cardtext` LIKE '%+4[Health] for each%' OR
+		`cardtext` LIKE '%give%+4/+4%' OR
+		`cardtext` LIKE '%give%+4[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+4%' OR
+		`cardtext` LIKE '%Spark: +%/+4%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 4%'))
+	OR
+		`cardtext` LIKE '%give a unit +4[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+4%' OR
+		`cardtext` LIKE '%give another unit +4[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+4%' OR
+		`cardtext` LIKE '%units get +%/+4%' OR
+		`cardtext` LIKE '%units get +4[Health]%' OR
+		`cardtext` LIKE '%unit each get +4[Health]%' OR
+		`cardtext` LIKE '%unit gets +4[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+4%' OR
+		`cardtext` LIKE '%units have +4[Health]%' OR
+		`cardtext` LIKE '%units have +%/+4%' OR
+		`cardtext` LIKE '%give yourself or a unit +4[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+4%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+4%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+4%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+4%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+4%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 5 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+5[Health]%' OR
+		`cardtext` LIKE '%gets %+5[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+5%' OR
+		`cardtext` LIKE '%get %+%/+5%' OR
+		`cardtext` LIKE '%has +%/+5%' OR
+		`cardtext` LIKE '%has +5[Health]%' OR
+		`cardtext` LIKE '%have +%/+5%' OR
+		`cardtext` LIKE '%have +5[Health]%' OR
+		`cardtext` LIKE '%+5[Health] while%' OR
+		`cardtext` LIKE '%+5/+5 while%' OR
+		`cardtext` LIKE '%+5[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+5 and % while%' OR
+		`cardtext` LIKE '%+%/+5 for each%' OR
+		`cardtext` LIKE '%+5[Health] for each%' OR
+		`cardtext` LIKE '%give%+5/+5%' OR
+		`cardtext` LIKE '%give%+5[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+5%' OR
+		`cardtext` LIKE '%Spark: +%/+5%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 5%'))
+	OR
+		`cardtext` LIKE '%give a unit +5[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+5%' OR
+		`cardtext` LIKE '%give another unit +5[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+5%' OR
+		`cardtext` LIKE '%units get +%/+5%' OR
+		`cardtext` LIKE '%units get +5[Health]%' OR
+		`cardtext` LIKE '%unit each get +5[Health]%' OR
+		`cardtext` LIKE '%unit gets +5[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+5%' OR
+		`cardtext` LIKE '%units have +5[Health]%' OR
+		`cardtext` LIKE '%units have +%/+5%' OR
+		`cardtext` LIKE '%give yourself or a unit +5[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+5%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+5%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+5%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+5%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+5%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 6 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+6[Health]%' OR
+		`cardtext` LIKE '%gets %+6[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+6%' OR
+		`cardtext` LIKE '%get %+%/+6%' OR
+		`cardtext` LIKE '%has +%/+6%' OR
+		`cardtext` LIKE '%has +6[Health]%' OR
+		`cardtext` LIKE '%have +%/+6%' OR
+		`cardtext` LIKE '%have +6[Health]%' OR
+		`cardtext` LIKE '%+6[Health] while%' OR
+		`cardtext` LIKE '%+6/+6 while%' OR
+		`cardtext` LIKE '%+6[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+6 and % while%' OR
+		`cardtext` LIKE '%+%/+6 for each%' OR
+		`cardtext` LIKE '%+6[Health] for each%' OR
+		`cardtext` LIKE '%give%+6/+6%' OR
+		`cardtext` LIKE '%give%+6[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+6%' OR
+		`cardtext` LIKE '%Spark: +%/+6%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 6%'))
+	OR
+		`cardtext` LIKE '%give a unit +6[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+6%' OR
+		`cardtext` LIKE '%give another unit +6[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+6%' OR
+		`cardtext` LIKE '%units get +%/+6%' OR
+		`cardtext` LIKE '%units get +6[Health]%' OR
+		`cardtext` LIKE '%unit each get +6[Health]%' OR
+		`cardtext` LIKE '%unit gets +6[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+6%' OR
+		`cardtext` LIKE '%units have +6[Health]%' OR
+		`cardtext` LIKE '%units have +%/+6%' OR
+		`cardtext` LIKE '%give yourself or a unit +6[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+6%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+6%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+6%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+6%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+6%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 7 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+7[Health]%' OR
+		`cardtext` LIKE '%gets %+7[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+7%' OR
+		`cardtext` LIKE '%get %+%/+7%' OR
+		`cardtext` LIKE '%has +%/+7%' OR
+		`cardtext` LIKE '%has +7[Health]%' OR
+		`cardtext` LIKE '%have +%/+7%' OR
+		`cardtext` LIKE '%have +7[Health]%' OR
+		`cardtext` LIKE '%+7[Health] while%' OR
+		`cardtext` LIKE '%+7/+7 while%' OR
+		`cardtext` LIKE '%+7[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+7 and % while%' OR
+		`cardtext` LIKE '%+%/+7 for each%' OR
+		`cardtext` LIKE '%+7[Health] for each%' OR
+		`cardtext` LIKE '%give%+7/+7%' OR
+		`cardtext` LIKE '%give%+7[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+7%' OR
+		`cardtext` LIKE '%Spark: +%/+7%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 7%'))
+	OR
+		`cardtext` LIKE '%give a unit +7[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+7%' OR
+		`cardtext` LIKE '%give another unit +7[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+7%' OR
+		`cardtext` LIKE '%units get +%/+7%' OR
+		`cardtext` LIKE '%units get +7[Health]%' OR
+		`cardtext` LIKE '%unit each get +7[Health]%' OR
+		`cardtext` LIKE '%unit gets +7[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+7%' OR
+		`cardtext` LIKE '%units have +7[Health]%' OR
+		`cardtext` LIKE '%units have +%/+7%' OR
+		`cardtext` LIKE '%give yourself or a unit +7[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+7%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+7%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+7%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+7%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+7%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 8 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+8[Health]%' OR
+		`cardtext` LIKE '%gets %+8[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+8%' OR
+		`cardtext` LIKE '%get %+%/+8%' OR
+		`cardtext` LIKE '%has +%/+8%' OR
+		`cardtext` LIKE '%has +8[Health]%' OR
+		`cardtext` LIKE '%have +%/+8%' OR
+		`cardtext` LIKE '%have +8[Health]%' OR
+		`cardtext` LIKE '%+8[Health] while%' OR
+		`cardtext` LIKE '%+8/+8 while%' OR
+		`cardtext` LIKE '%+8[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+8 and % while%' OR
+		`cardtext` LIKE '%+%/+8 for each%' OR
+		`cardtext` LIKE '%+8[Health] for each%' OR
+		`cardtext` LIKE '%give%+8/+8%' OR
+		`cardtext` LIKE '%give%+8[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+8%' OR
+		`cardtext` LIKE '%Spark: +%/+8%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 8%'))
+	OR
+		`cardtext` LIKE '%give a unit +8[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+8%' OR
+		`cardtext` LIKE '%give another unit +8[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+8%' OR
+		`cardtext` LIKE '%units get +%/+8%' OR
+		`cardtext` LIKE '%units get +8[Health]%' OR
+		`cardtext` LIKE '%unit each get +8[Health]%' OR
+		`cardtext` LIKE '%unit gets +8[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+8%' OR
+		`cardtext` LIKE '%units have +8[Health]%' OR
+		`cardtext` LIKE '%units have +%/+8%' OR
+		`cardtext` LIKE '%give yourself or a unit +8[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+8%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+8%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+8%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+8%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+8%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 9 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+9[Health]%' OR
+		`cardtext` LIKE '%gets %+9[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+9%' OR
+		`cardtext` LIKE '%get %+%/+9%' OR
+		`cardtext` LIKE '%has +%/+9%' OR
+		`cardtext` LIKE '%has +9[Health]%' OR
+		`cardtext` LIKE '%have +%/+9%' OR
+		`cardtext` LIKE '%have +9[Health]%' OR
+		`cardtext` LIKE '%+9[Health] while%' OR
+		`cardtext` LIKE '%+9/+9 while%' OR
+		`cardtext` LIKE '%+9[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+9 and % while%' OR
+		`cardtext` LIKE '%+%/+9 for each%' OR
+		`cardtext` LIKE '%+9[Health] for each%' OR
+		`cardtext` LIKE '%give%+9/+9%' OR
+		`cardtext` LIKE '%give%+9[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+9%' OR
+		`cardtext` LIKE '%Spark: +%/+9%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 9%'))
+	OR
+		`cardtext` LIKE '%give a unit +9[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+9%' OR
+		`cardtext` LIKE '%give another unit +9[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+9%' OR
+		`cardtext` LIKE '%units get +%/+9%' OR
+		`cardtext` LIKE '%units get +9[Health]%' OR
+		`cardtext` LIKE '%unit each get +9[Health]%' OR
+		`cardtext` LIKE '%unit gets +9[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+9%' OR
+		`cardtext` LIKE '%units have +9[Health]%' OR
+		`cardtext` LIKE '%units have +%/+9%' OR
+		`cardtext` LIKE '%give yourself or a unit +9[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+9%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+9%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+9%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+9%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+9%'
+	);
+	
+UPDATE `eternal_cards` SET `uhealthbuff` = 10 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+10[Health]%' OR
+		`cardtext` LIKE '%gets %+10[Health]%' OR
+		`cardtext` LIKE '%gets %+%/+10%' OR
+		`cardtext` LIKE '%get %+%/+10%' OR
+		`cardtext` LIKE '%has +%/+10%' OR
+		`cardtext` LIKE '%has +10[Health]%' OR
+		`cardtext` LIKE '%have +%/+10%' OR
+		`cardtext` LIKE '%have +10[Health]%' OR
+		`cardtext` LIKE '%+10[Health] while%' OR
+		`cardtext` LIKE '%+10/+10 while%' OR
+		`cardtext` LIKE '%+10[Health] and % while%' OR
+		`cardtext` LIKE '%+%/+10 and % while%' OR
+		`cardtext` LIKE '%+%/+10 for each%' OR
+		`cardtext` LIKE '%+10[Health] for each%' OR
+		`cardtext` LIKE '%give%+10/+10%' OR
+		`cardtext` LIKE '%give%+10[Health]%' OR
+		`cardtext` LIKE '%Ally: +%/+10%' OR
+		`cardtext` LIKE '%Spark: +%/+10%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 10%'))
+	OR
+		`cardtext` LIKE '%give a unit +10[Health]%' OR
+		`cardtext` LIKE '%give a unit +%/+10%' OR
+		`cardtext` LIKE '%give another unit +10[Health]%' OR
+		`cardtext` LIKE '%give another unit +%/+10%' OR
+		`cardtext` LIKE '%units get +%/+10%' OR
+		`cardtext` LIKE '%units get +10[Health]%' OR
+		`cardtext` LIKE '%unit each get +10[Health]%' OR
+		`cardtext` LIKE '%unit gets +10[Health]%' OR
+		`cardtext` LIKE '%unit gets +%/+10%' OR
+		`cardtext` LIKE '%units have +10[Health]%' OR
+		`cardtext` LIKE '%units have +%/+10%' OR
+		`cardtext` LIKE '%give yourself or a unit +10[Health]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +%/+10%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +%/+10%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +%/+10%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +%/+10%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +%/+10%'
+	);
+
+UPDATE `eternal_cards` SET `uhealthdebuff` = 0;
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -1 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-1%')
+	) OR
+	`cardtext` LIKE '%give%unit%-1[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-1%' OR
+	`cardtext` LIKE '%units get -1[Health]%' OR
+	`cardtext` LIKE '%units get -%/-1%' OR
+	`cardtext` LIKE '%unit%gets -1[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-1%' OR
+	`cardtext` LIKE '%unit has -1[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-1%' OR
+	`cardtext` LIKE '%play a -1[Health]%' OR
+	`cardtext` LIKE '%play a -%/-1%' OR
+	`cardtext` LIKE '%-1/-1%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -2 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-2%')
+	) OR
+	`cardtext` LIKE '%give%unit%-2[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-2%' OR
+	`cardtext` LIKE '%units get -2[Health]%' OR
+	`cardtext` LIKE '%units get -%/-2%' OR
+	`cardtext` LIKE '%unit%gets -2[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-2%' OR
+	`cardtext` LIKE '%unit has -2[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-2%' OR
+	`cardtext` LIKE '%play a -2[Health]%' OR
+	`cardtext` LIKE '%play a -%/-2%' OR
+	`cardtext` LIKE '%-2/-2%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -3 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-3%')
+	) OR
+	`cardtext` LIKE '%give%unit%-3[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-3%' OR
+	`cardtext` LIKE '%units get -3[Health]%' OR
+	`cardtext` LIKE '%units get -%/-3%' OR
+	`cardtext` LIKE '%unit%gets -3[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-3%' OR
+	`cardtext` LIKE '%unit has -3[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-3%' OR
+	`cardtext` LIKE '%play a -3[Health]%' OR
+	`cardtext` LIKE '%play a -%/-3%' OR
+	`cardtext` LIKE '%-3/-3%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -4 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-4%')
+	) OR
+	`cardtext` LIKE '%give%unit%-4[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-4%' OR
+	`cardtext` LIKE '%units get -4[Health]%' OR
+	`cardtext` LIKE '%units get -%/-4%' OR
+	`cardtext` LIKE '%unit%gets -4[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-4%' OR
+	`cardtext` LIKE '%unit has -4[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-4%' OR
+	`cardtext` LIKE '%play a -4[Health]%' OR
+	`cardtext` LIKE '%play a -%/-4%' OR
+	`cardtext` LIKE '%-4/-4%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -5 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-5%')
+	) OR
+	`cardtext` LIKE '%give%unit%-5[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-5%' OR
+	`cardtext` LIKE '%units get -5[Health]%' OR
+	`cardtext` LIKE '%units get -%/-5%' OR
+	`cardtext` LIKE '%unit%gets -5[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-5%' OR
+	`cardtext` LIKE '%unit has -5[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-5%' OR
+	`cardtext` LIKE '%play a -5[Health]%' OR
+	`cardtext` LIKE '%play a -%/-5%' OR
+	`cardtext` LIKE '%-5/-5%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -6 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-6%')
+	) OR
+	`cardtext` LIKE '%give%unit%-6[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-6%' OR
+	`cardtext` LIKE '%units get -6[Health]%' OR
+	`cardtext` LIKE '%units get -%/-6%' OR
+	`cardtext` LIKE '%unit%gets -6[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-6%' OR
+	`cardtext` LIKE '%unit has -6[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-6%' OR
+	`cardtext` LIKE '%play a -6[Health]%' OR
+	`cardtext` LIKE '%play a -%/-6%' OR
+	`cardtext` LIKE '%-6/-6%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -7 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-7%')
+	) OR
+	`cardtext` LIKE '%give%unit%-7[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-7%' OR
+	`cardtext` LIKE '%units get -7[Health]%' OR
+	`cardtext` LIKE '%units get -%/-7%' OR
+	`cardtext` LIKE '%unit%gets -7[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-7%' OR
+	`cardtext` LIKE '%unit has -7[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-7%' OR
+	`cardtext` LIKE '%play a -7[Health]%' OR
+	`cardtext` LIKE '%play a -%/-7%' OR
+	`cardtext` LIKE '%-7/-7%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -8 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-8%')
+	) OR
+	`cardtext` LIKE '%give%unit%-8[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-8%' OR
+	`cardtext` LIKE '%units get -8[Health]%' OR
+	`cardtext` LIKE '%units get -%/-8%' OR
+	`cardtext` LIKE '%unit%gets -8[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-8%' OR
+	`cardtext` LIKE '%unit has -8[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-8%' OR
+	`cardtext` LIKE '%play a -8[Health]%' OR
+	`cardtext` LIKE '%play a -%/-8%' OR
+	`cardtext` LIKE '%-8/-8%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -9 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-9%')
+	) OR
+	`cardtext` LIKE '%give%unit%-9[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-9%' OR
+	`cardtext` LIKE '%units get -9[Health]%' OR
+	`cardtext` LIKE '%units get -%/-9%' OR
+	`cardtext` LIKE '%unit%gets -9[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-9%' OR
+	`cardtext` LIKE '%unit has -9[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-9%' OR
+	`cardtext` LIKE '%play a -9[Health]%' OR
+	`cardtext` LIKE '%play a -%/-9%' OR
+	`cardtext` LIKE '%-9/-9%');
+	
+UPDATE `eternal_cards` SET `uhealthdebuff` = -10 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-%/-10%')
+	) OR
+	`cardtext` LIKE '%give%unit%-10[Health]%' OR
+	`cardtext` LIKE '%give%unit%-%/-10%' OR
+	`cardtext` LIKE '%units get -10[Health]%' OR
+	`cardtext` LIKE '%units get -%/-10%' OR
+	`cardtext` LIKE '%unit%gets -10[Health]%' OR
+	`cardtext` LIKE '%unit%gets -%/-10%' OR
+	`cardtext` LIKE '%unit has -10[Health]%' OR
+	`cardtext` LIKE '%unit has -%/-10%' OR
+	`cardtext` LIKE '%play a -10[Health]%' OR
+	`cardtext` LIKE '%play a -%/-10%' OR
+	`cardtext` LIKE '%-10/-10%');
+
+UPDATE `eternal_cards` SET `UHBvariable` = IF(
+	((`cardtype` = 'Unit' AND (
+		`cardtext` LIKE '%double%[Health]%' OR
+		`cardtext` LIKE '%has%for each%' OR
+		`cardtext` LIKE '%gets%for each%' OR
+		`cardtext` LIKE '%gets that much [Strength]/[Health]%' OR
+		`cardtext` LIKE '%gets that much [Health]%' OR
+		`cardtext` LIKE '%get that much [Strength]/[Health]%' OR
+		`cardtext` LIKE '%get that much [Health]%' OR
+		`cardtext` LIKE '%give%that much [Strength] and [Health]%' OR
+		`cardtext` LIKE '%give%that much [Health]%' OR
+		`cardtext` LIKE '%give one of your other units Crownwatch Cavalry% [Strength]/[Health]%' OR
+		`cardtext` LIKE '%gets the Student% [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double its [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double the [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double%[Health]%')) OR
+		`cardtext` LIKE '%swap%[Strength] and [Health]%'),1,0);
+	
+UPDATE `eternal_cards` SET `UHDvariable` = IF(
+	(`cardtext` LIKE '%give%units an additional -%[Health]%' OR
+	`cardtext` LIKE '%give%units an additional -%/-%' OR
+	`cardtext` LIKE '%give%unit -%[Health] equal to%' OR
+	`cardtext` LIKE '%give%unit -%/-% equal to%' OR
+	`cardtext` LIKE '%each unit% gets -%[Health] for each%' OR
+	`cardtext` LIKE '%each unit% gets -%/-% for each%' OR
+	`cardtext` LIKE '%swap%[Strength] and [Health]%'),1,0);
