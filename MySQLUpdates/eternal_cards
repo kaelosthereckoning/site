@@ -755,8 +755,8 @@ UPDATE `eternal_cards` SET `rwstrengthbuff` = 1 WHERE (
 UPDATE `eternal_cards` SET `rwstrengthbuff` = 2 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +2/+2%' OR
-		`cardtext` LIKE '%give Sanguine Sword +2/+2%'
-		`cardtext` LIKE '%Bloodrite Kalis gets +2/+2 for each unit sacrificed%')
+		`cardtext` LIKE '%give Sanguine Sword +2/+2%' OR
+		`cardtext` LIKE '%Bloodrite Kalis gets +2/+2%')
 	) OR
 	`cardtext` LIKE '%+2[Strength]%' OR
 	`cardtext` LIKE '%gain 2[Strength]%' OR
