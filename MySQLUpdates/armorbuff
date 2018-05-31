@@ -81,6 +81,10 @@ UPDATE `eternal_cards` SET `armorbuff` = 10 WHERE (
 	`cardtext` LIKE '%you gain%[Health] and 10[Armor]%');
 	
 UPDATE `eternal_cards` SET `ABvariable` = IF(
+	(`cardtype` = 'Relic Weapon' AND
+		(`cardtext` LIKE '%gets +%/+%for each%' OR
+		`cardtext` LIKE '%gets +1[Armor] for each')
+	) OR
 		(`cardtext` LIKE '%gain [Armor] equal to%' OR
 		`cardtext` LIKE '%gain 1[Armor] for each%' OR
 		`cardtext` LIKE '%double your [Strength] and [Armor]%'),1,0);
