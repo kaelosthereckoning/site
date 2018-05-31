@@ -98,7 +98,9 @@ UPDATE `eternal_cards` SET 	maxtargets = 1,
 							maxptargets = 1,
 							opponenthit = 2,
 							selfhit = 0
-							WHERE `cardtext` LIKE '%to each enemy%'	;
+							WHERE (
+								`cardtext` LIKE '%to each enemy%' OR
+								`cardtext` LIKE '%to each enemy unit%and the enemy player%') ;
 
 		UPDATE `eternal_cards` SET 	maxtargets = 13, 
 							targetunit = 1, 
