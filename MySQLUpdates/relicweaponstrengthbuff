@@ -1,3 +1,5 @@
+UPDATE `eternal_cards` SET `rwstrengthbuff` = 0;
+
 UPDATE `eternal_cards` SET `rwstrengthbuff` = 1 WHERE (
 	(`cardtype` = 'Relic Weapon' AND
 		(`cardtext` LIKE '%Spark: +1/+1%' OR
