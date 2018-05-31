@@ -977,3 +977,40 @@ UPDATE `eternal_cards` SET `ABvariable` = IF(
 		(`cardtext` LIKE '%gain [Armor] equal to%' OR
 		`cardtext` LIKE '%gain 1[Armor] for each%' OR
 		`cardtext` LIKE '%double your [Strength] and [Armor]%'),1,0);
+
+UPDATE `eternal_cards` SET `phealthbuff` = 0;
+
+UPDATE `eternal_cards` SET `phealthbuff` = 1 WHERE (
+	`cardtext` LIKE '%gain +1[Health]%' OR
+	`cardtext` LIKE '%gain 1[Health]%');
+UPDATE `eternal_cards` SET `phealthbuff` = 2 WHERE (
+	`cardtext` LIKE '%+2[Health]%' OR
+	`cardtext` LIKE '%+2/+2%');
+UPDATE `eternal_cards` SET `phealthbuff` = 3 WHERE (
+	`cardtext` LIKE '%+3[Health]%' OR
+	`cardtext` LIKE '%+3/+3%');
+UPDATE `eternal_cards` SET `phealthbuff` = 4 WHERE (
+	`cardtext` LIKE '%+4[Health]%' OR
+	`cardtext` LIKE '%+4/+4%');
+UPDATE `eternal_cards` SET `phealthbuff` = 5 WHERE (
+	`cardtext` LIKE '%+5[Health]%' OR
+	`cardtext` LIKE '%+5/+5%');
+UPDATE `eternal_cards` SET `phealthbuff` = 6 WHERE (
+	`cardtext` LIKE '%+6[Health]%' OR
+	`cardtext` LIKE '%+6/+6%');
+UPDATE `eternal_cards` SET `phealthbuff` = 7 WHERE (
+	`cardtext` LIKE '%+7[Health]%' OR
+	`cardtext` LIKE '%+7/+7%');
+UPDATE `eternal_cards` SET `phealthbuff` = 8 WHERE (
+	`cardtext` LIKE '%+8[Health]%' OR
+	`cardtext` LIKE '%+8/+8%');
+UPDATE `eternal_cards` SET `phealthbuff` = 9 WHERE (
+	`cardtext` LIKE '%+9[Health]%' OR
+	`cardtext` LIKE '%+9/+9%');
+UPDATE `eternal_cards` SET `phealthbuff` = 10 WHERE (
+	`cardtext` LIKE '%+10[Health]%' OR
+	`cardtext` LIKE '%+10/+10%');
+	
+UPDATE `eternal_cards` SET `PHBvariable` = IF(
+	(`cardtext` LIKE '%you gain [Health] equal to%' OR
+	`cardtext` LIKE '%gain its [Health]%'),1,0);
