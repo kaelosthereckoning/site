@@ -1,0 +1,630 @@
+UPDATE `eternal_cards` SET `ustrengthbuff` = 0;
+
+UPDATE `eternal_cards` SET `ustrengthbuff` = 1 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+1[Strength]%' OR
+		`cardtext` LIKE '%gets %+1[Strength]%' OR
+		`cardtext` LIKE '%gets %+1/+%' OR
+		`cardtext` LIKE '%get %+1/+%' OR
+		`cardtext` LIKE '%has +1/+%' OR
+		`cardtext` LIKE '%has +1[Strength]%' OR
+		`cardtext` LIKE '%have +1/+%' OR
+		`cardtext` LIKE '%have +1[Strength]%' OR
+		`cardtext` LIKE '%+1[Strength] while%' OR
+		`cardtext` LIKE '%+1/+1 while%' OR
+		`cardtext` LIKE '%+1[Strength] and % while%' OR
+		`cardtext` LIKE '%+1/+% and % while%' OR
+		`cardtext` LIKE '%+1/+% for each%' OR
+		`cardtext` LIKE '%+1[Strength] for each%' OR
+		`cardtext` LIKE '%give%+1/+1%' OR
+		`cardtext` LIKE '%give%+1[Strength]%' OR
+		`cardtext` LIKE '%Ally: +1/+%' OR
+		`cardtext` LIKE '%Spark: +1/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry%'))
+	OR
+		`cardtext` LIKE '%give a unit +1[Strength]%' OR
+		`cardtext` LIKE '%give a unit +1/+%' OR
+		`cardtext` LIKE '%give another unit +1[Strength]%' OR
+		`cardtext` LIKE '%give another unit +1/+%' OR
+		`cardtext` LIKE '%units get +1/+%' OR
+		`cardtext` LIKE '%units get +1[Strength]%' OR
+		`cardtext` LIKE '%unit each get +1[Strength]%' OR
+		`cardtext` LIKE '%unit gets +1[Strength]%' OR
+		`cardtext` LIKE '%unit gets +1/+%' OR
+		`cardtext` LIKE '%units have +1[Strength]%' OR
+		`cardtext` LIKE '%units have +1/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +1[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +1/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +1/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +1/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +1/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +1/+%'
+	);
+
+UPDATE `eternal_cards` SET `ustrengthbuff` = 2 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+2[Strength]%' OR
+		`cardtext` LIKE '%gets %+2[Strength]%' OR
+		`cardtext` LIKE '%gets %+2/+%' OR
+		`cardtext` LIKE '%get %+2/+%' OR
+		`cardtext` LIKE '%has +2/+%' OR
+		`cardtext` LIKE '%has +2[Strength]%' OR
+		`cardtext` LIKE '%have +2/+%' OR
+		`cardtext` LIKE '%have +2[Strength]%' OR
+		`cardtext` LIKE '%+2[Strength] while%' OR
+		`cardtext` LIKE '%+2/+2 while%' OR
+		`cardtext` LIKE '%+2[Strength] and % while%' OR
+		`cardtext` LIKE '%+2/+% and % while%' OR
+		`cardtext` LIKE '%+2/+% for each%' OR
+		`cardtext` LIKE '%+2[Strength] for each%' OR
+		`cardtext` LIKE '%give%+2/+2%' OR
+		`cardtext` LIKE '%give%+2[Strength]%' OR
+		`cardtext` LIKE '%Ally: +2/+%' OR
+		`cardtext` LIKE '%Spark: +2/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 2%'))
+	OR
+		`cardtext` LIKE '%give a unit +2[Strength]%' OR
+		`cardtext` LIKE '%give a unit +2/+%' OR
+		`cardtext` LIKE '%give another unit +2[Strength]%' OR
+		`cardtext` LIKE '%give another unit +2/+%' OR
+		`cardtext` LIKE '%units get +2/+%' OR
+		`cardtext` LIKE '%units get +2[Strength]%' OR
+		`cardtext` LIKE '%unit each get +2[Strength]%' OR
+		`cardtext` LIKE '%unit gets +2[Strength]%' OR
+		`cardtext` LIKE '%unit gets +2/+%' OR
+		`cardtext` LIKE '%units have +2[Strength]%' OR
+		`cardtext` LIKE '%units have +2/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +2[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +2/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +2/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +2/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +2/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +2/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 3 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+3[Strength]%' OR
+		`cardtext` LIKE '%gets %+3[Strength]%' OR
+		`cardtext` LIKE '%gets %+3/+%' OR
+		`cardtext` LIKE '%get %+3/+%' OR
+		`cardtext` LIKE '%has +3/+%' OR
+		`cardtext` LIKE '%has +3[Strength]%' OR
+		`cardtext` LIKE '%have +3/+%' OR
+		`cardtext` LIKE '%have +3[Strength]%' OR
+		`cardtext` LIKE '%+3[Strength] while%' OR
+		`cardtext` LIKE '%+3/+3 while%' OR
+		`cardtext` LIKE '%+3[Strength] and % while%' OR
+		`cardtext` LIKE '%+3/+% and % while%' OR
+		`cardtext` LIKE '%+3/+% for each%' OR
+		`cardtext` LIKE '%+3[Strength] for each%' OR
+		`cardtext` LIKE '%give%+3/+3%' OR
+		`cardtext` LIKE '%give%+3[Strength]%' OR
+		`cardtext` LIKE '%Ally: +3/+%' OR
+		`cardtext` LIKE '%Spark: +3/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 3%'))
+	OR
+		`cardtext` LIKE '%give a unit +3[Strength]%' OR
+		`cardtext` LIKE '%give a unit +3/+%' OR
+		`cardtext` LIKE '%give another unit +3[Strength]%' OR
+		`cardtext` LIKE '%give another unit +3/+%' OR
+		`cardtext` LIKE '%units get +3/+%' OR
+		`cardtext` LIKE '%units get +3[Strength]%' OR
+		`cardtext` LIKE '%unit each get +3[Strength]%' OR
+		`cardtext` LIKE '%unit gets +3[Strength]%' OR
+		`cardtext` LIKE '%unit gets +3/+%' OR
+		`cardtext` LIKE '%units have +3[Strength]%' OR
+		`cardtext` LIKE '%units have +3/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +3[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +3/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +3/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +3/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +3/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +3/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 4 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+4[Strength]%' OR
+		`cardtext` LIKE '%gets %+4[Strength]%' OR
+		`cardtext` LIKE '%gets %+4/+%' OR
+		`cardtext` LIKE '%get %+4/+%' OR
+		`cardtext` LIKE '%has +4/+%' OR
+		`cardtext` LIKE '%has +4[Strength]%' OR
+		`cardtext` LIKE '%have +4/+%' OR
+		`cardtext` LIKE '%have +4[Strength]%' OR
+		`cardtext` LIKE '%+4[Strength] while%' OR
+		`cardtext` LIKE '%+4/+4 while%' OR
+		`cardtext` LIKE '%+4[Strength] and % while%' OR
+		`cardtext` LIKE '%+4/+% and % while%' OR
+		`cardtext` LIKE '%+4/+% for each%' OR
+		`cardtext` LIKE '%+4[Strength] for each%' OR
+		`cardtext` LIKE '%give%+4/+4%' OR
+		`cardtext` LIKE '%give%+4[Strength]%' OR
+		`cardtext` LIKE '%Ally: +4/+%' OR
+		`cardtext` LIKE '%Spark: +4/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 4%'))
+	OR
+		`cardtext` LIKE '%give a unit +4[Strength]%' OR
+		`cardtext` LIKE '%give a unit +4/+%' OR
+		`cardtext` LIKE '%give another unit +4[Strength]%' OR
+		`cardtext` LIKE '%give another unit +4/+%' OR
+		`cardtext` LIKE '%units get +4/+%' OR
+		`cardtext` LIKE '%units get +4[Strength]%' OR
+		`cardtext` LIKE '%unit each get +4[Strength]%' OR
+		`cardtext` LIKE '%unit gets +4[Strength]%' OR
+		`cardtext` LIKE '%unit gets +4/+%' OR
+		`cardtext` LIKE '%units have +4[Strength]%' OR
+		`cardtext` LIKE '%units have +4/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +4[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +4/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +4/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +4/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +4/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +4/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 5 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+5[Strength]%' OR
+		`cardtext` LIKE '%gets %+5[Strength]%' OR
+		`cardtext` LIKE '%gets %+5/+%' OR
+		`cardtext` LIKE '%get %+5/+%' OR
+		`cardtext` LIKE '%has +5/+%' OR
+		`cardtext` LIKE '%has +5[Strength]%' OR
+		`cardtext` LIKE '%have +5/+%' OR
+		`cardtext` LIKE '%have +5[Strength]%' OR
+		`cardtext` LIKE '%+5[Strength] while%' OR
+		`cardtext` LIKE '%+5/+5 while%' OR
+		`cardtext` LIKE '%+5[Strength] and % while%' OR
+		`cardtext` LIKE '%+5/+% and % while%' OR
+		`cardtext` LIKE '%+5/+% for each%' OR
+		`cardtext` LIKE '%+5[Strength] for each%' OR
+		`cardtext` LIKE '%give%+5/+5%' OR
+		`cardtext` LIKE '%give%+5[Strength]%' OR
+		`cardtext` LIKE '%Ally: +5/+%' OR
+		`cardtext` LIKE '%Spark: +5/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 5%'))
+	OR
+		`cardtext` LIKE '%give a unit +5[Strength]%' OR
+		`cardtext` LIKE '%give a unit +5/+%' OR
+		`cardtext` LIKE '%give another unit +5[Strength]%' OR
+		`cardtext` LIKE '%give another unit +5/+%' OR
+		`cardtext` LIKE '%units get +5/+%' OR
+		`cardtext` LIKE '%units get +5[Strength]%' OR
+		`cardtext` LIKE '%unit each get +5[Strength]%' OR
+		`cardtext` LIKE '%unit gets +5[Strength]%' OR
+		`cardtext` LIKE '%unit gets +5/+%' OR
+		`cardtext` LIKE '%units have +5[Strength]%' OR
+		`cardtext` LIKE '%units have +5/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +5[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +5/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +5/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +5/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +5/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +5/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 6 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+6[Strength]%' OR
+		`cardtext` LIKE '%gets %+6[Strength]%' OR
+		`cardtext` LIKE '%gets %+6/+%' OR
+		`cardtext` LIKE '%get %+6/+%' OR
+		`cardtext` LIKE '%has +6/+%' OR
+		`cardtext` LIKE '%has +6[Strength]%' OR
+		`cardtext` LIKE '%have +6/+%' OR
+		`cardtext` LIKE '%have +6[Strength]%' OR
+		`cardtext` LIKE '%+6[Strength] while%' OR
+		`cardtext` LIKE '%+6/+6 while%' OR
+		`cardtext` LIKE '%+6[Strength] and % while%' OR
+		`cardtext` LIKE '%+6/+% and % while%' OR
+		`cardtext` LIKE '%+6/+% for each%' OR
+		`cardtext` LIKE '%+6[Strength] for each%' OR
+		`cardtext` LIKE '%give%+6/+6%' OR
+		`cardtext` LIKE '%give%+6[Strength]%' OR
+		`cardtext` LIKE '%Ally: +6/+%' OR
+		`cardtext` LIKE '%Spark: +6/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 6%'))
+	OR
+		`cardtext` LIKE '%give a unit +6[Strength]%' OR
+		`cardtext` LIKE '%give a unit +6/+%' OR
+		`cardtext` LIKE '%give another unit +6[Strength]%' OR
+		`cardtext` LIKE '%give another unit +6/+%' OR
+		`cardtext` LIKE '%units get +6/+%' OR
+		`cardtext` LIKE '%units get +6[Strength]%' OR
+		`cardtext` LIKE '%unit each get +6[Strength]%' OR
+		`cardtext` LIKE '%unit gets +6[Strength]%' OR
+		`cardtext` LIKE '%unit gets +6/+%' OR
+		`cardtext` LIKE '%units have +6[Strength]%' OR
+		`cardtext` LIKE '%units have +6/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +6[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +6/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +6/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +6/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +6/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +6/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 7 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+7[Strength]%' OR
+		`cardtext` LIKE '%gets %+7[Strength]%' OR
+		`cardtext` LIKE '%gets %+7/+%' OR
+		`cardtext` LIKE '%get %+7/+%' OR
+		`cardtext` LIKE '%has +7/+%' OR
+		`cardtext` LIKE '%has +7[Strength]%' OR
+		`cardtext` LIKE '%have +7/+%' OR
+		`cardtext` LIKE '%have +7[Strength]%' OR
+		`cardtext` LIKE '%+7[Strength] while%' OR
+		`cardtext` LIKE '%+7/+7 while%' OR
+		`cardtext` LIKE '%+7[Strength] and % while%' OR
+		`cardtext` LIKE '%+7/+% and % while%' OR
+		`cardtext` LIKE '%+7/+% for each%' OR
+		`cardtext` LIKE '%+7[Strength] for each%' OR
+		`cardtext` LIKE '%give%+7/+7%' OR
+		`cardtext` LIKE '%give%+7[Strength]%' OR
+		`cardtext` LIKE '%Ally: +7/+%' OR
+		`cardtext` LIKE '%Spark: +7/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 7%'))
+	OR
+		`cardtext` LIKE '%give a unit +7[Strength]%' OR
+		`cardtext` LIKE '%give a unit +7/+%' OR
+		`cardtext` LIKE '%give another unit +7[Strength]%' OR
+		`cardtext` LIKE '%give another unit +7/+%' OR
+		`cardtext` LIKE '%units get +7/+%' OR
+		`cardtext` LIKE '%units get +7[Strength]%' OR
+		`cardtext` LIKE '%unit each get +7[Strength]%' OR
+		`cardtext` LIKE '%unit gets +7[Strength]%' OR
+		`cardtext` LIKE '%unit gets +7/+%' OR
+		`cardtext` LIKE '%units have +7[Strength]%' OR
+		`cardtext` LIKE '%units have +7/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +7[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +7/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +7/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +7/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +7/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +7/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 8 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+8[Strength]%' OR
+		`cardtext` LIKE '%gets %+8[Strength]%' OR
+		`cardtext` LIKE '%gets %+8/+%' OR
+		`cardtext` LIKE '%get %+8/+%' OR
+		`cardtext` LIKE '%has +8/+%' OR
+		`cardtext` LIKE '%has +8[Strength]%' OR
+		`cardtext` LIKE '%have +8/+%' OR
+		`cardtext` LIKE '%have +8[Strength]%' OR
+		`cardtext` LIKE '%+8[Strength] while%' OR
+		`cardtext` LIKE '%+8/+8 while%' OR
+		`cardtext` LIKE '%+8[Strength] and % while%' OR
+		`cardtext` LIKE '%+8/+% and % while%' OR
+		`cardtext` LIKE '%+8/+% for each%' OR
+		`cardtext` LIKE '%+8[Strength] for each%' OR
+		`cardtext` LIKE '%give%+8/+8%' OR
+		`cardtext` LIKE '%give%+8[Strength]%' OR
+		`cardtext` LIKE '%Ally: +8/+%' OR
+		`cardtext` LIKE '%Spark: +8/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 8%'))
+	OR
+		`cardtext` LIKE '%give a unit +8[Strength]%' OR
+		`cardtext` LIKE '%give a unit +8/+%' OR
+		`cardtext` LIKE '%give another unit +8[Strength]%' OR
+		`cardtext` LIKE '%give another unit +8/+%' OR
+		`cardtext` LIKE '%units get +8/+%' OR
+		`cardtext` LIKE '%units get +8[Strength]%' OR
+		`cardtext` LIKE '%unit each get +8[Strength]%' OR
+		`cardtext` LIKE '%unit gets +8[Strength]%' OR
+		`cardtext` LIKE '%unit gets +8/+%' OR
+		`cardtext` LIKE '%units have +8[Strength]%' OR
+		`cardtext` LIKE '%units have +8/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +8[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +8/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +8/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +8/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +8/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +8/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 9 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+9[Strength]%' OR
+		`cardtext` LIKE '%gets %+9[Strength]%' OR
+		`cardtext` LIKE '%gets %+9/+%' OR
+		`cardtext` LIKE '%get %+9/+%' OR
+		`cardtext` LIKE '%has +9/+%' OR
+		`cardtext` LIKE '%has +9[Strength]%' OR
+		`cardtext` LIKE '%have +9/+%' OR
+		`cardtext` LIKE '%have +9[Strength]%' OR
+		`cardtext` LIKE '%+9[Strength] while%' OR
+		`cardtext` LIKE '%+9/+9 while%' OR
+		`cardtext` LIKE '%+9[Strength] and % while%' OR
+		`cardtext` LIKE '%+9/+% and % while%' OR
+		`cardtext` LIKE '%+9/+% for each%' OR
+		`cardtext` LIKE '%+9[Strength] for each%' OR
+		`cardtext` LIKE '%give%+9/+9%' OR
+		`cardtext` LIKE '%give%+9[Strength]%' OR
+		`cardtext` LIKE '%Ally: +9/+%' OR
+		`cardtext` LIKE '%Spark: +9/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 9%'))
+	OR
+		`cardtext` LIKE '%give a unit +9[Strength]%' OR
+		`cardtext` LIKE '%give a unit +9/+%' OR
+		`cardtext` LIKE '%give another unit +9[Strength]%' OR
+		`cardtext` LIKE '%give another unit +9/+%' OR
+		`cardtext` LIKE '%units get +9/+%' OR
+		`cardtext` LIKE '%units get +9[Strength]%' OR
+		`cardtext` LIKE '%unit each get +9[Strength]%' OR
+		`cardtext` LIKE '%unit gets +9[Strength]%' OR
+		`cardtext` LIKE '%unit gets +9/+%' OR
+		`cardtext` LIKE '%units have +9[Strength]%' OR
+		`cardtext` LIKE '%units have +9/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +9[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +9/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +9/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +9/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +9/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +9/+%'
+	);
+	
+UPDATE `eternal_cards` SET `ustrengthbuff` = 10 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%get %+10[Strength]%' OR
+		`cardtext` LIKE '%gets %+10[Strength]%' OR
+		`cardtext` LIKE '%gets %+10/+%' OR
+		`cardtext` LIKE '%get %+10/+%' OR
+		`cardtext` LIKE '%has +10/+%' OR
+		`cardtext` LIKE '%has +10[Strength]%' OR
+		`cardtext` LIKE '%have +10/+%' OR
+		`cardtext` LIKE '%have +10[Strength]%' OR
+		`cardtext` LIKE '%+10[Strength] while%' OR
+		`cardtext` LIKE '%+10/+10 while%' OR
+		`cardtext` LIKE '%+10[Strength] and % while%' OR
+		`cardtext` LIKE '%+10/+% and % while%' OR
+		`cardtext` LIKE '%+10/+% for each%' OR
+		`cardtext` LIKE '%+10[Strength] for each%' OR
+		`cardtext` LIKE '%give%+10/+10%' OR
+		`cardtext` LIKE '%give%+10[Strength]%' OR
+		`cardtext` LIKE '%Ally: +10/+%' OR
+		`cardtext` LIKE '%Spark: +10/+%'
+		))
+	OR
+		((`cardtype` = 'Unit' OR `cardtype` = 'Weapon' OR `cardtype` = 'Relic Weapon') AND
+		(`cardtext` LIKE '%Warcry 10%'))
+	OR
+		`cardtext` LIKE '%give a unit +10[Strength]%' OR
+		`cardtext` LIKE '%give a unit +10/+%' OR
+		`cardtext` LIKE '%give another unit +10[Strength]%' OR
+		`cardtext` LIKE '%give another unit +10/+%' OR
+		`cardtext` LIKE '%units get +10/+%' OR
+		`cardtext` LIKE '%units get +10[Strength]%' OR
+		`cardtext` LIKE '%unit each get +10[Strength]%' OR
+		`cardtext` LIKE '%unit gets +10[Strength]%' OR
+		`cardtext` LIKE '%unit gets +10/+%' OR
+		`cardtext` LIKE '%units have +10[Strength]%' OR
+		`cardtext` LIKE '%units have +10/+%' OR
+		`cardtext` LIKE '%give yourself or a unit +10[Strength]%' OR
+		`cardtext` LIKE '%give a unit or weapon in your hand +10/+%' OR
+		`cardtext` LIKE '%each unit in your hand with%gets +10/+%' OR
+		`cardtext` LIKE '%when%with%unit%it gets +10/+%' OR
+		`cardtext` LIKE '%each Gunslinger%gets +10/+%' OR
+		`cardtext` LIKE '%each Valkyrie%gets +10/+%'
+	);
+
+UPDATE `eternal_cards` SET `ustrengthdebuff` = 0;
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -1 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-1/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-1[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-1/-%' OR
+	`cardtext` LIKE '%units get -1[Strength]%' OR
+	`cardtext` LIKE '%units get -1/-%' OR
+	`cardtext` LIKE '%unit%gets -1[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -1/-%' OR
+	`cardtext` LIKE '%unit has -1[Strength]%' OR
+	`cardtext` LIKE '%unit has -1/-%' OR
+	`cardtext` LIKE '%play a -1[Strength]%' OR
+	`cardtext` LIKE '%play a -1/-%' OR
+	`cardtext` LIKE '%-1/-1%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -2 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-2/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-2[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-2/-%' OR
+	`cardtext` LIKE '%units get -2[Strength]%' OR
+	`cardtext` LIKE '%units get -2/-%' OR
+	`cardtext` LIKE '%unit%gets -2[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -2/-%' OR
+	`cardtext` LIKE '%unit has -2[Strength]%' OR
+	`cardtext` LIKE '%unit has -2/-%' OR
+	`cardtext` LIKE '%play a -2[Strength]%' OR
+	`cardtext` LIKE '%play a -2/-%' OR
+	`cardtext` LIKE '%-2/-2%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -3 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-3/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-3[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-3/-%' OR
+	`cardtext` LIKE '%units get -3[Strength]%' OR
+	`cardtext` LIKE '%units get -3/-%' OR
+	`cardtext` LIKE '%unit%gets -3[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -3/-%' OR
+	`cardtext` LIKE '%unit has -3[Strength]%' OR
+	`cardtext` LIKE '%unit has -3/-%' OR
+	`cardtext` LIKE '%play a -3[Strength]%' OR
+	`cardtext` LIKE '%play a -3/-%' OR
+	`cardtext` LIKE '%-3/-3%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -4 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-4/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-4[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-4/-%' OR
+	`cardtext` LIKE '%units get -4[Strength]%' OR
+	`cardtext` LIKE '%units get -4/-%' OR
+	`cardtext` LIKE '%unit%gets -4[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -4/-%' OR
+	`cardtext` LIKE '%unit has -4[Strength]%' OR
+	`cardtext` LIKE '%unit has -4/-%' OR
+	`cardtext` LIKE '%play a -4[Strength]%' OR
+	`cardtext` LIKE '%play a -4/-%' OR
+	`cardtext` LIKE '%-4/-4%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -5 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-5/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-5[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-5/-%' OR
+	`cardtext` LIKE '%units get -5[Strength]%' OR
+	`cardtext` LIKE '%units get -5/-%' OR
+	`cardtext` LIKE '%unit%gets -5[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -5/-%' OR
+	`cardtext` LIKE '%unit has -5[Strength]%' OR
+	`cardtext` LIKE '%unit has -5/-%' OR
+	`cardtext` LIKE '%play a -5[Strength]%' OR
+	`cardtext` LIKE '%play a -5/-%' OR
+	`cardtext` LIKE '%-5/-5%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -6 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-6/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-6[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-6/-%' OR
+	`cardtext` LIKE '%units get -6[Strength]%' OR
+	`cardtext` LIKE '%units get -6/-%' OR
+	`cardtext` LIKE '%unit%gets -6[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -6/-%' OR
+	`cardtext` LIKE '%unit has -6[Strength]%' OR
+	`cardtext` LIKE '%unit has -6/-%' OR
+	`cardtext` LIKE '%play a -6[Strength]%' OR
+	`cardtext` LIKE '%play a -6/-%' OR
+	`cardtext` LIKE '%-6/-6%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -7 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-7/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-7[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-7/-%' OR
+	`cardtext` LIKE '%units get -7[Strength]%' OR
+	`cardtext` LIKE '%units get -7/-%' OR
+	`cardtext` LIKE '%unit%gets -7[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -7/-%' OR
+	`cardtext` LIKE '%unit has -7[Strength]%' OR
+	`cardtext` LIKE '%unit has -7/-%' OR
+	`cardtext` LIKE '%play a -7[Strength]%' OR
+	`cardtext` LIKE '%play a -7/-%' OR
+	`cardtext` LIKE '%-7/-7%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -8 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-8/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-8[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-8/-%' OR
+	`cardtext` LIKE '%units get -8[Strength]%' OR
+	`cardtext` LIKE '%units get -8/-%' OR
+	`cardtext` LIKE '%unit%gets -8[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -8/-%' OR
+	`cardtext` LIKE '%unit has -8[Strength]%' OR
+	`cardtext` LIKE '%unit has -8/-%' OR
+	`cardtext` LIKE '%play a -8[Strength]%' OR
+	`cardtext` LIKE '%play a -8/-%' OR
+	`cardtext` LIKE '%-8/-8%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -9 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-9/-%')
+	) OR
+	`cardtext` LIKE '%give%unit%-9[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-9/-%' OR
+	`cardtext` LIKE '%units get -9[Strength]%' OR
+	`cardtext` LIKE '%units get -9/-%' OR
+	`cardtext` LIKE '%unit%gets -9[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -9/-%' OR
+	`cardtext` LIKE '%unit has -9[Strength]%' OR
+	`cardtext` LIKE '%unit has -9/-%' OR
+	`cardtext` LIKE '%play a -9[Strength]%' OR
+	`cardtext` LIKE '%play a -9/-%' OR
+	`cardtext` LIKE '%-9/-9%');
+	
+UPDATE `eternal_cards` SET `ustrengthdebuff` = -10 WHERE (
+	(`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%give%-1/-%0%')
+	) OR
+	`cardtext` LIKE '%give%unit%-10[Strength]%' OR
+	`cardtext` LIKE '%give%unit%-1/-%0%' OR
+	`cardtext` LIKE '%units get -10[Strength]%' OR
+	`cardtext` LIKE '%units get -1/-%0%' OR
+	`cardtext` LIKE '%unit%gets -10[Strength]%' OR
+	`cardtext` LIKE '%unit%gets -1/-%0%' OR
+	`cardtext` LIKE '%unit has -10[Strength]%' OR
+	`cardtext` LIKE '%unit has -1/-%0%' OR
+	`cardtext` LIKE '%play a -10[Strength]%' OR
+	`cardtext` LIKE '%play a -1/-%0%' OR
+	`cardtext` LIKE '%-10/-10%');
+
+UPDATE `eternal_cards` SET `USBvariable` = IF(
+	((`cardtype` = 'Unit' AND (
+		`cardtext` LIKE '%double%[Strength]%' OR
+		`cardtext` LIKE '%has%for each%' OR
+		`cardtext` LIKE '%gets%for each%' OR
+		`cardtext` LIKE '%gets that much [Strength]/[Health]%' OR
+		`cardtext` LIKE '%gets that much [Strength]%' OR
+		`cardtext` LIKE '%get that much [Strength]/[Health]%' OR
+		`cardtext` LIKE '%get that much [Strength]%' OR
+		`cardtext` LIKE '%give%that much [Strength] and [Health]%' OR
+		`cardtext` LIKE '%give%that much [Strength]%' OR
+		`cardtext` LIKE '%give one of your other units Crownwatch Cavalry% [Strength]/[Health]%' OR
+		`cardtext` LIKE '%gets the Student% [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double its [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double the [Strength]/[Health]%' OR
+		`cardtext` LIKE '%double%[Strength]%')) OR
+		`cardtext` LIKE '%swap%[Strength] and [Health]%'),1,0);
+	
+UPDATE `eternal_cards` SET `USDvariable` = IF(
+	(`cardtext` LIKE '%give%units an additional -%[Strength]%' OR
+	`cardtext` LIKE '%give%units an additional -%/-%' OR
+	`cardtext` LIKE '%give%unit -%[Strength] equal to%' OR
+	`cardtext` LIKE '%give%unit -%/-% equal to%' OR
+	`cardtext` LIKE '%each unit% gets -%[Strength] for each%' OR
+	`cardtext` LIKE '%each unit% gets -%/-% for each%' OR
+	`cardtext` LIKE '%swap%[Strength] and [Health]%'),1,0);
