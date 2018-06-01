@@ -22,7 +22,7 @@
 	`cardtext` LIKE '%play a Restless Radiant%' OR
 	`cardtext` LIKE '%play a random Stranger%') AND 
 	(`cardtext` NOT LIKE '%when you play a %' AND
-	`cardtext` NOT LIKE '%when you play an %'),1,
+	`cardtext` NOT LIKE '%when you play an %')),1,
 	(
 	IF(
 	(`cardtext` LIKE '%play two _/_%' OR
