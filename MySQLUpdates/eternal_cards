@@ -10,7 +10,7 @@
 	`cardtext` NOT LIKE '%play%power cards%from your void%')
 	),1,0);
 	UPDATE `eternal_cards` SET `tokenscreated` = IF (
-	(`cardtext` LIKE '%play a _/_%' OR
+	((`cardtext` LIKE '%play a _/_%' OR
 	`cardtext` LIKE '%play an _/_%' OR
 	`cardtext` LIKE '%play an Infernus%' OR
 	`cardtext` LIKE '%play one of%_/_%' OR
@@ -20,7 +20,9 @@
 	`cardtext` LIKE '%play the top unit%' OR
 	`cardtext` LIKE '%play a random%unit %' OR
 	`cardtext` LIKE '%play a Restless Radiant%' OR
-	`cardtext` LIKE '%play a random Stranger%'),1,
+	`cardtext` LIKE '%play a random Stranger%') AND 
+	(`cardtext` NOT LIKE '%when you play a %' AND
+	`cardtext` NOT LIKE '%when you play an %'),1,
 	(
 	IF(
 	(`cardtext` LIKE '%play two _/_%' OR
