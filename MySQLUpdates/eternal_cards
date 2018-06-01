@@ -1645,3 +1645,59 @@ UPDATE `eternal_cards` SET `USDvariable` = IF(
 	`cardtext` LIKE '%each unit% gets -%[Strength] for each%' OR
 	`cardtext` LIKE '%each unit% gets -%/-% for each%' OR
 	`cardtext` LIKE '%swap%[Strength] and [Health]%'),1,0);
+
+UPDATE `eternal_cards` SET `killunit` = IF(
+	((`cardtype` = 'Unit' AND
+		(`cardtext` LIKE '%sacrifice%'))
+	OR 
+	`cardtext` LIKE '%kill a%enemy unit%' OR
+	`cardtext` LIKE '%kill a unit%' OR
+	`cardtext` LIKE '%kill all enemy units%' OR
+	`cardtext` LIKE '%kill all units%' OR
+	`cardtext` LIKE '%when it would cost zero, kill it%' OR
+	`cardtext` LIKE '%kills the unit%' OR
+	`cardtext` LIKE '%if it had Flying, kill it%' OR
+	`cardtext` LIKE '%Transform%and then kill it%' OR
+	`cardtext` LIKE '%kill all other units%' OR
+	`cardtext` LIKE '%sacrifice a unit%' OR
+	`cardtext` LIKE '%sacrifice another unit%' OR
+	`cardtext` LIKE '%sacrifice two other units%' OR
+	`cardtext` LIKE '%play a unit%sacrifice it%' OR
+	`cardtext` LIKE '%sacrifice all of your units%' OR
+	`cardtext` LIKE '%sacrifice all of their units%'
+	),1,0);
+	
+UPDATE `eternal_cards` SET `killattachment` = IF(
+	(`cardtext` LIKE '%kill%enemy%attachment%' OR
+	`cardtext` LIKE '%kill all other%attachments%'),1,0);
+	
+UPDATE `eternal_cards` SET `killcurse` = IF(
+	(`cardtext` LIKE '%kill%enemy%curse%' OR
+	`killattachment` = 1),1,0);
+	
+UPDATE `eternal_cards` SET `killrelic` = IF(
+	(`cardtext` LIKE '%kill%enemy%relic%' OR
+	`cardtext` LIKE '%sacrifice Ruby Catalyst%' OR
+	`cardtext` LIKE '%sacrifice Sunken Tower%' OR
+	`cardtext` LIKE '%sacrifice Means to an End%' OR
+	`cardtext` LIKE '%sacrifice Argenport Sewers%' OR
+	`cardtext` LIKE '%sacrifice Feln Cauldron%' OR
+	`cardtext` LIKE '%sacrifice Family Charter%' OR
+	`killattachment` = 1),1,0);
+	
+UPDATE `eternal_cards` SET `killweapon` = IF(
+	(`cardtext` LIKE '%kill%enemy%weapon%' OR
+	`killattachment` = 1),1,0);
+	
+UPDATE `eternal_cards` SET `killrelicweapon` = IF(
+	(`cardtext` LIKE '%kill%enemy%relic weapon%' OR
+	`killattachment` = 1 OR
+	`killrelic` = 1 OR
+	`killweapon` = 1),1,0);
+	
+UPDATE `eternal_cards` SET `negatecurse` = IF(
+	(`cardtext` LIKE '%negate a%curse%'),1,0);
+	
+UPDATE `eternal_cards` SET `negatespell` = IF(
+	(`cardtext` LIKE '%negate a%enemy spell%' OR
+	`cardtext` LIKE '%when an enemy plays a spell%negate it%'),1,0);
