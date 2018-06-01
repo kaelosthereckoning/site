@@ -9,9 +9,11 @@
 	(`cardtext` NOT LIKE '%play a spell from your void%' AND
 	`cardtext` NOT LIKE '%play%power cards%from your void%')
 	),1,0);
-	UPDATE `eternal_cards` SET `tokenscreated` = IF (
+
+UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	((`cardtext` LIKE '%play a _/_%' OR
 	`cardtext` LIKE '%play an _/_%' OR
+	`cardtext` LIKE '%create and draw a%' OR
 	`cardtext` LIKE '%play an Infernus%' OR
 	`cardtext` LIKE '%play one of%_/_%' OR
 	`cardtext` LIKE '%play a Minotaur%' OR
@@ -38,7 +40,9 @@
 	(
 	IF((`cardtext` LIKE '%play five%units%' OR `cardtext` LIKE '%play five Sentinels%'),5,0)
 	))))))));
+
 	UPDATE `eternal_cards` SET `createtokens` = IF ((`tokenscreated` <> 0),1,0);
+	
 	UPDATE `eternal_cards` SET `monofiredeck` = IF ((`faction` LIKE 'Fire'),1,0);
 	UPDATE `eternal_cards` SET `monotimedeck` = IF ((`faction` LIKE 'Time'),1,0);
 	UPDATE `eternal_cards` SET `monojusticedeck` = IF ((`faction` LIKE 'Justice'),1,0);
