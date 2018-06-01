@@ -1701,3 +1701,10 @@ UPDATE `eternal_cards` SET `negatecurse` = IF(
 UPDATE `eternal_cards` SET `negatespell` = IF(
 	(`cardtext` LIKE '%negate a%enemy spell%' OR
 	`cardtext` LIKE '%when an enemy plays a spell%negate it%'),1,0);
+	
+UPDATE `eternal_cards` SET `bypassaegis` = IF(
+	((`cardtype` LIKE 'Curse' AND
+	`cardtext` LIKE '%it deals%damage to its owner%')
+	OR
+	`cardtext` LIKE '%can%t be negated or blocked by Aegis%' OR
+	`cardtext` LIKE '%Nightfall%'),1,0);
