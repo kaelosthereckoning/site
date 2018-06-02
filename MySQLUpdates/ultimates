@@ -1,0 +1,41 @@
+UPDATE `eternal_cards` SET `ultcost` = IF(
+	(`cardtext` LIKE '%Ultimate: Pay 1 %'),1,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 2 %'),2,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 3 %'),3,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 4 %'),4,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 5 %'),5,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 6 %'),6,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 7 %'),7,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 8 %'),8,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 9 %'),9,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 10 %'),10,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 11 %'),11,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 12 %'),12,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 13 %'),13,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 14 %'),14,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 15 %'),15,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 16 %'),16,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 17 %'),17,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 18 %'),18,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 19 %'),19,
+	(
+	IF((`cardtext` LIKE '%Ultimate: Pay 20 %'),20,0)
+	))))))))))))))))))))))))))))))))))))));
