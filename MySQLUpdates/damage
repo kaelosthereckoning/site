@@ -1,78 +1,103 @@
 UPDATE `eternal_cards` SET `flatdamage` = 1 WHERE (
 	`cardtext` LIKE '%deal 1 damage%' OR
-	`cardtext` LIKE '%deals 1 damage%');
+	`cardtext` LIKE '%deals 1 damage%' OR
+	`cardtext` LIKE '%dealt 1 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 2 WHERE (
 	`cardtext` LIKE '%deal 2 damage%' OR
-	`cardtext` LIKE '%deals 2 damage%');
+	`cardtext` LIKE '%deals 2 damage%' OR
+	`cardtext` LIKE '%dealt 2 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 3 WHERE (
 	`cardtext` LIKE '%deal 3 damage%' OR
-	`cardtext` LIKE '%deals 3 damage%');
+	`cardtext` LIKE '%deals 3 damage%' OR
+	`cardtext` LIKE '%dealt 3 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 4 WHERE (
 	`cardtext` LIKE '%deal 4 damage%' OR
-	`cardtext` LIKE '%deals 4 damage%');
+	`cardtext` LIKE '%deals 4 damage%' OR
+	`cardtext` LIKE '%dealt 4 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 5 WHERE (
 	`cardtext` LIKE '%deal 5 damage%' OR
-	`cardtext` LIKE '%deals 5 damage%');
+	`cardtext` LIKE '%deals 5 damage%' OR
+	`cardtext` LIKE '%dealt 5 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 6 WHERE (
 	`cardtext` LIKE '%deal 6 damage%' OR
-	`cardtext` LIKE '%deals 6 damage%');
+	`cardtext` LIKE '%deals 6 damage%' OR
+	`cardtext` LIKE '%dealt 6 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 7 WHERE (
 	`cardtext` LIKE '%deal 7 damage%' OR
-	`cardtext` LIKE '%deals 7 damage%');
+	`cardtext` LIKE '%deals 7 damage%' OR
+	`cardtext` LIKE '%dealt 7 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 8 WHERE (
 	`cardtext` LIKE '%deal 8 damage%' OR
-	`cardtext` LIKE '%deals 8 damage%');
+	`cardtext` LIKE '%deals 8 damage%' OR
+	`cardtext` LIKE '%dealt 8 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 9 WHERE (
 	`cardtext` LIKE '%deal 9 damage%' OR
-	`cardtext` LIKE '%deals 9 damage%');
+	`cardtext` LIKE '%deals 9 damage%' OR
+	`cardtext` LIKE '%dealt 9 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 10 WHERE (
 	`cardtext` LIKE '%deal 10 damage%' OR
-	`cardtext` LIKE '%deals 10 damage%');
+	`cardtext` LIKE '%deals 10 damage%' OR
+	`cardtext` LIKE '%dealt 10 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 11 WHERE (
 	`cardtext` LIKE '%deal 11 damage%' OR
-	`cardtext` LIKE '%deals 11 damage%');
+	`cardtext` LIKE '%deals 11 damage%' OR
+	`cardtext` LIKE '%dealt 11 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 12 WHERE (
 	`cardtext` LIKE '%deal 12 damage%' OR
-	`cardtext` LIKE '%deals 12 damage%');
+	`cardtext` LIKE '%deals 12 damage%' OR
+	`cardtext` LIKE '%dealt 12 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 13 WHERE (
 	`cardtext` LIKE '%deal 13 damage%' OR
-	`cardtext` LIKE '%deals 13 damage%');
+	`cardtext` LIKE '%deals 13 damage%' OR
+	`cardtext` LIKE '%dealt 13 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 14 WHERE (
 	`cardtext` LIKE '%deal 14 damage%' OR
-	`cardtext` LIKE '%deals 14 damage%');
+	`cardtext` LIKE '%deals 14 damage%' OR
+	`cardtext` LIKE '%dealt 14 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 15 WHERE (
 	`cardtext` LIKE '%deal 15 damage%' OR
-	`cardtext` LIKE '%deals 15 damage%');
+	`cardtext` LIKE '%deals 15 damage%' OR
+	`cardtext` LIKE '%dealt 15 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 16 WHERE (
 	`cardtext` LIKE '%deal 16 damage%' OR
-	`cardtext` LIKE '%deals 16 damage%');
+	`cardtext` LIKE '%deals 16 damage%' OR
+	`cardtext` LIKE '%dealt 16 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 17 WHERE (
 	`cardtext` LIKE '%deal 17 damage%' OR
-	`cardtext` LIKE '%deals 17 damage%');
+	`cardtext` LIKE '%deals 17 damage%' OR
+	`cardtext` LIKE '%dealt 17 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 18 WHERE (
 	`cardtext` LIKE '%deal 18 damage%' OR
-	`cardtext` LIKE '%deals 18 damage%');
+	`cardtext` LIKE '%deals 18 damage%' OR
+	`cardtext` LIKE '%dealt 18 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 19 WHERE (
 	`cardtext` LIKE '%deal 19 damage%' OR
-	`cardtext` LIKE '%deals 19 damage%');
+	`cardtext` LIKE '%deals 19 damage%' OR
+	`cardtext` LIKE '%dealt 19 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 20 WHERE (
 	`cardtext` LIKE '%deal 20 damage%' OR
-	`cardtext` LIKE '%deals 20 damage%');
+	`cardtext` LIKE '%deals 20 damage%' OR
+	`cardtext` LIKE '%dealt 20 damage%');
 UPDATE `eternal_cards` SET 	`flatdamage` = 21 WHERE (
 	`cardtext` LIKE '%deal 21 damage%' OR
-	`cardtext` LIKE '%deals 21 damage%');
+	`cardtext` LIKE '%deals 21 damage%' OR
+	`cardtext` LIKE '%dealt 21 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 22 WHERE (
 	`cardtext` LIKE '%deal 22 damage%' OR
-	`cardtext` LIKE '%deals 22 damage%');
+	`cardtext` LIKE '%deals 22 damage%' OR
+	`cardtext` LIKE '%dealt 22 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 23 WHERE (
 	`cardtext` LIKE '%deal 23 damage%' OR
-	`cardtext` LIKE '%deals 23 damage%');
+	`cardtext` LIKE '%deals 23 damage%' OR
+	`cardtext` LIKE '%dealt 23 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 24 WHERE (
 	`cardtext` LIKE '%deal 24 damage%' OR
-	`cardtext` LIKE '%deals 24 damage%');
+	`cardtext` LIKE '%deals 24 damage%' OR
+	`cardtext` LIKE '%dealt 24 damage%');
 UPDATE `eternal_cards` SET `flatdamage` = 25 WHERE (
 	`cardtext` LIKE '%deal 25 damage%' OR
-	`cardtext` LIKE '%deals 25 damage%');
+	`cardtext` LIKE '%deals 25 damage%' OR
+	`cardtext` LIKE '%dealt 25 damage%');
 UPDATE `eternal_cards` SET `variabledamage` = IF(
 	(`cardtext` LIKE '%deal damage%equal to%' OR
 	`cardtext` LIKE '%deal%[Strength] in damage%' OR
