@@ -130,7 +130,13 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	UPDATE `eternal_cards` SET `[Increased]` = IF ((`cardtext` LIKE '%increased%'),1,0);
 	UPDATE `eternal_cards` SET `[Infiltrate-Once]` = IF ((`cardtext` LIKE '%Infiltrate%'),1,0);
 	UPDATE `eternal_cards` SET `[Infiltrate-Recurring]` = IF ((`cardtext` LIKE '%When%hits the enemy player%' OR `cardname` LIKE '%Recurring Nightmare%'),1,0);
-	UPDATE `eternal_cards` SET `[Influence]` = 1 WHERE MATCH `cardtext` AGAINST ('"[Fire]" "[Time]" "[Justice]" "[Primal]" "[Shadow]"' IN BOOLEAN MODE);
+	UPDATE `eternal_cards` SET `[Influence]` = 1 WHERE (
+		`cardtext` LIKE '%gain an influence%' OR
+		`cardtext` LIKE '%gain [Fire]%' OR
+		`cardtext` LIKE '%gain [Time]%' OR
+		`cardtext` LIKE '%gain [Justice]%' OR
+		`cardtext` LIKE '%gain [Primal]%' OR
+		`cardtext` LIKE '%gain [Shadow]%')
 	UPDATE `eternal_cards` SET `[Invulnerable]` = IF ((`cardtext` LIKE '%invulnerable%'),1,0);
 	UPDATE `eternal_cards` SET `[Kill]` = IF ((`cardtext` LIKE '%kill%' AND `cardtext` NOT LIKE '%killer%'),1,0);
 	UPDATE `eternal_cards` SET `[Killer]` = IF ((`cardtext` LIKE '%Killer%'),1,0);
