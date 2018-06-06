@@ -1,0 +1,135 @@
+UPDATE `eternal_cards` SET `beast` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%beast%'),1,0)
+UPDATE `eternal_cards` SET `bird` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%bird%'),1,0)
+UPDATE `eternal_cards` SET `centaur` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%centaur%'),1,0)
+UPDATE `eternal_cards` SET `cleric` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%cleric%'),1,0)
+UPDATE `eternal_cards` SET `clockroach` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%clockroach%'),1,0)
+UPDATE `eternal_cards` SET `cultist` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%cultist%'),1,0)
+UPDATE `eternal_cards` SET `dinosaur` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%dinosaur%'),1,0)
+UPDATE `eternal_cards` SET `dragon` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%dragon%'),1,0)
+UPDATE `eternal_cards` SET `elf` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%elf%'),1,0)
+UPDATE `eternal_cards` SET `elemental` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%elemental%'),1,0)
+UPDATE `eternal_cards` SET `engine` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%engine%'),1,0)
+UPDATE `eternal_cards` SET `explorer` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%explorer%'),1,0)
+UPDATE `eternal_cards` SET `gargoyle` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%gargoyle%'),1,0)
+UPDATE `eternal_cards` SET `giant` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%giant%'),1,0)
+UPDATE `eternal_cards` SET `golem` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%golem%'),1,0)
+UPDATE `eternal_cards` SET `gorgon` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%gorgon%'),1,0)
+UPDATE `eternal_cards` SET `grenadin` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%grenadin%'),1,0)
+UPDATE `eternal_cards` SET `gunslinger` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%gunslinger%'),1,0)
+UPDATE `eternal_cards` SET `illusion` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%illusion%'),1,0)
+UPDATE `eternal_cards` SET `mage` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%mage%'),1,0)
+UPDATE `eternal_cards` SET `minotaur` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%minotaur%'),1,0)
+UPDATE `eternal_cards` SET `mob` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%mob%'),1,0)
+UPDATE `eternal_cards` SET `mystic` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%mystic%'),1,0)
+UPDATE `eternal_cards` SET `nightmare` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%nightmare%'),1,0)
+UPDATE `eternal_cards` SET `oni` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%oni%'),1,0)
+UPDATE `eternal_cards` SET `paladin` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%paladin%'),1,0)
+UPDATE `eternal_cards` SET `phoenix` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%phoenix%'),1,0)
+UPDATE `eternal_cards` SET `radiant` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%radiant%'),1,0)
+UPDATE `eternal_cards` SET `rebel` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%rebel%'),1,0)
+UPDATE `eternal_cards` SET `rogue` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%rogue%'),1,0)
+UPDATE `eternal_cards` SET `scion` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%scion%'),1,0)
+UPDATE `eternal_cards` SET `sentinel` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%sentinel%'),1,0)
+UPDATE `eternal_cards` SET `serpent` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%serpent%'),1,0)
+UPDATE `eternal_cards` SET `shaman` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%shaman%'),1,0)
+UPDATE `eternal_cards` SET `simulacrae` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%simulacrae%'),1,0)
+UPDATE `eternal_cards` SET `soldier` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%soldier%'),1,0)
+UPDATE `eternal_cards` SET `sporefolk` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%sporefolk%'),1,0)
+UPDATE `eternal_cards` SET `stranger` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%stranger%'),1,0)
+UPDATE `eternal_cards` SET `tinker` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%tinker%'),1,0)
+UPDATE `eternal_cards` SET `unseen` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%unseen%'),1,0)
+UPDATE `eternal_cards` SET `valkyrie` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%valkyrie%'),1,0)
+UPDATE `eternal_cards` SET `vermin` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%vermin%'),1,0)
+UPDATE `eternal_cards` SET `warrior` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%warrior%'),1,0)
+UPDATE `eternal_cards` SET `wisp` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%wisp%'),1,0)
+UPDATE `eternal_cards` SET `yeti` = IF(
+(`cardtype` = 'Unit' AND
+`unittype` LIKE '%yeti%'),1,0)
