@@ -2019,3 +2019,106 @@ UPDATE `eternal_cards` SET `wisp` = IF(
 UPDATE `eternal_cards` SET `yeti` = IF(
 	(`cardtype` = 'Unit' AND
 	`unittype` LIKE '%yeti%'),1,0);
+
+UPDATE `eternal_cards` SET `mono1` = 1 WHERE (
+	(`cardtext` LIKE '%if you have [Fire] %' OR
+	`cardtext` LIKE '%[Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time] %' OR
+	`cardtext` LIKE '%[Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice] %' OR
+	`cardtext` LIKE '%[Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal] %' OR
+	`cardtext` LIKE '%[Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow] %' OR
+	`cardtext` LIKE '%[Shadow]: %')
+	AND
+	(`cardtext` NOT LIKE '%[Fire][Fire]%' AND
+	`cardtext` NOT LIKE '%[Time][Time]%' AND
+	`cardtext` NOT LIKE '%[Justice][Justice]%' AND
+	`cardtext` NOT LIKE '%[Primal][Primal]%' AND
+	`cardtext` NOT LIKE '%[Shadow][Shadow]%'));
+	
+UPDATE `eternal_cards` SET `mono2` = 1 WHERE (
+	(`cardtext` LIKE '%if you have [Fire][Fire] %' OR
+	`cardtext` LIKE '%[Fire][Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time][Time] %' OR
+	`cardtext` LIKE '%[Time][Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice][Justice] %' OR
+	`cardtext` LIKE '%[Justice][Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal][Primal] %' OR
+	`cardtext` LIKE '%[Primal][Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow][Shadow] %' OR
+	`cardtext` LIKE '%[Shadow][Shadow]: %')
+	AND
+	(`cardtext` NOT LIKE '%[Fire][Fire][Fire]%' AND
+	`cardtext` NOT LIKE '%[Time][Time][Time]%' AND
+	`cardtext` NOT LIKE '%[Justice][Justice][Justice]%' AND
+	`cardtext` NOT LIKE '%[Primal][Primal][Primal]%' AND
+	`cardtext` NOT LIKE '%[Shadow][Shadow][Shadow]%'));
+	
+UPDATE `eternal_cards` SET `mono3` = 1 WHERE (
+	(`cardtext` LIKE '%if you have [Fire][Fire][Fire] %' OR
+	`cardtext` LIKE '%[Fire][Fire][Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time][Time][Time] %' OR
+	`cardtext` LIKE '%[Time][Time][Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice][Justice][Justice] %' OR
+	`cardtext` LIKE '%[Justice][Justice][Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal][Primal][Primal] %' OR
+	`cardtext` LIKE '%[Primal][Primal][Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow][Shadow][Shadow] %' OR
+	`cardtext` LIKE '%[Shadow][Shadow][Shadow]: %')
+	AND
+	(`cardtext` NOT LIKE '%[Fire][Fire][Fire][Fire]%' AND
+	`cardtext` NOT LIKE '%[Time][Time][Time][Time]%' AND
+	`cardtext` NOT LIKE '%[Justice][Justice][Justice][Justice]%' AND
+	`cardtext` NOT LIKE '%[Primal][Primal][Primal][Primal]%' AND
+	`cardtext` NOT LIKE '%[Shadow][Shadow][Shadow][Shadow]%'));
+
+UPDATE `eternal_cards` SET `mono4` = 1 WHERE (
+	(`cardtext` LIKE '%if you have [Fire][Fire][Fire][Fire] %' OR
+	`cardtext` LIKE '%[Fire][Fire][Fire][Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time][Time][Time][Time] %' OR
+	`cardtext` LIKE '%[Time][Time][Time][Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice][Justice][Justice][Justice] %' OR
+	`cardtext` LIKE '%[Justice][Justice][Justice][Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal][Primal][Primal][Primal] %' OR
+	`cardtext` LIKE '%[Primal][Primal][Primal][Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow][Shadow][Shadow][Shadow] %' OR
+	`cardtext` LIKE '%[Shadow][Shadow][Shadow][Shadow]: %')
+	AND
+	(`cardtext` NOT LIKE '%[Fire][Fire][Fire][Fire][Fire]%' AND
+	`cardtext` NOT LIKE '%[Time][Time][Time][Time][Time]%' AND
+	`cardtext` NOT LIKE '%[Justice][Justice][Justice][Justice][Justice]%' AND
+	`cardtext` NOT LIKE '%[Primal][Primal][Primal][Primal][Primal]%' AND
+	`cardtext` NOT LIKE '%[Shadow][Shadow][Shadow][Shadow][Shadow]%'));
+
+	
+UPDATE `eternal_cards` SET `mono5` = 1 WHERE (
+	(`cardtext` LIKE '%if you have [Fire][Fire][Fire][Fire][Fire] %' OR
+	`cardtext` LIKE '%[Fire][Fire][Fire][Fire][Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time][Time][Time][Time][Time] %' OR
+	`cardtext` LIKE '%[Time][Time][Time][Time][Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice][Justice][Justice][Justice][Justice] %' OR
+	`cardtext` LIKE '%[Justice][Justice][Justice][Justice][Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal][Primal][Primal][Primal][Primal] %' OR
+	`cardtext` LIKE '%[Primal][Primal][Primal][Primal][Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow][Shadow][Shadow][Shadow][Shadow] %' OR
+	`cardtext` LIKE '%[Shadow][Shadow][Shadow][Shadow][Shadow]: %')
+	AND
+	(`cardtext` NOT LIKE '%[Fire][Fire][Fire][Fire][Fire][Fire]%' AND
+	`cardtext` NOT LIKE '%[Time][Time][Time][Time][Time][Time]%' AND
+	`cardtext` NOT LIKE '%[Justice][Justice][Justice][Justice][Justice][Justice]%' AND
+	`cardtext` NOT LIKE '%[Primal][Primal][Primal][Primal][Primal][Primal]%' AND
+	`cardtext` NOT LIKE '%[Shadow][Shadow][Shadow][Shadow][Shadow][Shadow]%'));
+	
+UPDATE `eternal_cards` SET `mono6` = 1 WHERE (
+	`cardtext` LIKE '%if you have [Fire][Fire][Fire][Fire][Fire][Fire] %' OR
+	`cardtext` LIKE '%[Fire][Fire][Fire][Fire][Fire][Fire]: %' OR
+	`cardtext` LIKE '%if you have [Time][Time][Time][Time][Time][Time] %' OR
+	`cardtext` LIKE '%[Time][Time][Time][Time][Time][Time]: %' OR
+	`cardtext` LIKE '%if you have [Justice][Justice][Justice][Justice][Justice][Justice] %' OR
+	`cardtext` LIKE '%[Justice][Justice][Justice][Justice][Justice][Justice]: %' OR
+	`cardtext` LIKE '%if you have [Primal][Primal][Primal][Primal][Primal][Primal] %' OR
+	`cardtext` LIKE '%[Primal][Primal][Primal][Primal][Primal][Primal]: %' OR
+	`cardtext` LIKE '%if you have [Shadow][Shadow][Shadow][Shadow][Shadow][Shadow] %' OR
+	`cardtext` LIKE '%[Shadow][Shadow][Shadow][Shadow][Shadow][Shadow]: %');
