@@ -1,0 +1,182 @@
+UPDATE `eternal_cards` SET pkeywordsgained = '';
+UPDATE `eternal_cards` SET pnumkeywordsgained = 0;	
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Aegis%')
+	,CONCAT('Aegis'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Aegis%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Ally%')
+	,CONCAT('Ally'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Ally%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Deadly%')
+	,CONCAT('Deadly'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Deadly%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%invulnerable%')
+	,CONCAT('Invulnerable'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%invulnerable%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Lifeforce%')
+	,CONCAT('Lifeforce'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Lifeforce%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Lifesteal%')
+	,CONCAT('Lifesteal'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Lifesteal%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Overwhelm%')
+	,CONCAT('Overwhelm'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Overwhelm%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Quickdraw%')
+	,CONCAT('Quickdraw'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Quickdraw%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Summon%')
+	,CONCAT('Summon'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Summon%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Warcry%')
+	,CONCAT('Warcry'),CONCAT('')),
+	pnumkeywordsgained = IF(
+	(`cardtype` = 'Relic Weapon' AND
+	`cardtext` LIKE '%Warcry%')
+	,(`pnumkeywordsgained` + 1),`pnumkeywordsgained`);
+UPDATE `eternal_cards` SET pgainkeyword = IF(
+	(`pnumkeywordsgained`>0),1,0);
+	
+UPDATE `eternal_cards` SET ukeywordsgained = '';
+UPDATE `eternal_cards` SET unumkeywordsgained = 0;	
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Aegis%')
+	,CONCAT('Aegis'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Aegis%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);						
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Charge%')
+	,CONCAT('Charge'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Charge%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Destiny%' AND 
+	`cardtext` NOT LIKE '%power cards have Destiny%')
+	,CONCAT('Destiny'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Destiny%' AND 
+	`cardtext` NOT LIKE '%power cards have Destiny%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Endurance%')
+	,CONCAT('Endurance'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Endurance%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Flying%')
+	,CONCAT('Flying'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Flying%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%are%invulnerable%' AND
+	`cardtext` NOT LIKE '%you are invulnerable%')
+	,CONCAT('Invulnerable'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%are%invulnerable%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Lifesteal%')
+	,CONCAT('Lifesteal'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Lifesteal%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Overwhelm%')
+	,CONCAT('Overwhelm'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Overwhelm%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Quickdraw%')
+	,CONCAT('Quickdraw'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Quickdraw%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Warcry%')
+	,CONCAT('Warcry'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Warcry%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
+UPDATE `eternal_cards` SET ukeywordsgained = IF(
+	(`cardtext` LIKE '%have%Warp%' AND 
+	`cardtext` NOT LIKE '%power cards have Warp%')
+	,CONCAT('Warp'),CONCAT('')),
+	unumkeywordsgained = IF(
+	(`cardtext` LIKE '%have%Warp%' AND 
+	`cardtext` NOT LIKE '%power cards have Warp%');
+UPDATE `eternal_cards` SET ugainkeyword = IF(
+	(`unumkeywordsgained`>0),1,0);
+
+UPDATE `eternal_cards` SET powkeywordsgained = '';
+UPDATE `eternal_cards` SET pownumkeywordsgained = 0;
+UPDATE `eternal_cards` SET powkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Destiny%')
+	,CONCAT('Destiny'),CONCAT('')),
+	pownumkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Destiny%')
+	,(`pownumkeywordsgained` + 1),`pownumkeywordsgained`);						
+UPDATE `eternal_cards` SET powkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Echo%')
+	,CONCAT('Echo'),CONCAT('')),
+	pownumkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Echo%')
+	,(`pownumkeywordsgained` + 1),`pownumkeywordsgained`);
+UPDATE `eternal_cards` SET powkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Warp%')
+	,CONCAT('Warp'),CONCAT('')),
+	pownumkeywordsgained = IF(
+	(`cardtext` LIKE '%power cards have Warp%')
+	,(`pownumkeywordsgained` + 1),`pownumkeywordsgained`);
+UPDATE `eternal_cards` SET powgainkeyword = IF(
+	(`pownumkeywordsgained`>0),1,0);
