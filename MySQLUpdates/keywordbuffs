@@ -154,7 +154,8 @@ UPDATE `eternal_cards` SET ukeywordsgained = IF(
 	,CONCAT('Warp'),CONCAT('')),
 	unumkeywordsgained = IF(
 	(`cardtext` LIKE '%have%Warp%' AND 
-	`cardtext` NOT LIKE '%power cards have Warp%');
+	`cardtext` NOT LIKE '%power cards have Warp%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
 UPDATE `eternal_cards` SET ugainkeyword = IF(
 	(`unumkeywordsgained`>0),1,0);
 
