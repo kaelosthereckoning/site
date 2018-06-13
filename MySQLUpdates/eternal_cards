@@ -2238,7 +2238,7 @@ UPDATE `eternal_cards` SET `mono6` = 1 WHERE (
 	`cardtext` LIKE '%if you have [Shadow][Shadow][Shadow][Shadow][Shadow][Shadow] %' OR
 	`cardtext` LIKE '%[Shadow][Shadow][Shadow][Shadow][Shadow][Shadow]: %');
 	
-	UPDATE `eternal_cards` SET pkeywordsgained = '';
+UPDATE `eternal_cards` SET pkeywordsgained = '';
 UPDATE `eternal_cards` SET pnumkeywordsgained = 0;	
 UPDATE `eternal_cards` SET pkeywordsgained = IF(
 	(`cardtype` = 'Relic Weapon' AND
@@ -2394,7 +2394,8 @@ UPDATE `eternal_cards` SET ukeywordsgained = IF(
 	,CONCAT('Warp'),CONCAT('')),
 	unumkeywordsgained = IF(
 	(`cardtext` LIKE '%have%Warp%' AND 
-	`cardtext` NOT LIKE '%power cards have Warp%');
+	`cardtext` NOT LIKE '%power cards have Warp%')
+	,(`unumkeywordsgained` + 1),`unumkeywordsgained`);
 UPDATE `eternal_cards` SET ugainkeyword = IF(
 	(`unumkeywordsgained`>0),1,0);
 
