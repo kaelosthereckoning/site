@@ -233,3 +233,69 @@ UPDATE `eternal_cards` SET 	maxtargets = 1,
 							opponenthit = 1,
 							selfhit = 1
 							WHERE `cardtext` LIKE BINARY '%Deal _ damage.%' ;
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 12, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 12,
+							enemyuhit = 0,
+							playeruhit = 2,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE (
+							`cardtext` LIKE '%your units%have +%' OR
+							`cardtext` LIKE '%your%have Charge%' OR
+							`cardtext` LIKE '%your%units%have Destiny%' OR
+							`cardtext` LIKE '%your%units%have Endurance%' OR
+							`cardtext` LIKE '%your%units%are invulnerable%' OR
+							`cardtext` LIKE '%your%units%have Warp%' OR
+							`cardtext` LIKE '%your%Sentinels%have%'
+							);
+							
+		UPDATE `eternal_cards` SET 	maxtargets = 11, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 11,
+							enemyuhit = 0,
+							playeruhit = 2,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE (
+							`cardtext` LIKE '%your other%have%'
+							);
+
+		UPDATE `eternal_cards` SET 	maxtargets = 24, 
+							targetunit = 2, 
+							minutargets = 1,
+							maxutargets = 24,
+							enemyuhit = 2,
+							playeruhit = 2,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE (
+							`cardtext` LIKE '%Strangers have%'
+							);
+
+		UPDATE `eternal_cards` SET 	maxtargets = 0, 
+							targetunit = 0, 
+							minutargets = 0,
+							maxutargets = 0,
+							enemyuhit = 0,
+							playeruhit = 0,
+							targetplayer = 0,
+							minptargets = 0,
+							maxptargets = 0,
+							opponenthit = 0,
+							selfhit = 0
+							WHERE (
+							`cardtext` LIKE '%power cards have%'
+							);
