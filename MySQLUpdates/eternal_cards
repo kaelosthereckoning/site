@@ -100,15 +100,17 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	UPDATE `eternal_cards` SET `[Echo]` = IF ((`cardtext` LIKE '%Echo%'),1,0);
 	UPDATE `eternal_cards` SET `[Empower]` = IF ((`cardtext` LIKE '%Empower%'),1,0);
 	UPDATE `eternal_cards` SET `[Endurance]` = IF ((`cardtext` LIKE '%Endurance%'),1,0);
-	UPDATE `eternal_cards` SET `[Entomb]` = IF ((`cardtext` LIKE '%Entomb%'),1,0);
+	UPDATE `eternal_cards` SET `[Entomb]` = IF (
+	(`cardtext` LIKE '%Entomb%' AND
+	`cardtext` NOT LIKE '%can't Entomb%'),1,0);
 	UPDATE `eternal_cards` SET `[Equal]` = IF ((`cardtext` LIKE '%equal%'),1,0);
 	UPDATE `eternal_cards` SET `[Every]` = IF ((`cardtext` LIKE '%every%'),1,0);
 	UPDATE `eternal_cards` SET `[Exhaust]` = IF ((`cardtext` LIKE '%exhaust%'),1,0);
 	UPDATE `eternal_cards` SET `[Fate]` = IF ((`cardtext` LIKE '%Fate%'),1,0);
 	UPDATE `eternal_cards` SET `[Flying]` = IF ((
-	(`cardtext` LIKE '%Flying%' AND 
-	`cardtext` NOT LIKE '%with Flying%' AND
-	`cardtext` NOT LIKE '%a flying unit%') OR (
+	((`cardtext` LIKE '%Flying%') AND 
+	(`cardtext` NOT LIKE '%with Flying%' AND
+	`cardtext` NOT LIKE '%a flying unit%')) OR (
 	`cardname` LIKE '%Amilli%' OR
 	`cardname` LIKE 'Wild Cloudsnake' OR
 	`cardname` LIKE 'Skyrider Vanguard' OR
@@ -161,8 +163,10 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 		`cardtext` LIKE '%cost _ less%')
 		,1,0);
 	UPDATE `eternal_cards` SET `[Revenge]` = IF (
-		(`cardtext` LIKE '%Revenge%' OR
-		`cardtext` LIKE '%Destiny and put it into the top ten cards of your deck%'
+		((`cardtext` LIKE '%Revenge%' OR
+		`cardtext` LIKE '%Destiny and put it into the top ten cards of your deck%')
+		AND
+		`cardtext` NOT LIKE '%can't Entomb or Revenge%'
 		)
 		,1,0);
 	UPDATE `eternal_cards` SET `[Sacrifice]` = IF ((`cardtext` LIKE '%sacrifice%'),1,0);
