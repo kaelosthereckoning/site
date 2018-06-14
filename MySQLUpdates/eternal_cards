@@ -84,7 +84,47 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	UPDATE `eternal_cards` SET `[Ally]` = IF ((`cardtext` LIKE '%Ally%'),1,0);
 	UPDATE `eternal_cards` SET `[Ambush]` = IF ((`cardtext` LIKE '%Ambush%'),1,0);
 	UPDATE `eternal_cards` SET `[Are]` = IF ((`cardtext` LIKE '% are %'),1,0);
-	UPDATE `eternal_cards` SET `[Armor]` = IF ((`cardtext` LIKE '%[Armor]%'),1,0);
+	UPDATE `eternal_cards` SET `[Armor]` = IF(
+	(`cardtext` LIKE '%gain 1[Armor]%'),1,
+	(
+	IF((`cardtext` LIKE '%gain 2[Armor]%'),2,
+	(
+	IF((`cardtext` LIKE '%gain 3[Armor]%'),3,
+	(
+	IF((`cardtext` LIKE '%gain 4[Armor]%'),4,
+	(
+	IF((`cardtext` LIKE '%gain 5[Armor]%'),5,
+	(
+	IF((`cardtext` LIKE '%gain 6[Armor]%'),6,
+	(
+	IF((`cardtext` LIKE '%gain 7[Armor]%'),7,
+	(
+	IF((`cardtext` LIKE '%gain 8[Armor]%'),8,
+	(
+	IF((`cardtext` LIKE '%gain 9[Armor]%'),9,
+	(
+	IF((`cardtext` LIKE '%gain 10[Armor]%'),10,
+	(
+	IF((`cardtext` LIKE '%gain 11[Armor]%'),11,
+	(
+	IF((`cardtext` LIKE '%gain 12[Armor]%'),12,
+	(
+	IF((`cardtext` LIKE '%gain 13[Armor]%'),13,
+	(
+	IF((`cardtext` LIKE '%gain 14[Armor]%'),14,
+	(
+	IF((`cardtext` LIKE '%gain 15[Armor]%'),15,
+	(
+	IF((`cardtext` LIKE '%gain 16[Armor]%'),16,
+	(
+	IF((`cardtext` LIKE '%gain 17[Armor]%'),17,
+	(
+	IF((`cardtext` LIKE '%gain 18[Armor]%'),18,
+	(
+	IF((`cardtext` LIKE '%gain 19[Armor]%'),19,
+	(
+	IF((`cardtext` LIKE '%gain 20[Armor]%'),20,0)
+	))))))))))))))))))))))))))))))))))))));
 	UPDATE `eternal_cards` SET `[Attack]` = IF ((`cardtext` LIKE '%attack%'),1,0);
 	UPDATE `eternal_cards` SET `[Block]` = IF ((`cardtext` LIKE '%block%'),1,0);
 	UPDATE `eternal_cards` SET `[Bond]` = IF ((`cardtext` LIKE '%Bond%'),1,0);
@@ -126,7 +166,47 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	UPDATE `eternal_cards` SET `[Your Hand]` = IF ((`cardtext` LIKE '%your hand%'),1,0);
 	UPDATE `eternal_cards` SET `[Enemy Hand]` = IF ((`cardtext` LIKE '%their hand%' OR `cardtext` LIKE '%enemy player_s hand%'),1,0);
 	UPDATE `eternal_cards` SET `[Have]` = IF ((`cardtext` LIKE '% have %'),1,0);
-	UPDATE `eternal_cards` SET `[Health]` = IF ((`cardtext` LIKE '%[Health]%'),1,0);
+	UPDATE `eternal_cards` SET `[Health]` = IF(
+	(`cardtext` LIKE '%gain 1[Health]%'),1,
+	(
+	IF((`cardtext` LIKE '%gain 2[Health]%'),2,
+	(
+	IF((`cardtext` LIKE '%gain 3[Health]%'),3,
+	(
+	IF((`cardtext` LIKE '%gain 4[Health]%'),4,
+	(
+	IF((`cardtext` LIKE '%gain 5[Health]%'),5,
+	(
+	IF((`cardtext` LIKE '%gain 6[Health]%'),6,
+	(
+	IF((`cardtext` LIKE '%gain 7[Health]%'),7,
+	(
+	IF((`cardtext` LIKE '%gain 8[Health]%'),8,
+	(
+	IF((`cardtext` LIKE '%gain 9[Health]%'),9,
+	(
+	IF((`cardtext` LIKE '%gain 10[Health]%'),10,
+	(
+	IF((`cardtext` LIKE '%gain 11[Health]%'),11,
+	(
+	IF((`cardtext` LIKE '%gain 12[Health]%'),12,
+	(
+	IF((`cardtext` LIKE '%gain 13[Health]%'),13,
+	(
+	IF((`cardtext` LIKE '%gain 14[Health]%'),14,
+	(
+	IF((`cardtext` LIKE '%gain 15[Health]%'),15,
+	(
+	IF((`cardtext` LIKE '%gain 16[Health]%'),16,
+	(
+	IF((`cardtext` LIKE '%gain 17[Health]%'),17,
+	(
+	IF((`cardtext` LIKE '%gain 18[Health]%'),18,
+	(
+	IF((`cardtext` LIKE '%gain 19[Health]%'),19,
+	(
+	IF((`cardtext` LIKE '%gain 20[Health]%'),20,0)
+	))))))))))))))))))))))))))))))))))))));
 	UPDATE `eternal_cards` SET `[Impermanent]` = IF ((`cardtext` LIKE '%this turn%' AND `cardtext` NOT LIKE '%the enemy player has taken this turn%'),1,0);
 	UPDATE `eternal_cards` SET `[Increase]` = IF ((`cardtext` LIKE '%increase %'),1,0);
 	UPDATE `eternal_cards` SET `[Increased]` = IF ((`cardtext` LIKE '%increased%'),1,0);
@@ -144,10 +224,11 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	UPDATE `eternal_cards` SET `[Killer]` = IF ((`cardtext` LIKE '%Killer%'),1,0);
 	UPDATE `eternal_cards` SET `[Lifeforce]` = IF ((`cardtext` LIKE '%Lifeforce%'),1,0);
 	UPDATE `eternal_cards` SET `[Lifesteal]` = IF ((`cardtext` LIKE '%Lifesteal%'),1,0);
+	UPDATE `eternal_cards` SET `[Market]` = IF ((`cardtext` LIKE '%Market%'),1,0)
 	UPDATE `eternal_cards` SET `[+ Maximum Power]` = IF ((`cardtext` LIKE '%1 Maximum Power%'),1,0);
 	UPDATE `eternal_cards` SET `[Maximum Power]` = IF ((`cardtext` LIKE '%maximum power%'),1,0);
 	UPDATE `eternal_cards` SET `[May]` = IF ((`cardtext` LIKE '% may %'),1,0);
-	UPDATE `eternal_cards` SET `[Mentor]` = IF ((`cardtext` LIKE '%Mentor%'),1,0);
+	UPDATE `eternal_cards` SET `[Mentor]` = IF ((`cardtext` LIKE '%Mentor%'),1,0);;
 	UPDATE `eternal_cards` SET `[Negate]` = IF ((`cardtext` LIKE '%Negate%'),1,0);
 	UPDATE `eternal_cards` SET `[Night]` = IF ((`cardtext` LIKE '%Night %'),1,0);
 	UPDATE `eternal_cards` SET `[Nightfall]` = IF ((`cardtext` LIKE '%Nightfall%'),1,0);
