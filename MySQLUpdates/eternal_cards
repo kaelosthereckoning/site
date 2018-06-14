@@ -126,6 +126,7 @@ UPDATE `eternal_cards` SET `tokenscreated` = IF (
 	IF((`cardtext` LIKE '%gain 20[Armor]%'),20,0)
 	))))))))))))))))))))))))))))))))))))));
 	UPDATE `eternal_cards` SET `[Attack]` = IF ((`cardtext` LIKE '%attack%'),1,0);
+	UPDATE `eternal_cards` SET `[Berserk]` = IF ((`cardtext` LIKE '%Berserk%'),1,0);
 	UPDATE `eternal_cards` SET `[Block]` = IF ((`cardtext` LIKE '%block%'),1,0);
 	UPDATE `eternal_cards` SET `[Bond]` = IF ((`cardtext` LIKE '%Bond%'),1,0);
 	UPDATE `eternal_cards` SET `[Cant]` = IF ((`cardtext` LIKE '%can\'t%'),1,0);
